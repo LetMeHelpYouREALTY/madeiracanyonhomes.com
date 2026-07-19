@@ -12,11 +12,11 @@ workers_dev = true
 
 # Non-secret configuration. Override per environment / domain as needed.
 [vars]
-LEAD_SOURCE_LABEL = "Email Lead Worker"
+LEAD_SOURCE_LABEL = "Madeira Canyon Homes"
 # Comma-separated envelope MAIL FROM domains. Subdomains of each entry are allowed.
-ALLOWED_SENDER_DOMAINS = "realscout.com,homebot.ai,mail.homebot.ai,callaction.co,kvcore.com"
+ALLOWED_SENDER_DOMAINS = "realscout.com,homebot.ai,mail.homebot.ai,callaction.co,kvcore.com,madeiracanyonhomes.com"
 # Human inbox for unparseable / failed leads (must be a verified Email Routing destination).
-# FALLBACK_INBOX = "leads-fallback@heyberkshire.com"
+FALLBACK_INBOX = "DrDuffy@MadeiraCanyonHomes.com"
 
 # Message-ID de-dupe (prevents double-posts on Cloudflare Worker retries).
 # Create with: npx wrangler kv namespace create LEAD_DEDUPE

@@ -24,7 +24,7 @@ describe("resolveSourceParser", () => {
   });
 
   it("falls back to the generic contact-form parser", () => {
-    expect(resolveSourceParser("forms.heyberkshire.com").name).toBe(
+    expect(resolveSourceParser("forms.madeiracanyonhomes.com").name).toBe(
       "genericContactFormParser",
     );
   });

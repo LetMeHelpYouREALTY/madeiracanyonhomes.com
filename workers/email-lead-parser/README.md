@@ -31,15 +31,18 @@ npx wrangler kv namespace create LEAD_DEDUPE
 # Paste the id into wrangler.toml under [[kv_namespaces]]
 
 npx wrangler secret put FUB_API_KEY
-# Edit wrangler.toml [vars]: FALLBACK_INBOX, ALLOWED_SENDER_DOMAINS, LEAD_SOURCE_LABEL
+# wrangler.toml already sets:
+#   FALLBACK_INBOX = DrDuffy@MadeiraCanyonHomes.com
+#   LEAD_SOURCE_LABEL = Madeira Canyon Homes
+# Adjust ALLOWED_SENDER_DOMAINS if you add more vendors.
 
 npx wrangler deploy
 ```
 
 Then in the Cloudflare dashboard:
 
-1. **Email** → **Email Routing** → **Routing rules**
-2. Create a rule for the address that receives lead alerts (e.g. `leads@yourdomain.com`)
+1. **Email** → **Email Routing** → verify `DrDuffy@MadeiraCanyonHomes.com` as a **Destination address** (required for `message.forward()`)
+2. **Routing rules** → create a rule for the address that receives lead alerts (e.g. `leads@madeiracanyonhomes.com`)
 3. Action: **Send to a Worker** → select `fub-email-lead-parser`
 
 ## Single-contact go-live test (required)
