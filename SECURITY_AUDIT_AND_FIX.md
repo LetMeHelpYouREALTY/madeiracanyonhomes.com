@@ -422,7 +422,7 @@ Unable to auto-detect. Check:
 
 ## ⏰ Time Investment
 
-### This Site (heyberkshire.com)
+### This Site (madeiracanyonhomes.com)
 - Critical fixes: 5 minutes
 - Full remediation: 30 minutes
 - Testing & deploy: 10 minutes
@@ -484,7 +484,7 @@ Schedule:
 
 ## 📚 Next Steps
 
-1. **Today**: Fix this site (heyberkshire.com)
+1. **Today**: Fix this site (madeiracanyonhomes.com)
 2. **This week**: Create automation script
 3. **Next week**: Run script on all 37 sites
 4. **Monthly**: Set up automated security reviews

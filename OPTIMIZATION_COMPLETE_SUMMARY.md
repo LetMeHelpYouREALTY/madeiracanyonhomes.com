@@ -1,6 +1,6 @@
 # 🚀 Complete Optimization Summary
 
-**heyberkshire.com - Full Stack Optimization**
+**madeiracanyonhomes.com - Full Stack Optimization**
 
 **Date:** February 13, 2026  
 **Branch:** `optimize/github-vercel-setup`  
@@ -277,7 +277,7 @@ console.log(`Cost: $${response.cost.total.toFixed(6)}`);
 ### Immediate (Required)
 
 1. **Review and Merge PR #9**
-   - Go to: https://github.com/DrJanDuffy/heyberkshire.com/pull/9
+   - Go to: https://github.com/DrJanDuffy/madeiracanyonhomes.com/pull/9
    - Review all changes
    - Merge into `main` branch
 

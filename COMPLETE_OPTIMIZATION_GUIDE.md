@@ -1,6 +1,6 @@
 # 🚀 Complete Optimization Guide
 
-**heyberkshire.com - Full Stack Optimization Suite**
+**madeiracanyonhomes.com - Full Stack Optimization Suite**
 
 **Date:** February 13, 2026  
 **Branch:** `optimize/github-vercel-setup`  
@@ -470,7 +470,7 @@ const funnel = await automation.generateStageFunnel();
 
 // Email to team
 await sendEmail({
-  to: 'team@heyberkshire.com',
+  to: 'team@madeiracanyonhomes.com',
   subject: 'Weekly Lead Report',
   body: formatReport(sources, funnel),
 });
@@ -553,7 +553,7 @@ await sendEmail({
 
 **Review and merge PR #9 to deploy everything!**
 
-Go to: https://github.com/DrJanDuffy/heyberkshire.com/pull/9
+Go to: https://github.com/DrJanDuffy/madeiracanyonhomes.com/pull/9
 
 ---
 

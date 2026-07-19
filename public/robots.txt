@@ -1,4 +1,4 @@
-# robots.txt for heyberkshire.com
+# robots.txt for madeiracanyonhomes.com
 # Real estate site for Dr. Jan Duffy
 
 # Allow all search engines
@@ -20,7 +20,7 @@ Allow: /contact/
 Allow: /blog/
 
 # Sitemap location
-Sitemap: https://heyberkshire.com/sitemap.xml
+Sitemap: https://madeiracanyonhomes.com/sitemap.xml
 
 # Crawl-delay for aggressive bots (optional)
 User-agent: AhrefsBot

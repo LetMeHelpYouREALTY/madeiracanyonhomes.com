@@ -21,7 +21,7 @@ The `@vercel/analytics` package has been installed and the `<Analytics />` compo
 ### Step 1: Enable in Vercel Dashboard
 
 1. Go to [Vercel Dashboard](https://vercel.com/dashboard)
-2. Select your project: **heyberkshire-com-2**
+2. Select your project: **madeiracanyonhomes-com-2**
 3. Click **Analytics** tab in the left sidebar
 4. Click **Enable Analytics**
 5. That's it! Data collection starts automatically on your next deployment

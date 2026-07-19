@@ -1,6 +1,6 @@
 # Final Optimization Summary - February 2026
 
-**Project:** heyberkshire.com  
+**Project:** madeiracanyonhomes.com  
 **Branch:** `optimize/github-vercel-setup`  
 **Pull Request:** #9  
 **Date:** February 13, 2026

@@ -190,10 +190,10 @@ export default function Footer() {
               <li className="flex items-center">
                 <Mail className="h-5 w-5 mr-3 text-blue-400 flex-shrink-0" />
                 <Link
-                  href="mailto:homes@heyberkshire.com"
+                  href="mailto:DrDuffy@MadeiraCanyonHomes.com"
                   className="text-slate-300 hover:text-white transition-colors text-sm"
                 >
-                  Homes@HeyBerkshire.com
+                  DrDuffy@MadeiraCanyonHomes.com
                 </Link>
               </li>
             </ul>

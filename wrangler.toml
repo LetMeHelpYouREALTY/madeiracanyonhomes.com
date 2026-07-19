@@ -1,7 +1,7 @@
 # Cloudflare Workers Configuration
 # Learn more: https://developers.cloudflare.com/workers/wrangler/configuration/
 
-name = "heyberkshire-com"
+name = "madeiracanyonhomes-com"
 main = "workers/_worker.ts"
 compatibility_date = "2026-02-13"
 compatibility_flags = ["nodejs_compat"]
@@ -31,16 +31,16 @@ DEBUG = "false"
 # [[durable_objects.bindings]]
 # name = "CACHE_OBJECT"
 # class_name = "CacheObject"
-# script_name = "heyberkshire-com"
+# script_name = "madeiracanyonhomes-com"
 
 # Routes - apply workers to specific paths
 [[routes]]
-pattern = "heyberkshire.com/*"
-zone_name = "heyberkshire.com"
+pattern = "madeiracanyonhomes.com/*"
+zone_name = "madeiracanyonhomes.com"
 
 [[routes]]
-pattern = "www.heyberkshire.com/*"
-zone_name = "heyberkshire.com"
+pattern = "www.madeiracanyonhomes.com/*"
+zone_name = "madeiracanyonhomes.com"
 
 # Development settings
 [dev]
@@ -49,19 +49,19 @@ local_protocol = "http"
 
 # Production environment
 [env.production]
-name = "heyberkshire-com-production"
+name = "madeiracanyonhomes-com-production"
 vars = { DEBUG = "false" }
 routes = [
-  { pattern = "heyberkshire.com/*", zone_name = "heyberkshire.com" },
-  { pattern = "www.heyberkshire.com/*", zone_name = "heyberkshire.com" }
+  { pattern = "madeiracanyonhomes.com/*", zone_name = "madeiracanyonhomes.com" },
+  { pattern = "www.madeiracanyonhomes.com/*", zone_name = "madeiracanyonhomes.com" }
 ]
 
 # Staging environment
 [env.staging]
-name = "heyberkshire-com-staging"
+name = "madeiracanyonhomes-com-staging"
 vars = { DEBUG = "true" }
 routes = [
-  { pattern = "staging.heyberkshire.com/*", zone_name = "heyberkshire.com" }
+  { pattern = "staging.madeiracanyonhomes.com/*", zone_name = "madeiracanyonhomes.com" }
 ]
 
 # Observability

@@ -82,6 +82,27 @@ export const DOMAIN_CONFIGS: Record<string, DomainConfig> = {
   "vegasvalleyhomesforsale.com": { domain: "vegasvalleyhomesforsale.com", neighborhood: "Las Vegas Valley", tagline: "Vegas Valley Homes for Sale", description: "Search all Vegas Valley homes for sale. Every neighborhood, every price range. Dr. Jan Duffy, BHHS.", heroHeadline: "Vegas Valley Homes for Sale", heroSubheadline: "Every home, every neighborhood, every price point across the entire Las Vegas Valley.", keywords: ["Vegas Valley homes for sale", "Las Vegas Valley real estate", "Southern Nevada homes"], pageType: "search", realscoutAgentId: REALSCOUT_AGENT_ID, ctaBadge: "Valley-Wide Expert", ctaHeadline: "Search the Entire Vegas Valley", ctaSubheadline: "From Henderson to North Las Vegas — I cover every corner of the Valley." },
   "waterfallhomesnorthlasvegas.com": { domain: "waterfallhomesnorthlasvegas.com", neighborhood: "Waterfall Homes", tagline: "Waterfall Homes North Las Vegas", description: "Waterfall Homes community in North Las Vegas. Expert real estate guidance from Dr. Jan Duffy.", heroHeadline: "Waterfall Homes North Las Vegas", heroSubheadline: "Beautiful North Las Vegas community with distinctive waterfall features.", keywords: ["Waterfall Homes North Las Vegas", "North Las Vegas community", "North LV homes for sale"], pageType: "community", realscoutAgentId: REALSCOUT_AGENT_ID, ctaBadge: "North LV Specialist", ctaHeadline: "Find Your Waterfall Homes Property", ctaSubheadline: "Great value, great community — let me show you what is available." },
   "zoomintohomes.com": { domain: "zoomintohomes.com", neighborhood: "Las Vegas", tagline: "Zoom Into Las Vegas Homes", description: "Virtual home tours and in-depth Las Vegas real estate guidance from Dr. Jan Duffy.", heroHeadline: "Zoom Into Las Vegas Homes", heroSubheadline: "Virtual tours, 3D walkthroughs, and live video showings — home buying on your schedule.", keywords: ["virtual home tours Las Vegas", "zoom home tour Las Vegas", "remote home buying Las Vegas"], pageType: "search", realscoutAgentId: REALSCOUT_AGENT_ID, ctaBadge: "Virtual Tour Expert", ctaHeadline: "Tour Homes From Anywhere", ctaSubheadline: "Cannot visit in person? I will do a live video tour of any Las Vegas home. Call 702-222-1964." },
+  "madeiracanyonhomes.com": {
+    domain: "madeiracanyonhomes.com",
+    neighborhood: "Madeira Canyon",
+    tagline: "Madeira Canyon Homes for Sale",
+    description:
+      "Search Madeira Canyon homes for sale in Las Vegas. Expert guidance from Dr. Jan Duffy, Berkshire Hathaway HomeServices Nevada Properties.",
+    heroHeadline: "Madeira Canyon Homes for Sale",
+    heroSubheadline:
+      "Find your Madeira Canyon home with Dr. Jan Duffy — local market expertise backed by Berkshire Hathaway HomeServices.",
+    keywords: [
+      "Madeira Canyon homes",
+      "Madeira Canyon Las Vegas",
+      "Madeira Canyon Homes for Sale",
+      "Las Vegas real estate",
+    ],
+    pageType: "community",
+    realscoutAgentId: REALSCOUT_AGENT_ID,
+    ctaBadge: "Madeira Canyon Expert",
+    ctaHeadline: "Find Your Madeira Canyon Home",
+    ctaSubheadline: "Call or text Dr. Jan at 702-222-1964 — I answer my own phone.",
+  },
 
 };
 

@@ -378,10 +378,10 @@ const nextConfig = {
         has: [
           {
             type: 'host',
-            value: 'heyberkshire.com',
+            value: 'madeiracanyonhomes.com',
           },
         ],
-        destination: 'https://www.heyberkshire.com/:path*',
+        destination: 'https://www.madeiracanyonhomes.com/:path*',
         permanent: true,
       },
     ]
@@ -483,7 +483,7 @@ Update `package.json`:
 {
   "scripts": {
     "analyze": "ANALYZE=true npm run build",
-    "lighthouse": "lighthouse https://heyberkshire.com --view",
+    "lighthouse": "lighthouse https://madeiracanyonhomes.com --view",
     "perf": "npm run analyze && npm run lighthouse"
   },
   "devDependencies": {
@@ -557,8 +557,8 @@ Create `.lighthouserc.json`:
    - Node Version: 20.x
 
 3. **Domain Configuration**:
-   - Primary: www.heyberkshire.com
-   - Redirect: heyberkshire.com → www.heyberkshire.com
+   - Primary: www.madeiracanyonhomes.com
+   - Redirect: madeiracanyonhomes.com → www.madeiracanyonhomes.com
 
 4. **Function Configuration**:
    - Region: Washington, D.C., USA (iad1) - closest to target audience
