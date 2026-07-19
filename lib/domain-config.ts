@@ -16,6 +16,14 @@ export interface DomainConfig {
   ctaBadge: string;
   ctaHeadline: string;
   ctaSubheadline: string;
+  /**
+   * Google Search Console HTML-tag verification code for this specific
+   * domain (the value after `content=` from the meta-tag verification
+   * method — https://search.google.com/search-console). Each domain is a
+   * separate GSC property and needs its own code. Leave unset to fall back
+   * to `process.env.GOOGLE_SITE_VERIFICATION`.
+   */
+  googleSiteVerification?: string;
 }
 
 const REALSCOUT_AGENT_ID = "QWdlbnQtMjI1MDUw";
