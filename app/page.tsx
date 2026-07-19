@@ -186,7 +186,7 @@ export default async function Home() {
                 rel="noopener noreferrer"
                 className="inline-flex items-center bg-white text-slate-900 px-7 py-3.5 font-bold hover:bg-blue-50 transition-colors"
               >
-                Search clubmadeirahoa.com Homes
+                Search Homes for Sale
               </a>
               <a
                 href="tel:+17025001942"

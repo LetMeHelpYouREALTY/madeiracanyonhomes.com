@@ -16,7 +16,7 @@ type RealScoutListingsProps = {
  */
 export default function RealScoutListings({
   title = "Madeira Canyon & Henderson Homes for Sale",
-  subtitle = "Live office listings via RealScout — Club Madeira, Madeira Canyon, and nearby Henderson inventory",
+  subtitle = "Current homes for sale in Club Madeira, Madeira Canyon, and nearby Henderson",
 }: RealScoutListingsProps) {
   const sectionRef = useRef<HTMLElement>(null);
   const [ready, setReady] = useState(false);
@@ -70,12 +70,12 @@ export default function RealScoutListings({
             <p className="text-slate-600 text-base md:text-lg max-w-2xl">{subtitle}</p>
           </div>
           <a
-            href="http://drjanduffy.realscout.com/"
+            href="https://drjanduffy.realscout.com/"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center justify-center rounded-md border border-slate-300 bg-white px-4 py-2 text-sm font-semibold text-slate-900 hover:bg-slate-100 transition-colors"
           >
-            View All Properties
+            Browse All Homes
           </a>
         </div>
 
@@ -94,7 +94,7 @@ export default function RealScoutListings({
           />
         ) : (
           <p className="text-slate-600 text-sm" role="status">
-            Loading live listings…
+            Loading homes for sale…
           </p>
         )}
       </div>

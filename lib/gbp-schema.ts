@@ -146,12 +146,12 @@ export const businessInfo = {
 // 750-word GBP Description (3 sections)
 export const gbpDescription = {
   // Section 1: Who you are/mission (~250 words)
-  whoWeAre: `Madeira Canyon | Homes by Dr Jan Duffy is the local real estate resource for buyers and sellers in Madeira Canyon and Club Madeira in Henderson, NV—the community connected with clubmadeirahoa.com searches. Dr. Jan Duffy, REALTOR® with Berkshire Hathaway HomeServices Nevada Properties (License S.0197614.LLC), focuses on this Anthem Highlands corridor with square-footage comps, amenity knowledge, and clear next steps—not generic valley-wide marketing.
+  whoWeAre: `Madeira Canyon | Homes by Dr Jan Duffy is the local real estate resource for buyers and sellers in Madeira Canyon and Club Madeira in Henderson, NV—the community connected with clubmadeirahoa.com searches. Dr. Jan Duffy, REALTOR® with Berkshire Hathaway HomeServices Nevada Properties (License S.0197614.LLC), focuses on this Anthem Highlands corridor with clear pricing comparisons, amenity knowledge, and practical next steps—not generic valley-wide marketing.
 
 With $127 million in closed transactions and hundreds of clients helped since 2008, Dr. Jan brings BHHS resources plus hyperlocal Madeira Canyon inventory insight. Whether you are comparing Club Madeira listings, reviewing HOA dues tied to clubmadeirahoa.com community info, or relocating to Henderson for Nevada's tax advantages, you get data-backed guidance and a single point of contact.`,
 
   // Section 2: What/why - Value proposition (~250 words)
-  whatWeDo: `What sets this practice apart is Madeira Canyon focus plus Berkshire Hathaway HomeServices backing. Clients get current MLS pricing for Club Madeira and surrounding Madeira Canyon villages, negotiation support, and honest advice—not sales pressure. Sellers receive professional marketing; buyers get representation that costs them nothing when the listing side pays the commission.
+  whatWeDo: `What sets this practice apart is Madeira Canyon focus plus Berkshire Hathaway HomeServices backing. Clients get current pricing for Club Madeira and surrounding Madeira Canyon villages, clear offer help, and honest advice—not sales pressure. Sellers get professional marketing; buyers get representation that costs them nothing when the seller’s side pays the commission.
 
 Services include buyer and seller representation in Madeira Canyon / Club Madeira, Henderson market analysis, California relocation assistance, investment property consulting, new construction representation, and first-time buyer programs (FHA, VA, conventional, Nevada down-payment assistance).
 
@@ -171,7 +171,7 @@ export const gbpFAQs = [
   },
   {
     question: "Is this the Club Madeira HOA website (clubmadeirahoa.com)?",
-    answer: "No. clubmadeirahoa.com is the community/HOA site. For live MLS home search, use Dr. Jan Duffy’s RealScout at https://drjanduffy.realscout.com/. MadeiraCanyonHomes.com is Madeira Canyon | Homes by Dr Jan Duffy — Berkshire Hathaway HomeServices Nevada Properties — for buying and selling in Madeira Canyon and Club Madeira.",
+    answer: "No. clubmadeirahoa.com is the community/HOA site. To browse homes for sale, use Search Homes for Sale on MadeiraCanyonHomes.com. That site is Madeira Canyon | Homes by Dr Jan Duffy — Berkshire Hathaway HomeServices Nevada Properties — for buying and selling in Madeira Canyon and Club Madeira.",
   },
   {
     question: "Does Dr. Jan help buyers relocating from California?",

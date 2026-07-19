@@ -23,13 +23,13 @@ import PageHero from "@/components/sections/PageHero";
 import { getHero } from "@/lib/hero-images";
 
 export const metadata: Metadata = {
-  title: "Las Vegas Homes for Sale | MLS Property Search | Berkshire Hathaway HomeServices",
+  title: "Las Vegas Homes for Sale | Property Search | Berkshire Hathaway HomeServices",
   description:
-    "Browse all Las Vegas and Henderson homes for sale with live MLS listings. Search by neighborhood, price, and features. Dr. Jan Duffy, Berkshire Hathaway HomeServices. Call (702) 500-1942.",
+    "Browse Las Vegas and Henderson homes for sale. Search by neighborhood, price, and features. Dr. Jan Duffy, Berkshire Hathaway HomeServices. Call (702) 500-1942.",
   keywords: [
     "Las Vegas homes for sale",
     "Henderson real estate",
-    "MLS listings Las Vegas",
+    "homes for sale Las Vegas NV",
     "Summerlin homes",
     "houses for sale Las Vegas",
     "Berkshire Hathaway listings",
@@ -39,8 +39,8 @@ export const metadata: Metadata = {
 const listingsSchema = {
   "@context": "https://schema.org",
   "@type": "RealEstateListing",
-  name: "Las Vegas MLS Property Listings",
-  description: "Live MLS property listings for Las Vegas, Henderson, and Summerlin homes for sale",
+  name: "Las Vegas Homes for Sale",
+  description: "Current homes for sale in Las Vegas, Henderson, and Summerlin",
   provider: {
     "@type": "RealEstateAgent",
     name: "Dr. Jan Duffy - Berkshire Hathaway HomeServices Nevada Properties",
@@ -55,9 +55,9 @@ const listingsSchema = {
 
 const popularSearches = [
   {
-    name: "clubmadeirahoa.com / Club Madeira",
+    name: "Club Madeira (clubmadeirahoa.com)",
     href: "https://drjanduffy.realscout.com/",
-    count: "Live MLS",
+    count: "Homes for sale",
     external: true,
   },
   { name: "Madeira Canyon", href: "/neighborhoods/madeira-canyon", count: "89044" },
@@ -124,7 +124,7 @@ export default function ListingsPage() {
       <Navbar />
       <PageHero
         title={"Las Vegas Homes for Sale"}
-        subtitle={"Search thousands of Las Vegas, Henderson, and Summerlin properties with live MLS listings updated every 15 minutes. Find your dream home with expert guidance from Dr. Jan Duffy at Berkshire Hathaway HomeServices ."}
+        subtitle={"Search thousands of Las Vegas, Henderson, and Summerlin homes for sale. Find the right home with guidance from Dr. Jan Duffy at Berkshire Hathaway HomeServices."}
         image={getHero("modern")}
       />
       <main className="pb-16">
@@ -266,7 +266,7 @@ export default function ListingsPage() {
                 </div>
                 <h3 className="font-bold mb-2">Off-Market Access</h3>
                 <p className="text-slate-400 text-sm">
-                  See listings before they hit the MLS through our network of 50,000+ agents
+                  See homes before they hit the open market through our network of 50,000+ agents
                 </p>
               </div>
               <div className="text-center">
@@ -364,7 +364,7 @@ export default function ListingsPage() {
                   <p className="text-slate-600 text-sm">
                     Location, size, features, and budget all factor into your search. Dr. Jan helps 
                     you identify which Las Vegas neighborhoods match your lifestyle while setting 
-                    up automated MLS alerts so you never miss a new listing.
+                    up new-listing alerts so you never miss a home that fits.
                   </p>
                 </div>
               </div>

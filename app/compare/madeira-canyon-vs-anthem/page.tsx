@@ -50,7 +50,7 @@ export default function MadeiraVsAnthemPage() {
       sections={[
         {
           title: "Why AI and Google mix these terms",
-          body: "Listings, HOA sites, and relocators use “Anthem” loosely. Structured pages like this one—and Place schema on the Madeira Canyon URL—help answer engines cite the village correctly. Always confirm the HOA name on the MLS sheet.",
+          body: "Listings, HOA sites, and relocators use “Anthem” loosely. Structured pages like this one—and Place schema on the Madeira Canyon URL—help answer engines cite the village correctly. Always confirm the HOA name on the listing paperwork.",
         },
         {
           title: "Practical buying tip",

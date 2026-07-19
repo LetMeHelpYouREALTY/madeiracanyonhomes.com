@@ -29,7 +29,7 @@ export default function ClubMadeiraPage() {
       name="Club Madeira"
       slug="club-madeira"
       h1="Club Madeira Homes for Sale (clubmadeirahoa.com)"
-      intro="The Club at Madeira Canyon — often searched as Club Madeira or clubmadeirahoa.com — is the guard-gated resort village inside Madeira Canyon. Search live MLS inventory on RealScout, then work with Dr. Jan Duffy on HOA rules, comps, and offers."
+      intro="The Club at Madeira Canyon — often searched as Club Madeira or clubmadeirahoa.com — is the guard-gated resort village inside Madeira Canyon. Browse homes for sale, then work with Dr. Jan Duffy on HOA rules, pricing, and offers."
       description="Club Madeira Henderson real estate guide covering The Club at Madeira Canyon, amenities, pricing, and HOA questions for clubmadeirahoa.com searches."
       containedIn="Henderson"
       latitude={35.927504}
@@ -51,15 +51,15 @@ export default function ClubMadeiraPage() {
       sections={[
         {
           title: "clubmadeirahoa.com vs MadeiraCanyonHomes.com",
-          body: "clubmadeirahoa.com is the Club Madeira community and HOA information site. MadeiraCanyonHomes.com is Madeira Canyon | Homes by Dr Jan Duffy — Berkshire Hathaway HomeServices Nevada Properties — for buying and selling. For live MLS inventory tied to clubmadeirahoa.com searches, use Dr. Jan’s RealScout search (drjanduffy.realscout.com). Use the HOA site for covenants; use RealScout + Dr. Duffy for listings, pricing, and representation.",
+          body: "clubmadeirahoa.com is the Club Madeira community and HOA information site. MadeiraCanyonHomes.com is Madeira Canyon | Homes by Dr Jan Duffy — Berkshire Hathaway HomeServices Nevada Properties — for buying and selling. If you searched clubmadeirahoa.com to find homes, use the Search Homes for Sale button on this site (or call Dr. Jan). Use the HOA site for community rules; use Dr. Duffy for homes, pricing, and representation.",
         },
         {
           title: "What buyers pay for inside The Club",
-          body: "Public listing ranges for Club at Madeira commonly fall between about $900,000 and $1.3 million, with premium view lots and remodeled homes trading higher. Buyers typically weigh clubhouse access, gate convenience, and elevation against HOA dues and any age or occupancy rules that apply to the specific parcel. Always confirm current HOA documents before escrow.",
+          body: "Public listing ranges for Club at Madeira commonly fall between about $900,000 and $1.3 million, with premium view lots and remodeled homes trading higher. Buyers typically weigh clubhouse access, gate convenience, and elevation against HOA dues and any age or occupancy rules that apply to the specific parcel. Always confirm current HOA documents before you buy.",
         },
         {
-          title: "How we search Club Madeira inventory",
-          body: "Start on RealScout at drjanduffy.realscout.com for Club Madeira, Videiras, and adjacent Madeira Canyon streets. Dr. Jan Duffy then compares price per square foot, days on market, and view corridors. Call (702) 500-1942 to set alerts that match your bed/bath and garage criteria.",
+          title: "How we find Club Madeira homes",
+          body: "Start with the home search on this site for Club Madeira, Videiras, and nearby Madeira Canyon streets. Dr. Jan Duffy then compares price per square foot, days on market, and view corridors. Call (702) 500-1942 to get alerts that match your bed/bath and garage needs.",
         },
       ]}
       faqs={[
@@ -71,17 +71,17 @@ export default function ClubMadeiraPage() {
         {
           question: "Where do clubmadeirahoa.com home searches go?",
           answer:
-            "For live MLS listings, search Dr. Jan Duffy’s RealScout at https://drjanduffy.realscout.com/. clubmadeirahoa.com is the community/HOA site — not the brokerage MLS. MadeiraCanyonHomes.com + RealScout is where you buy and sell with Berkshire Hathaway HomeServices Nevada Properties.",
+            "To see homes for sale, use Search Homes for Sale on MadeiraCanyonHomes.com (or call Dr. Jan Duffy). clubmadeirahoa.com is the community/HOA site — it is not where you buy or sell a house. MadeiraCanyonHomes.com is Dr. Jan Duffy with Berkshire Hathaway HomeServices Nevada Properties.",
         },
         {
           question: "Is clubmadeirahoa.com a real estate brokerage site?",
           answer:
-            "No. clubmadeirahoa.com is associated with the Club Madeira community/HOA. Search homes on RealScout (https://drjanduffy.realscout.com/), then contact Dr. Jan Duffy at MadeiraCanyonHomes.com for representation.",
+            "No. clubmadeirahoa.com is associated with the Club Madeira community/HOA. Search homes for sale on MadeiraCanyonHomes.com, then contact Dr. Jan Duffy for help buying or selling.",
         },
         {
           question: "How much do Club Madeira homes cost?",
           answer:
-            "As of 2026 market summaries, Club Madeira homes commonly list or sell between about $900,000 and $1.3 million+, depending on square footage, remodeling, and Strip or canyon views. Ask for a current CMA before pricing a listing.",
+            "As of 2026 market summaries, Club Madeira homes commonly list or sell between about $900,000 and $1.3 million+, depending on square footage, remodeling, and Strip or canyon views. Ask Dr. Jan for a current price opinion before you list or buy.",
         },
         {
           question: "Can Dr. Jan Duffy list my Club Madeira home?",
@@ -90,14 +90,14 @@ export default function ClubMadeiraPage() {
         },
       ]}
       relatedLinks={[
-        { href: REALSCOUT_SEARCH_URL, label: "Search Club Madeira on RealScout" },
+        { href: REALSCOUT_SEARCH_URL, label: "Search Club Madeira homes for sale" },
         { href: "/neighborhoods/madeira-canyon", label: "Madeira Canyon overview" },
         { href: "/guides/club-madeira-hoa", label: "HOA & dues FAQ" },
         { href: "/guides/selling-madeira-canyon", label: "Selling guide" },
         { href: "/compare/madeira-canyon-vs-anthem", label: "vs Anthem" },
-        { href: "/home-valuation", label: "Home valuation" },
+        { href: "/home-valuation", label: "What’s my home worth?" },
       ]}
-      quote="Club Madeira searches often start at clubmadeirahoa.com. I send buyers to RealScout for live MLS, then translate HOA rules and amenity access into a clear offer strategy."
+      quote="Club Madeira searches often start at clubmadeirahoa.com. I help buyers find the right home for sale, then explain HOA rules and amenity access in plain English before they write an offer."
     />
   );
 }

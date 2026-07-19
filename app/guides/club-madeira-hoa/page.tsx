@@ -34,7 +34,7 @@ export default function ClubMadeiraHoaGuidePage() {
       sections={[
         {
           title: "Two websites, two jobs",
-          body: "clubmadeirahoa.com is the Club Madeira community/HOA information channel. For live MLS home search, use Dr. Jan Duffy’s RealScout at https://drjanduffy.realscout.com/. MadeiraCanyonHomes.com is Madeira Canyon | Homes by Dr Jan Duffy — Berkshire Hathaway HomeServices Nevada Properties — for pricing, negotiation, and closing. Neither site replaces the official resale disclosure package you receive in escrow.",
+          body: "clubmadeirahoa.com is the Club Madeira community/HOA information channel. To browse homes for sale, use Search Homes for Sale on MadeiraCanyonHomes.com (Dr. Jan Duffy — Berkshire Hathaway HomeServices Nevada Properties). This site helps with pricing, offers, and closing. Neither site replaces the official HOA resale package you receive when you buy.",
         },
         {
           title: "What to request in every Club Madeira offer",
@@ -49,7 +49,7 @@ export default function ClubMadeiraHoaGuidePage() {
         {
           question: "Is clubmadeirahoa.com owned by Dr. Jan Duffy?",
           answer:
-            "No. clubmadeirahoa.com relates to the Club Madeira community/HOA. Search homes on RealScout at https://drjanduffy.realscout.com/. Dr. Jan Duffy’s brokerage site is MadeiraCanyonHomes.com — use her for buying and selling representation.",
+            "No. clubmadeirahoa.com relates to the Club Madeira community/HOA. Search homes for sale on MadeiraCanyonHomes.com. Dr. Jan Duffy helps with buying and selling — Berkshire Hathaway HomeServices Nevada Properties.",
         },
         {
           question: "How much are Club Madeira HOA dues?",

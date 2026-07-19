@@ -111,7 +111,7 @@ export default function NeighborhoodGuide({
 
           <RealScoutListings
             title={`${name} & Nearby Homes for Sale`}
-            subtitle={`Live RealScout office listings near ${name}, Henderson, NV`}
+            subtitle={`Current homes for sale near ${name}, Henderson, NV`}
           />
 
           <section className="mb-16 bg-slate-900 text-white rounded-2xl p-8 md:p-12 max-w-5xl mx-auto">
@@ -231,7 +231,7 @@ export default function NeighborhoodGuide({
                 rel="noopener noreferrer"
                 className="inline-flex items-center bg-white text-blue-600 px-8 py-4 font-bold text-lg hover:bg-blue-50"
               >
-                Search Homes on RealScout
+                Search Homes for Sale
               </a>
               <a
                 href={agentInfo.phoneTel}

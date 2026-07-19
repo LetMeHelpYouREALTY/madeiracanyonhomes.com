@@ -85,7 +85,7 @@ const faqCategories = [
     faqs: [
       {
         q: "What is my home worth in today's market?",
-        a: "Home values depend on location, condition, size, and recent comparable sales. Dr. Jan provides free, comprehensive home valuations using current MLS data and her expertise serving Las Vegas since 2008.",
+        a: "Home values depend on location, condition, size, and recent comparable sales. Dr. Jan provides free, comprehensive home valuations using current market data and her expertise serving Las Vegas since 2008.",
       },
       {
         q: "How long will it take to sell my home?",
@@ -97,7 +97,7 @@ const faqCategories = [
       },
       {
         q: "How does Berkshire Hathaway market my home?",
-        a: "BHHS provides world-class marketing including professional photography, virtual tours, MLS syndication to 100+ websites, social media promotion, the BHHS global network exposure, and targeted digital advertising.",
+        a: "BHHS provides world-class marketing including professional photography, virtual tours, listing exposure on 100+ websites, social media promotion, the BHHS global network, and targeted digital advertising.",
       },
       {
         q: "Should I wait for prices to go higher?",
@@ -156,7 +156,7 @@ const faqCategories = [
       },
       {
         q: "Is this the same as clubmadeirahoa.com?",
-        a: "No. clubmadeirahoa.com is the Club Madeira community/HOA site. Search live MLS homes on RealScout at https://drjanduffy.realscout.com/. MadeiraCanyonHomes.com is Madeira Canyon | Homes by Dr Jan Duffy — Berkshire Hathaway HomeServices Nevada Properties — for buying and selling in Madeira Canyon and Club Madeira.",
+        a: "No. clubmadeirahoa.com is the Club Madeira community/HOA site. To see homes for sale, use Search Homes for Sale on MadeiraCanyonHomes.com. That site is Madeira Canyon | Homes by Dr Jan Duffy — Berkshire Hathaway HomeServices Nevada Properties — for buying and selling in Madeira Canyon and Club Madeira.",
       },
     ],
   },

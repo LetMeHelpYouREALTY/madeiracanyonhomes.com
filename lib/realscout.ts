@@ -6,7 +6,7 @@ export const REALSCOUT_WIDGET_SCRIPT =
   "https://em.realscout.com/widgets/realscout-web-components.umd.js";
 
 /**
- * Primary MLS search for Madeira Canyon / Club Madeira (clubmadeirahoa.com) buyers.
- * Prefer https — used for CTAs, SearchAction, and popular searches.
+ * Primary home-search URL for Madeira Canyon / Club Madeira (clubmadeirahoa.com) buyers.
+ * Consumer-facing copy should say “Search Homes for Sale” — never “RealScout.”
  */
 export const REALSCOUT_SEARCH_URL = "https://drjanduffy.realscout.com/";

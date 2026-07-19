@@ -50,13 +50,13 @@ export default function SellingMadeiraCanyonGuidePage() {
             text: "Clean patio furniture, service the pool if you have one, and highlight Strip or canyon views at dusk when relevant. Staging ROI is highest in the rooms buyers photograph first.",
           },
           {
-            name: "Launch with BHHS + RealScout distribution",
-            text: "List with Berkshire Hathaway HomeServices Nevada Properties for MLS reach and targeted Madeira Canyon buyer alerts.",
+            name: "Go live with Berkshire Hathaway HomeServices",
+            text: "List with Berkshire Hathaway HomeServices Nevada Properties so buyers across the valley—and Madeira Canyon shoppers—can find your home quickly.",
             url: "/sellers",
           },
           {
             name: "Negotiate repairs and close",
-            text: "Use inspection responses that protect net proceeds. Typical Madeira Canyon marketing time recently averages near 45 days before sale in public summaries—your DOM will vary by price and condition.",
+            text: "Use inspection responses that protect what you walk away with. Typical Madeira Canyon marketing time recently averages near 45 days before sale in public summaries—your timeline will vary by price and condition.",
           },
         ],
       }}
