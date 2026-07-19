@@ -400,12 +400,14 @@ export default function HeritageAtStonebridgePage() {
                 <Phone className="h-5 w-5 mr-2" />
                 Call (702) 500-1942
               </a>
-              <Link
-                href="/contact"
+              <a
+                href="https://calendly.com/drjanduffy/appointment"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="inline-flex items-center justify-center bg-purple-500 text-white px-8 py-4 rounded-md font-bold text-lg hover:bg-purple-400 transition-colors"
               >
                 Schedule a Tour
-              </Link>
+              </a>
             </div>
             <p className="text-purple-200">
               Here to make your transition smooth, Dr. Jan{" "}

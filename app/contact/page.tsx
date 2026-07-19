@@ -197,7 +197,7 @@ export default function ContactPage() {
                     or in-person meeting at our office.
                   </p>
                 </div>
-                <CalendlyWidget height="600px" />
+                <CalendlyWidget url="appointment" height="600px" />
               </div>
 
               {/* Why Contact BHHS */}

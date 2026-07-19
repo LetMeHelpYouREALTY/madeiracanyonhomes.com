@@ -1,10 +1,13 @@
 import Link from "next/link";
 import { Phone, Mail, MapPin, Facebook, Instagram, Linkedin } from "lucide-react";
+import CalendlyCTASection from "@/components/calendly/CalendlyCTASection";
 
 export default function Footer() {
   const currentYear = new Date().getFullYear();
 
   return (
+    <>
+    <CalendlyCTASection />
     <footer className="bg-slate-900 text-white">
       <div className="container mx-auto px-4 py-12 md:py-16">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-12">
@@ -221,6 +224,26 @@ export default function Footer() {
                   DrDuffy@MadeiraCanyonHomes.com
                 </Link>
               </li>
+              <li>
+                <a
+                  href="https://calendly.com/drjanduffy/appointment"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center rounded-md bg-blue-600 hover:bg-blue-500 px-3 py-2 text-sm font-semibold text-white transition-colors"
+                >
+                  Schedule on Calendly
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://calendly.com/drjanduffy/showing"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-slate-300 hover:text-white transition-colors text-sm underline-offset-2 hover:underline"
+                >
+                  Book a showing
+                </a>
+              </li>
             </ul>
           </div>
         </div>
@@ -258,5 +281,6 @@ export default function Footer() {
         </div>
       </div>
     </footer>
+    </>
   );
 }

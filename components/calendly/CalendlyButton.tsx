@@ -1,6 +1,6 @@
 "use client";
 
-import Script from "next/script";
+import { resolveCalendlyUrl } from "@/lib/calendly";
 import "./types";
 
 interface CalendlyButtonProps {
@@ -11,35 +11,30 @@ interface CalendlyButtonProps {
 }
 
 export default function CalendlyButton({
-  url = "https://calendly.com/drjanduffy/appointment",
-  text = "Schedule time with me",
+  url = "appointment",
+  text = "Schedule with Dr. Jan",
   className = "inline-flex items-center justify-center bg-blue-600 text-white px-6 py-3 rounded-md font-semibold hover:bg-blue-700 transition-colors",
   children,
 }: CalendlyButtonProps) {
-  const handleClick = (e: React.MouseEvent) => {
+  const resolvedUrl = resolveCalendlyUrl(url);
+
+  const handleClick = (e: React.MouseEvent<HTMLAnchorElement>) => {
     e.preventDefault();
     if (window.Calendly) {
-      window.Calendly.initPopupWidget({ url });
+      window.Calendly.initPopupWidget({ url: resolvedUrl });
+      return;
     }
+    window.open(resolvedUrl, "_blank", "noopener,noreferrer");
   };
 
   return (
-    <>
-      <link
-        href="https://assets.calendly.com/assets/external/widget.css"
-        rel="stylesheet"
-      />
-      <Script
-        src="https://assets.calendly.com/assets/external/widget.js"
-        strategy="lazyOnload"
-      />
-      <a
-        href=""
-        onClick={handleClick}
-        className={className}
-      >
-        {children || text}
-      </a>
-    </>
+    <a
+      href={resolvedUrl}
+      onClick={handleClick}
+      className={className}
+      rel="noopener noreferrer"
+    >
+      {children || text}
+    </a>
   );
 }

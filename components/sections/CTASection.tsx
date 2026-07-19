@@ -1,6 +1,6 @@
-import Link from "next/link";
+import { Phone, Home } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import { Phone, Mail, Home } from "lucide-react";
+import CalendlyButton from "@/components/calendly/CalendlyButton";
 
 export default function CTASection() {
   return (
@@ -8,54 +8,48 @@ export default function CTASection() {
       <div className="container mx-auto px-4">
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6">
-            Ready to Find Your Dream Home?
+            Ready for Madeira Canyon Real Estate Help?
           </h2>
           <p className="text-xl text-blue-100 mb-8 max-w-2xl mx-auto">
-            Let's start your real estate journey today. Get expert guidance, personalized service,
-            and results that exceed your expectations.
+            Schedule a buyer consult, listing appointment, or private showing with Dr. Jan Duffy —
+            Berkshire Hathaway HomeServices Nevada Properties.
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-8">
             <Button asChild size="lg" className="bg-white text-blue-600 hover:bg-blue-50">
-              <a href="http://drjanduffy.realscout.com/" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2">
+              <a
+                href="http://drjanduffy.realscout.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center gap-2"
+              >
                 <Home className="h-5 w-5" />
                 Browse Properties
               </a>
             </Button>
-            <Button
-              asChild
-              size="lg"
-              variant="outline"
-              className="border-white text-white hover:bg-white/10"
+            <CalendlyButton
+              url="appointment"
+              text="Schedule consultation"
+              className="inline-flex items-center justify-center bg-blue-800 hover:bg-blue-900 text-white px-6 py-3 rounded-md font-semibold text-lg transition-colors"
+            />
+            <CalendlyButton
+              url="showing"
+              text="Book a showing"
+              className="inline-flex items-center justify-center border border-white text-white hover:bg-white/10 px-6 py-3 rounded-md font-semibold text-lg transition-colors"
+            />
+            <a
+              href="tel:+17025001942"
+              className="inline-flex items-center justify-center border border-white text-white hover:bg-white/10 px-6 py-3 rounded-md font-semibold text-lg transition-colors"
             >
-              <Link href="/contact" className="flex items-center gap-2">
-                <Mail className="h-5 w-5" />
-                Get In Touch
-              </Link>
-            </Button>
-            <Button
-              asChild
-              size="lg"
-              variant="outline"
-              className="border-white text-white hover:bg-white/10"
-            >
-              <Link href="tel:+17025001942" className="flex items-center gap-2">
-                <Phone className="h-5 w-5" />
-                Call Now
-              </Link>
-            </Button>
+              <Phone className="h-5 w-5 mr-2" />
+              Call Now
+            </a>
           </div>
 
           <div className="flex flex-wrap justify-center gap-6 text-blue-100 text-sm">
-            <div className="flex items-center gap-2">
-              <span className="font-semibold text-white">Free Consultation</span>
-            </div>
-            <div className="flex items-center gap-2">
-              <span className="font-semibold text-white">No Obligation</span>
-            </div>
-            <div className="flex items-center gap-2">
-              <span className="font-semibold text-white">Expert Guidance</span>
-            </div>
+            <span className="font-semibold text-white">Free Consultation</span>
+            <span className="font-semibold text-white">Calendly Booking</span>
+            <span className="font-semibold text-white">Madeira Canyon Expert</span>
           </div>
         </div>
       </div>

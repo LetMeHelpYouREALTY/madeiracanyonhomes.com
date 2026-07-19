@@ -253,12 +253,12 @@ export default function LuxuryHomesPage() {
                       Perfect for part-time residents
                     </li>
                   </ul>
-                  <Link
-                    href="/contact"
+                  <a
+                    href="https://calendly.com/drjanduffy/appointment" target="_blank" rel="noopener noreferrer"
                     className="text-blue-600 font-semibold hover:text-blue-700"
                   >
                     Request High-Rise Portfolio →
-                  </Link>
+                  </a>
                 </div>
               </div>
 
@@ -388,12 +388,12 @@ export default function LuxuryHomesPage() {
                 <Phone className="h-5 w-5 mr-2" />
                 (702) 500-1942
               </a>
-              <Link
-                href="/contact"
+              <a
+                href="https://calendly.com/drjanduffy/appointment" target="_blank" rel="noopener noreferrer"
                 className="inline-flex items-center justify-center bg-amber-500 text-white px-8 py-4 rounded-md font-bold text-lg hover:bg-amber-400 transition-colors"
               >
                 Request Private Showing
-              </Link>
+              </a>
             </div>
             <p className="mt-6 text-slate-400 text-sm">
               Berkshire Hathaway HomeServices Nevada Properties

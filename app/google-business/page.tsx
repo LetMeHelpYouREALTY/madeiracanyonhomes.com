@@ -247,13 +247,13 @@ export default function GoogleBusinessPage() {
                   <Phone className="h-5 w-5 mr-2" />
                   {businessInfo.phone.display}
                 </a>
-                <Link
-                  href="/contact"
+                <a
+                  href="https://calendly.com/drjanduffy/appointment" target="_blank" rel="noopener noreferrer"
                   className="inline-flex items-center justify-center bg-white text-slate-900 px-8 py-4 rounded-lg font-bold text-lg hover:bg-slate-100 transition-colors"
                 >
                   <Mail className="h-5 w-5 mr-2" />
                   Send Message
-                </Link>
+                </a>
               </div>
               <p className="text-slate-400 text-sm mt-6">
                 {businessInfo.address.streetAddress}, {businessInfo.address.addressLocality}, {businessInfo.address.addressRegion} {businessInfo.address.postalCode}

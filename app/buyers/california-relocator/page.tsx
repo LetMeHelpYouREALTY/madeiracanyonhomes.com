@@ -468,12 +468,14 @@ export default function CaliforniaRelocatorPage() {
                 <Phone className="h-5 w-5 mr-2" />
                 Call/Text (702) 500-1942
               </a>
-              <Link
-                href="/contact"
+              <a
+                href="https://calendly.com/drjanduffy/appointment"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="inline-flex items-center justify-center bg-blue-500 text-white px-8 py-4 rounded-md font-bold text-lg hover:bg-blue-400 transition-colors"
               >
                 Schedule Consultation
-              </Link>
+              </a>
             </div>
             <p className="mt-6 text-blue-200 text-sm">
               Berkshire Hathaway HomeServices Nevada Properties

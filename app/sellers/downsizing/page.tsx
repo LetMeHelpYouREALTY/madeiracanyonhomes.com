@@ -127,12 +127,12 @@ export default function DownsizingPage() {
                   smaller yard, lower utility costs. Age-in-place features available.
                 </p>
                 <div className="text-blue-600 font-semibold">$400K - $600K</div>
-                <Link
-                  href="/contact"
+                <a
+                  href="https://calendly.com/drjanduffy/appointment" target="_blank" rel="noopener noreferrer"
                   className="block mt-3 text-sm text-blue-600 hover:text-blue-700"
                 >
                   Search Single-Story Homes →
-                </Link>
+                </a>
               </div>
 
               <div className="bg-white border border-slate-200 rounded-xl p-6">
@@ -145,12 +145,12 @@ export default function DownsizingPage() {
                   Guard-gated options available in Summerlin and Henderson.
                 </p>
                 <div className="text-blue-600 font-semibold">$275K - $500K</div>
-                <Link
-                  href="/contact"
+                <a
+                  href="https://calendly.com/drjanduffy/appointment" target="_blank" rel="noopener noreferrer"
                   className="block mt-3 text-sm text-blue-600 hover:text-blue-700"
                 >
                   View Condo Options →
-                </Link>
+                </a>
               </div>
             </div>
           </section>

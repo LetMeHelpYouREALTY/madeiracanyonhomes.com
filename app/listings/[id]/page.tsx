@@ -7,6 +7,8 @@ import { Bed, Bath, Square, MapPin, Calendar } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import type { Metadata } from "next";
 import { getHero } from "@/lib/hero-images";
+import CalendlyButton from "@/components/calendly/CalendlyButton";
+import CalendlyWidget from "@/components/calendly/CalendlyWidget";
 
 export const metadata: Metadata = {
   title: "Property Details | Las Vegas & Henderson Real Estate",
@@ -126,15 +128,19 @@ export default async function PropertyPage({ params }: PropertyPageProps) {
                 </div>
               </div>
 
-              {/* RealScout Widget Integration Point */}
               <div className="bg-blue-50 rounded-lg p-6">
                 <h3 className="text-xl font-bold text-slate-900 mb-2">Schedule a Showing</h3>
                 <p className="text-slate-700 mb-4">
-                  Contact us to schedule a private viewing of this property.
+                  Book a private viewing with Dr. Jan Duffy — Madeira Canyon &amp; Henderson specialist.
                 </p>
-                <Button asChild className="bg-blue-600 hover:bg-blue-700">
-                  <a href="/contact">Contact Agent</a>
-                </Button>
+                <CalendlyButton
+                  url="showing"
+                  text="Book showing on Calendly"
+                  className="inline-flex items-center justify-center bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-md font-semibold"
+                />
+                <div className="mt-4 overflow-hidden rounded-md bg-white">
+                  <CalendlyWidget url="showing" height="520px" />
+                </div>
               </div>
             </div>
 
@@ -150,9 +156,16 @@ export default async function PropertyPage({ params }: PropertyPageProps) {
                   <Button asChild className="w-full bg-blue-600 hover:bg-blue-700">
                     <a href="tel:+17025001942">Call (702) 500-1942</a>
                   </Button>
-                  <Button asChild variant="outline" className="w-full">
-                    <a href="/contact">Send Message</a>
-                  </Button>
+                  <CalendlyButton
+                    url="appointment"
+                    text="Schedule consultation"
+                    className="flex w-full items-center justify-center border border-slate-300 rounded-md px-4 py-2 font-semibold text-slate-800 hover:bg-slate-50"
+                  />
+                  <CalendlyButton
+                    url="showing"
+                    text="Book a showing"
+                    className="flex w-full items-center justify-center bg-blue-600 hover:bg-blue-700 text-white rounded-md px-4 py-2 font-semibold"
+                  />
                 </div>
               </div>
             </div>

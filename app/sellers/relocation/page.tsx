@@ -460,7 +460,7 @@ export default function RelocationPage() {
                 </ul>
               </div>
               <p className="text-green-800 font-medium mt-4">
-                Moving to Las Vegas? <Link href="/contact" className="underline">Contact Dr. Jan</Link> to start your home search.
+                Moving to Las Vegas? <a href="https://calendly.com/drjanduffy/appointment" target="_blank" rel="noopener noreferrer" className="underline">Contact Dr. Jan</a> to start your home search.
               </p>
             </div>
           </section>

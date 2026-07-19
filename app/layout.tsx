@@ -6,6 +6,7 @@ import { getDomainConfig } from "@/lib/domain-config";
 import { Analytics } from "@vercel/analytics/react";
 import Script from "next/script";
 import { REALSCOUT_WIDGET_SCRIPT } from "@/lib/realscout";
+import CalendlyProvider from "@/components/calendly/CalendlyProvider";
 
 export async function generateMetadata(): Promise<Metadata> {
   const domain = headers().get("x-domain") || "";
@@ -61,6 +62,8 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       <head>
         <link rel="preconnect" href="https://em.realscout.com" crossOrigin="anonymous" />
         <link rel="preconnect" href="https://www.realscout.com" crossOrigin="anonymous" />
+        <link rel="preconnect" href="https://assets.calendly.com" crossOrigin="anonymous" />
+        <link rel="preconnect" href="https://calendly.com" crossOrigin="anonymous" />
         {/* RealScout widgets — load once globally (script from em.realscout.com; API on www.realscout.com) */}
         <Script src={REALSCOUT_WIDGET_SCRIPT} strategy="afterInteractive" />
         {/* WidgetTracker */}
@@ -76,6 +79,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       </head>
       <body>
         {children}
+        <CalendlyProvider />
         <Analytics />
       </body>
     </html>

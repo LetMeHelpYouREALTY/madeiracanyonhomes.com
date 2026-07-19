@@ -11,6 +11,7 @@ import { getPageDomainConfig } from "@/lib/get-domain-config";
 import { getFaqsForDomain } from "@/lib/faq-config";
 import { generateImageObjectSchema, getHero } from "@/lib/hero-images";
 import { siteConfig } from "@/lib/site-config";
+import CalendlyButton from "@/components/calendly/CalendlyButton";
 
 // Maps pageType → human-readable FAQ section title/subtitle
 const FAQ_SECTION_COPY: Record<
@@ -280,18 +281,22 @@ export default async function Home() {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a
-                href="tel:+17022221964"
+                href="tel:+17025001942"
                 className="inline-flex items-center justify-center bg-white text-blue-600 px-8 py-4 rounded-md font-bold text-lg hover:bg-blue-50 transition-colors"
               >
                 <Phone className="h-5 w-5 mr-2" />
-                Call 702-222-1964
+                Call (702) 500-1942
               </a>
-              <Link
-                href="/contact"
+              <CalendlyButton
+                url="appointment"
+                text="Schedule consultation"
                 className="inline-block bg-blue-700 hover:bg-blue-800 text-white px-8 py-4 rounded-md font-bold text-lg transition-colors"
-              >
-                Send a Message
-              </Link>
+              />
+              <CalendlyButton
+                url="showing"
+                text="Book a showing"
+                className="inline-block bg-slate-800 hover:bg-slate-700 text-white px-8 py-4 rounded-md font-bold text-lg transition-colors"
+              />
             </div>
             <p className="mt-6 text-blue-200 text-sm">
               Dr. Jan Duffy | License S.0197614.LLC | Berkshire Hathaway HomeServices Nevada Properties
