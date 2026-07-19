@@ -12,6 +12,7 @@ import {
   combineSchemas,
 } from "@/lib/schema";
 import PageHero from "@/components/sections/PageHero";
+import { getHero } from "@/lib/hero-images";
 
 export const metadata: Metadata = {
   title: "FAQ | Madeira Canyon | Homes by Dr Jan Duffy | clubmadeirahoa.com",
@@ -191,7 +192,7 @@ export default function FAQPage() {
       <PageHero
         title={"Frequently Asked Questions"}
         subtitle={"Everything you need to know about working with Berkshire Hathaway HomeServices in Las Vegas"}
-        image={{"src":"/images/hero/kitchen-interior.jpg","alt":"Bright modern kitchen interior in a Nevada home"}}
+        image={getHero("interior")}
       />
       <main className="pb-16">
         <div className="container mx-auto px-4">

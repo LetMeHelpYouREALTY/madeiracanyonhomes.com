@@ -13,6 +13,7 @@ import {
 } from "lucide-react";
 import type { Metadata } from "next";
 import PageHero from "@/components/sections/PageHero";
+import { getHero } from "@/lib/hero-images";
 
 export const metadata: Metadata = {
   title: "Del Webb at Lake Las Vegas Homes | Berkshire Hathaway HomeServices",
@@ -34,7 +35,7 @@ export default function DelWebbLakeLasVegasPage() {
       <PageHero
         title={"Del Webb at Lake Las Vegas"}
         subtitle={"Modern homes. Lake views. Resort living. The newest Del Webb in Las Vegas."}
-        image={{"src":"/images/hero/mountain-lake.jpg","alt":"Lake and mountain landscape near Lake Las Vegas"}}
+        image={getHero("lake")}
       />
       <main className="pb-16">
         <div className="container mx-auto px-4">

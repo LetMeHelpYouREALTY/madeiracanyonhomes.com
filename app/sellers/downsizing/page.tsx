@@ -15,6 +15,7 @@ import {
 } from "lucide-react";
 import type { Metadata } from "next";
 import PageHero from "@/components/sections/PageHero";
+import { getHero } from "@/lib/hero-images";
 
 export const metadata: Metadata = {
   title: "Downsizing in Las Vegas | Berkshire Hathaway HomeServices",
@@ -36,7 +37,7 @@ export default function DownsizingPage() {
       <PageHero
         title={"Simplify. Downsize. Enjoy."}
         subtitle={"Extract your equity. Embrace low-maintenance living. Start your next chapter."}
-        image={{"src":"/images/hero/active-adult.jpg","alt":"Bright active-adult style living room and patio light"}}
+        image={getHero("fiftyPlus")}
       />
       <main className="pb-16">
         <div className="container mx-auto px-4">

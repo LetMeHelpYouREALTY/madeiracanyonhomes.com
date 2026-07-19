@@ -15,6 +15,7 @@ import {
 } from "lucide-react";
 import type { Metadata } from "next";
 import PageHero from "@/components/sections/PageHero";
+import { getHero } from "@/lib/hero-images";
 
 export const metadata: Metadata = {
   title: "Divorce & Probate Home Sales Las Vegas | Berkshire Hathaway HomeServices",
@@ -36,7 +37,7 @@ export default function DivorceProbatePage() {
       <PageHero
         title={"Difficult Situations, Expert Guidance"}
         subtitle={"When life gets complicated, you need an agent who handles sensitive transactions with discretion, expertise, and compassion."}
-        image={{"src":"/images/hero/kitchen-interior.jpg","alt":"Bright modern kitchen interior in a Nevada home"}}
+        image={getHero("interior")}
       />
       <main className="pb-16">
         <div className="container mx-auto px-4">

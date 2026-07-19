@@ -9,6 +9,7 @@ import {
   generateWebPageSchema,
 } from "@/lib/schema";
 import PageHero from "@/components/sections/PageHero";
+import { getHero } from "@/lib/hero-images";
 
 export const metadata: Metadata = {
   title: "Compare Henderson Neighborhoods | Madeira Canyon Guides",
@@ -55,7 +56,7 @@ export default function CompareHubPage() {
       <PageHero
         title={"Compare Henderson Neighborhoods"}
         subtitle={"GEO-friendly side-by-side pages built for buyers asking AI engines “Madeira Canyon vs …” questions."}
-        image={{"src":"/images/hero/henderson-home-2.jpg","alt":"Residential homes in Henderson Nevada"}}
+        image={getHero("henderson")}
       />
       <main className="pb-16">
         <div className="container mx-auto px-4 max-w-4xl pt-10">

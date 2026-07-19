@@ -11,9 +11,9 @@ export default function HeroSection() {
   const prefersReducedMotion = useReducedMotion();
   
   const images = [
-    "/images/hero/henderson-home-1.jpg",
-    "/images/hero/desert-canyon.jpg",
-    "/images/hero/las-vegas-skyline.jpg",
+    "/images/hero/madeira-canyon-henderson-nv-home-exterior-1.jpg",
+    "/images/hero/las-vegas-strip-skyline-blue-diamond-hill-nv.jpg",
+    "/images/hero/red-rock-canyon-calico-hills-summerlin-nv.jpg",
   ];
 
   useEffect(() => {
@@ -44,7 +44,13 @@ export default function HeroSection() {
           >
             <Image
               src={src}
-              alt={`Hero image ${index + 1}`}
+              alt={
+                index === 0
+                  ? "Madeira Canyon Henderson NV home exterior for sale"
+                  : index === 1
+                    ? "Las Vegas Strip skyline views from elevated Henderson ridges near Club Madeira"
+                    : "Red Rock Canyon Calico Hills near Summerlin Las Vegas Nevada"
+              }
               fill
               className="object-cover"
               priority={index === 0}

@@ -5,6 +5,7 @@ import Link from "next/link";
 import { Phone, Shield, Users, GraduationCap, TreePine } from "lucide-react";
 import type { Metadata } from "next";
 import PageHero from "@/components/sections/PageHero";
+import { getHero } from "@/lib/hero-images";
 
 export const metadata: Metadata = {
   title: "Berkshire Hathaway HomeServices Henderson | Nevada Real Estate",
@@ -85,7 +86,7 @@ export default function HendersonPage() {
       <PageHero
         title={"Berkshire Hathaway HomeServices Henderson"}
         subtitle={"Nevada's safest city. Find your Henderson home with Dr. Jan Duffy, your trusted Berkshire Hathaway HomeServices Henderson specialist."}
-        image={{"src":"/images/hero/henderson-home-2.jpg","alt":"Residential homes in Henderson Nevada"}}
+        image={getHero("henderson")}
       />
       <main className="pb-16">
         <div className="container mx-auto px-4">

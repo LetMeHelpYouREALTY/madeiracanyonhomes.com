@@ -16,6 +16,7 @@ import {
 } from "lucide-react";
 import type { Metadata } from "next";
 import PageHero from "@/components/sections/PageHero";
+import { getHero } from "@/lib/hero-images";
 
 export const metadata: Metadata = {
   title: "Trilogy at Summerlin Homes for Sale | Luxury Resort 55+ Living | Dr. Jan Duffy",
@@ -67,7 +68,7 @@ export default function TrilogySummerlinPage() {
       <PageHero
         title={"Trilogy at Summerlin"}
         subtitle={"Where five-star resort living meets 55+ community. Farm-to-table dining, world-class spa, and contemporary homes."}
-        image={{"src":"/images/hero/active-adult.jpg","alt":"Bright active-adult style living room and patio light"}}
+        image={getHero("fiftyPlus")}
       />
       <main className="pb-16">
         <div className="container mx-auto px-4">

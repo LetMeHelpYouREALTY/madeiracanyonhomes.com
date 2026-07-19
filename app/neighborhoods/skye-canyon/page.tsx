@@ -5,6 +5,7 @@ import Link from "next/link";
 import { Phone, Mountain, Users, Home as HomeIcon, GraduationCap } from "lucide-react";
 import type { Metadata } from "next";
 import PageHero from "@/components/sections/PageHero";
+import { getHero } from "@/lib/hero-images";
 
 export const metadata: Metadata = {
   title: "Berkshire Hathaway HomeServices Skye Canyon | Northwest Las Vegas",
@@ -69,7 +70,7 @@ export default function SkyeCanyonPage() {
       <PageHero
         title={"Berkshire Hathaway HomeServices Skye Canyon"}
         subtitle={"Northwest Las Vegas's fastest-growing community. Discover Skye Canyon with Berkshire Hathaway HomeServices and Dr. Jan Duffy."}
-        image={{"src":"/images/hero/desert-sunset.jpg","alt":"Nevada desert sunset over mountains"}}
+        image={getHero("desert")}
       />
       <main className="pb-16">
         <div className="container mx-auto px-4">

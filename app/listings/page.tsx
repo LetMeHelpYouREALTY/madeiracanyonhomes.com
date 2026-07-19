@@ -20,6 +20,7 @@ import {
 import type { Metadata } from "next";
 import RealScoutListings from "@/components/realscout/RealScoutListings";
 import PageHero from "@/components/sections/PageHero";
+import { getHero } from "@/lib/hero-images";
 
 export const metadata: Metadata = {
   title: "Las Vegas Homes for Sale | MLS Property Search | Berkshire Hathaway HomeServices",
@@ -119,7 +120,7 @@ export default function ListingsPage() {
       <PageHero
         title={"Las Vegas Homes for Sale"}
         subtitle={"Search thousands of Las Vegas, Henderson, and Summerlin properties with live MLS listings updated every 15 minutes. Find your dream home with expert guidance from Dr. Jan Duffy at Berkshire Hathaway HomeServices ."}
-        image={{"src":"/images/hero/modern-home-exterior.jpg","alt":"Modern single-family home exterior with landscaping"}}
+        image={getHero("modern")}
       />
       <main className="pb-16">
         <div className="container mx-auto px-4">

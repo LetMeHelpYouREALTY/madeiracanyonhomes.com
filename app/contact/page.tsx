@@ -6,6 +6,7 @@ import CalendlyWidget from "@/components/calendly/CalendlyWidget";
 import Link from "next/link";
 import type { Metadata } from "next";
 import PageHero from "@/components/sections/PageHero";
+import { getHero } from "@/lib/hero-images";
 
 export const metadata: Metadata = {
   title: "Contact | Madeira Canyon | Homes by Dr Jan Duffy | clubmadeirahoa.com",
@@ -57,7 +58,7 @@ export default function ContactPage() {
       <PageHero
         title={"Contact Dr. Jan Duffy"}
         subtitle={"Questions about Las Vegas real estate? Your Berkshire Hathaway HomeServices expert is here to help. Schedule an appointment or reach out directly."}
-        image={{"src":"/images/hero/contact-office.jpg","alt":"Professional real estate office workspace"}}
+        image={getHero("contact")}
       />
       <main className="pb-16">
         <div className="container mx-auto px-4">

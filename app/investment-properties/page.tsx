@@ -5,6 +5,7 @@ import Link from "next/link";
 import { Phone, TrendingUp, DollarSign, Building, BarChart, CheckCircle, Calculator } from "lucide-react";
 import type { Metadata } from "next";
 import PageHero from "@/components/sections/PageHero";
+import { getHero } from "@/lib/hero-images";
 
 export const metadata: Metadata = {
   title: "Las Vegas Investment Properties | Berkshire Hathaway HomeServices",
@@ -72,7 +73,7 @@ export default function InvestmentPropertiesPage() {
       <PageHero
         title={"Las Vegas Investment Properties"}
         subtitle={"No state income tax, strong appreciation, and excellent rental yields. Discover why investors choose Las Vegas—with guidance from Berkshire Hathaway HomeServices ."}
-        image={{"src":"/images/hero/modern-home-exterior.jpg","alt":"Modern single-family home exterior with landscaping"}}
+        image={getHero("modern")}
       />
       <main className="pb-16">
         <div className="container mx-auto px-4">

@@ -9,7 +9,7 @@ import Link from "next/link";
 import { Phone, Home as HomeIcon, TrendingUp, Shield, Users } from "lucide-react";
 import { getPageDomainConfig } from "@/lib/get-domain-config";
 import { getFaqsForDomain } from "@/lib/faq-config";
-import { getHero } from "@/lib/hero-images";
+import { generateImageObjectSchema, getHero } from "@/lib/hero-images";
 import { siteConfig } from "@/lib/site-config";
 
 // Maps pageType → human-readable FAQ section title/subtitle
@@ -116,10 +116,19 @@ export default async function Home() {
       <Navbar />
       <main>
         {/* Domain-Aware full-bleed hero */}
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify(
+              generateImageObjectSchema(getHero("madeiraCanyon"))
+            ),
+          }}
+        />
         <section className="relative min-h-[70vh] md:min-h-[78vh] flex items-center overflow-hidden text-white pt-20">
           <Image
             src={getHero("madeiraCanyon").src}
             alt={getHero("madeiraCanyon").alt}
+            title={getHero("madeiraCanyon").caption}
             fill
             priority
             className="object-cover object-center"

@@ -16,6 +16,7 @@ import {
 } from "lucide-react";
 import type { Metadata } from "next";
 import PageHero from "@/components/sections/PageHero";
+import { getHero } from "@/lib/hero-images";
 
 export const metadata: Metadata = {
   title: "Las Vegas Real Estate Market Insights 2026 | Berkshire Hathaway HomeServices",
@@ -58,7 +59,7 @@ export default function MarketInsightsPage() {
       <PageHero
         title={"Las Vegas Market Insights"}
         subtitle={"Technology trends, economic forces, and market dynamics shaping Las Vegas real estate in 2026 and beyond."}
-        image={{"src":"/images/hero/las-vegas-skyline.jpg","alt":"Las Vegas skyline at dusk"}}
+        image={getHero("skyline")}
       />
       <main className="pb-16">
         <div className="container mx-auto px-4">

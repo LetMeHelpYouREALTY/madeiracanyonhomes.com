@@ -5,6 +5,7 @@ import Link from "next/link";
 import { Phone, Shield, Mountain, Star, MapPin } from "lucide-react";
 import type { Metadata } from "next";
 import PageHero from "@/components/sections/PageHero";
+import { getHero } from "@/lib/hero-images";
 
 export const metadata: Metadata = {
   title: "Berkshire Hathaway HomeServices Southern Highlands | Las Vegas Golf Community",
@@ -69,7 +70,7 @@ export default function SouthernHighlandsPage() {
       <PageHero
         title={"Berkshire Hathaway HomeServices Southern Highlands"}
         subtitle={"Premier golf course living in southwest Las Vegas. Discover Southern Highlands with Berkshire Hathaway HomeServices and Dr. Jan Duffy."}
-        image={{"src":"/images/hero/golf-community.jpg","alt":"Golf community fairway at sunrise"}}
+        image={getHero("golf")}
       />
       <main className="pb-16">
         <div className="container mx-auto px-4">

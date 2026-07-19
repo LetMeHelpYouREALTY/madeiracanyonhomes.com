@@ -15,6 +15,7 @@ import {
 } from "lucide-react";
 import type { Metadata } from "next";
 import PageHero from "@/components/sections/PageHero";
+import { getHero } from "@/lib/hero-images";
 
 export const metadata: Metadata = {
   title: "Relocation Home Sales Las Vegas | Berkshire Hathaway HomeServices",
@@ -36,7 +37,7 @@ export default function RelocationPage() {
       <PageHero
         title={"New Opportunity? We Handle Your Sale."}
         subtitle={"Sell your Las Vegas home while you focus on your new chapter. We coordinate both ends of your move."}
-        image={{"src":"/images/hero/desert-sunset.jpg","alt":"Nevada desert sunset over mountains"}}
+        image={getHero("desert")}
       />
       <main className="pb-16">
         <div className="container mx-auto px-4">

@@ -5,6 +5,7 @@ import Link from "next/link";
 import { Phone, Mountain, TreePine, DollarSign, Home as HomeIcon } from "lucide-react";
 import type { Metadata } from "next";
 import PageHero from "@/components/sections/PageHero";
+import { getHero } from "@/lib/hero-images";
 
 export const metadata: Metadata = {
   title: "Berkshire Hathaway HomeServices Mountains Edge | Southwest Las Vegas",
@@ -69,7 +70,7 @@ export default function MountainsEdgePage() {
       <PageHero
         title={"Berkshire Hathaway HomeServices Mountains Edge"}
         subtitle={"Affordable luxury in southwest Las Vegas. Find your Mountains Edge home with Berkshire Hathaway HomeServices and Dr. Jan Duffy."}
-        image={{"src":"/images/hero/desert-sunset.jpg","alt":"Nevada desert sunset over mountains"}}
+        image={getHero("desert")}
       />
       <main className="pb-16">
         <div className="container mx-auto px-4">

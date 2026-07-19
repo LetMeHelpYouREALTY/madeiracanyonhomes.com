@@ -12,6 +12,7 @@ import {
 } from "@/lib/schema";
 import { agentInfo, officeInfo } from "@/lib/site-config";
 import PageHero from "@/components/sections/PageHero";
+import { getHero } from "@/lib/hero-images";
 
 export const metadata: Metadata = {
   title: "Madeira Canyon Real Estate Guides | AEO Answers | Dr Jan Duffy",
@@ -79,7 +80,7 @@ export default function GuidesHubPage() {
       <PageHero
         title={"Madeira Canyon & Club Madeira Guides"}
         subtitle={"Answer-engine ready guides for buyers, sellers, and relocators — written for Google, AI Overviews, and local search around clubmadeirahoa.com."}
-        image={{"src":"/images/hero/desert-canyon.jpg","alt":"Desert canyon landscape near Madeira Canyon Henderson Nevada"}}
+        image={getHero("madeiraCanyon")}
       />
       <main className="pb-16">
         <div className="container mx-auto px-4 max-w-5xl">

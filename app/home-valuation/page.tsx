@@ -6,6 +6,7 @@ import Link from "next/link";
 import { Phone, CheckCircle, Home, TrendingUp, MapPin, Calculator, Clock, DollarSign } from "lucide-react";
 import type { Metadata } from "next";
 import PageHero from "@/components/sections/PageHero";
+import { getHero } from "@/lib/hero-images";
 
 export const metadata: Metadata = {
   title: "Free Home Valuation Las Vegas | What's Your Home Worth? | Berkshire Hathaway HomeServices",
@@ -73,7 +74,7 @@ export default function HomeValuationPage() {
       <PageHero
         title={"What's Your Las Vegas Home Worth?"}
         subtitle={"Get a free, no-obligation home valuation from Dr. Jan Duffy at Berkshire Hathaway HomeServices . Accurate pricing backed by 17+ years of Las Vegas market expertise and $127M+ in closed transactions."}
-        image={{"src":"/images/hero/open-house.jpg","alt":"Open house ready living room staged for buyers"}}
+        image={getHero("sellers")}
       />
       <main className="pb-16">
         <div className="container mx-auto px-4">

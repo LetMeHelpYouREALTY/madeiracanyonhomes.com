@@ -5,6 +5,7 @@ import Link from "next/link";
 import { Shield, Users, Globe, Award, TrendingUp, CheckCircle, Phone } from "lucide-react";
 import type { Metadata } from "next";
 import PageHero from "@/components/sections/PageHero";
+import { getHero } from "@/lib/hero-images";
 
 export const metadata: Metadata = {
   title: "Why Choose Berkshire Hathaway HomeServices | Las Vegas Real Estate",
@@ -46,7 +47,7 @@ export default function WhyBerkshireHathawayPage() {
       <PageHero
         title={"Why Choose Berkshire Hathaway HomeServices?"}
         subtitle={"When you work with a Berkshire Hathaway HomeServices agent, you're backed by a name synonymous with trust, ethical standards, and financial strength—the same principles that built Warren Buffett's empire."}
-        image={{"src":"/images/hero/las-vegas-skyline.jpg","alt":"Las Vegas skyline at dusk"}}
+        image={getHero("skyline")}
       />
       <main className="pb-16">
         <div className="container mx-auto px-4">

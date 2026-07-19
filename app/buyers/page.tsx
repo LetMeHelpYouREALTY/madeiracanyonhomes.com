@@ -20,6 +20,7 @@ import {
 } from "lucide-react";
 import type { Metadata } from "next";
 import PageHero from "@/components/sections/PageHero";
+import { getHero } from "@/lib/hero-images";
 
 export const metadata: Metadata = {
   title: "Home Buying Guide Las Vegas | Berkshire Hathaway HomeServices",
@@ -102,7 +103,7 @@ export default function BuyersPage() {
       <PageHero
         title={"Buy Your Las Vegas Home with Confidence"}
         subtitle={"When you work with a Berkshire Hathaway HomeServices buyer's agent, you're backed by the most trusted name in real estate—and it costs you nothing. The seller pays the commission, but the representation is yours."}
-        image={{"src":"/images/hero/keys-closing.jpg","alt":"House keys at closing for a home purchase"}}
+        image={getHero("buyers")}
       />
       <main className="pb-16">
         <div className="container mx-auto px-4">

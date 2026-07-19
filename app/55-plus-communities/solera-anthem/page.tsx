@@ -16,6 +16,7 @@ import {
 } from "lucide-react";
 import type { Metadata } from "next";
 import PageHero from "@/components/sections/PageHero";
+import { getHero } from "@/lib/hero-images";
 
 export const metadata: Metadata = {
   title: "Solera at Anthem Homes for Sale | Intimate Guard-Gated 55+ Henderson | Dr. Jan Duffy",
@@ -67,7 +68,7 @@ export default function SoleraAnthemPage() {
       <PageHero
         title={"Solera at Anthem"}
         subtitle={"The close-knit alternative to mega-communities. Guard-gated security in Henderson's safest neighborhood."}
-        image={{"src":"/images/hero/active-adult.jpg","alt":"Bright active-adult style living room and patio light"}}
+        image={getHero("fiftyPlus")}
       />
       <main className="pb-16">
         <div className="container mx-auto px-4">

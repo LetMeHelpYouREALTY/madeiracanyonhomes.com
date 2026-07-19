@@ -1,107 +1,186 @@
 /**
- * Page hero image registry — local assets under /public/images/hero
- * Used for SEO/AEO full-bleed heroes sitewide.
+ * Page hero image registry — local SEO / AEO / GEO assets under /public/images/hero
+ *
+ * Conventions (2026):
+ * - Keyword-rich filenames (place + intent)
+ * - Alt text: place + property type + city/state (visible on page via PageHero)
+ * - Prefer Nevada place photos (Wikimedia / brand originals) over generic stock
  */
 
 export type HeroImage = {
   src: string;
   alt: string;
+  /** Optional caption for AEO / ImageObject */
+  caption?: string;
+  width?: number;
+  height?: number;
 };
 
 const H = "/images/hero";
+const SITE = "https://madeiracanyonhomes.com";
 
 export const heroImages = {
   default: {
-    src: `${H}/henderson-home-1.jpg`,
-    alt: "Henderson Nevada home exterior at golden hour",
+    src: `${H}/madeira-canyon-henderson-nv-home-exterior-1.jpg`,
+    alt: "Madeira Canyon homes for sale in Henderson NV — single-family exterior near Club Madeira",
+    caption: "Madeira Canyon | Homes by Dr Jan Duffy — Henderson, NV 89044",
+    width: 2028,
+    height: 1421,
   },
   madeiraCanyon: {
-    src: `${H}/desert-canyon.jpg`,
-    alt: "Desert canyon landscape near Madeira Canyon Henderson Nevada",
+    src: `${H}/madeira-canyon-henderson-nv-home-exterior-1.jpg`,
+    alt: "Madeira Canyon Henderson Nevada homes — desert-landscaped residential exterior in ZIP 89044",
+    caption: "Buy and sell Madeira Canyon homes with Dr. Jan Duffy, BHHS Nevada Properties",
+    width: 2028,
+    height: 1421,
   },
   clubMadeira: {
-    src: `${H}/luxury-estate.jpg`,
-    alt: "Luxury estate home similar to Club Madeira Henderson living",
+    src: `${H}/las-vegas-strip-skyline-blue-diamond-hill-nv.jpg`,
+    alt: "Las Vegas Strip skyline views from elevated Henderson ridges near Club Madeira and Madeira Canyon",
+    caption: "Club Madeira (clubmadeirahoa.com) buyers often pay a premium for valley and Strip views",
+    width: 1920,
+    height: 1280,
   },
   anthem: {
-    src: `${H}/suburban-street.jpg`,
-    alt: "Anthem Highlands style residential street in Henderson",
+    src: `${H}/suburban-neighborhood-street-southwest.jpg`,
+    alt: "Anthem Highlands Henderson NV residential street near Madeira Canyon and Club Madeira",
+    caption: "Anthem corridor living — Madeira Canyon, Club Madeira, and nearby Henderson villages",
+    width: 1920,
+    height: 1280,
   },
   henderson: {
-    src: `${H}/henderson-home-2.jpg`,
-    alt: "Residential homes in Henderson Nevada",
+    src: `${H}/madeira-canyon-henderson-nv-home-exterior-2.jpg`,
+    alt: "Henderson Nevada real estate — Madeira Canyon area home exterior for sale",
+    caption: "Henderson homes with Dr. Jan Duffy — Suite A, 2721 Bonaparte Ln, Henderson, NV 89044",
+    width: 2070,
+    height: 1380,
   },
   summerlin: {
-    src: `${H}/red-rock.jpg`,
-    alt: "Red Rock Canyon scenery near Summerlin Las Vegas",
+    src: `${H}/red-rock-canyon-calico-hills-summerlin-nv.jpg`,
+    alt: "Red Rock Canyon Calico Hills near Summerlin Las Vegas Nevada — outdoor lifestyle for home buyers",
+    caption: "Summerlin real estate near Red Rock Canyon National Conservation Area",
+    width: 1920,
+    height: 1536,
   },
   luxury: {
-    src: `${H}/luxury-estate.jpg`,
-    alt: "Luxury home exterior with modern architecture",
+    src: `${H}/southwest-luxury-home-exterior-pool.jpg`,
+    alt: "Luxury home with pool in the Las Vegas Valley — high-end Henderson and Summerlin estates",
+    caption: "Luxury homes Las Vegas and Henderson — Berkshire Hathaway HomeServices Nevada Properties",
+    width: 1920,
+    height: 1280,
   },
   golf: {
-    src: `${H}/golf-community.jpg`,
-    alt: "Golf community fairway at sunrise",
+    src: `${H}/desert-golf-community-fairway-nevada.jpg`,
+    alt: "Desert golf community fairway in Southern Nevada — Anthem and Henderson golf-course living",
+    caption: "Golf community homes in Henderson and the Las Vegas Valley",
+    width: 1920,
+    height: 1280,
   },
   lake: {
-    src: `${H}/mountain-lake.jpg`,
-    alt: "Lake and mountain landscape near Lake Las Vegas",
+    src: `${H}/lake-mead-nevada-from-hoover-dam.jpg`,
+    alt: "Lake Mead Nevada reservoir near Henderson and Lake Las Vegas waterfront communities",
+    caption: "Lake Las Vegas and Lake Mead area homes — Henderson, NV",
+    width: 1920,
+    height: 1080,
   },
   pool: {
-    src: `${H}/resort-pool.jpg`,
-    alt: "Resort-style community pool and cabanas",
+    src: `${H}/resort-community-pool-henderson-lifestyle.jpg`,
+    alt: "Resort-style community pool lifestyle in Henderson NV — Inspirada and master-planned amenities",
+    caption: "Resort amenities compared with Club Madeira and Madeira Canyon living",
+    width: 1920,
+    height: 1280,
   },
   courtyard: {
-    src: `${H}/pool-courtyard.jpg`,
-    alt: "Modern home pool courtyard in Southern Nevada",
+    src: `${H}/henderson-style-modern-home-curb-appeal.jpg`,
+    alt: "Modern Henderson NV home curb appeal with desert landscaping and three-car garage style",
+    caption: "Modern homes for sale in Henderson and Madeira Canyon",
+    width: 1920,
+    height: 1274,
   },
   skyline: {
-    src: `${H}/las-vegas-skyline.jpg`,
-    alt: "Las Vegas skyline at dusk",
+    src: `${H}/las-vegas-strip-night-lights-nv.jpg`,
+    alt: "Las Vegas Strip night lights — Southern Nevada skyline for relocating home buyers",
+    caption: "Las Vegas and Henderson real estate market — Dr. Jan Duffy",
+    width: 1920,
+    height: 1277,
   },
   desert: {
-    src: `${H}/desert-sunset.jpg`,
-    alt: "Nevada desert sunset over mountains",
+    src: `${H}/mojave-desert-sunset-southern-nevada.jpg`,
+    alt: "Mojave Desert sunset over Southern Nevada mountains near Henderson and Madeira Canyon",
+    caption: "Relocating to Henderson NV — desert lifestyle near Madeira Canyon",
+    width: 1920,
+    height: 1280,
   },
   newConstruction: {
-    src: `${H}/new-construction.jpg`,
-    alt: "New construction home framing on a building site",
+    src: `${H}/new-construction-homesite-las-vegas-valley.jpg`,
+    alt: "New construction homesite in the Las Vegas Valley — Cadence and Henderson builder communities",
+    caption: "New construction representation in Henderson and Las Vegas",
+    width: 1920,
+    height: 1280,
   },
   interior: {
-    src: `${H}/kitchen-interior.jpg`,
-    alt: "Bright modern kitchen interior in a Nevada home",
+    src: `${H}/modern-kitchen-home-buyer-nevada.jpg`,
+    alt: "Modern kitchen interior in a Nevada home — staging and buyer expectations in Henderson",
+    caption: "Home buying and selling guidance — Madeira Canyon | Homes by Dr Jan Duffy",
+    width: 1920,
+    height: 1280,
   },
   buyers: {
-    src: `${H}/keys-closing.jpg`,
-    alt: "House keys at closing for a home purchase",
+    src: `${H}/home-keys-closing-day-real-estate.jpg`,
+    alt: "House keys on closing day — buying a home in Madeira Canyon or Club Madeira Henderson NV",
+    caption: "How to buy a Madeira Canyon home with Dr. Jan Duffy",
+    width: 1920,
+    height: 1280,
   },
   sellers: {
-    src: `${H}/open-house.jpg`,
-    alt: "Open house ready living room staged for buyers",
+    src: `${H}/staged-home-interior-open-house-nevada.jpg`,
+    alt: "Staged open house interior ready for buyers in Henderson and Madeira Canyon Nevada",
+    caption: "Sell your Madeira Canyon or Club Madeira home — listing preparation",
+    width: 1920,
+    height: 1280,
   },
   modern: {
-    src: `${H}/modern-home-exterior.jpg`,
-    alt: "Modern single-family home exterior with landscaping",
+    src: `${H}/henderson-style-modern-home-curb-appeal.jpg`,
+    alt: "Modern single-family home exterior in Henderson Nevada for sale",
+    caption: "Listings and modern homes — MadeiraCanyonHomes.com",
+    width: 1920,
+    height: 1274,
   },
   fiftyPlus: {
-    src: `${H}/active-adult.jpg`,
-    alt: "Bright active-adult style living room and patio light",
+    src: `${H}/active-adult-community-living-room-light.jpg`,
+    alt: "Bright active-adult community living space — 55+ homes near Summerlin and Anthem Nevada",
+    caption: "55+ communities in Las Vegas and Henderson — Sun City, Del Webb, and more",
+    width: 1920,
+    height: 1280,
   },
   contact: {
-    src: `${H}/contact-office.jpg`,
-    alt: "Professional real estate office workspace",
+    src: `${H}/madeira-canyon-henderson-nv-home-exterior-3.jpg`,
+    alt: "Contact Madeira Canyon Homes by Dr Jan Duffy — Henderson NV office near Bonaparte Lane",
+    caption: "Suite A, 2721 Bonaparte Ln, Henderson, NV 89044 · (702) 500-1942",
+    width: 2070,
+    height: 1380,
   },
   services: {
-    src: `${H}/henderson-home-3.jpg`,
-    alt: "Southern Nevada home exterior representing full-service real estate",
+    src: `${H}/madeira-canyon-area-single-family-home-nv.jpg`,
+    alt: "Full-service real estate for Madeira Canyon and Club Madeira Henderson Nevada homes",
+    caption: "Buyer and seller services — Berkshire Hathaway HomeServices Nevada Properties",
+    width: 1280,
+    height: 1280,
+  },
+  stripDusk: {
+    src: `${H}/las-vegas-boulevard-strip-dusk-nv.jpg`,
+    alt: "Las Vegas Boulevard Strip at dusk — iconic Southern Nevada skyline",
+    caption: "Las Vegas Valley real estate context for Henderson relocators",
+    width: 1920,
+    height: 1275,
   },
 } as const satisfies Record<string, HeroImage>;
 
 export type HeroImageKey = keyof typeof heroImages;
 
-/** Route → hero image key for automated page wiring */
+/** Route → hero image key for page wiring */
 export const heroByRoute: Record<string, HeroImageKey> = {
-  "/": "skyline",
+  "/": "madeiraCanyon",
   "/about": "contact",
   "/contact": "contact",
   "/services": "services",
@@ -121,7 +200,7 @@ export const heroByRoute: Record<string, HeroImageKey> = {
   "/luxury-homes": "luxury",
   "/new-construction": "newConstruction",
   "/investment-properties": "modern",
-  "/why-berkshire-hathaway": "skyline",
+  "/why-berkshire-hathaway": "stripDusk",
   "/market-report": "skyline",
   "/market-update": "skyline",
   "/market-insights": "skyline",
@@ -159,6 +238,7 @@ export const heroByRoute: Record<string, HeroImageKey> = {
   "/55-plus-communities/solera-anthem": "fiftyPlus",
   "/55-plus-communities/heritage-stonebridge": "fiftyPlus",
   "/55-plus-communities/trilogy-summerlin": "fiftyPlus",
+  "/security-policy": "contact",
 };
 
 export function getHeroForRoute(route: string): HeroImage {
@@ -168,4 +248,21 @@ export function getHeroForRoute(route: string): HeroImage {
 
 export function getHero(key: HeroImageKey): HeroImage {
   return heroImages[key];
+}
+
+/** ImageObject JSON-LD for AEO / GEO image understanding */
+export function generateImageObjectSchema(image: HeroImage) {
+  const url = image.src.startsWith("http") ? image.src : `${SITE}${image.src}`;
+  return {
+    "@context": "https://schema.org",
+    "@type": "ImageObject",
+    contentUrl: url,
+    url,
+    description: image.alt,
+    ...(image.caption && { caption: image.caption }),
+    ...(image.width && { width: image.width }),
+    ...(image.height && { height: image.height }),
+    creditText: "Madeira Canyon | Homes by Dr Jan Duffy",
+    copyrightNotice: "Used for MadeiraCanyonHomes.com local real estate marketing",
+  };
 }

@@ -12,6 +12,7 @@ import {
   combineSchemas,
 } from "@/lib/schema";
 import PageHero from "@/components/sections/PageHero";
+import { getHero } from "@/lib/hero-images";
 
 export const metadata: Metadata = {
   title: "Berkshire Hathaway HomeServices Summerlin | Las Vegas Luxury Real Estate",
@@ -81,7 +82,7 @@ export default function SummerlinPage() {
       <PageHero
         title={"Berkshire Hathaway HomeServices Summerlin"}
         subtitle={"Discover Las Vegas's premier master-planned community with Dr. Jan Duffy, your trusted Berkshire Hathaway HomeServices Summerlin expert."}
-        image={{"src":"/images/hero/red-rock.jpg","alt":"Red Rock Canyon scenery near Summerlin Las Vegas"}}
+        image={getHero("summerlin")}
       />
       <main className="pb-16">
         <div className="container mx-auto px-4">

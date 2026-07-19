@@ -24,6 +24,7 @@ import {
 } from "lucide-react";
 import type { Metadata } from "next";
 import PageHero from "@/components/sections/PageHero";
+import { getHero } from "@/lib/hero-images";
 
 export const metadata: Metadata = {
   title:
@@ -338,7 +339,7 @@ export default function FiftyFiveCommunitiesPage() {
       <PageHero
         title={"Find Your Perfect 55+ Community in Las Vegas"}
         subtitle={"Sun City, Del Webb, Heritage at Stonebridge & more— Dr. Duffy specializes in active adult living"}
-        image={{"src":"/images/hero/active-adult.jpg","alt":"Bright active-adult style living room and patio light"}}
+        image={getHero("fiftyPlus")}
       />
       <main className="pb-16">
         <div className="container mx-auto px-4">

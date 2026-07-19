@@ -27,6 +27,7 @@ import {
   generateFAQSchema,
 } from "@/lib/gbp-schema";
 import PageHero from "@/components/sections/PageHero";
+import { getHero } from "@/lib/hero-images";
 
 export const metadata: Metadata = {
   title: "Dr. Jan Duffy, REALTOR® Las Vegas | Berkshire Hathaway HomeServices",
@@ -67,7 +68,7 @@ export default function GoogleBusinessPage() {
       <PageHero
         title={"Dr. Jan Duffy"}
         subtitle={"REALTOR® | License"}
-        image={{"src":"/images/hero/contact-office.jpg","alt":"Professional real estate office workspace"}}
+        image={getHero("contact")}
       />
       <main className="pb-16">
         <div className="container mx-auto px-4">

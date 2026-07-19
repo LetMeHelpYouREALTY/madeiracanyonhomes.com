@@ -5,6 +5,7 @@ import Link from "next/link";
 import { Phone, Waves, TreePine, GraduationCap, Home as HomeIcon } from "lucide-react";
 import type { Metadata } from "next";
 import PageHero from "@/components/sections/PageHero";
+import { getHero } from "@/lib/hero-images";
 
 export const metadata: Metadata = {
   title: "Berkshire Hathaway HomeServices Inspirada | Henderson Resort Living",
@@ -69,7 +70,7 @@ export default function InspiradaPage() {
       <PageHero
         title={"Berkshire Hathaway HomeServices Inspirada"}
         subtitle={"Resort-style living in Henderson. Discover Inspirada with Berkshire Hathaway HomeServices and Dr. Jan Duffy."}
-        image={{"src":"/images/hero/resort-pool.jpg","alt":"Resort-style community pool and cabanas"}}
+        image={getHero("pool")}
       />
       <main className="pb-16">
         <div className="container mx-auto px-4">

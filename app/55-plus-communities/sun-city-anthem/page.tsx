@@ -21,6 +21,7 @@ import {
   combineSchemas,
 } from "@/lib/schema";
 import PageHero from "@/components/sections/PageHero";
+import { getHero } from "@/lib/hero-images";
 
 export const metadata: Metadata = {
   title: "Sun City Anthem Homes for Sale | Berkshire Hathaway HomeServices",
@@ -108,7 +109,7 @@ export default function SunCityAnthemPage() {
       <PageHero
         title={"Sun City Anthem"}
         subtitle={"7,100+ homes. Mountain views. Henderson safety. Championship golf."}
-        image={{"src":"/images/hero/golf-community.jpg","alt":"Golf community fairway at sunrise"}}
+        image={getHero("golf")}
       />
       <main className="pb-16">
         <div className="container mx-auto px-4">

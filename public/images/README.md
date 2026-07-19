@@ -57,4 +57,5 @@ import Image from 'next/image'
 - WebP preferred for web (30% smaller than JPEG)
 - Always include descriptive alt text for SEO/accessibility
 - Page heroes use `components/sections/PageHero.tsx` + `lib/hero-images.ts`
-- Hero JPGs in `hero/` are Unsplash License (commercial OK) or site originals (`henderson-home-*`)
+- Prefer **keyword-rich filenames** + Nevada place photography (see `hero/ATTRIBUTION.md`)
+- Each `PageHero` emits `ImageObject` JSON-LD for AEO/GEO image understanding

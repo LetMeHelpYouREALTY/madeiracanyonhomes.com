@@ -15,6 +15,7 @@ import {
 } from "lucide-react";
 import type { Metadata } from "next";
 import PageHero from "@/components/sections/PageHero";
+import { getHero } from "@/lib/hero-images";
 
 export const metadata: Metadata = {
   title: "Sun City Aliante Homes for Sale | Most Affordable Sun City | Dr. Jan Duffy",
@@ -66,7 +67,7 @@ export default function SunCityAliantePage() {
       <PageHero
         title={"Sun City Aliante"}
         subtitle={"Full Sun City amenities at the best value. Golf, pools, fitness, and 100+ clubs—from $280K."}
-        image={{"src":"/images/hero/active-adult.jpg","alt":"Bright active-adult style living room and patio light"}}
+        image={getHero("fiftyPlus")}
       />
       <main className="pb-16">
         <div className="container mx-auto px-4">
