@@ -97,6 +97,8 @@ export default function HomeValuationPage() {
             </p>
           </div>
 
+          <RealScoutListings />
+
           <div className="grid lg:grid-cols-2 gap-12 max-w-6xl mx-auto mb-16">
             {/* Calendly Widget */}
             <div className="bg-white border border-slate-200 rounded-lg overflow-hidden">
@@ -489,7 +491,7 @@ export default function HomeValuationPage() {
         {/* Last Updated */}
         <div className="text-center text-sm text-slate-500 mt-8">Last Updated: January 2026</div>
       </main>
-      <RealScoutListings />
+
       <Footer />
     </>
   );

@@ -19,6 +19,7 @@ import {
 } from "lucide-react";
 import type { Metadata } from "next";
 import {
+import RealScoutListings from "@/components/realscout/RealScoutListings";
   businessInfo,
   gbpDescription,
   gbpFAQs,
@@ -123,6 +124,8 @@ export default function GoogleBusinessPage() {
               </div>
             </div>
           </section>
+
+          <RealScoutListings />
 
           {/* Business Hours */}
           <section className="max-w-5xl mx-auto mb-16">

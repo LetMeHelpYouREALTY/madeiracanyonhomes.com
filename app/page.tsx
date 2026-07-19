@@ -158,6 +158,8 @@ export default async function Home() {
           </div>
         </section>
 
+        <RealScoutListings />
+
         {/* Value Proposition */}
         <section className="py-16 md:py-20 bg-white">
           <div className="container mx-auto px-4">
@@ -219,7 +221,7 @@ export default async function Home() {
           </div>
         </section>
 
-        <RealScoutListings />
+
         <WhyChooseUs />
         <ReviewsSection />
 

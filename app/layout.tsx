@@ -5,6 +5,7 @@ import { headers } from "next/headers";
 import { getDomainConfig } from "@/lib/domain-config";
 import { Analytics } from "@vercel/analytics/react";
 import Script from "next/script";
+import { REALSCOUT_WIDGET_SCRIPT } from "@/lib/realscout";
 
 export async function generateMetadata(): Promise<Metadata> {
   const domain = headers().get("x-domain") || "";
@@ -33,6 +34,10 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html lang="en" className={GeistSans.className}>
       <head>
+        <link rel="preconnect" href="https://em.realscout.com" crossOrigin="anonymous" />
+        <link rel="preconnect" href="https://www.realscout.com" crossOrigin="anonymous" />
+        {/* RealScout widgets — load once globally (script from em.realscout.com; API on www.realscout.com) */}
+        <Script src={REALSCOUT_WIDGET_SCRIPT} strategy="afterInteractive" />
         {/* WidgetTracker */}
         <Script id="widget-tracker" strategy="afterInteractive">{`
           (function(w,i,d,g,e,t){w["WidgetTrackerObject"]=g;(w[g]=w[g]||function()

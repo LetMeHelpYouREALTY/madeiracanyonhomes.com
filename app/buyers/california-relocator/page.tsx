@@ -145,6 +145,8 @@ export default function CaliforniaRelocatorPage() {
             </a>
           </div>
 
+          <RealScoutListings />
+
           {/* Tax Savings Comparison */}
           <section className="mb-16 bg-gradient-to-br from-green-600 to-green-700 text-white rounded-2xl p-8 md:p-12 max-w-5xl mx-auto">
             <div className="flex items-center justify-center mb-6">
@@ -492,7 +494,7 @@ export default function CaliforniaRelocatorPage() {
         </div>
         <div className="text-center text-sm text-slate-500 mt-8">Last Updated: January 2026</div>
       </main>
-      <RealScoutListings />
+
       <Footer />
     </>
   );

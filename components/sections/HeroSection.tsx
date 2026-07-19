@@ -3,6 +3,8 @@
 import { useState, useEffect } from "react";
 import Image from "next/image";
 import { useReducedMotion } from "@/hooks/useReducedMotion";
+import { REALSCOUT_AGENT_ENCODED_ID } from "@/lib/realscout";
+import RealScoutListings from "@/components/realscout/RealScoutListings";
 
 export default function HeroSection() {
   const [currentImage, setCurrentImage] = useState(0);
@@ -25,6 +27,7 @@ export default function HeroSection() {
   }, [prefersReducedMotion]);
 
   return (
+    <>
     <div className="relative w-full h-screen overflow-hidden">
       {/* Background Images */}
       <div className="absolute inset-0">
@@ -67,7 +70,7 @@ export default function HeroSection() {
         <div className="realscout-wrapper mb-4">
           <div
             dangerouslySetInnerHTML={{
-              __html: `<realscout-simple-search agent-encoded-id="QWdlbnQtMjI1MDUw"></realscout-simple-search>`,
+              __html: `<realscout-simple-search agent-encoded-id="${REALSCOUT_AGENT_ENCODED_ID}"></realscout-simple-search>`,
             }}
           />
         </div>
@@ -100,5 +103,8 @@ export default function HeroSection() {
         </div>
       </div>
     </div>
+    {/* Office listings directly below hero */}
+    <RealScoutListings />
+    </>
   );
 }

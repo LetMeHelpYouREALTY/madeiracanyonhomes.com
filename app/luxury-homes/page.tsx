@@ -144,6 +144,8 @@ export default function LuxuryHomesPage() {
             </div>
           </div>
 
+          <RealScoutListings />
+
           {/* Luxury Stats */}
           <section className="mb-16 bg-slate-900 text-white rounded-2xl p-8 md:p-12 max-w-5xl mx-auto">
             <h2 className="text-2xl font-bold mb-4 text-center">
@@ -450,7 +452,7 @@ export default function LuxuryHomesPage() {
         {/* Last Updated */}
         <div className="text-center text-sm text-slate-500 mt-8">Last Updated: January 2026</div>
       </main>
-      <RealScoutListings />
+
       <Footer />
     </>
   );

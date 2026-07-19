@@ -1,5 +1,6 @@
 import Navbar from "@/components/layouts/Navbar";
 import Footer from "@/components/layouts/Footer";
+import RealScoutListings from "@/components/realscout/RealScoutListings";
 import Image from "next/image";
 import { Bed, Bath, Square, MapPin, Calendar } from "lucide-react";
 import { Button } from "@/components/ui/button";
@@ -60,7 +61,7 @@ export default async function PropertyPage({ params }: PropertyPageProps) {
             </ol>
           </nav>
 
-          {/* Property Header */}
+          {/* Hero */}
           <div className="mb-8">
             <h1 className="text-3xl md:text-4xl font-bold text-slate-900 mb-2">
               {property.name}
@@ -82,6 +83,8 @@ export default async function PropertyPage({ params }: PropertyPageProps) {
               priority
             />
           </div>
+
+          <RealScoutListings title="More Homes from Our Office" />
 
           {/* Property Details Grid */}
           <div className="grid md:grid-cols-3 gap-8 mb-12">

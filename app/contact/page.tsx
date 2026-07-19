@@ -70,6 +70,8 @@ export default function ContactPage() {
             </p>
           </div>
 
+          <RealScoutListings />
+
           <div className="grid lg:grid-cols-2 gap-12 max-w-6xl mx-auto">
             {/* Contact Info & Map */}
             <div>
@@ -327,7 +329,7 @@ export default function ContactPage() {
         {/* Last Updated */}
         <div className="text-center text-sm text-slate-500 mt-8">Last Updated: January 2026</div>
       </main>
-      <RealScoutListings />
+
       <Footer />
     </>
   );

@@ -142,6 +142,8 @@ export default function AboutPage() {
             </p>
           </div>
 
+          <RealScoutListings />
+
           {/* Agent Profile */}
           <section className="mb-16">
             <div className="grid md:grid-cols-2 gap-12 items-start max-w-6xl mx-auto">
@@ -464,7 +466,7 @@ export default function AboutPage() {
           Last Updated: January 2026
         </div>
       </main>
-      <RealScoutListings />
+
       <Footer />
     </>
   );

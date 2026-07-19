@@ -279,6 +279,8 @@ export default function NewConstructionPage() {
             </div>
           </div>
 
+          <RealScoutListings />
+
           {/* Why Free Representation */}
           <section className="mb-16 bg-blue-600 text-white rounded-2xl p-8 md:p-12 max-w-5xl mx-auto">
             <h2 className="text-3xl font-bold mb-8 text-center">
@@ -693,7 +695,7 @@ export default function NewConstructionPage() {
           Last Updated: January 2026 | Incentives subject to change
         </div>
       </main>
-      <RealScoutListings />
+
       <Footer />
     </>
   );
