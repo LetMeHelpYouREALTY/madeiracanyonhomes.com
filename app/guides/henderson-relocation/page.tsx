@@ -12,7 +12,7 @@ export const metadata: Metadata = {
     "California to Henderson real estate",
   ],
   alternates: {
-    canonical: "https://madeiracanyonhomes.com/guides/henderson-relocation",
+    canonical: "https://www.madeiracanyonhomes.com/guides/henderson-relocation",
   },
 };
 

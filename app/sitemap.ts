@@ -1,7 +1,8 @@
-import { MetadataRoute } from "next";
+import type { MetadataRoute } from "next";
+import { siteConfig } from "@/lib/site-config";
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = "https://madeiracanyonhomes.com";
+  const baseUrl = siteConfig.url.replace(/\/$/, "");
   const lastModified = new Date();
 
   // Core pages
@@ -19,6 +20,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${baseUrl}/guides`, priority: 0.9, changeFrequency: "weekly" as const },
     { url: `${baseUrl}/compare`, priority: 0.8, changeFrequency: "weekly" as const },
     { url: `${baseUrl}/photo-credits`, priority: 0.5, changeFrequency: "monthly" as const },
+    { url: `${baseUrl}/security-policy`, priority: 0.3, changeFrequency: "yearly" as const },
   ];
 
   // Service pages

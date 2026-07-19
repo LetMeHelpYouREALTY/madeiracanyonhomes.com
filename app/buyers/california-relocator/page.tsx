@@ -87,7 +87,7 @@ const realEstateAgentSchema = {
   name: "Madeira Canyon | Homes by Dr Jan Duffy",
   alternateName: ["clubmadeirahoa.com", "MadeiraCanyonHomes.com"],
   telephone: "+17025001942",
-  url: "https://madeiracanyonhomes.com/buyers/california-relocator",
+  url: "https://www.madeiracanyonhomes.com/buyers/california-relocator",
   address: {
     "@type": "PostalAddress",
     streetAddress: "Suite A, 2721 Bonaparte Ln",

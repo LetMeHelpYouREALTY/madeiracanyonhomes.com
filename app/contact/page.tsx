@@ -31,7 +31,7 @@ const contactSchema = {
     alternateName: ["clubmadeirahoa.com", "MadeiraCanyonHomes.com"],
     telephone: "+17025001942",
     email: "DrDuffy@MadeiraCanyonHomes.com",
-    url: "https://madeiracanyonhomes.com/contact",
+    url: "https://www.madeiracanyonhomes.com/contact",
     address: {
       "@type": "PostalAddress",
       streetAddress: "Suite A, 2721 Bonaparte Ln",

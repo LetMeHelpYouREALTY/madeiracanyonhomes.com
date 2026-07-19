@@ -40,7 +40,7 @@ export const metadata: Metadata = {
   ],
 };
 
-const agentPhotoUrl = getDrJanPhotoAbsoluteUrl("https://madeiracanyonhomes.com");
+const agentPhotoUrl = getDrJanPhotoAbsoluteUrl("https://www.madeiracanyonhomes.com");
 
 // Person Schema for Dr. Jan Duffy
 const personSchema = {
@@ -53,7 +53,7 @@ const personSchema = {
   image: agentPhotoUrl,
   telephone: "+17025001942",
   email: "DrDuffy@MadeiraCanyonHomes.com",
-  url: "https://madeiracanyonhomes.com/about",
+  url: "https://www.madeiracanyonhomes.com/about",
   worksFor: {
     "@type": "RealEstateAgent",
     name: "Madeira Canyon | Homes by Dr Jan Duffy",

@@ -9,7 +9,7 @@ export const siteConfig = {
   brandLine: "Madeira Canyon | Homes by Dr Jan Duffy",
   brandName: "Berkshire Hathaway HomeServices",
   shortName: "BHHS",
-  url: "https://madeiracanyonhomes.com",
+  url: "https://www.madeiracanyonhomes.com",
   /** Primary SEO focus keyword: clubmadeirahoa.com (Club Madeira / Madeira Canyon searches) */
   primaryKeyword: "clubmadeirahoa.com",
   description:

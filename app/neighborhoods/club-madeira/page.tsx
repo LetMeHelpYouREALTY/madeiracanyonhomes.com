@@ -13,12 +13,12 @@ export const metadata: Metadata = {
     "Club Madeira homes for sale",
     "Madeira Canyon | Homes by Dr Jan Duffy",
   ],
-  alternates: { canonical: "https://madeiracanyonhomes.com/neighborhoods/club-madeira" },
+  alternates: { canonical: "https://www.madeiracanyonhomes.com/neighborhoods/club-madeira" },
   openGraph: {
     title: "Club Madeira Homes | clubmadeirahoa.com",
     description:
       "Buy or sell inside Club Madeira / The Club at Madeira Canyon with Dr. Jan Duffy.",
-    url: "https://madeiracanyonhomes.com/neighborhoods/club-madeira",
+    url: "https://www.madeiracanyonhomes.com/neighborhoods/club-madeira",
   },
 };
 

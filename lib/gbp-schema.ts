@@ -2,7 +2,7 @@
 // Supports GBP ranking factors: Relevance, Distance, Prominence
 
 import { getDrJanPhotoAbsoluteUrl } from "./agent-photo";
-import { agentStats } from "./site-config";
+import { agentStats, siteConfig } from "./site-config";
 
 export const businessInfo = {
   // NAP - Must match GBP exactly
@@ -19,7 +19,7 @@ export const businessInfo = {
     tel: "+17025001942",
   },
   email: "DrDuffy@MadeiraCanyonHomes.com",
-  url: "https://madeiracanyonhomes.com", // MadeiraCanyonHomes.com
+  url: siteConfig.url,
 
   // Business Details
   license: "S.0197614.LLC",
@@ -216,9 +216,9 @@ export function generateLocalBusinessSchema() {
   return {
     "@context": "https://schema.org",
     "@type": "RealEstateAgent",
-    "@id": "https://madeiracanyonhomes.com/#organization",
+    "@id": `${siteConfig.url}/#organization`,
     name: businessInfo.name,
-    image: getDrJanPhotoAbsoluteUrl("https://madeiracanyonhomes.com"),
+    image: getDrJanPhotoAbsoluteUrl(siteConfig.url),
     url: businessInfo.url,
     telephone: businessInfo.phone.tel,
     email: businessInfo.email,

@@ -8,6 +8,11 @@ import Script from "next/script";
 import { REALSCOUT_WIDGET_SCRIPT } from "@/lib/realscout";
 import CalendlyProvider from "@/components/calendly/CalendlyProvider";
 import { generateLocalBusinessSchema } from "@/lib/gbp-schema";
+import { siteConfig } from "@/lib/site-config";
+
+const SITE_URL =
+  (process.env.NEXT_PUBLIC_SITE_URL || siteConfig.url).replace(/\/$/, "") ||
+  "https://www.madeiracanyonhomes.com";
 
 export async function generateMetadata(): Promise<Metadata> {
   const domain = headers().get("x-domain") || "";
@@ -19,10 +24,39 @@ export async function generateMetadata(): Promise<Metadata> {
   const title = isMadeira
     ? "Madeira Canyon | Homes by Dr Jan Duffy | clubmadeirahoa.com"
     : `${config.neighborhood} | Dr. Jan Duffy, REALTOR® | BHHS Nevada`;
+
+  const googleVerification =
+    process.env.GOOGLE_SITE_VERIFICATION ||
+    process.env.NEXT_PUBLIC_GOOGLE_SITE_VERIFICATION ||
+    undefined;
+
   return {
+    metadataBase: new URL(SITE_URL),
     title,
     description: config.description,
     keywords: config.keywords,
+    authors: [{ name: "Dr. Jan Duffy", url: `${SITE_URL}/about` }],
+    creator: "Dr. Jan Duffy",
+    publisher: siteConfig.fullName,
+    // Do not set a sitewide canonical here — it would force every page to "/"
+    robots: {
+      index: true,
+      follow: true,
+      googleBot: {
+        index: true,
+        follow: true,
+        "max-image-preview": "large",
+        "max-snippet": -1,
+        "max-video-preview": -1,
+      },
+    },
+    ...(googleVerification
+      ? {
+          verification: {
+            google: googleVerification,
+          },
+        }
+      : {}),
     icons: {
       icon: [
         { url: "/favicon.ico", sizes: "any" },
@@ -36,10 +70,12 @@ export async function generateMetadata(): Promise<Metadata> {
       title: isMadeira ? "Madeira Canyon | Homes by Dr Jan Duffy" : config.heroHeadline,
       description: config.description,
       type: "website",
-      url: isMadeira ? "https://madeiracanyonhomes.com" : undefined,
+      url: isMadeira ? SITE_URL : undefined,
+      siteName: siteConfig.name,
+      locale: "en_US",
       images: [
         {
-          url: "https://madeiracanyonhomes.com/images/hero/madeira-canyon-henderson-nv-home-exterior-2.jpg",
+          url: "/images/hero/madeira-canyon-henderson-nv-home-exterior-2.jpg",
           width: 2028,
           height: 1421,
           alt: "Madeira Canyon homes for sale in Henderson NV near Club Madeira",
@@ -50,9 +86,7 @@ export async function generateMetadata(): Promise<Metadata> {
       card: "summary_large_image",
       title: isMadeira ? "Madeira Canyon | Homes by Dr Jan Duffy" : config.heroHeadline,
       description: config.description,
-      images: [
-        "https://madeiracanyonhomes.com/images/hero/madeira-canyon-henderson-nv-home-exterior-2.jpg",
-      ],
+      images: ["/images/hero/madeira-canyon-henderson-nv-home-exterior-2.jpg"],
     },
   };
 }

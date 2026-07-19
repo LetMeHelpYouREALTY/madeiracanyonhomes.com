@@ -6,7 +6,7 @@ export const metadata: Metadata = {
   description:
     "Madeira Canyon vs Anthem Highlands: naming, gates, Club Madeira, parks. Clear comparison for Henderson buyers. Dr. Jan Duffy (702) 500-1942.",
   alternates: {
-    canonical: "https://madeiracanyonhomes.com/compare/madeira-canyon-vs-anthem",
+    canonical: "https://www.madeiracanyonhomes.com/compare/madeira-canyon-vs-anthem",
   },
 };
 

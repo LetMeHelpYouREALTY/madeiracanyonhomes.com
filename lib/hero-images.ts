@@ -26,7 +26,7 @@ export type HeroImage = {
 };
 
 const H = "/images/hero";
-const SITE = "https://madeiracanyonhomes.com";
+const SITE = "https://www.madeiracanyonhomes.com";
 
 function withCredit<T extends HeroImage>(image: T): T & Partial<ImageCredit> {
   const credit = creditForFile(image.src);

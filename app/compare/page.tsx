@@ -15,7 +15,7 @@ export const metadata: Metadata = {
   title: "Compare Henderson Neighborhoods | Madeira Canyon Guides",
   description:
     "Compare Madeira Canyon vs Inspirada, Anthem, Cadence, and Club Madeira. Side-by-side guides for Henderson home buyers by Dr. Jan Duffy.",
-  alternates: { canonical: "https://madeiracanyonhomes.com/compare" },
+  alternates: { canonical: "https://www.madeiracanyonhomes.com/compare" },
 };
 
 const comparisons = [

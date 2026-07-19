@@ -50,7 +50,7 @@ const articleSchema = {
   publisher: {
     "@type": "Organization",
     name: "Berkshire Hathaway HomeServices Nevada Properties",
-    url: "https://madeiracanyonhomes.com",
+    url: "https://www.madeiracanyonhomes.com",
   },
 };
 

@@ -12,7 +12,7 @@ export const metadata: Metadata = {
     "Madeira Canyon Anthem",
     "Henderson Anthem realtor",
   ],
-  alternates: { canonical: "https://madeiracanyonhomes.com/neighborhoods/anthem" },
+  alternates: { canonical: "https://www.madeiracanyonhomes.com/neighborhoods/anthem" },
 };
 
 export default function AnthemPage() {

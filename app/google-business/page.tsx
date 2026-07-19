@@ -50,7 +50,7 @@ export const metadata: Metadata = {
     title: "Madeira Canyon | Homes by Dr Jan Duffy — Google Business Profile",
     description:
       "NAP, hours, map, and reviews for Madeira Canyon and Club Madeira, Henderson NV. Call (702) 500-1942.",
-    url: "https://madeiracanyonhomes.com/google-business",
+    url: "https://www.madeiracanyonhomes.com/google-business",
     type: "website",
   },
 };

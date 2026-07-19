@@ -11,7 +11,7 @@ export const metadata: Metadata = {
     "new construction Cadence Henderson",
     "Cadence vs Madeira Canyon",
   ],
-  alternates: { canonical: "https://madeiracanyonhomes.com/neighborhoods/cadence" },
+  alternates: { canonical: "https://www.madeiracanyonhomes.com/neighborhoods/cadence" },
 };
 
 export default function CadencePage() {

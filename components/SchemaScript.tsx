@@ -64,7 +64,7 @@ export function BreadcrumbSchema({
       name: item.name,
       item: item.url.startsWith("http")
         ? item.url
-        : `https://madeiracanyonhomes.com${item.url}`,
+        : `https://www.madeiracanyonhomes.com${item.url}`,
     })),
   };
 
@@ -118,7 +118,7 @@ export function ReviewSchema({
   const schema: Record<string, unknown> = {
     "@context": "https://schema.org",
     "@type": "RealEstateAgent",
-    "@id": "https://madeiracanyonhomes.com#organization",
+    "@id": "https://www.madeiracanyonhomes.com#organization",
     name: "Madeira Canyon | Homes by Dr Jan Duffy",
   };
 
@@ -174,7 +174,7 @@ export function NeighborhoodSchema({
   const schema: Record<string, unknown> = {
     "@context": "https://schema.org",
     "@type": "Place",
-    "@id": `https://madeiracanyonhomes.com/neighborhoods/${slug}#place`,
+    "@id": `https://www.madeiracanyonhomes.com/neighborhoods/${slug}#place`,
     name: `${name}, Las Vegas`,
     description,
     address: {

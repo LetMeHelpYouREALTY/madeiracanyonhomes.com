@@ -12,7 +12,7 @@ export const metadata: Metadata = {
     "Madeira Canyon listing agent",
   ],
   alternates: {
-    canonical: "https://madeiracanyonhomes.com/guides/selling-madeira-canyon",
+    canonical: "https://www.madeiracanyonhomes.com/guides/selling-madeira-canyon",
   },
 };
 

@@ -24,7 +24,7 @@ export const metadata: Metadata = {
     "Henderson real estate guides",
     "clubmadeirahoa.com",
   ],
-  alternates: { canonical: "https://madeiracanyonhomes.com/guides" },
+  alternates: { canonical: "https://www.madeiracanyonhomes.com/guides" },
 };
 
 const guides = [

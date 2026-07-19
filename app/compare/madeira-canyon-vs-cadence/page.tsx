@@ -7,7 +7,7 @@ export const metadata: Metadata = {
     "Madeira Canyon vs Cadence Henderson: resale elevation vs new construction incentives. Side-by-side buyer guide by Dr. Jan Duffy. (702) 500-1942.",
   alternates: {
     canonical:
-      "https://madeiracanyonhomes.com/compare/madeira-canyon-vs-cadence",
+      "https://www.madeiracanyonhomes.com/compare/madeira-canyon-vs-cadence",
   },
 };
 

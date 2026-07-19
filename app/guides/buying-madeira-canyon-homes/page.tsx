@@ -12,7 +12,7 @@ export const metadata: Metadata = {
     "clubmadeirahoa.com homes",
   ],
   alternates: {
-    canonical: "https://madeiracanyonhomes.com/guides/buying-madeira-canyon-homes",
+    canonical: "https://www.madeiracanyonhomes.com/guides/buying-madeira-canyon-homes",
   },
 };
 

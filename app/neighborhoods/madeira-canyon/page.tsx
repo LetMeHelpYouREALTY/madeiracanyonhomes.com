@@ -13,12 +13,12 @@ export const metadata: Metadata = {
     "Madeira Canyon real estate",
     "Homes by Dr Jan Duffy",
   ],
-  alternates: { canonical: "https://madeiracanyonhomes.com/neighborhoods/madeira-canyon" },
+  alternates: { canonical: "https://www.madeiracanyonhomes.com/neighborhoods/madeira-canyon" },
   openGraph: {
     title: "Madeira Canyon Homes for Sale | Henderson NV",
     description:
       "Buy or sell in Madeira Canyon and Club Madeira with Dr. Jan Duffy, BHHS Nevada Properties.",
-    url: "https://madeiracanyonhomes.com/neighborhoods/madeira-canyon",
+    url: "https://www.madeiracanyonhomes.com/neighborhoods/madeira-canyon",
   },
 };
 

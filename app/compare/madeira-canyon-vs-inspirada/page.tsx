@@ -7,7 +7,7 @@ export const metadata: Metadata = {
     "Madeira Canyon vs Inspirada: prices, amenities, new vs resale, Club Madeira. Which Henderson community fits you? Dr. Jan Duffy (702) 500-1942.",
   alternates: {
     canonical:
-      "https://madeiracanyonhomes.com/compare/madeira-canyon-vs-inspirada",
+      "https://www.madeiracanyonhomes.com/compare/madeira-canyon-vs-inspirada",
   },
 };
 

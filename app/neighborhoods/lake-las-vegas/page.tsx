@@ -11,7 +11,7 @@ export const metadata: Metadata = {
     "waterfront homes Henderson NV",
     "Lake Las Vegas realtor",
   ],
-  alternates: { canonical: "https://madeiracanyonhomes.com/neighborhoods/lake-las-vegas" },
+  alternates: { canonical: "https://www.madeiracanyonhomes.com/neighborhoods/lake-las-vegas" },
 };
 
 export default function LakeLasVegasPage() {

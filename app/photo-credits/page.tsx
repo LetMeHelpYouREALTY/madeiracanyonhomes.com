@@ -24,7 +24,7 @@ export const metadata: Metadata = {
   title: "Photo Credits & Authors | Madeira Canyon Homes",
   description:
     "Photographer and author credits for images on MadeiraCanyonHomes.com — Wikimedia Commons attribution and Unsplash contributors.",
-  alternates: { canonical: "https://madeiracanyonhomes.com/photo-credits" },
+  alternates: { canonical: "https://www.madeiracanyonhomes.com/photo-credits" },
   robots: { index: true, follow: true },
 };
 
@@ -141,10 +141,10 @@ export default function PhotoCreditsPage() {
     {
       "@context": "https://schema.org",
       "@type": "Person",
-      "@id": "https://madeiracanyonhomes.com/about#person",
+      "@id": "https://www.madeiracanyonhomes.com/about#person",
       name: agentInfo.name,
       jobTitle: agentInfo.title,
-      url: "https://madeiracanyonhomes.com/about",
+      url: "https://www.madeiracanyonhomes.com/about",
       email: agentInfo.email,
       telephone: "+1-702-500-1942",
       identifier: agentInfo.license,

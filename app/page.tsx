@@ -1,3 +1,4 @@
+import type { Metadata } from "next";
 import Navbar from "@/components/layouts/Navbar";
 import RealScoutListings from "@/components/realscout/RealScoutListings";
 import WhyChooseUs from "@/components/sections/WhyChooseUs";
@@ -12,6 +13,12 @@ import { getFaqsForDomain } from "@/lib/faq-config";
 import { generateImageObjectSchema, getHero } from "@/lib/hero-images";
 import { siteConfig } from "@/lib/site-config";
 import CalendlyButton from "@/components/calendly/CalendlyButton";
+
+export const metadata: Metadata = {
+  alternates: {
+    canonical: siteConfig.url,
+  },
+};
 
 // Maps pageType → human-readable FAQ section title/subtitle
 const FAQ_SECTION_COPY: Record<
@@ -67,7 +74,10 @@ export default async function Home() {
         ? "Madeira Canyon | Homes by Dr Jan Duffy"
         : `Dr. Jan Duffy - ${config.neighborhood} Real Estate`,
     alternateName: ["clubmadeirahoa.com", "MadeiraCanyonHomes.com", "Club Madeira Homes Henderson"],
-    url: `https://${config.domain !== "default" ? config.domain : "madeiracanyonhomes.com"}`,
+    url:
+      config.domain === "madeiracanyonhomes.com" || config.domain === "default"
+        ? siteConfig.url
+        : `https://www.${config.domain.replace(/^www\./, "")}`,
     telephone: "+17025001942",
     email: "DrDuffy@MadeiraCanyonHomes.com",
     address: {

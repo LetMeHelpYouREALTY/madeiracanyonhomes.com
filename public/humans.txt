@@ -3,7 +3,7 @@
 /* TEAM */
 Agent: Dr. Jan Duffy
 License: S.0197614.LLC
-Site: https://madeiracanyonhomes.com
+Site: https://www.madeiracanyonhomes.com
 Location: Las Vegas, Nevada, USA
 Phone: (702) 500-1942
 
