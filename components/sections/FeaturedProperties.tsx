@@ -61,7 +61,7 @@ const properties: Property[] = [
     name: "Modern Luxury Home",
     location: "Summerlin, Las Vegas, NV",
     price: "$850,000",
-    image: "/images/hero/madeira-canyon-henderson-nv-home-exterior-1.jpg",
+    image: "/images/hero/madeira-canyon-henderson-nv-home-exterior-2.jpg",
     bedrooms: 4,
     bathrooms: 3,
     squareFeet: 3200,

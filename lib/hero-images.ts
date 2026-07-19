@@ -43,18 +43,19 @@ function withCredit<T extends HeroImage>(image: T): T & Partial<ImageCredit> {
 
 export const heroImages = {
   default: {
-    src: `${H}/madeira-canyon-henderson-nv-home-exterior-1.jpg`,
-    alt: "Madeira Canyon homes for sale in Henderson NV — single-family exterior near Club Madeira",
+    src: `${H}/madeira-canyon-henderson-nv-home-exterior-2.jpg`,
+    alt: "Madeira Canyon homes for sale in Henderson NV — modern single-family exterior with pool near Club Madeira",
     caption: "Madeira Canyon | Homes by Dr Jan Duffy — Henderson, NV 89044",
-    width: 2028,
-    height: 1421,
+    width: 2070,
+    height: 1380,
   },
   madeiraCanyon: {
-    src: `${H}/madeira-canyon-henderson-nv-home-exterior-1.jpg`,
-    alt: "Madeira Canyon Henderson Nevada homes — desert-landscaped residential exterior in ZIP 89044",
+    // Best full-bleed Madeira Canyon hero: bright landscape, pool/patio, clean (no stock watermarks)
+    src: `${H}/madeira-canyon-henderson-nv-home-exterior-2.jpg`,
+    alt: "Madeira Canyon Henderson Nevada home for sale — modern exterior with pool and patio in ZIP 89044",
     caption: "Buy and sell Madeira Canyon homes with Dr. Jan Duffy, BHHS Nevada Properties",
-    width: 2028,
-    height: 1421,
+    width: 2070,
+    height: 1380,
   },
   clubMadeira: {
     src: `${H}/las-vegas-strip-skyline-blue-diamond-hill-nv.jpg`,

@@ -28,7 +28,7 @@ export async function generateMetadata(): Promise<Metadata> {
       url: isMadeira ? "https://madeiracanyonhomes.com" : undefined,
       images: [
         {
-          url: "https://madeiracanyonhomes.com/images/hero/madeira-canyon-henderson-nv-home-exterior-1.jpg",
+          url: "https://madeiracanyonhomes.com/images/hero/madeira-canyon-henderson-nv-home-exterior-2.jpg",
           width: 2028,
           height: 1421,
           alt: "Madeira Canyon homes for sale in Henderson NV near Club Madeira",
@@ -40,7 +40,7 @@ export async function generateMetadata(): Promise<Metadata> {
       title: isMadeira ? "Madeira Canyon | Homes by Dr Jan Duffy" : config.heroHeadline,
       description: config.description,
       images: [
-        "https://madeiracanyonhomes.com/images/hero/madeira-canyon-henderson-nv-home-exterior-1.jpg",
+        "https://madeiracanyonhomes.com/images/hero/madeira-canyon-henderson-nv-home-exterior-2.jpg",
       ],
     },
   };

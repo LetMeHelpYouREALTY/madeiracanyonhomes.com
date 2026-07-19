@@ -11,7 +11,7 @@ export default function HeroSection() {
   const prefersReducedMotion = useReducedMotion();
   
   const images = [
-    "/images/hero/madeira-canyon-henderson-nv-home-exterior-1.jpg",
+    "/images/hero/madeira-canyon-henderson-nv-home-exterior-2.jpg",
     "/images/hero/las-vegas-strip-skyline-blue-diamond-hill-nv.jpg",
     "/images/hero/red-rock-canyon-calico-hills-summerlin-nv.jpg",
   ];
