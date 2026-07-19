@@ -64,6 +64,8 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <link rel="preconnect" href="https://www.realscout.com" crossOrigin="anonymous" />
         <link rel="preconnect" href="https://assets.calendly.com" crossOrigin="anonymous" />
         <link rel="preconnect" href="https://calendly.com" crossOrigin="anonymous" />
+        <link rel="preconnect" href="https://maps.google.com" crossOrigin="anonymous" />
+        <link rel="preconnect" href="https://www.google.com" crossOrigin="anonymous" />
         {/* RealScout widgets — load once globally (script from em.realscout.com; API on www.realscout.com) */}
         <Script src={REALSCOUT_WIDGET_SCRIPT} strategy="afterInteractive" />
         {/* WidgetTracker */}

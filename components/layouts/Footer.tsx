@@ -1,12 +1,14 @@
 import Link from "next/link";
 import { Phone, Mail, MapPin, Facebook, Instagram, Linkedin } from "lucide-react";
 import CalendlyCTASection from "@/components/calendly/CalendlyCTASection";
+import MadeiraCanyonMap from "@/components/maps/MadeiraCanyonMap";
 
 export default function Footer() {
   const currentYear = new Date().getFullYear();
 
   return (
     <>
+    <MadeiraCanyonMap focus="community" />
     <CalendlyCTASection />
     <footer className="bg-slate-900 text-white">
       <div className="container mx-auto px-4 py-12 md:py-16">

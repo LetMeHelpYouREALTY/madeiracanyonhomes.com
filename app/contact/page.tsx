@@ -3,6 +3,7 @@ import Footer from "@/components/layouts/Footer";
 import RealScoutListings from "@/components/realscout/RealScoutListings";
 import { Phone, Mail, MapPin, Clock, Calendar, CheckCircle, Star, Users, Shield } from "lucide-react";
 import CalendlyWidget from "@/components/calendly/CalendlyWidget";
+import MadeiraCanyonMap from "@/components/maps/MadeiraCanyonMap";
 import Link from "next/link";
 import type { Metadata } from "next";
 import PageHero from "@/components/sections/PageHero";
@@ -140,40 +141,14 @@ export default function ContactPage() {
                 </div>
               </div>
 
-              {/* Google Map Embed */}
-              <div className="rounded-xl overflow-hidden shadow-md mb-4">
-                <iframe
-                  src="https://maps.google.com/maps?q=Suite+A,+2721+Bonaparte+Ln,+Henderson,+NV+89044&t=&z=15&ie=UTF8&iwloc=&output=embed"
-                  width="100%"
-                  height="300"
-                  style={{ border: 0 }}
-                  allowFullScreen
-                  loading="lazy"
-                  referrerPolicy="no-referrer-when-downgrade"
-                  title="Berkshire Hathaway HomeServices Nevada Properties - Office Location"
-                  className="w-full"
+              <div className="mb-8">
+                <MadeiraCanyonMap
+                  focus="office"
+                  compact
+                  height={300}
+                  title="Madeira Canyon office"
+                  subtitle="Suite A, 2721 Bonaparte Ln — in Madeira Canyon / Club Madeira, Henderson NV 89044"
                 />
-              </div>
-              
-              {/* Map Action Buttons */}
-              <div className="flex gap-3 mb-8">
-                <a
-                  href="https://www.google.com/maps/dir//Suite+A,+2721+Bonaparte+Ln,+Henderson,+NV+89044"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="flex-1 inline-flex items-center justify-center bg-blue-600 hover:bg-blue-700 text-white px-4 py-3 rounded-lg font-medium transition-colors"
-                >
-                  <MapPin className="h-4 w-4 mr-2" />
-                  Get Directions
-                </a>
-                <a
-                  href="https://maps.google.com/?q=Suite+A,+2721+Bonaparte+Ln,+Henderson,+NV+89044"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="flex-1 inline-flex items-center justify-center bg-slate-100 hover:bg-slate-200 text-slate-700 px-4 py-3 rounded-lg font-medium transition-colors"
-                >
-                  View on Google Maps
-                </a>
               </div>
 
               {/* Credentials */}
