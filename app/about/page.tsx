@@ -2,6 +2,7 @@ import Navbar from "@/components/layouts/Navbar";
 import Footer from "@/components/layouts/Footer";
 import RealScoutListings from "@/components/realscout/RealScoutListings";
 import Link from "next/link";
+import Image from "next/image";
 import { 
   Phone, 
   Mail, 
@@ -19,6 +20,10 @@ import {
 import type { Metadata } from "next";
 import PageHero from "@/components/sections/PageHero";
 import { getHero } from "@/lib/hero-images";
+import {
+  getDrJanPhotoAbsoluteUrl,
+  getDrJanPhotoUrl,
+} from "@/lib/agent-photo";
 
 export const metadata: Metadata = {
   title: "About Dr. Jan Duffy | Madeira Canyon | Homes by Dr Jan Duffy",
@@ -35,6 +40,8 @@ export const metadata: Metadata = {
   ],
 };
 
+const agentPhotoUrl = getDrJanPhotoAbsoluteUrl("https://madeiracanyonhomes.com");
+
 // Person Schema for Dr. Jan Duffy
 const personSchema = {
   "@context": "https://schema.org",
@@ -43,6 +50,7 @@ const personSchema = {
   jobTitle: "REALTOR®",
   description:
     "Madeira Canyon | Homes by Dr Jan Duffy — licensed REALTOR® with Berkshire Hathaway HomeServices Nevada Properties, specializing in Madeira Canyon and Club Madeira (clubmadeirahoa.com) in Henderson, NV.",
+  image: agentPhotoUrl,
   telephone: "+17025001942",
   email: "DrDuffy@MadeiraCanyonHomes.com",
   url: "https://madeiracanyonhomes.com/about",
@@ -225,14 +233,20 @@ export default function AboutPage() {
 
               {/* Stats & Credentials */}
               <div className="space-y-6">
-                {/* Agent Photo Placeholder */}
-                <div className="bg-gradient-to-br from-blue-100 to-slate-100 rounded-lg p-8 aspect-square flex items-center justify-center">
-                  <div className="text-center">
-                    <div className="text-6xl mb-4">👩‍💼</div>
-                    <p className="text-slate-600 font-semibold">Dr. Jan Duffy</p>
-                    <p className="text-sm text-slate-500">BHHS Nevada Properties</p>
-                  </div>
-                </div>
+                <figure className="relative aspect-[3/4] overflow-hidden rounded-lg bg-slate-100">
+                  <Image
+                    src={getDrJanPhotoUrl({ variant: "headshot" })}
+                    alt="Dr. Jan Duffy, REALTOR® — Berkshire Hathaway HomeServices Nevada Properties, Madeira Canyon Henderson"
+                    fill
+                    className="object-cover object-top"
+                    sizes="(max-width: 768px) 100vw, 480px"
+                    priority
+                  />
+                  <figcaption className="sr-only">
+                    Professional headshot of Dr. Jan Duffy, REALTOR® with Berkshire Hathaway
+                    HomeServices Nevada Properties
+                  </figcaption>
+                </figure>
 
                 {/* Stats Grid */}
                 <div className="grid grid-cols-2 gap-4">

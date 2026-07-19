@@ -7,6 +7,7 @@
  */
 
 import { siteConfig, agentInfo, officeInfo, agentStats } from "./site-config";
+import { getDrJanPhotoAbsoluteUrl } from "./agent-photo";
 
 // ============================================================================
 // Types
@@ -62,6 +63,7 @@ export interface SeniorCommunityData {
 // ============================================================================
 
 const BASE_URL = siteConfig.url;
+const DR_JAN_PHOTO = getDrJanPhotoAbsoluteUrl(BASE_URL);
 
 // Social media profiles (to be updated with actual URLs)
 export const socialProfiles = {
@@ -96,8 +98,8 @@ export function generateRealEstateAgentSchema() {
       "Berkshire Hathaway HomeServices",
     ],
     url: BASE_URL,
-    logo: `${BASE_URL}/images/dr-jan-duffy.jpg`,
-    image: `${BASE_URL}/images/dr-jan-duffy.jpg`,
+    logo: DR_JAN_PHOTO,
+    image: DR_JAN_PHOTO,
     description: siteConfig.description,
     telephone: "+1-702-500-1942",
     email: agentInfo.email,
@@ -638,7 +640,7 @@ export function generateArticleSchema(article: {
       url: `${BASE_URL}/about`,
       email: agentInfo.email,
       telephone: "+1-702-500-1942",
-      image: `${BASE_URL}/Image/agent1.jpg`,
+      image: DR_JAN_PHOTO,
       identifier: agentInfo.license,
       worksFor: {
         "@id": `${BASE_URL}#organization`,

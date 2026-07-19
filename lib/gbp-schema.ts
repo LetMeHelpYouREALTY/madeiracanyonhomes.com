@@ -1,6 +1,8 @@
 // Google Business Profile Schema Data
 // Supports GBP ranking factors: Relevance, Distance, Prominence
 
+import { getDrJanPhotoAbsoluteUrl } from "./agent-photo";
+
 export const businessInfo = {
   // NAP - Must match GBP exactly
   name: "Madeira Canyon | Homes by Dr Jan Duffy",
@@ -215,7 +217,7 @@ export function generateLocalBusinessSchema() {
     "@type": "RealEstateAgent",
     "@id": "https://madeiracanyonhomes.com/#organization",
     name: businessInfo.name,
-    image: "https://madeiracanyonhomes.com/images/dr-jan-duffy.jpg",
+    image: getDrJanPhotoAbsoluteUrl("https://madeiracanyonhomes.com"),
     url: businessInfo.url,
     telephone: businessInfo.phone.tel,
     email: businessInfo.email,

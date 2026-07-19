@@ -27,6 +27,8 @@ images/
 
 - Use lowercase with hyphens: `summerlin-aerial.webp`
 - Be descriptive: `dr-jan-duffy-headshot.jpg`
+- Production headshot: `dr-jan-duffy.jpg` (root) and `agent/dr-jan-duffy-headshot.jpg`
+- Prefer Cloudflare Images via `NEXT_PUBLIC_CLOUDFLARE_ACCOUNT_HASH` + `NEXT_PUBLIC_DR_JAN_CF_IMAGE_ID` (see `lib/agent-photo.ts`)
 - Include size if multiple: `hero-desktop.webp`, `hero-mobile.webp`
 
 ## Image Optimization
