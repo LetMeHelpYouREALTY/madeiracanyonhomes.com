@@ -143,10 +143,10 @@ export const heroImages = {
   },
   interior: {
     src: `${H}/modern-kitchen-home-buyer-nevada.jpg`,
-    alt: "Modern kitchen interior in a Nevada home — staging and buyer expectations in Henderson",
+    alt: "Modern white kitchen with island — buyer expectations for Henderson and Madeira Canyon homes",
     caption: "Home buying and selling guidance — Madeira Canyon | Homes by Dr Jan Duffy",
-    width: 1920,
-    height: 1280,
+    width: 2400,
+    height: 3600,
   },
   buyers: {
     src: `${H}/home-keys-closing-day-real-estate.jpg`,
@@ -157,10 +157,10 @@ export const heroImages = {
   },
   sellers: {
     src: `${H}/staged-home-interior-open-house-nevada.jpg`,
-    alt: "Staged open house interior ready for buyers in Henderson and Madeira Canyon Nevada",
+    alt: "Staged living room ready for open house — selling in Henderson and Madeira Canyon Nevada",
     caption: "Sell your Madeira Canyon or Club Madeira home — listing preparation",
-    width: 1920,
-    height: 1280,
+    width: 2400,
+    height: 1266,
   },
   modern: {
     src: `${H}/henderson-style-modern-home-curb-appeal.jpg`,

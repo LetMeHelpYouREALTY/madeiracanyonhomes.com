@@ -39,8 +39,8 @@ From site `public/Image/` brand library. All rights reserved.
 | `resort-community-pool-henderson-lifestyle.jpg` | [Anmol Seth](https://unsplash.com/@anmol_seth) | [hDbCjHNdF48](https://unsplash.com/photos/hDbCjHNdF48) |
 | `desert-golf-community-fairway-nevada.jpg` | [Courtney Cook](https://unsplash.com/@courtneymcook) | [SsIIw_MET0E](https://unsplash.com/photos/SsIIw_MET0E) |
 | `new-construction-homesite-las-vegas-valley.jpg` | [Daniel McCullough](https://unsplash.com/@d_mccullough) | [HtBlQdxfG9k](https://unsplash.com/photos/HtBlQdxfG9k) |
-| `staged-home-interior-open-house-nevada.jpg` | Unsplash contributor (page ID unresolved) | [CDN](https://images.unsplash.com/photo-1600585154526-be33763f01dc) |
-| `modern-kitchen-home-buyer-nevada.jpg` | Unsplash contributor (page ID unresolved) | [CDN](https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3) |
+| `staged-home-interior-open-house-nevada.jpg` | [Spacejoy](https://unsplash.com/@spacejoy) | [9M66C_w_ToM](https://unsplash.com/photos/9M66C_w_ToM) |
+| `modern-kitchen-home-buyer-nevada.jpg` | [Jason Briscoe](https://unsplash.com/@jsnbrsc) | [AQl-J19ocWE](https://unsplash.com/photos/AQl-J19ocWE) |
 | `active-adult-community-living-room-light.jpg` | [Jarek Ceborski](https://unsplash.com/@jarson) | [jn7uVeCdf6U](https://unsplash.com/photos/jn7uVeCdf6U) |
 | `suburban-neighborhood-street-southwest.jpg` | [Wes Fischer](https://unsplash.com/@ntwrk_img) | [g39p1kDjvSY](https://unsplash.com/photos/g39p1kDjvSY) |
 | `mountain-lake-reservoir-recreation-nv.jpg` | [Sam Ferrara](https://unsplash.com/@samferrara) | [1527pjeb6jg](https://unsplash.com/photos/1527pjeb6jg) |

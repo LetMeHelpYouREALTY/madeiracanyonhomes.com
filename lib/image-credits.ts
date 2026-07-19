@@ -200,20 +200,20 @@ export const imageCredits: ImageCredit[] = [
   },
   {
     file: "staged-home-interior-open-house-nevada.jpg",
-    title: "Staged home interior for open house",
-    author: "Unsplash contributor",
-    sourceUrl:
-      "https://images.unsplash.com/photo-1600585154526-be33763f01dc",
+    title: "Staged living room for open house",
+    author: "Spacejoy",
+    authorUrl: "https://unsplash.com/@spacejoy",
+    sourceUrl: `${U}/9M66C_w_ToM`,
     license: "Unsplash License",
     licenseUrl: "https://unsplash.com/license",
     kind: "unsplash",
   },
   {
     file: "modern-kitchen-home-buyer-nevada.jpg",
-    title: "Modern kitchen interior",
-    author: "Unsplash contributor",
-    sourceUrl:
-      "https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3",
+    title: "Modern white kitchen with island",
+    author: "Jason Briscoe",
+    authorUrl: "https://unsplash.com/@jsnbrsc",
+    sourceUrl: `${U}/AQl-J19ocWE`,
     license: "Unsplash License",
     licenseUrl: "https://unsplash.com/license",
     kind: "unsplash",
