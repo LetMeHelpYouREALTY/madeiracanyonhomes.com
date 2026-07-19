@@ -7,15 +7,15 @@ import Link from "next/link";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Contact Dr. Jan Duffy | Berkshire Hathaway HomeServices Las Vegas",
+  title: "Contact | Madeira Canyon | Homes by Dr Jan Duffy | clubmadeirahoa.com",
   description:
-    "Contact Dr. Jan Duffy at Berkshire Hathaway HomeServices Nevada Properties. Schedule an appointment, get directions, or call (702) 500-1942. Las Vegas, Henderson, Summerlin real estate expert.",
+    "Contact Madeira Canyon | Homes by Dr Jan Duffy. Suite A, 2721 Bonaparte Ln, Henderson, NV 89044. Call (702) 500-1942 or email DrDuffy@MadeiraCanyonHomes.com. Club Madeira & Madeira Canyon real estate.",
   keywords: [
-    "contact real estate agent Las Vegas",
-    "Berkshire Hathaway contact",
-    "Dr. Jan Duffy phone",
-    "Las Vegas realtor contact",
-    "schedule real estate appointment",
+    "clubmadeirahoa.com",
+    "contact Dr Jan Duffy",
+    "Madeira Canyon realtor contact",
+    "Club Madeira Henderson",
+    "2721 Bonaparte Ln Henderson",
   ],
 };
 
@@ -24,16 +24,23 @@ const contactSchema = {
   "@type": "ContactPage",
   mainEntity: {
     "@type": "RealEstateAgent",
-    name: "Dr. Jan Duffy - Berkshire Hathaway HomeServices Nevada Properties",
+    name: "Madeira Canyon | Homes by Dr Jan Duffy",
+    alternateName: ["clubmadeirahoa.com", "MadeiraCanyonHomes.com"],
     telephone: "+17025001942",
     email: "DrDuffy@MadeiraCanyonHomes.com",
+    url: "https://madeiracanyonhomes.com/contact",
     address: {
       "@type": "PostalAddress",
-      streetAddress: "9406 W Lake Mead Blvd, Suite 100",
-      addressLocality: "Las Vegas",
+      streetAddress: "Suite A, 2721 Bonaparte Ln",
+      addressLocality: "Henderson",
       addressRegion: "NV",
-      postalCode: "89134",
+      postalCode: "89044",
       addressCountry: "US",
+    },
+    geo: {
+      "@type": "GeoCoordinates",
+      latitude: 35.927504,
+      longitude: -115.090006,
     },
   },
 };
@@ -115,8 +122,8 @@ export default function ContactPage() {
                     <address className="not-italic text-slate-700">
                       Berkshire Hathaway HomeServices<br />
                       Nevada Properties<br />
-                      9406 W Lake Mead Blvd, Suite 100<br />
-                      Las Vegas, NV 89134
+                      Suite A, 2721 Bonaparte Ln<br />
+                      Henderson, NV 89044
                     </address>
                   </div>
                 </div>
@@ -139,7 +146,7 @@ export default function ContactPage() {
               {/* Google Map Embed */}
               <div className="rounded-xl overflow-hidden shadow-md mb-4">
                 <iframe
-                  src="https://maps.google.com/maps?q=9406+W+Lake+Mead+Blvd+Suite+100,+Las+Vegas,+NV+89134&t=&z=15&ie=UTF8&iwloc=&output=embed"
+                  src="https://maps.google.com/maps?q=Suite+A,+2721+Bonaparte+Ln,+Henderson,+NV+89044&t=&z=15&ie=UTF8&iwloc=&output=embed"
                   width="100%"
                   height="300"
                   style={{ border: 0 }}
@@ -154,7 +161,7 @@ export default function ContactPage() {
               {/* Map Action Buttons */}
               <div className="flex gap-3 mb-8">
                 <a
-                  href="https://www.google.com/maps/dir//9406+W+Lake+Mead+Blvd+Suite+100,+Las+Vegas,+NV+89134"
+                  href="https://www.google.com/maps/dir//Suite+A,+2721+Bonaparte+Ln,+Henderson,+NV+89044"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex-1 inline-flex items-center justify-center bg-blue-600 hover:bg-blue-700 text-white px-4 py-3 rounded-lg font-medium transition-colors"
@@ -163,7 +170,7 @@ export default function ContactPage() {
                   Get Directions
                 </a>
                 <a
-                  href="https://maps.google.com/?q=Berkshire+Hathaway+HomeServices+Nevada+Properties+9406+W+Lake+Mead+Blvd+Las+Vegas+NV"
+                  href="https://maps.google.com/?q=Suite+A,+2721+Bonaparte+Ln,+Henderson,+NV+89044"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex-1 inline-flex items-center justify-center bg-slate-100 hover:bg-slate-200 text-slate-700 px-4 py-3 rounded-lg font-medium transition-colors"

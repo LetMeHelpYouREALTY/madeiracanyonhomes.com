@@ -10,10 +10,11 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-12">
           {/* Company Info */}
           <div>
-            <h3 className="font-bold text-xl mb-4">Berkshire Hathaway HomeServices</h3>
+            <h3 className="font-bold text-xl mb-4">Madeira Canyon | Homes by Dr Jan Duffy</h3>
             <p className="text-slate-300 mb-4 text-sm">
-              Nevada Properties - Your trusted real estate partner in Las Vegas, Henderson, and
-              Summerlin. Backed by Warren Buffett's legacy of trust.
+              Buy and sell in Madeira Canyon and Club Madeira, Henderson, NV
+              (clubmadeirahoa.com). Berkshire Hathaway HomeServices Nevada Properties —
+              Suite A, 2721 Bonaparte Ln, Henderson, NV 89044.
             </p>
             <div className="flex space-x-4">
               <a
@@ -173,9 +174,9 @@ export default function Footer() {
               <li className="flex items-start">
                 <MapPin className="h-5 w-5 mr-3 text-blue-400 flex-shrink-0 mt-0.5" />
                 <span className="text-slate-300 text-sm">
-                  9406 W Lake Mead Blvd, Suite 100
+                  Suite A, 2721 Bonaparte Ln
                   <br />
-                  Las Vegas, NV 89134
+                  Henderson, NV 89044
                 </span>
               </li>
               <li className="flex items-center">
@@ -204,8 +205,8 @@ export default function Footer() {
         <div className="border-t border-slate-800 mt-8 pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center gap-4">
             <p className="text-slate-400 text-sm text-center md:text-left">
-              © {currentYear} Berkshire Hathaway HomeServices Nevada Properties. All Rights
-              Reserved.
+              © {currentYear} Madeira Canyon | Homes by Dr Jan Duffy · Berkshire Hathaway
+              HomeServices Nevada Properties. All Rights Reserved.
             </p>
             <div className="flex flex-wrap justify-center gap-4 text-sm">
               <Link href="/faq" className="text-slate-400 hover:text-white transition-colors">

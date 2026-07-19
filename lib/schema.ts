@@ -85,10 +85,13 @@ export function generateRealEstateAgentSchema() {
     "@context": "https://schema.org",
     "@type": "RealEstateAgent",
     "@id": `${BASE_URL}#organization`,
-    name: "Dr. Jan Duffy - Berkshire Hathaway HomeServices Nevada Properties",
+    name: siteConfig.name,
     alternateName: [
-      "Madeira Canyon Homes",
+      "Madeira Canyon | Homes by Dr Jan Duffy",
       "MadeiraCanyonHomes.com",
+      "clubmadeirahoa.com",
+      "Club Madeira Homes Henderson",
+      "Madeira Canyon Homes",
       "BHHS Nevada Properties",
       "Berkshire Hathaway HomeServices",
     ],
@@ -114,14 +117,34 @@ export function generateRealEstateAgentSchema() {
     },
     areaServed: [
       {
-        "@type": "City",
-        name: "Las Vegas",
-        sameAs: "https://en.wikipedia.org/wiki/Las_Vegas",
+        "@type": "Place",
+        name: "Madeira Canyon",
+        address: {
+          "@type": "PostalAddress",
+          addressLocality: "Henderson",
+          addressRegion: "NV",
+          postalCode: "89044",
+        },
+      },
+      {
+        "@type": "Place",
+        name: "Club Madeira",
+        address: {
+          "@type": "PostalAddress",
+          addressLocality: "Henderson",
+          addressRegion: "NV",
+          postalCode: "89044",
+        },
       },
       {
         "@type": "City",
         name: "Henderson",
         sameAs: "https://en.wikipedia.org/wiki/Henderson,_Nevada",
+      },
+      {
+        "@type": "City",
+        name: "Las Vegas",
+        sameAs: "https://en.wikipedia.org/wiki/Las_Vegas",
       },
       {
         "@type": "Place",

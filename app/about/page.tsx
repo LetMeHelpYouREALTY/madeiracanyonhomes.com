@@ -19,16 +19,17 @@ import {
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "About Dr. Jan Duffy | Berkshire Hathaway HomeServices Las Vegas",
+  title: "About Dr. Jan Duffy | Madeira Canyon | Homes by Dr Jan Duffy",
   description:
-    "Meet Dr. Jan Duffy, your trusted Berkshire Hathaway HomeServices Nevada Properties agent. Serving Las Vegas since 2008, $127M+ in transactions, Henderson & Summerlin specialist. Call (702) 500-1942.",
+    "Meet Dr. Jan Duffy — Madeira Canyon | Homes by Dr Jan Duffy. Club Madeira & Madeira Canyon specialist (clubmadeirahoa.com). BHHS Nevada Properties. Suite A, 2721 Bonaparte Ln, Henderson, NV 89044. Call (702) 500-1942.",
   keywords: [
+    "clubmadeirahoa.com",
     "Dr. Jan Duffy",
+    "Madeira Canyon Homes",
+    "Club Madeira Henderson",
     "Berkshire Hathaway HomeServices agent",
-    "Las Vegas realtor",
-    "BHHS Nevada Properties",
     "Henderson real estate agent",
-    "Summerlin realtor",
+    "BHHS Nevada Properties",
   ],
 };
 
@@ -39,19 +40,21 @@ const personSchema = {
   name: "Dr. Jan Duffy",
   jobTitle: "REALTOR®",
   description:
-    "Licensed real estate agent with Berkshire Hathaway HomeServices Nevada Properties, serving Las Vegas, Henderson, and Summerlin since 2008.",
+    "Madeira Canyon | Homes by Dr Jan Duffy — licensed REALTOR® with Berkshire Hathaway HomeServices Nevada Properties, specializing in Madeira Canyon and Club Madeira (clubmadeirahoa.com) in Henderson, NV.",
   telephone: "+17025001942",
   email: "DrDuffy@MadeiraCanyonHomes.com",
   url: "https://madeiracanyonhomes.com/about",
   worksFor: {
     "@type": "RealEstateAgent",
-    name: "Berkshire Hathaway HomeServices Nevada Properties",
+    name: "Madeira Canyon | Homes by Dr Jan Duffy",
+    alternateName: "Berkshire Hathaway HomeServices Nevada Properties",
     address: {
       "@type": "PostalAddress",
-      streetAddress: "9406 W Lake Mead Blvd, Suite 100",
-      addressLocality: "Las Vegas",
+      streetAddress: "Suite A, 2721 Bonaparte Ln",
+      addressLocality: "Henderson",
       addressRegion: "NV",
-      postalCode: "89134",
+      postalCode: "89044",
+      addressCountry: "US",
     },
   },
   hasCredential: {
@@ -60,12 +63,14 @@ const personSchema = {
     credentialNumber: "S.0197614.LLC",
   },
   knowsAbout: [
-    "Las Vegas real estate",
-    "Henderson properties",
-    "Summerlin homes",
+    "clubmadeirahoa.com",
+    "Club Madeira Henderson",
+    "Madeira Canyon homes",
+    "Madeira Canyon Henderson",
+    "Henderson NV real estate",
+    "Anthem Highlands",
     "Luxury real estate",
     "Investment properties",
-    "55+ communities",
     "California relocation",
   ],
 };
@@ -198,8 +203,8 @@ export default function AboutPage() {
                     <div className="flex items-start text-slate-700">
                       <MapPin className="h-5 w-5 mr-3 text-blue-600 mt-0.5" />
                       <address className="not-italic">
-                        9406 W Lake Mead Blvd, Suite 100<br />
-                        Las Vegas, NV 89134
+                        Suite A, 2721 Bonaparte Ln<br />
+                        Henderson, NV 89044
                       </address>
                     </div>
                     <div className="flex items-center text-slate-700">

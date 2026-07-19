@@ -3,12 +3,12 @@
 
 export const businessInfo = {
   // NAP - Must match GBP exactly
-  name: "Dr. Jan Duffy - Berkshire Hathaway HomeServices Nevada Properties",
+  name: "Madeira Canyon | Homes by Dr Jan Duffy",
   address: {
-    streetAddress: "9406 W Lake Mead Blvd, Suite 100",
-    addressLocality: "Las Vegas",
+    streetAddress: "Suite A, 2721 Bonaparte Ln",
+    addressLocality: "Henderson",
     addressRegion: "NV",
-    postalCode: "89134",
+    postalCode: "89044",
     addressCountry: "US",
   },
   phone: {
@@ -33,21 +33,19 @@ export const businessInfo = {
     sunday: "By Appointment",
   },
 
-  // Geo coordinates for distance ranking
+  // Geo coordinates for distance ranking (Club Madeira / Bonaparte Ln)
   geo: {
-    latitude: 36.1941,
-    longitude: -115.2678,
+    latitude: 35.927504,
+    longitude: -115.090006,
   },
 
-  // Service areas - Start focused, expand with prominence
+  // Service areas - Start focused on Madeira Canyon / Henderson
   serviceAreas: [
-    // Primary (immediate city)
-    "Las Vegas, NV",
-    "Summerlin, NV",
-    // Secondary (close ZIPs)
+    "Madeira Canyon, Henderson, NV",
+    "Club Madeira, Henderson, NV",
     "Henderson, NV",
-    "North Las Vegas, NV",
-    // Tertiary (county expansion)
+    "Anthem Highlands, NV",
+    "Las Vegas, NV",
     "Clark County, NV",
   ],
 
@@ -145,30 +143,32 @@ export const businessInfo = {
 // 750-word GBP Description (3 sections)
 export const gbpDescription = {
   // Section 1: Who you are/mission (~250 words)
-  whoWeAre: `Dr. Jan Duffy is a trusted REALTOR® with Berkshire Hathaway HomeServices Nevada Properties, serving the Las Vegas real estate market since 2008. Backed by Warren Buffett's Berkshire Hathaway—the most recognized name in real estate—Dr. Jan combines local expertise with world-class resources to deliver exceptional results for buyers and sellers alike.
+  whoWeAre: `Madeira Canyon | Homes by Dr Jan Duffy is the local real estate resource for buyers and sellers in Madeira Canyon and Club Madeira in Henderson, NV—the community connected with clubmadeirahoa.com searches. Dr. Jan Duffy, REALTOR® with Berkshire Hathaway HomeServices Nevada Properties (License S.0197614.LLC), focuses on this Anthem Highlands corridor with square-footage comps, amenity knowledge, and clear next steps—not generic valley-wide marketing.
 
-With $127 million in closed transactions and hundreds of satisfied clients, Dr. Jan has earned a reputation for integrity, market knowledge, and personalized service. Whether you're a first-time buyer navigating the process, a luxury home seeker exploring The Ridges or MacDonald Highlands, or a California family relocating for Nevada's tax advantages, Dr. Jan provides the guidance you need to make confident real estate decisions.`,
+With $127 million in closed transactions and hundreds of clients helped since 2008, Dr. Jan brings BHHS resources plus hyperlocal Madeira Canyon inventory insight. Whether you are comparing Club Madeira listings, reviewing HOA dues tied to clubmadeirahoa.com community info, or relocating to Henderson for Nevada's tax advantages, you get data-backed guidance and a single point of contact.`,
 
   // Section 2: What/why - Value proposition (~250 words)
-  whatWeDo: `What sets Dr. Jan apart is a commitment to education and advocacy. Clients receive comprehensive market analysis, expert negotiation, and honest advice—not sales pressure. As a Berkshire Hathaway HomeServices agent, Dr. Jan offers access to a global network of 50,000+ agents, world-class marketing for sellers, and off-market opportunities for buyers.
+  whatWeDo: `What sets this practice apart is Madeira Canyon focus plus Berkshire Hathaway HomeServices backing. Clients get current MLS pricing for Club Madeira and surrounding Madeira Canyon villages, negotiation support, and honest advice—not sales pressure. Sellers receive professional marketing; buyers get representation that costs them nothing when the listing side pays the commission.
 
-Specialized services include: buyer and seller representation, luxury home sales, 55+ active adult community expertise (Sun City Summerlin, Sun City Anthem, Del Webb Lake Las Vegas), California relocation assistance, probate and divorce real estate, investment property consulting, new construction representation, and first-time buyer programs including FHA, VA, and down payment assistance guidance.
+Services include buyer and seller representation in Madeira Canyon / Club Madeira, Henderson market analysis, California relocation assistance, investment property consulting, new construction representation, and first-time buyer programs (FHA, VA, conventional, Nevada down-payment assistance).
 
-Dr. Jan's approach is simple: treat every client like family, know the market inside and out, and never stop working until the deal closes successfully.`,
+Dr. Jan's approach: know the street-level inventory, match amenities (clubhouse, pool, fitness, courts) to your criteria, and stay on the file until closing.`,
 
   // Section 3: Where - Areas served (~250 words)
-  whereWeServe: `Dr. Jan serves the entire Las Vegas Valley with specialized knowledge of Las Vegas, Summerlin, Henderson, North Las Vegas, and all of Clark County. Neighborhood expertise includes Summerlin's master-planned communities, Henderson's Green Valley and Inspirada, the luxury enclaves of The Ridges and Southern Highlands, family-friendly Centennial Hills and Skye Canyon, and affordable options in Mountains Edge and North Las Vegas.
+  whereWeServe: `Primary focus: Madeira Canyon and Club Madeira in Henderson, NV 89044—the guard-gated Anthem Highlands community buyers often research via clubmadeirahoa.com. Nearby coverage includes Anthem Highlands, Green Valley, Inspirada, and the broader Henderson / Las Vegas Valley market when your search expands.
 
-55+ active adult community specialization covers Sun City Summerlin (Nevada's largest 55+ community), Sun City Anthem in Henderson, Del Webb Lake Las Vegas, and Solera at Anthem. Investment property expertise spans single-family rentals, multi-family opportunities, and short-term rental analysis across the Las Vegas metro area.
-
-Office located at 9406 W Lake Mead Blvd, Suite 100, Las Vegas, NV 89134. Available Monday through Friday 9am-6pm, Saturday 10am-4pm, and Sunday by appointment. Call (702) 500-1942 for a free consultation or visit madeiracanyonhomes.com to start your Las Vegas real estate journey today.`,
+Office: Suite A, 2721 Bonaparte Ln, Henderson, NV 89044 (at The Club at Madeira Canyon clubhouse address). Hours Monday–Friday 9am–6pm, Saturday 10am–4pm, Sunday by appointment. Call (702) 500-1942 or email DrDuffy@MadeiraCanyonHomes.com. Start at madeiracanyonhomes.com for Madeira Canyon homes by Dr. Jan Duffy.`,
 };
 
 // FAQ Schema for GBP Q&A section
 export const gbpFAQs = [
   {
-    question: "What areas does Dr. Jan Duffy serve in Las Vegas?",
-    answer: "Dr. Jan serves all of Las Vegas, Summerlin, Henderson, North Las Vegas, and Clark County. Specialized neighborhood expertise includes Summerlin, Green Valley, The Ridges, Southern Highlands, Centennial Hills, Skye Canyon, Inspirada, and Mountains Edge.",
+    question: "What areas does Dr. Jan Duffy serve?",
+    answer: "Primary focus is Madeira Canyon and Club Madeira in Henderson, NV (clubmadeirahoa.com community searches), plus Anthem Highlands, Green Valley, Inspirada, and the broader Henderson / Las Vegas Valley market.",
+  },
+  {
+    question: "Is this the Club Madeira HOA website (clubmadeirahoa.com)?",
+    answer: "No. clubmadeirahoa.com is the community/HOA site. MadeiraCanyonHomes.com is Madeira Canyon | Homes by Dr Jan Duffy — a Berkshire Hathaway HomeServices Nevada Properties real estate site for buying and selling homes in Madeira Canyon and Club Madeira.",
   },
   {
     question: "Does Dr. Jan help buyers relocating from California?",
@@ -200,7 +200,7 @@ export const gbpFAQs = [
   },
   {
     question: "How do I schedule a consultation with Dr. Jan Duffy?",
-    answer: "Call or text (702) 500-1942 for immediate assistance, or email DrDuffy@MadeiraCanyonHomes.com. Office visits available at 9406 W Lake Mead Blvd, Suite 100, Las Vegas, NV 89134. Monday-Friday 9am-6pm, Saturday 10am-4pm, Sunday by appointment.",
+    answer: "Call or text (702) 500-1942 for immediate assistance, or email DrDuffy@MadeiraCanyonHomes.com. Office visits available at Suite A, 2721 Bonaparte Ln, Henderson, NV 89044. Monday-Friday 9am-6pm, Saturday 10am-4pm, Sunday by appointment.",
   },
   {
     question: "Does Dr. Jan help with investment properties in Las Vegas?",

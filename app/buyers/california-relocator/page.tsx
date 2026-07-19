@@ -87,10 +87,10 @@ const realEstateAgentSchema = {
   url: "https://madeiracanyonhomes.com/buyers/california-relocator",
   address: {
     "@type": "PostalAddress",
-    streetAddress: "9406 W Lake Mead Blvd, Suite 100",
-    addressLocality: "Las Vegas",
+    streetAddress: "Suite A, 2721 Bonaparte Ln",
+    addressLocality: "Henderson",
     addressRegion: "NV",
-    postalCode: "89134",
+    postalCode: "89044",
   },
   areaServed: ["Las Vegas", "Henderson", "Summerlin", "North Las Vegas"],
   priceRange: "$350,000 - $10,000,000+",

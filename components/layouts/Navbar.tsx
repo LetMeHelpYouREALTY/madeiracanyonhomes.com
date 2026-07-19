@@ -45,12 +45,14 @@ export default function Navbar() {
       <div className="container mx-auto px-4">
         <div className="flex justify-between items-center">
           {/* Brand Logo */}
-          <Link href="/" className="flex flex-col">
-            <span className="text-lg md:text-xl lg:text-2xl font-bold text-slate-900 hover:text-blue-600 transition-colors leading-tight">
-              Berkshire Hathaway
-              <span className="text-blue-600"> HomeServices</span>
+          <Link href="/" className="flex flex-col min-w-0">
+            <span className="text-base md:text-lg lg:text-xl font-bold text-slate-900 hover:text-blue-600 transition-colors leading-tight">
+              Madeira Canyon
+              <span className="text-blue-600"> | Homes by Dr Jan Duffy</span>
             </span>
-            <span className="text-xs text-slate-500 hidden sm:block">Nevada Properties</span>
+            <span className="text-xs text-slate-500 hidden sm:block">
+              BHHS Nevada Properties · clubmadeirahoa.com
+            </span>
           </Link>
 
           {/* Desktop Navigation */}

@@ -2,17 +2,28 @@
 // Berkshire Hathaway HomeServices Nevada Properties
 
 export const siteConfig = {
-  name: "Madeira Canyon Homes",
+  name: "Madeira Canyon | Homes by Dr Jan Duffy",
   fullName: "Berkshire Hathaway HomeServices Nevada Properties",
-  tagline: "Private Client Real Estate Advisory",
-  /** Full brand line for titles and OG: Berkshire Hathaway HomeServices Nevada Properties | Private Client Real Estate Advisory */
-  brandLine:
-    "Berkshire Hathaway HomeServices Nevada Properties | Private Client Real Estate Advisory",
+  tagline: "Madeira Canyon & Club Madeira Homes in Henderson, NV",
+  /** Primary brand line for titles and Open Graph */
+  brandLine: "Madeira Canyon | Homes by Dr Jan Duffy",
   brandName: "Berkshire Hathaway HomeServices",
   shortName: "BHHS",
   url: "https://madeiracanyonhomes.com",
+  /** Primary SEO focus keyword: clubmadeirahoa.com (Club Madeira / Madeira Canyon searches) */
+  primaryKeyword: "clubmadeirahoa.com",
   description:
-    "Expert real estate services in Las Vegas and Henderson, NV. Buy, sell, or invest with Dr. Jan Duffy, your trusted Berkshire Hathaway HomeServices Nevada Properties agent.",
+    "Madeira Canyon | Homes by Dr Jan Duffy — buy or sell in Madeira Canyon and Club Madeira (clubmadeirahoa.com) Henderson, NV. Berkshire Hathaway HomeServices Nevada Properties. Suite A, 2721 Bonaparte Ln, Henderson, NV 89044.",
+  keywords: [
+    "clubmadeirahoa.com",
+    "Club Madeira HOA",
+    "Club Madeira Henderson",
+    "Madeira Canyon homes",
+    "Madeira Canyon Henderson",
+    "Madeira Canyon Homes for Sale",
+    "Homes by Dr Jan Duffy",
+    "Henderson NV real estate",
+  ],
 };
 
 export const agentInfo = {
@@ -27,17 +38,18 @@ export const agentInfo = {
 };
 
 export const officeInfo = {
-  name: "Berkshire Hathaway HomeServices Nevada Properties",
+  name: "Madeira Canyon | Homes by Dr Jan Duffy",
   address: {
-    street: "9406 W Lake Mead Blvd, Suite 100",
-    city: "Las Vegas",
+    street: "Suite A, 2721 Bonaparte Ln",
+    city: "Henderson",
     state: "NV",
-    zip: "89134",
-    full: "9406 W Lake Mead Blvd, Suite 100, Las Vegas, NV 89134",
+    zip: "89044",
+    full: "Suite A, 2721 Bonaparte Ln, Henderson, NV 89044",
   },
+  // Adjacent listing coords for Club Madeira / 272x Bonaparte Ln (Compass MLS)
   coordinates: {
-    lat: 36.1893,
-    lng: -115.2821,
+    lat: 35.927504,
+    lng: -115.090006,
   },
   phone: "(702) 500-1942",
   phoneTel: "tel:+17025001942",

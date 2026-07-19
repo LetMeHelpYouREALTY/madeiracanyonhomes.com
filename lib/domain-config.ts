@@ -85,17 +85,21 @@ export const DOMAIN_CONFIGS: Record<string, DomainConfig> = {
   "madeiracanyonhomes.com": {
     domain: "madeiracanyonhomes.com",
     neighborhood: "Madeira Canyon",
-    tagline: "Madeira Canyon Homes for Sale",
+    tagline: "Madeira Canyon | Homes by Dr Jan Duffy",
     description:
-      "Search Madeira Canyon homes for sale in Las Vegas. Expert guidance from Dr. Jan Duffy, Berkshire Hathaway HomeServices Nevada Properties.",
-    heroHeadline: "Madeira Canyon Homes for Sale",
+      "Madeira Canyon | Homes by Dr Jan Duffy — buy or sell in Madeira Canyon and Club Madeira (clubmadeirahoa.com) Henderson, NV. Berkshire Hathaway HomeServices Nevada Properties. Suite A, 2721 Bonaparte Ln, Henderson, NV 89044.",
+    heroHeadline: "Madeira Canyon | Homes by Dr Jan Duffy",
     heroSubheadline:
-      "Find your Madeira Canyon home with Dr. Jan Duffy — local market expertise backed by Berkshire Hathaway HomeServices.",
+      "Club Madeira and Madeira Canyon homes in Henderson — local comps, amenity knowledge, and BHHS representation. Searches for clubmadeirahoa.com start here for buying and selling.",
     keywords: [
+      "clubmadeirahoa.com",
+      "Club Madeira HOA",
+      "Club Madeira Henderson",
       "Madeira Canyon homes",
-      "Madeira Canyon Las Vegas",
+      "Madeira Canyon Henderson",
       "Madeira Canyon Homes for Sale",
-      "Las Vegas real estate",
+      "Homes by Dr Jan Duffy",
+      "Henderson NV real estate",
     ],
     pageType: "community",
     realscoutAgentId: REALSCOUT_AGENT_ID,

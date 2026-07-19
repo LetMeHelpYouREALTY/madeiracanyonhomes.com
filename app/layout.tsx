@@ -9,14 +9,22 @@ import Script from "next/script";
 export async function generateMetadata(): Promise<Metadata> {
   const domain = headers().get("x-domain") || "";
   const config = getDomainConfig(domain);
+  const isMadeira =
+    config.domain === "madeiracanyonhomes.com" ||
+    domain.replace(/^www\./, "").toLowerCase() === "madeiracanyonhomes.com" ||
+    !domain;
+  const title = isMadeira
+    ? "Madeira Canyon | Homes by Dr Jan Duffy | clubmadeirahoa.com"
+    : `${config.neighborhood} | Dr. Jan Duffy, REALTOR® | BHHS Nevada`;
   return {
-    title: `${config.neighborhood} | Dr. Jan Duffy, REALTOR® | BHHS Nevada`,
+    title,
     description: config.description,
     keywords: config.keywords,
     openGraph: {
-      title: config.heroHeadline,
+      title: isMadeira ? "Madeira Canyon | Homes by Dr Jan Duffy" : config.heroHeadline,
       description: config.description,
       type: "website",
+      url: isMadeira ? "https://madeiracanyonhomes.com" : undefined,
     },
   };
 }

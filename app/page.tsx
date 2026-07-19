@@ -57,16 +57,28 @@ export default async function Home() {
   const organizationSchema = {
     "@context": "https://schema.org",
     "@type": "RealEstateAgent",
-    name: `Dr. Jan Duffy - ${config.neighborhood} Real Estate`,
+    name:
+      config.domain === "madeiracanyonhomes.com" || config.domain === "default"
+        ? "Madeira Canyon | Homes by Dr Jan Duffy"
+        : `Dr. Jan Duffy - ${config.neighborhood} Real Estate`,
+    alternateName: ["clubmadeirahoa.com", "MadeiraCanyonHomes.com", "Club Madeira Homes Henderson"],
     url: `https://${config.domain !== "default" ? config.domain : "madeiracanyonhomes.com"}`,
-    telephone: "+17022221964",
+    telephone: "+17025001942",
+    email: "DrDuffy@MadeiraCanyonHomes.com",
     address: {
       "@type": "PostalAddress",
-      streetAddress: "9406 W Lake Mead Blvd, Suite 100",
-      addressLocality: "Las Vegas",
+      streetAddress: "Suite A, 2721 Bonaparte Ln",
+      addressLocality: "Henderson",
       addressRegion: "NV",
-      postalCode: "89134",
+      postalCode: "89044",
+      addressCountry: "US",
     },
+    geo: {
+      "@type": "GeoCoordinates",
+      latitude: 35.927504,
+      longitude: -115.090006,
+    },
+    areaServed: ["Madeira Canyon", "Club Madeira", "Henderson, NV"],
     aggregateRating: {
       "@type": "AggregateRating",
       ratingValue: "4.9",

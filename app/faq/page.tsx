@@ -13,14 +13,14 @@ import {
 } from "@/lib/schema";
 
 export const metadata: Metadata = {
-  title: "FAQ | Berkshire Hathaway HomeServices Las Vegas Real Estate",
+  title: "FAQ | Madeira Canyon | Homes by Dr Jan Duffy | clubmadeirahoa.com",
   description:
-    "Frequently asked questions about Las Vegas real estate, Berkshire Hathaway HomeServices, buying, selling, and working with Dr. Jan Duffy at BHHS Nevada Properties.",
+    "FAQ for Madeira Canyon and Club Madeira home buyers and sellers — clubmadeirahoa.com community questions answered by Dr. Jan Duffy, BHHS Nevada Properties.",
   keywords: [
-    "Berkshire Hathaway HomeServices FAQ",
-    "Las Vegas real estate questions",
-    "buying a home Las Vegas",
-    "selling a home Henderson",
+    "clubmadeirahoa.com",
+    "Club Madeira FAQ",
+    "Madeira Canyon homes FAQ",
+    "Henderson real estate questions",
     "BHHS agent questions",
   ],
 };
@@ -146,11 +146,15 @@ const faqCategories = [
       },
       {
         q: "How do I contact Dr. Jan Duffy?",
-        a: "Call or text (702) 500-1942 or email DrDuffy@MadeiraCanyonHomes.com. Office located at 9406 W Lake Mead Blvd, Suite 100, Las Vegas, NV 89134.",
+        a: "Call or text (702) 500-1942 or email DrDuffy@MadeiraCanyonHomes.com. Office located at Suite A, 2721 Bonaparte Ln, Henderson, NV 89044.",
       },
       {
         q: "What areas does Dr. Jan cover?",
-        a: "Dr. Jan serves all of Las Vegas, Henderson, Summerlin, Green Valley, North Las Vegas, Southern Highlands, Skye Canyon, Centennial Hills, The Ridges, and surrounding communities.",
+        a: "Primary focus is Madeira Canyon and Club Madeira in Henderson, NV (clubmadeirahoa.com community searches), plus Anthem Highlands, Green Valley, Inspirada, and the broader Henderson / Las Vegas Valley market.",
+      },
+      {
+        q: "Is this the same as clubmadeirahoa.com?",
+        a: "No. clubmadeirahoa.com is the Club Madeira community/HOA site. MadeiraCanyonHomes.com is Madeira Canyon | Homes by Dr Jan Duffy — a Berkshire Hathaway HomeServices Nevada Properties site for buying and selling homes in Madeira Canyon and Club Madeira.",
       },
     ],
   },
