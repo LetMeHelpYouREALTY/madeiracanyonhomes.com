@@ -156,7 +156,7 @@ const faqCategories = [
       },
       {
         q: "Is this the same as clubmadeirahoa.com?",
-        a: "No. clubmadeirahoa.com is the Club Madeira community/HOA site. MadeiraCanyonHomes.com is Madeira Canyon | Homes by Dr Jan Duffy — a Berkshire Hathaway HomeServices Nevada Properties site for buying and selling homes in Madeira Canyon and Club Madeira.",
+        a: "No. clubmadeirahoa.com is the Club Madeira community/HOA site. Search live MLS homes on RealScout at https://drjanduffy.realscout.com/. MadeiraCanyonHomes.com is Madeira Canyon | Homes by Dr Jan Duffy — Berkshire Hathaway HomeServices Nevada Properties — for buying and selling in Madeira Canyon and Club Madeira.",
       },
     ],
   },

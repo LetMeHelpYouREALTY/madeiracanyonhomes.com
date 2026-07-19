@@ -4,3 +4,9 @@ export const REALSCOUT_AGENT_ENCODED_ID = "QWdlbnQtMjI1MDUw";
 /** Official RealScout web-components bundle (load once in root layout) */
 export const REALSCOUT_WIDGET_SCRIPT =
   "https://em.realscout.com/widgets/realscout-web-components.umd.js";
+
+/**
+ * Primary MLS search for Madeira Canyon / Club Madeira (clubmadeirahoa.com) buyers.
+ * Prefer https — used for CTAs, SearchAction, and popular searches.
+ */
+export const REALSCOUT_SEARCH_URL = "https://drjanduffy.realscout.com/";

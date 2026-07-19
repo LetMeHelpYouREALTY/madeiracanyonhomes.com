@@ -291,7 +291,8 @@ export function generateWebSiteSchema() {
       "@type": "SearchAction",
       target: {
         "@type": "EntryPoint",
-        urlTemplate: `${BASE_URL}/listings?q={search_term_string}`,
+        // clubmadeirahoa.com / Club Madeira MLS search → RealScout
+        urlTemplate: "https://drjanduffy.realscout.com/",
       },
       "query-input": "required name=search_term_string",
     },

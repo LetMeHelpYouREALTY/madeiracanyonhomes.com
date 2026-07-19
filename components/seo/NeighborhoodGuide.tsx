@@ -15,6 +15,7 @@ import {
 } from "@/lib/schema";
 import { getHeroForRoute } from "@/lib/hero-images";
 import { agentInfo, officeInfo } from "@/lib/site-config";
+import { REALSCOUT_SEARCH_URL } from "@/lib/realscout";
 
 export type NeighborhoodStat = {
   label: string;
@@ -193,12 +194,23 @@ export default function NeighborhoodGuide({
               <ul className="flex flex-wrap gap-3">
                 {relatedLinks.map((link) => (
                   <li key={link.href}>
-                    <Link
-                      href={link.href}
-                      className="inline-block border border-slate-300 px-4 py-2 text-sm text-slate-700 hover:border-blue-600 hover:text-blue-700"
-                    >
-                      {link.label}
-                    </Link>
+                    {link.href.startsWith("http") ? (
+                      <a
+                        href={link.href}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="inline-block border border-slate-300 px-4 py-2 text-sm text-slate-700 hover:border-blue-600 hover:text-blue-700"
+                      >
+                        {link.label}
+                      </a>
+                    ) : (
+                      <Link
+                        href={link.href}
+                        className="inline-block border border-slate-300 px-4 py-2 text-sm text-slate-700 hover:border-blue-600 hover:text-blue-700"
+                      >
+                        {link.label}
+                      </Link>
+                    )}
                   </li>
                 ))}
               </ul>
@@ -214,8 +226,16 @@ export default function NeighborhoodGuide({
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
               <a
-                href={agentInfo.phoneTel}
+                href={REALSCOUT_SEARCH_URL}
+                target="_blank"
+                rel="noopener noreferrer"
                 className="inline-flex items-center bg-white text-blue-600 px-8 py-4 font-bold text-lg hover:bg-blue-50"
+              >
+                Search Homes on RealScout
+              </a>
+              <a
+                href={agentInfo.phoneTel}
+                className="inline-flex items-center border border-white px-8 py-4 font-bold text-lg hover:bg-blue-700"
               >
                 <Phone className="h-5 w-5 mr-2" />
                 Call {agentInfo.phone}

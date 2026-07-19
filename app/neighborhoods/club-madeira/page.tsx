@@ -1,5 +1,6 @@
 import NeighborhoodGuide from "@/components/seo/NeighborhoodGuide";
 import type { Metadata } from "next";
+import { REALSCOUT_SEARCH_URL } from "@/lib/realscout";
 
 export const metadata: Metadata = {
   title: "Club Madeira Homes | clubmadeirahoa.com | Henderson NV",
@@ -28,7 +29,7 @@ export default function ClubMadeiraPage() {
       name="Club Madeira"
       slug="club-madeira"
       h1="Club Madeira Homes for Sale (clubmadeirahoa.com)"
-      intro="The Club at Madeira Canyon — often searched as Club Madeira or clubmadeirahoa.com — is the guard-gated resort village inside Madeira Canyon. Dr. Jan Duffy helps buyers and sellers navigate inventory, HOA rules, and view premiums."
+      intro="The Club at Madeira Canyon — often searched as Club Madeira or clubmadeirahoa.com — is the guard-gated resort village inside Madeira Canyon. Search live MLS inventory on RealScout, then work with Dr. Jan Duffy on HOA rules, comps, and offers."
       description="Club Madeira Henderson real estate guide covering The Club at Madeira Canyon, amenities, pricing, and HOA questions for clubmadeirahoa.com searches."
       containedIn="Henderson"
       latitude={35.927504}
@@ -50,7 +51,7 @@ export default function ClubMadeiraPage() {
       sections={[
         {
           title: "clubmadeirahoa.com vs MadeiraCanyonHomes.com",
-          body: "clubmadeirahoa.com is the Club Madeira community and HOA information site. MadeiraCanyonHomes.com is Madeira Canyon | Homes by Dr Jan Duffy — a Berkshire Hathaway HomeServices Nevada Properties site for buying and selling homes in Club Madeira and the wider Madeira Canyon area. Use the HOA site for covenants and amenity rules; use this site for MLS search, pricing strategy, and representation.",
+          body: "clubmadeirahoa.com is the Club Madeira community and HOA information site. MadeiraCanyonHomes.com is Madeira Canyon | Homes by Dr Jan Duffy — Berkshire Hathaway HomeServices Nevada Properties — for buying and selling. For live MLS inventory tied to clubmadeirahoa.com searches, use Dr. Jan’s RealScout search (drjanduffy.realscout.com). Use the HOA site for covenants; use RealScout + Dr. Duffy for listings, pricing, and representation.",
         },
         {
           title: "What buyers pay for inside The Club",
@@ -58,7 +59,7 @@ export default function ClubMadeiraPage() {
         },
         {
           title: "How we search Club Madeira inventory",
-          body: "Dr. Jan Duffy filters RealScout and MLS for Club Madeira, Videiras, and adjacent Madeira Canyon streets, then compares price per square foot, days on market, and view corridors. Call (702) 500-1942 to set alerts for new Club Madeira listings that match your bed/bath and garage criteria.",
+          body: "Start on RealScout at drjanduffy.realscout.com for Club Madeira, Videiras, and adjacent Madeira Canyon streets. Dr. Jan Duffy then compares price per square foot, days on market, and view corridors. Call (702) 500-1942 to set alerts that match your bed/bath and garage criteria.",
         },
       ]}
       faqs={[
@@ -68,9 +69,14 @@ export default function ClubMadeiraPage() {
             "Club Madeira is The Club at Madeira Canyon, a guard-gated village of roughly 546 homes inside the Madeira Canyon master plan in Henderson, NV 89044. Residents use a resort-style clubhouse and pool with notable valley views.",
         },
         {
+          question: "Where do clubmadeirahoa.com home searches go?",
+          answer:
+            "For live MLS listings, search Dr. Jan Duffy’s RealScout at https://drjanduffy.realscout.com/. clubmadeirahoa.com is the community/HOA site — not the brokerage MLS. MadeiraCanyonHomes.com + RealScout is where you buy and sell with Berkshire Hathaway HomeServices Nevada Properties.",
+        },
+        {
           question: "Is clubmadeirahoa.com a real estate brokerage site?",
           answer:
-            "No. clubmadeirahoa.com is associated with the Club Madeira community/HOA. For buying or selling representation, contact Dr. Jan Duffy at MadeiraCanyonHomes.com — Berkshire Hathaway HomeServices Nevada Properties.",
+            "No. clubmadeirahoa.com is associated with the Club Madeira community/HOA. Search homes on RealScout (https://drjanduffy.realscout.com/), then contact Dr. Jan Duffy at MadeiraCanyonHomes.com for representation.",
         },
         {
           question: "How much do Club Madeira homes cost?",
@@ -84,13 +90,14 @@ export default function ClubMadeiraPage() {
         },
       ]}
       relatedLinks={[
+        { href: REALSCOUT_SEARCH_URL, label: "Search Club Madeira on RealScout" },
         { href: "/neighborhoods/madeira-canyon", label: "Madeira Canyon overview" },
         { href: "/guides/club-madeira-hoa", label: "HOA & dues FAQ" },
         { href: "/guides/selling-madeira-canyon", label: "Selling guide" },
         { href: "/compare/madeira-canyon-vs-anthem", label: "vs Anthem" },
         { href: "/home-valuation", label: "Home valuation" },
       ]}
-      quote="Club Madeira searches often start at clubmadeirahoa.com. I translate HOA rules and amenity access into a clear offer strategy so buyers know exactly what they are paying for beyond the gate."
+      quote="Club Madeira searches often start at clubmadeirahoa.com. I send buyers to RealScout for live MLS, then translate HOA rules and amenity access into a clear offer strategy."
     />
   );
 }

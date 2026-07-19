@@ -54,12 +54,17 @@ const listingsSchema = {
 };
 
 const popularSearches = [
+  {
+    name: "clubmadeirahoa.com / Club Madeira",
+    href: "https://drjanduffy.realscout.com/",
+    count: "Live MLS",
+    external: true,
+  },
+  { name: "Madeira Canyon", href: "/neighborhoods/madeira-canyon", count: "89044" },
   { name: "Summerlin Homes", href: "/neighborhoods/summerlin", count: "1,200+" },
   { name: "Henderson Properties", href: "/neighborhoods/henderson", count: "980+" },
   { name: "Green Valley", href: "/neighborhoods/green-valley", count: "450+" },
-  { name: "The Ridges Luxury", href: "/neighborhoods/the-ridges", count: "85+" },
   { name: "55+ Communities", href: "/55-plus-communities", count: "320+" },
-  { name: "New Construction", href: "/new-construction", count: "600+" },
 ];
 
 const priceRanges = [
@@ -142,21 +147,36 @@ export default function ListingsPage() {
               filters to customize your home search experience.
             </p>
             <div className="grid md:grid-cols-3 gap-4">
-              {popularSearches.map((search) => (
-                <Link
-                  key={search.name}
-                  href={search.href}
-                  className="bg-white border border-slate-200 rounded-lg p-4 hover:shadow-lg hover:border-blue-300 transition-all group flex justify-between items-center"
-                >
-                  <div>
-                    <h3 className="font-bold text-slate-900 group-hover:text-blue-600">
-                      {search.name}
-                    </h3>
-                    <span className="text-sm text-slate-500">{search.count} listings</span>
-                  </div>
-                  <ArrowRight className="h-5 w-5 text-slate-400 group-hover:text-blue-600" />
-                </Link>
-              ))}
+              {popularSearches.map((search) => {
+                const className =
+                  "bg-white border border-slate-200 rounded-lg p-4 hover:shadow-lg hover:border-blue-300 transition-all group flex justify-between items-center";
+                const body = (
+                  <>
+                    <div>
+                      <h3 className="font-bold text-slate-900 group-hover:text-blue-600">
+                        {search.name}
+                      </h3>
+                      <span className="text-sm text-slate-500">{search.count} listings</span>
+                    </div>
+                    <ArrowRight className="h-5 w-5 text-slate-400 group-hover:text-blue-600" />
+                  </>
+                );
+                return "external" in search && search.external ? (
+                  <a
+                    key={search.name}
+                    href={search.href}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className={className}
+                  >
+                    {body}
+                  </a>
+                ) : (
+                  <Link key={search.name} href={search.href} className={className}>
+                    {body}
+                  </Link>
+                );
+              })}
             </div>
           </section>
 

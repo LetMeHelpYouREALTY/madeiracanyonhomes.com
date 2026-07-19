@@ -49,7 +49,7 @@ export default function ClubMadeiraHoaGuidePage() {
         {
           question: "Is clubmadeirahoa.com owned by Dr. Jan Duffy?",
           answer:
-            "No. clubmadeirahoa.com relates to the Club Madeira community/HOA. Dr. Jan Duffy’s brokerage site is MadeiraCanyonHomes.com. Use the HOA site for community information; use Dr. Duffy for buying and selling representation.",
+            "No. clubmadeirahoa.com relates to the Club Madeira community/HOA. Search homes on RealScout at https://drjanduffy.realscout.com/. Dr. Jan Duffy’s brokerage site is MadeiraCanyonHomes.com — use her for buying and selling representation.",
         },
         {
           question: "How much are Club Madeira HOA dues?",

@@ -15,6 +15,7 @@ import { siteConfig } from "@/lib/site-config";
 import CalendlyButton from "@/components/calendly/CalendlyButton";
 import RealScoutHeroSearch from "@/components/realscout/RealScoutHeroSearch";
 import { getDrJanPhotoUrl } from "@/lib/agent-photo";
+import { REALSCOUT_SEARCH_URL } from "@/lib/realscout";
 
 export const metadata: Metadata = {
   alternates: {
@@ -178,13 +179,23 @@ export default async function Home() {
               <RealScoutHeroSearch agentEncodedId={config.realscoutAgentId} />
             </div>
 
-            <a
-              href="tel:+17025001942"
-              className="inline-flex items-center bg-white text-slate-900 px-7 py-3.5 font-bold hover:bg-blue-50 transition-colors"
-            >
-              <Phone className="h-5 w-5 mr-2" aria-hidden="true" />
-              Call (702) 500-1942
-            </a>
+            <div className="flex flex-col sm:flex-row gap-3 justify-center items-center">
+              <a
+                href={REALSCOUT_SEARCH_URL}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center bg-white text-slate-900 px-7 py-3.5 font-bold hover:bg-blue-50 transition-colors"
+              >
+                Search clubmadeirahoa.com Homes
+              </a>
+              <a
+                href="tel:+17025001942"
+                className="inline-flex items-center border border-white/80 text-white px-7 py-3.5 font-bold hover:bg-white/10 transition-colors"
+              >
+                <Phone className="h-5 w-5 mr-2" aria-hidden="true" />
+                Call (702) 500-1942
+              </a>
+            </div>
           </div>
         </section>
         {/* Author credit below hero (not overlaid) — matches PageHero pattern */}
