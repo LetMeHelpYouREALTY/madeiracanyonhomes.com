@@ -6,6 +6,7 @@ import { getDomainConfig } from "@/lib/domain-config";
 import { Analytics } from "@vercel/analytics/react";
 import CalendlyProvider from "@/components/calendly/CalendlyProvider";
 import DeferredWidgetTracker from "@/components/analytics/DeferredWidgetTracker";
+import GoogleAnalytics from "@/components/analytics/GoogleAnalytics";
 import { generateLocalBusinessSchema } from "@/lib/gbp-schema";
 import { siteConfig } from "@/lib/site-config";
 
@@ -105,6 +106,8 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <link rel="dns-prefetch" href="https://maps.google.com" />
         <link rel="dns-prefetch" href="https://www.google.com" />
         <link rel="dns-prefetch" href="https://widgetbe.com" />
+        <link rel="dns-prefetch" href="https://www.googletagmanager.com" />
+        <link rel="dns-prefetch" href="https://www.google-analytics.com" />
       </head>
       <body>
         <script
@@ -114,6 +117,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           }}
         />
         {children}
+        <GoogleAnalytics />
         <CalendlyProvider />
         <DeferredWidgetTracker />
         <Analytics />
