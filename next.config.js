@@ -27,18 +27,31 @@ const nextConfig = {
   // Performance optimizations
   swcMinify: true,
 
-  // Redirect non-www to www
+  // Redirect non-www to www — but serve robots.txt + sitemap.xml with 200 on
+  // apex too. GSC URL-prefix properties on the apex host report "No robots.txt"
+  // when /robots.txt only returns a 308 to www.
   async redirects() {
     return [
       {
-        source: '/:path*',
+        source: '/',
         has: [
           {
             type: 'host',
             value: 'madeiracanyonhomes.com',
           },
         ],
-        destination: 'https://www.madeiracanyonhomes.com/:path*',
+        destination: 'https://www.madeiracanyonhomes.com/',
+        permanent: true,
+      },
+      {
+        source: '/:path((?!robots\\.txt$|sitemap\\.xml$).*)',
+        has: [
+          {
+            type: 'host',
+            value: 'madeiracanyonhomes.com',
+          },
+        ],
+        destination: 'https://www.madeiracanyonhomes.com/:path',
         permanent: true,
       },
     ]

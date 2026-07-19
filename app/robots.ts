@@ -2,9 +2,9 @@ import type { MetadataRoute } from "next";
 import { siteConfig } from "@/lib/site-config";
 
 /**
- * Google Search Console crawl rules.
- * Prefer this over public/robots.txt (removed to avoid conflicts).
- * Sitemap URL must match the preferred host (www — apex 301/308s here).
+ * Google Search Console crawl rules (served at /robots.txt on www and apex).
+ * Sitemap points at the preferred host (www). No `Host:` line — that is a
+ * Yandex extension; Google ignores it and some GSC views prefer a clean file.
  */
 export default function robots(): MetadataRoute.Robots {
   const baseUrl = siteConfig.url.replace(/\/$/, "");
@@ -31,6 +31,5 @@ export default function robots(): MetadataRoute.Robots {
       },
     ],
     sitemap: `${baseUrl}/sitemap.xml`,
-    host: baseUrl,
   };
 }
