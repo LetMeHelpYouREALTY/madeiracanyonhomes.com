@@ -20,7 +20,6 @@ type WidgetTrackerFn = ((...args: unknown[]) => void) & {
 export default function DeferredWidgetTracker() {
   useEffect(() => {
     let loaded = false;
-    let timeoutId: ReturnType<typeof setTimeout> | undefined;
     let titleInterval: ReturnType<typeof setInterval> | undefined;
     let mutationObserver: MutationObserver | undefined;
 
@@ -49,7 +48,26 @@ export default function DeferredWidgetTracker() {
       }, 30000);
     };
 
-    const load = () => {
+    const onInteract = () => {
+      loadTracker();
+    };
+
+    // Click/tap/key only — not scroll (PSI/Lighthouse scroll the page)
+    window.addEventListener("pointerdown", onInteract, { once: true });
+    window.addEventListener("keydown", onInteract, { once: true });
+
+    // Analytics fallback for users who never interact (well after LH finishes)
+    const timeoutId = setTimeout(() => {
+      loadTracker();
+    }, 60000);
+
+    function cleanupListeners() {
+      clearTimeout(timeoutId);
+      window.removeEventListener("pointerdown", onInteract);
+      window.removeEventListener("keydown", onInteract);
+    }
+
+    function loadTracker() {
       if (loaded) return;
       loaded = true;
       cleanupListeners();
@@ -80,22 +98,7 @@ export default function DeferredWidgetTracker() {
       script.setAttribute("data-widgetbe", "1");
       script.onload = () => startTitleGuard();
       document.head.appendChild(script);
-    };
-
-    const onInteract = () => load();
-
-    const cleanupListeners = () => {
-      if (timeoutId) clearTimeout(timeoutId);
-      window.removeEventListener("pointerdown", onInteract);
-      window.removeEventListener("keydown", onInteract);
-    };
-
-    // Click/tap/key only — not scroll (PSI/Lighthouse scroll the page)
-    window.addEventListener("pointerdown", onInteract, { once: true });
-    window.addEventListener("keydown", onInteract, { once: true });
-
-    // Analytics fallback for users who never interact (well after LH finishes)
-    timeoutId = setTimeout(load, 60000);
+    }
 
     return () => {
       cleanupListeners();
