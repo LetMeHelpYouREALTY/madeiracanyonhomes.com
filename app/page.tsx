@@ -13,6 +13,7 @@ import { getFaqsForDomain } from "@/lib/faq-config";
 import { generateImageObjectSchema, getHero } from "@/lib/hero-images";
 import { siteConfig } from "@/lib/site-config";
 import CalendlyButton from "@/components/calendly/CalendlyButton";
+import RealScoutHeroSearch from "@/components/realscout/RealScoutHeroSearch";
 import { getDrJanPhotoUrl } from "@/lib/agent-photo";
 
 export const metadata: Metadata = {
@@ -118,8 +119,6 @@ export default async function Home() {
 
   return (
     <>
-      {/* Hint browser to fetch LCP hero early (mobile PageSpeed) */}
-      <link rel="preload" as="image" href={homeHero.src} />
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationSchema) }}
@@ -145,6 +144,7 @@ export default async function Home() {
             fill
             priority
             fetchPriority="high"
+            quality={70}
             className="object-cover object-center"
             sizes="100vw"
           />
@@ -153,34 +153,29 @@ export default async function Home() {
             aria-hidden="true"
           />
           <div className="relative z-10 container mx-auto px-4 py-20 md:py-24 text-center">
-            {/* Dr. Jan headshot — brand-level face for the Madeira Canyon hero */}
+            {/* Headshot is not priority — LCP hero image must win bandwidth */}
             <div className="mb-5 flex justify-center">
               <Image
                 src={getDrJanPhotoUrl({ variant: "hero" })}
                 alt="Dr. Jan Duffy, REALTOR® — Madeira Canyon | Homes by Dr Jan Duffy, BHHS Nevada Properties"
                 width={168}
                 height={168}
-                priority
                 className="h-28 w-28 md:h-36 md:w-36 lg:h-40 lg:w-40 rounded-md object-cover shadow-lg shadow-black/40"
                 sizes="(max-width: 768px) 112px, (max-width: 1024px) 144px, 160px"
               />
             </div>
-            <p className="text-sm md:text-base font-semibold tracking-wide text-blue-300 mb-3">
+            <p className="text-sm md:text-base font-semibold tracking-wide text-sky-200 mb-3">
               {siteConfig.brandLine}
             </p>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-5 leading-tight">
               {config.heroHeadline}
             </h1>
-            <p className="text-xl md:text-2xl text-white/90 mb-8 max-w-3xl mx-auto">
+            <p className="text-xl md:text-2xl text-white mb-8 max-w-3xl mx-auto">
               {config.heroSubheadline}
             </p>
 
             <div className="mb-8 flex justify-center">
-              <div
-                dangerouslySetInnerHTML={{
-                  __html: `<realscout-simple-search agent-encoded-id="${config.realscoutAgentId}"></realscout-simple-search>`,
-                }}
-              />
+              <RealScoutHeroSearch agentEncodedId={config.realscoutAgentId} />
             </div>
 
             <a

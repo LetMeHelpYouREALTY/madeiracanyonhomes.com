@@ -4,9 +4,8 @@ import "./globals.css";
 import { headers } from "next/headers";
 import { getDomainConfig } from "@/lib/domain-config";
 import { Analytics } from "@vercel/analytics/react";
-import Script from "next/script";
-import { REALSCOUT_WIDGET_SCRIPT } from "@/lib/realscout";
 import CalendlyProvider from "@/components/calendly/CalendlyProvider";
+import DeferredWidgetTracker from "@/components/analytics/DeferredWidgetTracker";
 import { generateLocalBusinessSchema } from "@/lib/gbp-schema";
 import { siteConfig } from "@/lib/site-config";
 
@@ -76,8 +75,8 @@ export async function generateMetadata(): Promise<Metadata> {
       images: [
         {
           url: "/images/hero/madeira-canyon-henderson-nv-home-exterior-2.jpg",
-          width: 2028,
-          height: 1421,
+          width: 1920,
+          height: 1280,
           alt: "Madeira Canyon homes for sale in Henderson NV near Club Madeira",
         },
       ],
@@ -98,24 +97,14 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html lang="en" className={GeistSans.className}>
       <head>
-        <link rel="preconnect" href="https://em.realscout.com" crossOrigin="anonymous" />
-        <link rel="preconnect" href="https://www.realscout.com" crossOrigin="anonymous" />
-        <link rel="preconnect" href="https://assets.calendly.com" crossOrigin="anonymous" />
-        <link rel="preconnect" href="https://calendly.com" crossOrigin="anonymous" />
-        <link rel="preconnect" href="https://maps.google.com" crossOrigin="anonymous" />
-        <link rel="preconnect" href="https://www.google.com" crossOrigin="anonymous" />
-        {/* RealScout — deferred so hero LCP is not blocked by widget JS (~200KB+) */}
-        <Script src={REALSCOUT_WIDGET_SCRIPT} strategy="lazyOnload" />
-        {/* WidgetTracker — deferred; domain must be in CSP script-src */}
-        <Script id="widget-tracker" strategy="lazyOnload">{`
-          (function(w,i,d,g,e,t){w["WidgetTrackerObject"]=g;(w[g]=w[g]||function()
-          {(w[g].q=w[g].q||[]).push(arguments);}),(w[g].ds=1*new Date());(e="script"),
-          (t=d.createElement(e)),(e=d.getElementsByTagName(e)[0]);t.async=1;t.src=i;
-          e.parentNode.insertBefore(t,e);})
-          (window,"https://widgetbe.com/agent",document,"widgetTracker");
-          window.widgetTracker("create","WT-XQHVYQWW");
-          window.widgetTracker("send","pageview");
-        `}</Script>
+        {/* dns-prefetch only — full preconnect steals early bandwidth from LCP hero */}
+        <link rel="dns-prefetch" href="https://em.realscout.com" />
+        <link rel="dns-prefetch" href="https://www.realscout.com" />
+        <link rel="dns-prefetch" href="https://assets.calendly.com" />
+        <link rel="dns-prefetch" href="https://calendly.com" />
+        <link rel="dns-prefetch" href="https://maps.google.com" />
+        <link rel="dns-prefetch" href="https://www.google.com" />
+        <link rel="dns-prefetch" href="https://widgetbe.com" />
       </head>
       <body>
         <script
@@ -126,6 +115,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         />
         {children}
         <CalendlyProvider />
+        <DeferredWidgetTracker />
         <Analytics />
       </body>
     </html>

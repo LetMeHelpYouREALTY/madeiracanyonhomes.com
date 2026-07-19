@@ -1,6 +1,8 @@
 "use client";
 
+import { useEffect, useRef, useState } from "react";
 import { REALSCOUT_AGENT_ENCODED_ID } from "@/lib/realscout";
+import { loadRealScoutScript } from "@/components/realscout/RealScoutScript";
 
 type RealScoutListingsProps = {
   /** Optional heading override for neighborhood pages */
@@ -10,14 +12,52 @@ type RealScoutListingsProps = {
 
 /**
  * RealScout office-listings widget — place directly below each page hero.
- * Script is loaded once in root layout (em.realscout.com).
+ * Script loads when this section nears the viewport (keeps hero LCP free).
  */
 export default function RealScoutListings({
   title = "Madeira Canyon & Henderson Homes for Sale",
   subtitle = "Live office listings via RealScout — Club Madeira, Madeira Canyon, and nearby Henderson inventory",
 }: RealScoutListingsProps) {
+  const sectionRef = useRef<HTMLElement>(null);
+  const [ready, setReady] = useState(false);
+
+  useEffect(() => {
+    const el = sectionRef.current;
+    if (!el) return;
+
+    let cancelled = false;
+
+    const activate = () => {
+      void loadRealScoutScript().then(() => {
+        if (!cancelled) setReady(true);
+      });
+    };
+
+    if (!("IntersectionObserver" in window)) {
+      activate();
+      return;
+    }
+
+    const io = new IntersectionObserver(
+      (entries) => {
+        if (entries.some((e) => e.isIntersecting)) {
+          io.disconnect();
+          activate();
+        }
+      },
+      { rootMargin: "240px 0px" }
+    );
+    io.observe(el);
+
+    return () => {
+      cancelled = true;
+      io.disconnect();
+    };
+  }, []);
+
   return (
     <section
+      ref={sectionRef}
       className="py-12 md:py-16 bg-slate-50 border-y border-slate-200"
       aria-label="Office property listings"
     >
@@ -39,10 +79,10 @@ export default function RealScoutListings({
           </a>
         </div>
 
-        {/* RealScout office widget — dangerouslySetInnerHTML per RealScout/Next.js rules */}
-        <div
-          dangerouslySetInnerHTML={{
-            __html: `<realscout-office-listings
+        {ready ? (
+          <div
+            dangerouslySetInnerHTML={{
+              __html: `<realscout-office-listings
               agent-encoded-id="${REALSCOUT_AGENT_ENCODED_ID}"
               sort-order="NEWEST"
               listing-status="For Sale"
@@ -50,8 +90,13 @@ export default function RealScoutListings({
               price-min="400000"
               price-max="2500000"
             ></realscout-office-listings>`,
-          }}
-        />
+            }}
+          />
+        ) : (
+          <p className="text-slate-600 text-sm" role="status">
+            Loading live listings…
+          </p>
+        )}
       </div>
     </section>
   );

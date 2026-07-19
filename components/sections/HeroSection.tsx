@@ -5,6 +5,7 @@ import Image from "next/image";
 import { useReducedMotion } from "@/hooks/useReducedMotion";
 import { REALSCOUT_AGENT_ENCODED_ID } from "@/lib/realscout";
 import RealScoutListings from "@/components/realscout/RealScoutListings";
+import RealScoutHeroSearch from "@/components/realscout/RealScoutHeroSearch";
 
 export default function HeroSection() {
   const [currentImage, setCurrentImage] = useState(0);
@@ -72,13 +73,9 @@ export default function HeroSection() {
           selling, and investing in Southern Nevada.
         </p>
 
-        {/* RealScout Search Widget */}
+        {/* RealScout Search Widget — script deferred until idle */}
         <div className="realscout-wrapper mb-4">
-          <div
-            dangerouslySetInnerHTML={{
-              __html: `<realscout-simple-search agent-encoded-id="${REALSCOUT_AGENT_ENCODED_ID}"></realscout-simple-search>`,
-            }}
-          />
+          <RealScoutHeroSearch agentEncodedId={REALSCOUT_AGENT_ENCODED_ID} />
         </div>
 
         {/* Trust Indicators */}
