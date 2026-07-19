@@ -82,7 +82,8 @@ const faqSchema = {
 const realEstateAgentSchema = {
   "@context": "https://schema.org",
   "@type": "RealEstateAgent",
-  name: "Dr. Jan Duffy - Berkshire Hathaway HomeServices Nevada Properties",
+  name: "Madeira Canyon | Homes by Dr Jan Duffy",
+  alternateName: ["clubmadeirahoa.com", "MadeiraCanyonHomes.com"],
   telephone: "+17025001942",
   url: "https://madeiracanyonhomes.com/buyers/california-relocator",
   address: {
@@ -91,8 +92,9 @@ const realEstateAgentSchema = {
     addressLocality: "Henderson",
     addressRegion: "NV",
     postalCode: "89044",
+    addressCountry: "US",
   },
-  areaServed: ["Las Vegas", "Henderson", "Summerlin", "North Las Vegas"],
+  areaServed: ["Madeira Canyon", "Club Madeira", "Henderson", "Las Vegas"],
   priceRange: "$350,000 - $10,000,000+",
 };
 
