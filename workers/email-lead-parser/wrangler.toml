@@ -1,0 +1,33 @@
+# FUB Email Lead Parser — Cloudflare Email Worker
+# Deploy:  cd workers/email-lead-parser && npx wrangler deploy
+# Secret:  npx wrangler secret put FUB_API_KEY
+# Docs:    ./README.md
+
+name = "fub-email-lead-parser"
+main = "index.js"
+compatibility_date = "2026-07-15"
+compatibility_flags = ["nodejs_compat"]
+
+workers_dev = true
+
+# Non-secret configuration. Override per environment / domain as needed.
+[vars]
+LEAD_SOURCE_LABEL = "Madeira Canyon Homes"
+# Comma-separated envelope MAIL FROM domains. Subdomains of each entry are allowed.
+ALLOWED_SENDER_DOMAINS = "realscout.com,homebot.ai,mail.homebot.ai,callaction.co,kvcore.com,madeiracanyonhomes.com"
+# Human inbox for unparseable / failed leads (must be a verified Email Routing destination).
+FALLBACK_INBOX = "DrDuffy@MadeiraCanyonHomes.com"
+
+# Message-ID de-dupe (prevents double-posts on Cloudflare Worker retries).
+# Create with: npx wrangler kv namespace create LEAD_DEDUPE
+# Then uncomment and paste the id:
+# [[kv_namespaces]]
+# binding = "LEAD_DEDUPE"
+# id = "your-kv-namespace-id"
+
+[observability]
+enabled = true
+head_sampling_rate = 1
+
+# Email Workers are bound via Email Routing rules in the Cloudflare dashboard
+# (Email → Email Routing → Routing rules → Send to a Worker), not via [[routes]].
