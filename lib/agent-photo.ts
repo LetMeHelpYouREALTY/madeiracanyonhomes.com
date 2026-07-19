@@ -14,14 +14,20 @@
 
 export const DR_JAN_LOCAL_PHOTO = "/images/dr-jan-duffy.jpg";
 export const DR_JAN_LOCAL_HEADSHOT = "/images/agent/dr-jan-duffy-headshot.jpg";
+/** Gold-framed circular badge for homepage hero brand mark */
+export const DR_JAN_HERO_FRAMED = "/images/agent/dr-jan-duffy-hero-framed.jpg";
 
 const DEFAULT_VARIANT = "public";
 
 export function getDrJanPhotoUrl(options?: {
   /** Prefer square/agent path when using local assets */
-  variant?: "default" | "headshot";
+  variant?: "default" | "headshot" | "hero";
 }): string {
   const override = process.env.NEXT_PUBLIC_DR_JAN_PHOTO_URL?.trim();
+  // Framed hero badge is a local design asset — don't replace with CF override
+  if (options?.variant === "hero") {
+    return DR_JAN_HERO_FRAMED;
+  }
   if (override) return override;
 
   const accountHash = process.env.NEXT_PUBLIC_CLOUDFLARE_ACCOUNT_HASH?.trim();

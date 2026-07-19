@@ -13,6 +13,7 @@ import { getFaqsForDomain } from "@/lib/faq-config";
 import { generateImageObjectSchema, getHero } from "@/lib/hero-images";
 import { siteConfig } from "@/lib/site-config";
 import CalendlyButton from "@/components/calendly/CalendlyButton";
+import { getDrJanPhotoUrl } from "@/lib/agent-photo";
 
 export const metadata: Metadata = {
   alternates: {
@@ -151,14 +152,26 @@ export default async function Home() {
             className="absolute inset-0 bg-gradient-to-t from-slate-950/90 via-slate-900/60 to-slate-900/40"
             aria-hidden="true"
           />
-          <div className="relative z-10 container mx-auto px-4 py-24 text-center">
-            <p className="text-sm md:text-base font-semibold tracking-wide text-blue-300 mb-4">
+          <div className="relative z-10 container mx-auto px-4 py-20 md:py-24 text-center">
+            {/* Dr. Jan headshot — brand-level face for the Madeira Canyon hero */}
+            <div className="mb-5 flex justify-center">
+              <Image
+                src={getDrJanPhotoUrl({ variant: "hero" })}
+                alt="Dr. Jan Duffy, REALTOR® — Madeira Canyon | Homes by Dr Jan Duffy, BHHS Nevada Properties"
+                width={168}
+                height={168}
+                priority
+                className="h-28 w-28 md:h-36 md:w-36 lg:h-40 lg:w-40 rounded-md object-cover shadow-lg shadow-black/40"
+                sizes="(max-width: 768px) 112px, (max-width: 1024px) 144px, 160px"
+              />
+            </div>
+            <p className="text-sm md:text-base font-semibold tracking-wide text-blue-300 mb-3">
               {siteConfig.brandLine}
             </p>
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight">
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-5 leading-tight">
               {config.heroHeadline}
             </h1>
-            <p className="text-xl md:text-2xl text-white/90 mb-10 max-w-3xl mx-auto">
+            <p className="text-xl md:text-2xl text-white/90 mb-8 max-w-3xl mx-auto">
               {config.heroSubheadline}
             </p>
 
