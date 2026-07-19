@@ -91,7 +91,7 @@ export function generateRealEstateAgentSchema() {
     alternateName: [
       "Madeira Canyon | Homes by Dr Jan Duffy",
       "MadeiraCanyonHomes.com",
-      "clubmadeirahoa.com",
+      "Madeira Canyon Homes",
       "Club Madeira Homes Henderson",
       "Madeira Canyon Homes",
       "BHHS Nevada Properties",
@@ -212,7 +212,7 @@ export function generateRealEstateAgentSchema() {
     knowsAbout: [
       "Madeira Canyon homes",
       "Club Madeira",
-      "clubmadeirahoa.com",
+      "Madeira Canyon Homes",
       "Anthem Highlands",
       "Henderson homes",
       "Las Vegas real estate",
@@ -291,7 +291,7 @@ export function generateWebSiteSchema() {
       "@type": "SearchAction",
       target: {
         "@type": "EntryPoint",
-        // clubmadeirahoa.com / Club Madeira MLS search → RealScout
+        // Madeira Canyon Homes / Club Madeira MLS search → RealScout
         urlTemplate: "https://drjanduffy.realscout.com/",
       },
       "query-input": "required name=search_term_string",
@@ -657,7 +657,7 @@ export function generateArticleSchema(article: {
         "Madeira Canyon homes",
         "Club Madeira",
         "Henderson NV real estate",
-        "clubmadeirahoa.com",
+        "Madeira Canyon Homes",
       ],
     },
     publisher: {

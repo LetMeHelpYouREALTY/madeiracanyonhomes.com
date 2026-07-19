@@ -28,9 +28,9 @@ import {
 export const metadata: Metadata = {
   title: "About Dr. Jan Duffy | Madeira Canyon | Homes by Dr Jan Duffy",
   description:
-    "Meet Dr. Jan Duffy — Madeira Canyon | Homes by Dr Jan Duffy. Club Madeira & Madeira Canyon specialist (clubmadeirahoa.com). BHHS Nevada Properties. Suite A, 2721 Bonaparte Ln, Henderson, NV 89044. Call (702) 500-1942.",
+    "Meet Dr. Jan Duffy — Madeira Canyon | Homes by Dr Jan Duffy. Club Madeira & Madeira Canyon specialist (Madeira Canyon Homes). BHHS Nevada Properties. Suite A, 2721 Bonaparte Ln, Henderson, NV 89044. Call (702) 500-1942.",
   keywords: [
-    "clubmadeirahoa.com",
+    "Madeira Canyon Homes",
     "Dr. Jan Duffy",
     "Madeira Canyon Homes",
     "Club Madeira Henderson",
@@ -49,7 +49,7 @@ const personSchema = {
   name: "Dr. Jan Duffy",
   jobTitle: "REALTOR®",
   description:
-    "Madeira Canyon | Homes by Dr Jan Duffy — licensed REALTOR® with Berkshire Hathaway HomeServices Nevada Properties, specializing in Madeira Canyon and Club Madeira (clubmadeirahoa.com) in Henderson, NV.",
+    "Madeira Canyon | Homes by Dr Jan Duffy — licensed REALTOR® with Berkshire Hathaway HomeServices Nevada Properties, specializing in Madeira Canyon and Club Madeira (Madeira Canyon Homes) in Henderson, NV.",
   image: agentPhotoUrl,
   telephone: "+17025001942",
   email: "DrDuffy@MadeiraCanyonHomes.com",
@@ -73,7 +73,7 @@ const personSchema = {
     credentialNumber: "S.0197614.LLC",
   },
   knowsAbout: [
-    "clubmadeirahoa.com",
+    "Madeira Canyon Homes",
     "Club Madeira Henderson",
     "Madeira Canyon homes",
     "Madeira Canyon Henderson",

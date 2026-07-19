@@ -8,7 +8,7 @@ export const metadata: Metadata = {
   keywords: [
     "Madeira Canyon homes for sale",
     "Madeira Canyon Henderson",
-    "clubmadeirahoa.com",
+    "Madeira Canyon Homes",
     "Club Madeira homes",
     "Madeira Canyon real estate",
     "Homes by Dr Jan Duffy",
@@ -54,7 +54,7 @@ export default function MadeiraCanyonPage() {
         },
         {
           title: "Home types and price bands (2026)",
-          body: "Across Madeira Canyon, recent public market summaries put the 12-month median sale near $745,000 (about +8% year over year), with list medians near $755K. Non-gated sections often trade roughly $550K–$750K depending on square footage and upgrades. Guard-gated Videiras commonly runs about $800K–$1.25M. Club at Madeira (Club Madeira / clubmadeirahoa.com community searches) typically ranges about $900K–$1.3M+ for elevated lots with valley and Strip views.",
+          body: "Across Madeira Canyon, recent public market summaries put the 12-month median sale near $745,000 (about +8% year over year), with list medians near $755K. Non-gated sections often trade roughly $550K–$750K depending on square footage and upgrades. Guard-gated Videiras commonly runs about $800K–$1.25M. Club at Madeira (Club Madeira) typically ranges about $900K–$1.3M+ for elevated lots with valley and Strip views.",
         },
         {
           title: "Amenities buyers ask about first",
@@ -70,7 +70,7 @@ export default function MadeiraCanyonPage() {
         {
           question: "Is Club Madeira the same as Madeira Canyon?",
           answer:
-            "Club Madeira (The Club at Madeira Canyon) is a guard-gated village inside the larger Madeira Canyon master plan. Madeira Canyon also includes non-gated streets and enclaves such as Videiras. clubmadeirahoa.com is the community/HOA site; MadeiraCanyonHomes.com is Dr. Jan Duffy’s brokerage site for buying and selling.",
+            "Club Madeira (The Club at Madeira Canyon) is a guard-gated village inside the larger Madeira Canyon master plan. Madeira Canyon also includes non-gated streets and enclaves such as Videiras. The Club Madeira HOA has a community site for rules; Madeira Canyon Homes is Dr. Jan Duffy’s brokerage site for buying and selling.",
         },
         {
           question: "How large are typical Madeira Canyon homes?",

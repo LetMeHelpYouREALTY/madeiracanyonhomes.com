@@ -85,7 +85,7 @@ const realEstateAgentSchema = {
   "@context": "https://schema.org",
   "@type": "RealEstateAgent",
   name: "Madeira Canyon | Homes by Dr Jan Duffy",
-  alternateName: ["clubmadeirahoa.com", "MadeiraCanyonHomes.com"],
+  alternateName: ["Madeira Canyon Homes", "MadeiraCanyonHomes.com"],
   telephone: "+17025001942",
   url: "https://www.madeiracanyonhomes.com/buyers/california-relocator",
   address: {

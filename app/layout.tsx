@@ -22,7 +22,7 @@ export async function generateMetadata(): Promise<Metadata> {
     domain.replace(/^www\./, "").toLowerCase() === "madeiracanyonhomes.com" ||
     !domain;
   const title = isMadeira
-    ? "Madeira Canyon | Homes by Dr Jan Duffy | clubmadeirahoa.com"
+    ? "Madeira Canyon | Homes by Dr Jan Duffy | Madeira Canyon Homes"
     : `${config.neighborhood} | Dr. Jan Duffy, REALTOR® | BHHS Nevada`;
 
   const googleVerification =

@@ -10,11 +10,11 @@ import PageHero from "@/components/sections/PageHero";
 import { getHero } from "@/lib/hero-images";
 
 export const metadata: Metadata = {
-  title: "Contact | Madeira Canyon | Homes by Dr Jan Duffy | clubmadeirahoa.com",
+  title: "Contact | Madeira Canyon | Homes by Dr Jan Duffy | Madeira Canyon Homes",
   description:
     "Contact Madeira Canyon | Homes by Dr Jan Duffy. Suite A, 2721 Bonaparte Ln, Henderson, NV 89044. Call (702) 500-1942 or email DrDuffy@MadeiraCanyonHomes.com. Club Madeira & Madeira Canyon real estate.",
   keywords: [
-    "clubmadeirahoa.com",
+    "Madeira Canyon Homes",
     "contact Dr Jan Duffy",
     "Madeira Canyon realtor contact",
     "Club Madeira Henderson",
@@ -28,7 +28,7 @@ const contactSchema = {
   mainEntity: {
     "@type": "RealEstateAgent",
     name: "Madeira Canyon | Homes by Dr Jan Duffy",
-    alternateName: ["clubmadeirahoa.com", "MadeiraCanyonHomes.com"],
+    alternateName: ["Madeira Canyon Homes", "MadeiraCanyonHomes.com"],
     telephone: "+17025001942",
     email: "DrDuffy@MadeiraCanyonHomes.com",
     url: "https://www.madeiracanyonhomes.com/contact",

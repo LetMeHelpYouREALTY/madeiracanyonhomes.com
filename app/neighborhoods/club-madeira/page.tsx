@@ -3,11 +3,11 @@ import type { Metadata } from "next";
 import { REALSCOUT_SEARCH_URL } from "@/lib/realscout";
 
 export const metadata: Metadata = {
-  title: "Club Madeira Homes | clubmadeirahoa.com | Henderson NV",
+  title: "Club Madeira Homes | Madeira Canyon Homes | Henderson NV",
   description:
-    "Club Madeira (The Club at Madeira Canyon) homes for sale in Henderson. clubmadeirahoa.com community buyers — resort clubhouse, valley views, ~$900K–$1.3M+. Dr. Jan Duffy (702) 500-1942.",
+    "Club Madeira (The Club at Madeira Canyon) homes for sale in Henderson. Madeira Canyon Homes buyers — resort clubhouse, valley views, ~$900K–$1.3M+. Dr. Jan Duffy (702) 500-1942.",
   keywords: [
-    "clubmadeirahoa.com",
+    "Madeira Canyon Homes",
     "Club Madeira HOA",
     "Club Madeira Henderson",
     "Club at Madeira Canyon",
@@ -16,7 +16,7 @@ export const metadata: Metadata = {
   ],
   alternates: { canonical: "https://www.madeiracanyonhomes.com/neighborhoods/club-madeira" },
   openGraph: {
-    title: "Club Madeira Homes | clubmadeirahoa.com",
+    title: "Club Madeira Homes | Madeira Canyon Homes",
     description:
       "Buy or sell inside Club Madeira / The Club at Madeira Canyon with Dr. Jan Duffy.",
     url: "https://www.madeiracanyonhomes.com/neighborhoods/club-madeira",
@@ -28,9 +28,9 @@ export default function ClubMadeiraPage() {
     <NeighborhoodGuide
       name="Club Madeira"
       slug="club-madeira"
-      h1="Club Madeira Homes for Sale (clubmadeirahoa.com)"
-      intro="The Club at Madeira Canyon — often searched as Club Madeira or clubmadeirahoa.com — is the guard-gated resort village inside Madeira Canyon. Browse homes for sale, then work with Dr. Jan Duffy on HOA rules, pricing, and offers."
-      description="Club Madeira Henderson real estate guide covering The Club at Madeira Canyon, amenities, pricing, and HOA questions for clubmadeirahoa.com searches."
+      h1="Club Madeira Homes for Sale (Madeira Canyon Homes)"
+      intro="The Club at Madeira Canyon — often searched as Club Madeira or Madeira Canyon Homes — is the guard-gated resort village inside Madeira Canyon. Browse homes for sale, then work with Dr. Jan Duffy on HOA rules, pricing, and offers."
+      description="Club Madeira Henderson real estate guide covering The Club at Madeira Canyon, amenities, pricing, and HOA questions for Madeira Canyon Homes searches."
       containedIn="Henderson"
       latitude={35.927504}
       longitude={-115.090006}
@@ -41,7 +41,7 @@ export default function ClubMadeiraPage() {
         { label: "Parent community", value: "Madeira Canyon" },
       ]}
       highlights={[
-        "Primary SEO keyword: clubmadeirahoa.com (community/HOA site)",
+        "Focus: Madeira Canyon Homes and Club Madeira",
         "Resort clubhouse with elevated valley and Strip night views",
         "Pool, fitness, and resident gathering spaces",
         "Roaming security / gated entry for the Club village",
@@ -50,8 +50,8 @@ export default function ClubMadeiraPage() {
       ]}
       sections={[
         {
-          title: "clubmadeirahoa.com vs MadeiraCanyonHomes.com",
-          body: "clubmadeirahoa.com is the Club Madeira community and HOA information site. MadeiraCanyonHomes.com is Madeira Canyon | Homes by Dr Jan Duffy — Berkshire Hathaway HomeServices Nevada Properties — for buying and selling. If you searched clubmadeirahoa.com to find homes, use the Search Homes for Sale button on this site (or call Dr. Jan). Use the HOA site for community rules; use Dr. Duffy for homes, pricing, and representation.",
+          title: "Club Madeira HOA vs Madeira Canyon Homes",
+          body: "The Club Madeira HOA has a community information site for covenants and amenity rules. Madeira Canyon Homes (MadeiraCanyonHomes.com) is Dr. Jan Duffy — Berkshire Hathaway HomeServices Nevada Properties — for buying and selling. Looking for homes? Use Search Homes for Sale on this site, or call Dr. Jan.",
         },
         {
           title: "What buyers pay for inside The Club",
@@ -69,14 +69,14 @@ export default function ClubMadeiraPage() {
             "Club Madeira is The Club at Madeira Canyon, a guard-gated village of roughly 546 homes inside the Madeira Canyon master plan in Henderson, NV 89044. Residents use a resort-style clubhouse and pool with notable valley views.",
         },
         {
-          question: "Where do clubmadeirahoa.com home searches go?",
+          question: "Where should I search for Club Madeira homes?",
           answer:
-            "To see homes for sale, use Search Homes for Sale on MadeiraCanyonHomes.com (or call Dr. Jan Duffy). clubmadeirahoa.com is the community/HOA site — it is not where you buy or sell a house. MadeiraCanyonHomes.com is Dr. Jan Duffy with Berkshire Hathaway HomeServices Nevada Properties.",
+            "Use Search Homes for Sale on Madeira Canyon Homes (MadeiraCanyonHomes.com), or call Dr. Jan Duffy. The Club Madeira HOA site is for community rules — not for buying or selling a house.",
         },
         {
-          question: "Is clubmadeirahoa.com a real estate brokerage site?",
+          question: "Is the Club Madeira HOA website a real estate brokerage site?",
           answer:
-            "No. clubmadeirahoa.com is associated with the Club Madeira community/HOA. Search homes for sale on MadeiraCanyonHomes.com, then contact Dr. Jan Duffy for help buying or selling.",
+            "No. That site is for the Club Madeira community/HOA. Search homes for sale on Madeira Canyon Homes, then contact Dr. Jan Duffy for help buying or selling.",
         },
         {
           question: "How much do Club Madeira homes cost?",
@@ -97,7 +97,7 @@ export default function ClubMadeiraPage() {
         { href: "/compare/madeira-canyon-vs-anthem", label: "vs Anthem" },
         { href: "/home-valuation", label: "What’s my home worth?" },
       ]}
-      quote="Club Madeira searches often start at clubmadeirahoa.com. I help buyers find the right home for sale, then explain HOA rules and amenity access in plain English before they write an offer."
+      quote="Club Madeira searches often start with Madeira Canyon Homes. I help buyers find the right home for sale, then explain HOA rules and amenity access in plain English before they write an offer."
     />
   );
 }

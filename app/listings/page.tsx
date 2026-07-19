@@ -55,7 +55,7 @@ const listingsSchema = {
 
 const popularSearches = [
   {
-    name: "Club Madeira (clubmadeirahoa.com)",
+    name: "Club Madeira",
     href: "https://drjanduffy.realscout.com/",
     count: "Homes for sale",
     external: true,

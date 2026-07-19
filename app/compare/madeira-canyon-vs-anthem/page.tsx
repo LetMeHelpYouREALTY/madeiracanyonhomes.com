@@ -28,7 +28,7 @@ export default function MadeiraVsAnthemPage() {
         },
         {
           factor: "Search intent",
-          left: "Madeira Canyon homes, Club Madeira, clubmadeirahoa.com",
+          left: "Madeira Canyon Homes, Club Madeira",
           right: "Anthem Henderson, Anthem Country Club, Anthem parks",
         },
         {
@@ -54,7 +54,7 @@ export default function MadeiraVsAnthemPage() {
         },
         {
           title: "Practical buying tip",
-          body: "If a buyer says Anthem but wants clubmadeirahoa.com amenities, start in Club Madeira. If they want golf-club living, we may tour Anthem Country Club instead. One phone screen at (702) 500-1942 saves a wasted tour day.",
+          body: "If a buyer says Anthem but wants Club Madeira amenities, start in Club Madeira. If they want golf-club living, we may tour Anthem Country Club instead. One phone screen at (702) 500-1942 saves a wasted tour day.",
         },
       ]}
       faqs={[

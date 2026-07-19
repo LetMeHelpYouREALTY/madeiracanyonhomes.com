@@ -146,9 +146,9 @@ export const businessInfo = {
 // 750-word GBP Description (3 sections)
 export const gbpDescription = {
   // Section 1: Who you are/mission (~250 words)
-  whoWeAre: `Madeira Canyon | Homes by Dr Jan Duffy is the local real estate resource for buyers and sellers in Madeira Canyon and Club Madeira in Henderson, NV—the community connected with clubmadeirahoa.com searches. Dr. Jan Duffy, REALTOR® with Berkshire Hathaway HomeServices Nevada Properties (License S.0197614.LLC), focuses on this Anthem Highlands corridor with clear pricing comparisons, amenity knowledge, and practical next steps—not generic valley-wide marketing.
+  whoWeAre: `Madeira Canyon | Homes by Dr Jan Duffy is the local real estate resource for buyers and sellers in Madeira Canyon and Club Madeira in Henderson, NV—the community known as Madeira Canyon Homes. Dr. Jan Duffy, REALTOR® with Berkshire Hathaway HomeServices Nevada Properties (License S.0197614.LLC), focuses on this Anthem Highlands corridor with clear pricing comparisons, amenity knowledge, and practical next steps—not generic valley-wide marketing.
 
-With $127 million in closed transactions and hundreds of clients helped since 2008, Dr. Jan brings BHHS resources plus hyperlocal Madeira Canyon inventory insight. Whether you are comparing Club Madeira listings, reviewing HOA dues tied to clubmadeirahoa.com community info, or relocating to Henderson for Nevada's tax advantages, you get data-backed guidance and a single point of contact.`,
+With $127 million in closed transactions and hundreds of clients helped since 2008, Dr. Jan brings BHHS resources plus hyperlocal Madeira Canyon inventory insight. Whether you are comparing Club Madeira listings, reviewing HOA dues tied to Club Madeira HOA info, or relocating to Henderson for Nevada's tax advantages, you get data-backed guidance and a single point of contact.`,
 
   // Section 2: What/why - Value proposition (~250 words)
   whatWeDo: `What sets this practice apart is Madeira Canyon focus plus Berkshire Hathaway HomeServices backing. Clients get current pricing for Club Madeira and surrounding Madeira Canyon villages, clear offer help, and honest advice—not sales pressure. Sellers get professional marketing; buyers get representation that costs them nothing when the seller’s side pays the commission.
@@ -158,7 +158,7 @@ Services include buyer and seller representation in Madeira Canyon / Club Madeir
 Dr. Jan's approach: know the street-level inventory, match amenities (clubhouse, pool, fitness, courts) to your criteria, and stay on the file until closing.`,
 
   // Section 3: Where - Areas served (~250 words)
-  whereWeServe: `Primary focus: Madeira Canyon and Club Madeira in Henderson, NV 89044—the guard-gated Anthem Highlands community buyers often research via clubmadeirahoa.com. Nearby coverage includes Anthem Highlands, Green Valley, Inspirada, and the broader Henderson / Las Vegas Valley market when your search expands.
+  whereWeServe: `Primary focus: Madeira Canyon and Club Madeira in Henderson, NV 89044—the guard-gated Anthem Highlands community buyers often research for Madeira Canyon Homes. Nearby coverage includes Anthem Highlands, Green Valley, Inspirada, and the broader Henderson / Las Vegas Valley market when your search expands.
 
 Office: Suite A, 2721 Bonaparte Ln, Henderson, NV 89044 (at The Club at Madeira Canyon clubhouse address). Hours Monday–Friday 9am–6pm, Saturday 10am–4pm, Sunday by appointment. Call (702) 500-1942 or email DrDuffy@MadeiraCanyonHomes.com. Start at madeiracanyonhomes.com for Madeira Canyon homes by Dr. Jan Duffy.`,
 };
@@ -167,11 +167,11 @@ Office: Suite A, 2721 Bonaparte Ln, Henderson, NV 89044 (at The Club at Madeira 
 export const gbpFAQs = [
   {
     question: "What areas does Dr. Jan Duffy serve?",
-    answer: "Primary focus is Madeira Canyon and Club Madeira in Henderson, NV (clubmadeirahoa.com community searches), plus Anthem Highlands, Green Valley, Inspirada, and the broader Henderson / Las Vegas Valley market.",
+    answer: "Primary focus is Madeira Canyon and Club Madeira in Henderson, NV (Madeira Canyon Homes), plus Anthem Highlands, Green Valley, Inspirada, and the broader Henderson / Las Vegas Valley market.",
   },
   {
-    question: "Is this the Club Madeira HOA website (clubmadeirahoa.com)?",
-    answer: "No. clubmadeirahoa.com is the community/HOA site. To browse homes for sale, use Search Homes for Sale on MadeiraCanyonHomes.com. That site is Madeira Canyon | Homes by Dr Jan Duffy — Berkshire Hathaway HomeServices Nevada Properties — for buying and selling in Madeira Canyon and Club Madeira.",
+    question: "Is this the Club Madeira HOA website?",
+    answer: "No. The Club Madeira HOA has its own community website. Madeira Canyon Homes (MadeiraCanyonHomes.com) is Dr. Jan Duffy — Berkshire Hathaway HomeServices Nevada Properties — for buying and selling in Madeira Canyon and Club Madeira. Use Search Homes for Sale to browse listings.",
   },
   {
     question: "Does Dr. Jan help buyers relocating from California?",

@@ -60,7 +60,7 @@ export const heroImages = {
   clubMadeira: {
     src: `${H}/las-vegas-strip-skyline-blue-diamond-hill-nv.jpg`,
     alt: "Las Vegas Strip skyline views from elevated Henderson ridges near Club Madeira and Madeira Canyon",
-    caption: "Club Madeira (clubmadeirahoa.com) buyers often pay a premium for valley and Strip views",
+    caption: "Club Madeira buyers searching Madeira Canyon Homes often pay a premium for valley and Strip views",
     width: 1920,
     height: 1280,
   },

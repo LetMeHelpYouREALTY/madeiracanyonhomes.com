@@ -15,11 +15,11 @@ import PageHero from "@/components/sections/PageHero";
 import { getHero } from "@/lib/hero-images";
 
 export const metadata: Metadata = {
-  title: "FAQ | Madeira Canyon | Homes by Dr Jan Duffy | clubmadeirahoa.com",
+  title: "FAQ | Madeira Canyon | Homes by Dr Jan Duffy | Madeira Canyon Homes",
   description:
-    "FAQ for Madeira Canyon and Club Madeira home buyers and sellers — clubmadeirahoa.com community questions answered by Dr. Jan Duffy, BHHS Nevada Properties.",
+    "FAQ for Madeira Canyon and Club Madeira home buyers and sellers — Madeira Canyon Homes community questions answered by Dr. Jan Duffy, BHHS Nevada Properties.",
   keywords: [
-    "clubmadeirahoa.com",
+    "Madeira Canyon Homes",
     "Club Madeira FAQ",
     "Madeira Canyon homes FAQ",
     "Henderson real estate questions",
@@ -152,11 +152,11 @@ const faqCategories = [
       },
       {
         q: "What areas does Dr. Jan cover?",
-        a: "Primary focus is Madeira Canyon and Club Madeira in Henderson, NV (clubmadeirahoa.com community searches), plus Anthem Highlands, Green Valley, Inspirada, and the broader Henderson / Las Vegas Valley market.",
+        a: "Primary focus is Madeira Canyon and Club Madeira in Henderson, NV (Madeira Canyon Homes), plus Anthem Highlands, Green Valley, Inspirada, and the broader Henderson / Las Vegas Valley market.",
       },
       {
-        q: "Is this the same as clubmadeirahoa.com?",
-        a: "No. clubmadeirahoa.com is the Club Madeira community/HOA site. To see homes for sale, use Search Homes for Sale on MadeiraCanyonHomes.com. That site is Madeira Canyon | Homes by Dr Jan Duffy — Berkshire Hathaway HomeServices Nevada Properties — for buying and selling in Madeira Canyon and Club Madeira.",
+        q: "Is this the Club Madeira HOA website?",
+        a: "No. The Club Madeira HOA has its own community site. Madeira Canyon Homes is Dr. Jan Duffy — Berkshire Hathaway HomeServices Nevada Properties — for buying and selling in Madeira Canyon and Club Madeira. Use Search Homes for Sale to browse listings.",
       },
     ],
   },

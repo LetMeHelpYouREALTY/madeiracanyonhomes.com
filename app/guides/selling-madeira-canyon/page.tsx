@@ -67,7 +67,7 @@ export default function SellingMadeiraCanyonGuidePage() {
         },
         {
           title: "Club Madeira marketing angle",
-          body: "Club Madeira listings should lead with gate, clubhouse access, and view corridor—then square footage. Buyers arriving from clubmadeirahoa.com already know the amenity story; they need proof your home is the right unit inside the Club.",
+          body: "Club Madeira listings should lead with gate, clubhouse access, and view corridor—then square footage. Buyers looking at Madeira Canyon Homes already know the amenity story; they need proof your home is the right unit inside the Club.",
         },
       ]}
       faqs={[

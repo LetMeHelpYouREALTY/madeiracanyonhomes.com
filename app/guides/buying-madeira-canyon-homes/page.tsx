@@ -9,7 +9,7 @@ export const metadata: Metadata = {
     "buy Madeira Canyon home",
     "Club Madeira buying guide",
     "how to buy in Henderson NV",
-    "clubmadeirahoa.com homes",
+    "Madeira Canyon Homes",
   ],
   alternates: {
     canonical: "https://www.madeiracanyonhomes.com/guides/buying-madeira-canyon-homes",
@@ -27,7 +27,7 @@ export default function BuyingMadeiraCanyonGuidePage() {
       keywords={[
         "Madeira Canyon homes",
         "Club Madeira",
-        "clubmadeirahoa.com",
+        "Madeira Canyon Homes",
         "Henderson NV buyer guide",
       ]}
       howto={{
@@ -43,7 +43,7 @@ export default function BuyingMadeiraCanyonGuidePage() {
           },
           {
             name: "Pick your village: open Madeira, Club Madeira, or Videiras",
-            text: "Decide whether you need guard gates, clubhouse access, or a quieter non-gated street. Confirm amenity rights in the HOA resale package—not only on clubmadeirahoa.com marketing pages.",
+            text: "Decide whether you need guard gates, clubhouse access, or a quieter non-gated street. Confirm amenity rights in the HOA resale package—not only on community marketing pages.",
             url: "/neighborhoods/club-madeira",
           },
           {
@@ -69,7 +69,7 @@ export default function BuyingMadeiraCanyonGuidePage() {
         },
         {
           title: "Relocating from out of state",
-          body: "California and out-of-state buyers often start at clubmadeirahoa.com, then need help finding homes for sale and writing a strong offer. Virtual tours plus a two-day in-person tour from Suite A, 2721 Bonaparte Ln, Henderson, NV 89044 keep the trip efficient.",
+          body: "California and out-of-state buyers often start with Madeira Canyon Homes, then need help finding homes for sale and writing a strong offer. Virtual tours plus a two-day in-person tour from Suite A, 2721 Bonaparte Ln, Henderson, NV 89044 keep the trip efficient.",
         },
       ]}
       faqs={[

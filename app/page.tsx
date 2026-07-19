@@ -76,7 +76,7 @@ export default async function Home() {
       config.domain === "madeiracanyonhomes.com" || config.domain === "default"
         ? "Madeira Canyon | Homes by Dr Jan Duffy"
         : `Dr. Jan Duffy - ${config.neighborhood} Real Estate`,
-    alternateName: ["clubmadeirahoa.com", "MadeiraCanyonHomes.com", "Club Madeira Homes Henderson"],
+    alternateName: ["Madeira Canyon Homes", "MadeiraCanyonHomes.com", "Club Madeira Homes Henderson"],
     url:
       config.domain === "madeiracanyonhomes.com" || config.domain === "default"
         ? siteConfig.url

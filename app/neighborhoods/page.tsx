@@ -35,8 +35,8 @@ const neighborhoods = [
     slug: "club-madeira",
     medianPrice: "$900K–$1.3M+",
     priceChange: "View premium",
-    description: "Guard-gated Club at Madeira Canyon — clubmadeirahoa.com community searches",
-    highlights: ["Guard-Gated", "Clubhouse", "Valley Views", "clubmadeirahoa.com"],
+    description: "Guard-gated Club at Madeira Canyon — Madeira Canyon Homes",
+    highlights: ["Guard-Gated", "Clubhouse", "Valley Views", "Madeira Canyon Homes"],
     bestFor: "Buyers wanting Club amenities and gates",
   },
   {

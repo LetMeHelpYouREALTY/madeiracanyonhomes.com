@@ -51,7 +51,7 @@ export default function Navbar() {
               <span className="text-blue-600"> | Homes by Dr Jan Duffy</span>
             </span>
             <span className="text-xs text-slate-500 hidden sm:block">
-              BHHS Nevada Properties · clubmadeirahoa.com
+              BHHS Nevada Properties · Madeira Canyon Homes
             </span>
           </Link>
 

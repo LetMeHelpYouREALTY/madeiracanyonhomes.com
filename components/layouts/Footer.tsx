@@ -19,7 +19,7 @@ export default function Footer() {
             <h3 className="font-bold text-xl mb-4">Madeira Canyon | Homes by Dr Jan Duffy</h3>
             <p className="text-slate-300 mb-4 text-sm">
               Buy and sell in Madeira Canyon and Club Madeira, Henderson, NV
-              (clubmadeirahoa.com). Berkshire Hathaway HomeServices Nevada Properties —
+              (Madeira Canyon Homes). Berkshire Hathaway HomeServices Nevada Properties —
               Suite A, 2721 Bonaparte Ln, Henderson, NV 89044.
             </p>
             <div className="flex space-x-4">

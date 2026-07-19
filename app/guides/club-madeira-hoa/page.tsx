@@ -2,11 +2,11 @@ import AnswerGuide from "@/components/seo/AnswerGuide";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Club Madeira HOA FAQ | clubmadeirahoa.com Explained",
+  title: "Club Madeira HOA FAQ | Madeira Canyon Homes Explained",
   description:
-    "Club Madeira HOA questions for buyers and sellers: clubmadeirahoa.com vs MadeiraCanyonHomes.com, dues, documents, gates. Dr. Jan Duffy (702) 500-1942.",
+    "Club Madeira HOA questions for buyers and sellers: Madeira Canyon Homes vs MadeiraCanyonHomes.com, dues, documents, gates. Dr. Jan Duffy (702) 500-1942.",
   keywords: [
-    "clubmadeirahoa.com",
+    "Madeira Canyon Homes",
     "Club Madeira HOA",
     "Club Madeira dues",
     "Club at Madeira Canyon HOA",
@@ -22,11 +22,11 @@ export default function ClubMadeiraHoaGuidePage() {
     <AnswerGuide
       title="Club Madeira HOA FAQ"
       path="/guides/club-madeira-hoa"
-      h1="Club Madeira HOA FAQ (clubmadeirahoa.com)"
-      intro="Clear answers for buyers typing clubmadeirahoa.com: what the HOA site covers, what a REALTOR® handles, and which documents matter before you write an offer in The Club at Madeira Canyon."
-      description="FAQ guide clarifying Club Madeira HOA, clubmadeirahoa.com, and brokerage services from Dr. Jan Duffy."
+      h1="Club Madeira HOA FAQ (Madeira Canyon Homes)"
+      intro="Clear answers for buyers looking for Madeira Canyon Homes: what the HOA site covers, what a REALTOR® handles, and which documents matter before you write an offer in The Club at Madeira Canyon."
+      description="FAQ guide clarifying Club Madeira HOA, Madeira Canyon Homes, and brokerage services from Dr. Jan Duffy."
       keywords={[
-        "clubmadeirahoa.com",
+        "Madeira Canyon Homes",
         "Club Madeira HOA",
         "Madeira Canyon HOA documents",
       ]}
@@ -34,7 +34,7 @@ export default function ClubMadeiraHoaGuidePage() {
       sections={[
         {
           title: "Two websites, two jobs",
-          body: "clubmadeirahoa.com is the Club Madeira community/HOA information channel. To browse homes for sale, use Search Homes for Sale on MadeiraCanyonHomes.com (Dr. Jan Duffy — Berkshire Hathaway HomeServices Nevada Properties). This site helps with pricing, offers, and closing. Neither site replaces the official HOA resale package you receive when you buy.",
+          body: "The Club Madeira HOA has a community information channel for rules and amenities. Madeira Canyon Homes (MadeiraCanyonHomes.com) is Dr. Jan Duffy — Berkshire Hathaway HomeServices Nevada Properties — for browsing homes, pricing, offers, and closing. Neither replaces the official HOA resale package you receive when you buy.",
         },
         {
           title: "What to request in every Club Madeira offer",
@@ -47,9 +47,9 @@ export default function ClubMadeiraHoaGuidePage() {
       ]}
       faqs={[
         {
-          question: "Is clubmadeirahoa.com owned by Dr. Jan Duffy?",
+          question: "Is the Club Madeira HOA website owned by Dr. Jan Duffy?",
           answer:
-            "No. clubmadeirahoa.com relates to the Club Madeira community/HOA. Search homes for sale on MadeiraCanyonHomes.com. Dr. Jan Duffy helps with buying and selling — Berkshire Hathaway HomeServices Nevada Properties.",
+            "No. The Club Madeira HOA runs its own community site. Madeira Canyon Homes is Dr. Jan Duffy’s brokerage site — Berkshire Hathaway HomeServices Nevada Properties — for buying and selling.",
         },
         {
           question: "How much are Club Madeira HOA dues?",
