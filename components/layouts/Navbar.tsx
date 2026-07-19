@@ -135,8 +135,11 @@ export default function Navbar() {
           {/* Mobile Menu Button */}
           <div className="lg:hidden flex items-center gap-3">
             <Button asChild size="sm" className="bg-blue-600 hover:bg-blue-700">
-              <Link href="tel:+17025001942">
-                <Phone className="h-4 w-4" />
+              <Link
+                href="tel:+17025001942"
+                aria-label="Call Dr. Jan Duffy at (702) 500-1942"
+              >
+                <Phone className="h-4 w-4" aria-hidden="true" />
               </Link>
             </Button>
             <button

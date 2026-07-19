@@ -104,10 +104,10 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <link rel="preconnect" href="https://calendly.com" crossOrigin="anonymous" />
         <link rel="preconnect" href="https://maps.google.com" crossOrigin="anonymous" />
         <link rel="preconnect" href="https://www.google.com" crossOrigin="anonymous" />
-        {/* RealScout widgets — load once globally (script from em.realscout.com; API on www.realscout.com) */}
-        <Script src={REALSCOUT_WIDGET_SCRIPT} strategy="afterInteractive" />
-        {/* WidgetTracker */}
-        <Script id="widget-tracker" strategy="afterInteractive">{`
+        {/* RealScout — deferred so hero LCP is not blocked by widget JS (~200KB+) */}
+        <Script src={REALSCOUT_WIDGET_SCRIPT} strategy="lazyOnload" />
+        {/* WidgetTracker — deferred; domain must be in CSP script-src */}
+        <Script id="widget-tracker" strategy="lazyOnload">{`
           (function(w,i,d,g,e,t){w["WidgetTrackerObject"]=g;(w[g]=w[g]||function()
           {(w[g].q=w[g].q||[]).push(arguments);}),(w[g].ds=1*new Date());(e="script"),
           (t=d.createElement(e)),(e=d.getElementsByTagName(e)[0]);t.async=1;t.src=i;

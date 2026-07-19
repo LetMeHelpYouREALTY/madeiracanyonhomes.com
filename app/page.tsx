@@ -117,6 +117,8 @@ export default async function Home() {
 
   return (
     <>
+      {/* Hint browser to fetch LCP hero early (mobile PageSpeed) */}
+      <link rel="preload" as="image" href={homeHero.src} />
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationSchema) }}
@@ -141,6 +143,7 @@ export default async function Home() {
             title={homeHero.caption}
             fill
             priority
+            fetchPriority="high"
             className="object-cover object-center"
             sizes="100vw"
           />
@@ -286,7 +289,7 @@ export default async function Home() {
             <h2 className="text-3xl md:text-4xl font-bold mb-4">
               {config.ctaHeadline}
             </h2>
-            <p className="text-xl text-blue-100 mb-8 max-w-2xl mx-auto">
+            <p className="text-xl text-white mb-8 max-w-2xl mx-auto">
               {config.ctaSubheadline}
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
@@ -308,7 +311,7 @@ export default async function Home() {
                 className="inline-block bg-slate-800 hover:bg-slate-700 text-white px-8 py-4 rounded-md font-bold text-lg transition-colors"
               />
             </div>
-            <p className="mt-6 text-blue-200 text-sm">
+            <p className="mt-6 text-white text-sm">
               Dr. Jan Duffy | License S.0197614.LLC | Berkshire Hathaway HomeServices Nevada Properties
             </p>
           </div>

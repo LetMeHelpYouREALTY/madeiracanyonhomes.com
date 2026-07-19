@@ -53,7 +53,7 @@ export default function CalendlyProvider({
       <link href={CALENDLY_CSS} rel="stylesheet" />
       <Script
         src={CALENDLY_SCRIPT}
-        strategy="afterInteractive"
+        strategy="lazyOnload"
         onLoad={() => {
           window.dispatchEvent(new Event("calendly-loaded"));
           if (showBadge && window.Calendly) {

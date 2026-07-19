@@ -22,7 +22,7 @@ export default function CalendlyCTASection({
   title = "Book a Madeira Canyon Consultation with Dr. Jan Duffy",
   subtitle = "Buyer strategy, listing consultation, home valuation, or a private showing — pick a time that works. Berkshire Hathaway HomeServices Nevada Properties.",
   event = "appointment",
-  showInline = true,
+  showInline = false,
   className = "",
 }: CalendlyCTASectionProps) {
   const url = CALENDLY_EVENTS[event];

@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useRef } from "react";
+import { useEffect, useRef, useState } from "react";
 import { resolveCalendlyUrl } from "@/lib/calendly";
 import "./types";
 
@@ -11,15 +11,43 @@ interface CalendlyWidgetProps {
   height?: string;
 }
 
+/**
+ * Inline Calendly embed — mounts only after the host enters the viewport
+ * so booking CSS/JS (~2MB) does not compete with LCP on first paint.
+ */
 export default function CalendlyWidget({
   url = "appointment",
   minWidth = "320px",
   height = "700px",
 }: CalendlyWidgetProps) {
   const widgetRef = useRef<HTMLDivElement>(null);
+  const [isVisible, setIsVisible] = useState(false);
   const resolvedUrl = resolveCalendlyUrl(url);
 
   useEffect(() => {
+    const parent = widgetRef.current;
+    if (!parent) return;
+
+    if (typeof IntersectionObserver === "undefined") {
+      setIsVisible(true);
+      return;
+    }
+
+    const observer = new IntersectionObserver(
+      (entries) => {
+        if (entries.some((entry) => entry.isIntersecting)) {
+          setIsVisible(true);
+          observer.disconnect();
+        }
+      },
+      { rootMargin: "200px 0px" }
+    );
+    observer.observe(parent);
+    return () => observer.disconnect();
+  }, []);
+
+  useEffect(() => {
+    if (!isVisible) return;
     const parent = widgetRef.current;
     if (!parent) return;
 
@@ -67,7 +95,7 @@ export default function CalendlyWidget({
       window.clearInterval(checkCalendly);
       window.clearTimeout(timeout);
     };
-  }, [resolvedUrl, minWidth, height]);
+  }, [isVisible, resolvedUrl, minWidth, height]);
 
   return (
     <div
