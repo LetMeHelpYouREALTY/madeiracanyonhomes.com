@@ -1,0 +1,21 @@
+{
+  "name": "Madeira Canyon | Homes by Dr Jan Duffy",
+  "short_name": "Madeira Canyon Homes",
+  "description": "Madeira Canyon and Club Madeira homes in Henderson, NV — Dr. Jan Duffy, BHHS Nevada Properties",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#1d4ed8",
+  "icons": [
+    {
+      "src": "/android-chrome-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/android-chrome-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
