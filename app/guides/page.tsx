@@ -49,6 +49,11 @@ const guides = [
     blurb: "Timeline, neighborhoods, and Madeira Canyon fit for relocators.",
   },
   {
+    href: "/guides/madeira-canyon-schools",
+    title: "Madeira Canyon Schools",
+    blurb: "School names, published ratings, and CCSD zoning verification for 89044.",
+  },
+  {
     href: "/compare/madeira-canyon-vs-inspirada",
     title: "Madeira Canyon vs Inspirada",
     blurb: "Side-by-side lifestyle and price comparison.",

@@ -88,6 +88,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${baseUrl}/guides/selling-madeira-canyon`, priority: 0.9, changeFrequency: "monthly" as const },
     { url: `${baseUrl}/guides/club-madeira-hoa`, priority: 0.9, changeFrequency: "monthly" as const },
     { url: `${baseUrl}/guides/henderson-relocation`, priority: 0.8, changeFrequency: "monthly" as const },
+    { url: `${baseUrl}/guides/madeira-canyon-schools`, priority: 0.85, changeFrequency: "monthly" as const },
   ];
 
   // Comparison pages

@@ -86,6 +86,7 @@ export default function MadeiraCanyonPage() {
       relatedLinks={[
         { href: "/neighborhoods/club-madeira", label: "Club Madeira homes" },
         { href: "/guides/buying-madeira-canyon-homes", label: "Buying guide" },
+        { href: "/guides/madeira-canyon-schools", label: "Madeira Canyon schools" },
         { href: "/guides/club-madeira-hoa", label: "Club Madeira HOA FAQ" },
         { href: "/compare/madeira-canyon-vs-inspirada", label: "vs Inspirada" },
         { href: "/neighborhoods/anthem", label: "Anthem Highlands" },

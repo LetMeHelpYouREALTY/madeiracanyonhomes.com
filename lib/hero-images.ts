@@ -233,6 +233,7 @@ export const heroByRoute: Record<string, HeroImageKey> = {
   "/guides/selling-madeira-canyon": "sellers",
   "/guides/club-madeira-hoa": "clubMadeira",
   "/guides/henderson-relocation": "desert",
+  "/guides/madeira-canyon-schools": "madeiraCanyon",
   "/compare": "henderson",
   "/compare/madeira-canyon-vs-inspirada": "pool",
   "/compare/madeira-canyon-vs-anthem": "anthem",
