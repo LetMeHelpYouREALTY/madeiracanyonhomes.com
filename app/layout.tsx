@@ -7,6 +7,7 @@ import { Analytics } from "@vercel/analytics/react";
 import Script from "next/script";
 import { REALSCOUT_WIDGET_SCRIPT } from "@/lib/realscout";
 import CalendlyProvider from "@/components/calendly/CalendlyProvider";
+import { generateLocalBusinessSchema } from "@/lib/gbp-schema";
 
 export async function generateMetadata(): Promise<Metadata> {
   const domain = headers().get("x-domain") || "";
@@ -57,6 +58,9 @@ export async function generateMetadata(): Promise<Metadata> {
 }
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
+  // Sitewide LocalBusiness / RealEstateAgent JSON-LD — NAP + hours match GBP
+  const localBusinessSchema = generateLocalBusinessSchema();
+
   return (
     <html lang="en" className={GeistSans.className}>
       <head>
@@ -80,6 +84,12 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         `}</Script>
       </head>
       <body>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify(localBusinessSchema),
+          }}
+        />
         {children}
         <CalendlyProvider />
         <Analytics />

@@ -130,6 +130,14 @@ export default function Footer() {
                   Contact
                 </Link>
               </li>
+              <li>
+                <Link
+                  href="/google-business"
+                  className="text-slate-300 hover:text-white transition-colors text-sm"
+                >
+                  Google Business Profile
+                </Link>
+              </li>
             </ul>
           </div>
 
@@ -260,6 +268,12 @@ export default function Footer() {
             <div className="flex flex-wrap justify-center gap-4 text-sm">
               <Link href="/faq" className="text-slate-400 hover:text-white transition-colors">
                 FAQ
+              </Link>
+              <Link
+                href="/google-business"
+                className="text-slate-400 hover:text-white transition-colors"
+              >
+                Google Business
               </Link>
               <Link
                 href="/photo-credits"

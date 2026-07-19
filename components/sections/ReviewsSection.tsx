@@ -2,6 +2,8 @@
 
 import { Star, Quote } from "lucide-react";
 import Image from "next/image";
+import { agentStats } from "@/lib/site-config";
+import { GOOGLE_REVIEWS_URL } from "@/lib/maps";
 
 export interface Review {
   id: number;
@@ -44,10 +46,10 @@ export const defaultReviews: Review[] = [
   },
 ];
 
-// Aggregate rating stats
+// Aggregate rating stats — must match schema / GBP (lib/site-config agentStats)
 export const aggregateRating = {
-  ratingValue: 4.9,
-  reviewCount: 500,
+  ratingValue: agentStats.averageRating,
+  reviewCount: agentStats.reviewCount,
   bestRating: 5,
   worstRating: 1,
 };
@@ -69,7 +71,7 @@ export default function ReviewsSection({
   reviews = defaultReviews,
   title = "What Our Clients Say",
   subtitle = "Real testimonials from satisfied clients across Las Vegas and Henderson",
-  googleReviewsUrl = "https://g.page/r/madeiracanyonhomes/review",
+  googleReviewsUrl = GOOGLE_REVIEWS_URL,
   className = "",
 }: ReviewsSectionProps) {
   return (

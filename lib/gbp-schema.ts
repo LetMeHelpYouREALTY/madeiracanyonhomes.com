@@ -2,6 +2,7 @@
 // Supports GBP ranking factors: Relevance, Distance, Prominence
 
 import { getDrJanPhotoAbsoluteUrl } from "./agent-photo";
+import { agentStats } from "./site-config";
 
 export const businessInfo = {
   // NAP - Must match GBP exactly
@@ -257,9 +258,10 @@ export function generateLocalBusinessSchema() {
     },
     aggregateRating: {
       "@type": "AggregateRating",
-      ratingValue: "4.9",
-      reviewCount: "200",
+      ratingValue: agentStats.averageRating.toString(),
+      reviewCount: agentStats.reviewCount.toString(),
       bestRating: "5",
+      worstRating: "1",
     },
     sameAs: [
       "https://www.facebook.com/drjanduffy",

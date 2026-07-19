@@ -161,12 +161,19 @@ export function generateRealEstateAgentSchema() {
         name: "Green Valley",
       },
     ],
+    // Match GBP / lib/gbp-schema.ts exactly (Mon–Fri 9–6, Sat 10–4; Sun by appointment)
     openingHoursSpecification: [
       {
         "@type": "OpeningHoursSpecification",
-        dayOfWeek: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
-        opens: "08:00",
-        closes: "20:00",
+        dayOfWeek: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+        opens: "09:00",
+        closes: "18:00",
+      },
+      {
+        "@type": "OpeningHoursSpecification",
+        dayOfWeek: "Saturday",
+        opens: "10:00",
+        closes: "16:00",
       },
     ],
     hasCredential: {

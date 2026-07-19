@@ -105,7 +105,7 @@ export const DOMAIN_CONFIGS: Record<string, DomainConfig> = {
     realscoutAgentId: REALSCOUT_AGENT_ID,
     ctaBadge: "Madeira Canyon Expert",
     ctaHeadline: "Find Your Madeira Canyon Home",
-    ctaSubheadline: "Call or text Dr. Jan at 702-222-1964 — I answer my own phone.",
+    ctaSubheadline: "Call or text Dr. Jan at (702) 500-1942 — I answer my own phone.",
   },
 
 };
@@ -123,7 +123,7 @@ export const DEFAULT_CONFIG: DomainConfig = {
   realscoutAgentId: REALSCOUT_AGENT_ID,
   ctaBadge: "Las Vegas Expert",
   ctaHeadline: "Find Your Las Vegas Home",
-  ctaSubheadline: "Call or text Dr. Jan at 702-222-1964 — I answer my own phone.",
+  ctaSubheadline: "Call or text Dr. Jan at (702) 500-1942 — I answer my own phone.",
 };
 
 export function getDomainConfig(hostname: string): DomainConfig {
