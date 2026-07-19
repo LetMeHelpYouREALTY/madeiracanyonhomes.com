@@ -63,6 +63,30 @@ export default function Footer() {
               </li>
               <li>
                 <Link
+                  href="/neighborhoods/madeira-canyon"
+                  className="text-slate-300 hover:text-white transition-colors text-sm"
+                >
+                  Madeira Canyon Homes
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/neighborhoods/club-madeira"
+                  className="text-slate-300 hover:text-white transition-colors text-sm"
+                >
+                  Club Madeira
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/guides"
+                  className="text-slate-300 hover:text-white transition-colors text-sm"
+                >
+                  Buyer & Seller Guides
+                </Link>
+              </li>
+              <li>
+                <Link
                   href="/neighborhoods"
                   className="text-slate-300 hover:text-white transition-colors text-sm"
                 >

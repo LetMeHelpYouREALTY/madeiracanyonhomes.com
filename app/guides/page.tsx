@@ -1,0 +1,128 @@
+import Navbar from "@/components/layouts/Navbar";
+import Footer from "@/components/layouts/Footer";
+import RealScoutListings from "@/components/realscout/RealScoutListings";
+import JsonLd from "@/components/seo/JsonLd";
+import Link from "next/link";
+import { Phone } from "lucide-react";
+import type { Metadata } from "next";
+import {
+  combineSchemas,
+  generateBreadcrumbSchema,
+  generateWebPageSchema,
+} from "@/lib/schema";
+import { agentInfo, officeInfo, siteConfig } from "@/lib/site-config";
+
+export const metadata: Metadata = {
+  title: "Madeira Canyon Real Estate Guides | AEO Answers | Dr Jan Duffy",
+  description:
+    "Buying, selling, and HOA guides for Madeira Canyon and Club Madeira (clubmadeirahoa.com). Answer-ready articles by Dr. Jan Duffy, BHHS Nevada Properties.",
+  keywords: [
+    "Madeira Canyon buying guide",
+    "Club Madeira HOA guide",
+    "Henderson real estate guides",
+    "clubmadeirahoa.com",
+  ],
+  alternates: { canonical: "https://madeiracanyonhomes.com/guides" },
+};
+
+const guides = [
+  {
+    href: "/guides/buying-madeira-canyon-homes",
+    title: "How to Buy a Home in Madeira Canyon",
+    blurb: "Step-by-step buyer process, budgets, and village selection.",
+  },
+  {
+    href: "/guides/selling-madeira-canyon",
+    title: "How to Sell in Madeira Canyon",
+    blurb: "Pricing, prep, and Club Madeira marketing checklist.",
+  },
+  {
+    href: "/guides/club-madeira-hoa",
+    title: "Club Madeira HOA FAQ",
+    blurb: "clubmadeirahoa.com vs brokerage site, dues, and documents.",
+  },
+  {
+    href: "/guides/henderson-relocation",
+    title: "Relocating to Henderson, NV",
+    blurb: "Timeline, neighborhoods, and Madeira Canyon fit for relocators.",
+  },
+  {
+    href: "/compare/madeira-canyon-vs-inspirada",
+    title: "Madeira Canyon vs Inspirada",
+    blurb: "Side-by-side lifestyle and price comparison.",
+  },
+  {
+    href: "/compare/madeira-canyon-vs-anthem",
+    title: "Madeira Canyon vs Anthem",
+    blurb: "Village naming, gates, and amenity differences.",
+  },
+];
+
+export default function GuidesHubPage() {
+  const schema = combineSchemas(
+    generateWebPageSchema({
+      name: "Madeira Canyon Real Estate Guides",
+      description: metadata.description as string,
+      url: "/guides",
+    }),
+    generateBreadcrumbSchema([
+      { name: "Home", url: "/" },
+      { name: "Guides", url: "/guides" },
+    ])
+  );
+
+  return (
+    <>
+      <JsonLd data={schema} />
+      <Navbar />
+      <main className="pt-24 pb-16">
+        <div className="container mx-auto px-4 max-w-5xl">
+          <p className="text-sm font-semibold text-blue-800 mb-3">
+            {siteConfig.brandLine}
+          </p>
+          <h1 className="text-4xl md:text-5xl font-bold text-slate-900 mb-4">
+            Madeira Canyon & Club Madeira Guides
+          </h1>
+          <p className="text-xl text-slate-600 mb-10">
+            Answer-engine ready guides for buyers, sellers, and relocators —
+            written for Google, AI Overviews, and local search around
+            clubmadeirahoa.com.
+          </p>
+
+          <RealScoutListings />
+
+          <ul className="grid md:grid-cols-2 gap-5 mb-14">
+            {guides.map((guide) => (
+              <li key={guide.href}>
+                <Link
+                  href={guide.href}
+                  className="block h-full border border-slate-200 p-6 hover:border-blue-600"
+                >
+                  <h2 className="text-xl font-bold text-slate-900 mb-2">
+                    {guide.title}
+                  </h2>
+                  <p className="text-slate-600 text-sm">{guide.blurb}</p>
+                </Link>
+              </li>
+            ))}
+          </ul>
+
+          <section className="bg-slate-900 text-white p-8 text-center">
+            <h2 className="text-2xl font-bold mb-3">Need a human answer?</h2>
+            <p className="text-slate-300 mb-4">
+              {officeInfo.address.full} · License {agentInfo.license}
+            </p>
+            <a
+              href={agentInfo.phoneTel}
+              className="inline-flex items-center bg-blue-600 px-6 py-3 font-bold hover:bg-blue-500"
+            >
+              <Phone className="h-5 w-5 mr-2" />
+              {agentInfo.phone}
+            </a>
+          </section>
+        </div>
+      </main>
+      <Footer />
+    </>
+  );
+}

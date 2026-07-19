@@ -16,6 +16,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${baseUrl}/market-insights`, priority: 0.9, changeFrequency: "monthly" as const },
     { url: `${baseUrl}/google-business`, priority: 0.9, changeFrequency: "monthly" as const },
     { url: `${baseUrl}/faq`, priority: 0.8, changeFrequency: "monthly" as const },
+    { url: `${baseUrl}/guides`, priority: 0.9, changeFrequency: "weekly" as const },
+    { url: `${baseUrl}/compare`, priority: 0.8, changeFrequency: "weekly" as const },
   ];
 
   // Service pages
@@ -51,24 +53,57 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${baseUrl}/55-plus-communities/sun-city-summerlin`, priority: 0.8, changeFrequency: "monthly" as const },
     { url: `${baseUrl}/55-plus-communities/sun-city-anthem`, priority: 0.8, changeFrequency: "monthly" as const },
     { url: `${baseUrl}/55-plus-communities/del-webb-lake-las-vegas`, priority: 0.8, changeFrequency: "monthly" as const },
+    { url: `${baseUrl}/55-plus-communities/sun-city-aliante`, priority: 0.7, changeFrequency: "monthly" as const },
+    { url: `${baseUrl}/55-plus-communities/solera-anthem`, priority: 0.7, changeFrequency: "monthly" as const },
+    { url: `${baseUrl}/55-plus-communities/heritage-stonebridge`, priority: 0.7, changeFrequency: "monthly" as const },
+    { url: `${baseUrl}/55-plus-communities/trilogy-summerlin`, priority: 0.7, changeFrequency: "monthly" as const },
   ];
 
   // Neighborhood pages
   const neighborhoodPages = [
     { url: `${baseUrl}/neighborhoods`, priority: 0.8, changeFrequency: "weekly" as const },
-    { url: `${baseUrl}/neighborhoods/summerlin`, priority: 0.8, changeFrequency: "weekly" as const },
+    { url: `${baseUrl}/neighborhoods/madeira-canyon`, priority: 1.0, changeFrequency: "weekly" as const },
+    { url: `${baseUrl}/neighborhoods/club-madeira`, priority: 1.0, changeFrequency: "weekly" as const },
+    { url: `${baseUrl}/neighborhoods/anthem`, priority: 0.9, changeFrequency: "weekly" as const },
     { url: `${baseUrl}/neighborhoods/henderson`, priority: 0.8, changeFrequency: "weekly" as const },
+    { url: `${baseUrl}/neighborhoods/summerlin`, priority: 0.8, changeFrequency: "weekly" as const },
     { url: `${baseUrl}/neighborhoods/green-valley`, priority: 0.7, changeFrequency: "weekly" as const },
     { url: `${baseUrl}/neighborhoods/the-ridges`, priority: 0.8, changeFrequency: "weekly" as const },
     { url: `${baseUrl}/neighborhoods/southern-highlands`, priority: 0.7, changeFrequency: "weekly" as const },
     { url: `${baseUrl}/neighborhoods/north-las-vegas`, priority: 0.7, changeFrequency: "weekly" as const },
     { url: `${baseUrl}/neighborhoods/skye-canyon`, priority: 0.7, changeFrequency: "weekly" as const },
     { url: `${baseUrl}/neighborhoods/centennial-hills`, priority: 0.7, changeFrequency: "weekly" as const },
-    { url: `${baseUrl}/neighborhoods/inspirada`, priority: 0.7, changeFrequency: "weekly" as const },
+    { url: `${baseUrl}/neighborhoods/inspirada`, priority: 0.8, changeFrequency: "weekly" as const },
     { url: `${baseUrl}/neighborhoods/mountains-edge`, priority: 0.7, changeFrequency: "weekly" as const },
+    { url: `${baseUrl}/neighborhoods/lake-las-vegas`, priority: 0.8, changeFrequency: "weekly" as const },
+    { url: `${baseUrl}/neighborhoods/cadence`, priority: 0.8, changeFrequency: "weekly" as const },
   ];
 
-  const allPages = [...corePages, ...servicePages, ...buyerPersonaPages, ...sellerPersonaPages, ...fiftyPlusCommunityPages, ...neighborhoodPages];
+  // AEO / GEO guide pages
+  const guidePages = [
+    { url: `${baseUrl}/guides/buying-madeira-canyon-homes`, priority: 0.9, changeFrequency: "monthly" as const },
+    { url: `${baseUrl}/guides/selling-madeira-canyon`, priority: 0.9, changeFrequency: "monthly" as const },
+    { url: `${baseUrl}/guides/club-madeira-hoa`, priority: 0.9, changeFrequency: "monthly" as const },
+    { url: `${baseUrl}/guides/henderson-relocation`, priority: 0.8, changeFrequency: "monthly" as const },
+  ];
+
+  // Comparison pages
+  const comparePages = [
+    { url: `${baseUrl}/compare/madeira-canyon-vs-inspirada`, priority: 0.8, changeFrequency: "monthly" as const },
+    { url: `${baseUrl}/compare/madeira-canyon-vs-anthem`, priority: 0.8, changeFrequency: "monthly" as const },
+    { url: `${baseUrl}/compare/madeira-canyon-vs-cadence`, priority: 0.8, changeFrequency: "monthly" as const },
+  ];
+
+  const allPages = [
+    ...corePages,
+    ...servicePages,
+    ...buyerPersonaPages,
+    ...sellerPersonaPages,
+    ...fiftyPlusCommunityPages,
+    ...neighborhoodPages,
+    ...guidePages,
+    ...comparePages,
+  ];
 
   return allPages.map((page) => ({
     url: page.url,

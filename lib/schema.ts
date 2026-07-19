@@ -201,9 +201,15 @@ export function generateRealEstateAgentSchema() {
       worstRating: "1",
     },
     knowsAbout: [
-      "Las Vegas real estate",
+      "Madeira Canyon homes",
+      "Club Madeira",
+      "clubmadeirahoa.com",
+      "Anthem Highlands",
       "Henderson homes",
+      "Las Vegas real estate",
       "Summerlin properties",
+      "Cadence Henderson",
+      "Lake Las Vegas",
       "Luxury homes",
       "New construction",
       "Investment properties",
@@ -572,6 +578,72 @@ export function generateWebPageSchema(page: {
     },
     ...(page.datePublished && { datePublished: page.datePublished }),
     ...(page.dateModified && { dateModified: page.dateModified }),
+  };
+}
+
+/**
+ * Generate HowTo schema for AEO process guides
+ */
+export function generateHowToSchema(howto: {
+  name: string;
+  description: string;
+  totalTime?: string;
+  steps: { name: string; text: string; url?: string }[];
+}) {
+  return {
+    "@context": "https://schema.org",
+    "@type": "HowTo",
+    name: howto.name,
+    description: howto.description,
+    ...(howto.totalTime && { totalTime: howto.totalTime }),
+    step: howto.steps.map((step, index) => ({
+      "@type": "HowToStep",
+      position: index + 1,
+      name: step.name,
+      text: step.text,
+      ...(step.url && {
+        url: step.url.startsWith("http") ? step.url : `${BASE_URL}${step.url}`,
+      }),
+    })),
+  };
+}
+
+/**
+ * Generate Article schema for GEO/AEO guide content
+ */
+export function generateArticleSchema(article: {
+  headline: string;
+  description: string;
+  url: string;
+  datePublished?: string;
+  dateModified?: string;
+  keywords?: string[];
+}) {
+  const url = article.url.startsWith("http") ? article.url : `${BASE_URL}${article.url}`;
+  return {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    headline: article.headline,
+    description: article.description,
+    url,
+    mainEntityOfPage: {
+      "@type": "WebPage",
+      "@id": `${url}#webpage`,
+    },
+    author: {
+      "@type": "Person",
+      name: agentInfo.name,
+      jobTitle: agentInfo.title,
+      worksFor: {
+        "@id": `${BASE_URL}#organization`,
+      },
+    },
+    publisher: {
+      "@id": `${BASE_URL}#organization`,
+    },
+    datePublished: article.datePublished || "2026-07-01",
+    dateModified: article.dateModified || new Date().toISOString().split("T")[0],
+    ...(article.keywords && { keywords: article.keywords.join(", ") }),
   };
 }
 

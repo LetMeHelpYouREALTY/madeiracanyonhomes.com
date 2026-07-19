@@ -20,22 +20,49 @@ export const metadata: Metadata = {
 
 const neighborhoods = [
   {
+    name: "Madeira Canyon",
+    slug: "madeira-canyon",
+    medianPrice: "$745,000",
+    priceChange: "+8%",
+    description: "Primary focus: elevated Anthem Highlands living, Madeira Canyon Park, Club Madeira & Videiras",
+    highlights: ["Club Madeira", "Trails", "Strip Views", "ZIP 89044"],
+    bestFor: "Move-up buyers, relocators, Club Madeira shoppers",
+  },
+  {
+    name: "Club Madeira",
+    slug: "club-madeira",
+    medianPrice: "$900K–$1.3M+",
+    priceChange: "View premium",
+    description: "Guard-gated Club at Madeira Canyon — clubmadeirahoa.com community searches",
+    highlights: ["Guard-Gated", "Clubhouse", "Valley Views", "clubmadeirahoa.com"],
+    bestFor: "Buyers wanting Club amenities and gates",
+  },
+  {
+    name: "Anthem",
+    slug: "anthem",
+    medianPrice: "Varies by village",
+    priceChange: "Corridor",
+    description: "Broader Anthem Highlands area that includes Madeira Canyon and nearby villages",
+    highlights: ["Parks", "Madeira Canyon", "St. Rose Access", "Multiple HOAs"],
+    bestFor: "Buyers still mapping the Anthem corridor",
+  },
+  {
     name: "Summerlin",
     slug: "summerlin",
     medianPrice: "$625,000",
     priceChange: "+6.8%",
-    description: "Premier master-planned community with parks, trails, and top-rated schools",
-    highlights: ["150+ Parks", "Top Schools", "Red Rock Views", "Downtown Summerlin"],
-    bestFor: "Families, professionals, outdoor enthusiasts",
+    description: "Premier master-planned community with parks, trails, and established amenities",
+    highlights: ["150+ Parks", "Red Rock Views", "Downtown Summerlin", "Golf"],
+    bestFor: "Professionals, outdoor enthusiasts",
   },
   {
     name: "Henderson",
     slug: "henderson",
     medianPrice: "$485,000",
     priceChange: "+5.1%",
-    description: "Nevada's second-largest city known for safety, schools, and family-friendly living",
-    highlights: ["Low Crime Rate", "Excellent Schools", "Lake Las Vegas", "Green Valley"],
-    bestFor: "Families, retirees, commuters",
+    description: "Nevada's second-largest city with Green Valley, Inspirada, Lake Las Vegas, and Madeira Canyon",
+    highlights: ["Green Valley", "Inspirada", "Lake Las Vegas", "Cadence"],
+    bestFor: "Citywide explorers, relocators, commuters",
   },
   {
     name: "Green Valley",
@@ -70,8 +97,8 @@ const neighborhoods = [
     medianPrice: "$385,000",
     priceChange: "+3.2%",
     description: "Rapidly growing area with affordable new construction and family-friendly communities",
-    highlights: ["New Construction", "Affordable", "Growing Area", "Family-Friendly"],
-    bestFor: "First-time buyers, young families, investors",
+    highlights: ["New Construction", "Affordable", "Growing Area", "Investor Interest"],
+    bestFor: "First-time buyers, investors",
   },
   {
     name: "Skye Canyon",
@@ -79,17 +106,17 @@ const neighborhoods = [
     medianPrice: "$550,000",
     priceChange: "+5.5%",
     description: "Newer master-planned community in northwest Las Vegas with mountain views",
-    highlights: ["New Homes", "Mountain Views", "Skye Center", "Great Schools"],
-    bestFor: "Young families, outdoor enthusiasts, commuters",
+    highlights: ["New Homes", "Mountain Views", "Skye Center", "Parks"],
+    bestFor: "Outdoor enthusiasts, commuters",
   },
   {
     name: "Centennial Hills",
     slug: "centennial-hills",
     medianPrice: "$495,000",
     priceChange: "+4.8%",
-    description: "Northwest Las Vegas community with mountain proximity and family amenities",
-    highlights: ["Mountain Access", "Parks", "Shopping", "Family-Friendly"],
-    bestFor: "Families, outdoor lovers, professionals",
+    description: "Northwest Las Vegas community with mountain proximity and retail centers",
+    highlights: ["Mountain Access", "Parks", "Shopping", "Trail Access"],
+    bestFor: "Outdoor lovers, professionals",
   },
   {
     name: "Inspirada",
@@ -97,8 +124,8 @@ const neighborhoods = [
     medianPrice: "$525,000",
     priceChange: "+5.0%",
     description: "Henderson master-planned community with resort-style living and modern homes",
-    highlights: ["Resort Pools", "Walking Trails", "New Construction", "Great Schools"],
-    bestFor: "Families, active adults, new home buyers",
+    highlights: ["Resort Pools", "Walking Trails", "New Construction", "Sports Courts"],
+    bestFor: "Active adults, new home buyers",
   },
   {
     name: "Mountains Edge",
@@ -106,8 +133,26 @@ const neighborhoods = [
     medianPrice: "$475,000",
     priceChange: "+4.5%",
     description: "Southwest Las Vegas master-planned community with mountain views and parks",
-    highlights: ["Mountain Views", "Parks", "Growing Area", "Affordable Luxury"],
-    bestFor: "Families, commuters, value-seekers",
+    highlights: ["Mountain Views", "Parks", "Growing Area", "Value Options"],
+    bestFor: "Commuters, value-seekers",
+  },
+  {
+    name: "Lake Las Vegas",
+    slug: "lake-las-vegas",
+    medianPrice: "Condo–estate",
+    priceChange: "Water premium",
+    description: "Marina, golf, and resort-village living east of the Anthem / Madeira corridor",
+    highlights: ["Lake", "Golf", "Resort Villages", "Del Webb Nearby"],
+    bestFor: "Waterfront and golf lifestyle buyers",
+  },
+  {
+    name: "Cadence",
+    slug: "cadence",
+    medianPrice: "New + resale",
+    priceChange: "Builder incentives",
+    description: "Large Henderson master plan with modern floor plans and new construction villages",
+    highlights: ["New Construction", "Parks", "Modern Plans", "Relocator Favorite"],
+    bestFor: "New-home buyers, relocators",
   },
 ];
 
@@ -174,11 +219,11 @@ export default function NeighborhoodsPage() {
           <section className="mb-16 max-w-4xl mx-auto">
             <div className="bg-slate-50 rounded-lg p-8">
               <blockquote className="text-lg text-slate-700 italic mb-4">
-                "Every Las Vegas neighborhood has its own personality. Whether you want the
-                family-friendly parks of Summerlin, the established charm of Green Valley, or the
-                luxury of The Ridges, I'll help you find the community that matches your lifestyle.
-                That's the Berkshire Hathaway HomeServices difference—personalized guidance backed
-                by local expertise."
+                "Every Las Vegas neighborhood has its own personality. Whether you want Madeira
+                Canyon and Club Madeira, the parks of Summerlin, the established streets of Green
+                Valley, or The Ridges, I'll help you match square footage and amenities to how you
+                live. That's the Berkshire Hathaway HomeServices difference—local guidance with a
+                clear village-level CMA."
               </blockquote>
               <cite className="text-slate-900 font-semibold">
                 — Dr. Jan Duffy, BHHS Nevada Properties
