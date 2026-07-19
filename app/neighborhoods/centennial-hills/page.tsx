@@ -4,6 +4,7 @@ import RealScoutListings from "@/components/realscout/RealScoutListings";
 import Link from "next/link";
 import { Phone, Mountain, Users, ShoppingBag, Home as HomeIcon } from "lucide-react";
 import type { Metadata } from "next";
+import PageHero from "@/components/sections/PageHero";
 
 export const metadata: Metadata = {
   title: "Berkshire Hathaway HomeServices Centennial Hills | Las Vegas Homes",
@@ -65,7 +66,12 @@ export default function CentennialHillsPage() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
       />
       <Navbar />
-      <main className="pt-24 pb-16">
+      <PageHero
+        title={"Berkshire Hathaway HomeServices Centennial Hills"}
+        subtitle={"Family-friendly northwest Las Vegas living. Find your Centennial Hills home with Berkshire Hathaway HomeServices and Dr. Jan Duffy."}
+        image={{"src":"/images/hero/desert-sunset.jpg","alt":"Nevada desert sunset over mountains"}}
+      />
+      <main className="pb-16">
         <div className="container mx-auto px-4">
           {/* Breadcrumb */}
           <div className="max-w-6xl mx-auto mb-6">
@@ -78,19 +84,8 @@ export default function CentennialHillsPage() {
             </nav>
           </div>
 
-          {/* Hero */}
-          <div className="max-w-4xl mx-auto text-center mb-16">
-            <div className="inline-block bg-blue-100 text-blue-800 px-4 py-2 rounded-full text-sm font-semibold mb-6">
-              Berkshire Hathaway HomeServices Nevada Properties
-            </div>
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-slate-900 mb-6">
-              Berkshire Hathaway HomeServices Centennial Hills
-            </h1>
-            <p className="text-xl text-slate-600">
-              Family-friendly northwest Las Vegas living. Find your Centennial Hills home with{" "}
-              <strong>Berkshire Hathaway HomeServices</strong> and Dr. Jan Duffy.
-            </p>
-          </div>
+          
+
 
           <RealScoutListings />
 

@@ -16,6 +16,7 @@ import {
   DollarSign,
 } from "lucide-react";
 import type { Metadata } from "next";
+import PageHero from "@/components/sections/PageHero";
 
 export const metadata: Metadata = {
   title: "Luxury Homes Las Vegas | Berkshire Hathaway HomeServices",
@@ -70,7 +71,12 @@ export default function LuxuryHomesPage() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
       />
       <Navbar />
-      <main className="pt-24 pb-16">
+      <PageHero
+        title={"Las Vegas Luxury Real Estate"}
+        subtitle={"Guard-gated estates. Strip penthouses. Uncompromising privacy."}
+        image={{"src":"/images/hero/luxury-estate.jpg","alt":"Luxury home exterior with modern architecture"}}
+      />
+      <main className="pb-16">
         <div className="container mx-auto px-4">
           {/* Breadcrumb */}
           <div className="max-w-6xl mx-auto mb-6">
@@ -83,26 +89,8 @@ export default function LuxuryHomesPage() {
             </nav>
           </div>
 
-          {/* Hero */}
-          <div className="max-w-4xl mx-auto text-center mb-16">
-            <div className="inline-flex items-center bg-slate-900 text-white px-4 py-2 rounded-full text-sm font-semibold mb-6">
-              <Star className="h-4 w-4 mr-2" />
-              $1.2M - $10M+
-            </div>
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-slate-900 mb-6">
-              Las Vegas Luxury Real Estate
-            </h1>
-            <p className="text-xl text-slate-600 mb-8">
-              Guard-gated estates. Strip penthouses. Uncompromising privacy.
-            </p>
-            <a
-              href="tel:+17025001942"
-              className="inline-flex items-center bg-slate-900 text-white px-8 py-4 rounded-md font-bold text-lg hover:bg-slate-800 transition-colors"
-            >
-              <Phone className="h-5 w-5 mr-2" />
-              Schedule a Private Preview → (702) 500-1942
-            </a>
-          </div>
+          
+
 
           <RealScoutListings />
 

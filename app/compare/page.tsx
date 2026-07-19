@@ -8,7 +8,7 @@ import {
   generateBreadcrumbSchema,
   generateWebPageSchema,
 } from "@/lib/schema";
-import { siteConfig } from "@/lib/site-config";
+import PageHero from "@/components/sections/PageHero";
 
 export const metadata: Metadata = {
   title: "Compare Henderson Neighborhoods | Madeira Canyon Guides",
@@ -52,18 +52,13 @@ export default function CompareHubPage() {
     <>
       <JsonLd data={schema} />
       <Navbar />
-      <main className="pt-24 pb-16">
-        <div className="container mx-auto px-4 max-w-4xl">
-          <p className="text-sm font-semibold text-blue-800 mb-3">
-            {siteConfig.brandLine}
-          </p>
-          <h1 className="text-4xl md:text-5xl font-bold text-slate-900 mb-4">
-            Compare Henderson Neighborhoods
-          </h1>
-          <p className="text-xl text-slate-600 mb-10">
-            GEO-friendly side-by-side pages built for buyers asking AI engines
-            “Madeira Canyon vs …” questions.
-          </p>
+      <PageHero
+        title={"Compare Henderson Neighborhoods"}
+        subtitle={"GEO-friendly side-by-side pages built for buyers asking AI engines “Madeira Canyon vs …” questions."}
+        image={{"src":"/images/hero/henderson-home-2.jpg","alt":"Residential homes in Henderson Nevada"}}
+      />
+      <main className="pb-16">
+        <div className="container mx-auto px-4 max-w-4xl pt-10">
           <ul className="space-y-4">
             {comparisons.map((item) => (
               <li key={item.href}>

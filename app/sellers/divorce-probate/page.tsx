@@ -14,6 +14,7 @@ import {
   Users,
 } from "lucide-react";
 import type { Metadata } from "next";
+import PageHero from "@/components/sections/PageHero";
 
 export const metadata: Metadata = {
   title: "Divorce & Probate Home Sales Las Vegas | Berkshire Hathaway HomeServices",
@@ -32,7 +33,12 @@ export default function DivorceProbatePage() {
   return (
     <>
       <Navbar />
-      <main className="pt-24 pb-16">
+      <PageHero
+        title={"Difficult Situations, Expert Guidance"}
+        subtitle={"When life gets complicated, you need an agent who handles sensitive transactions with discretion, expertise, and compassion."}
+        image={{"src":"/images/hero/kitchen-interior.jpg","alt":"Bright modern kitchen interior in a Nevada home"}}
+      />
+      <main className="pb-16">
         <div className="container mx-auto px-4">
           {/* Breadcrumb */}
           <div className="max-w-6xl mx-auto mb-6">
@@ -45,27 +51,8 @@ export default function DivorceProbatePage() {
             </nav>
           </div>
 
-          {/* Hero */}
-          <div className="max-w-4xl mx-auto text-center mb-16">
-            <div className="inline-flex items-center bg-slate-100 text-slate-800 px-4 py-2 rounded-full text-sm font-semibold mb-6">
-              <Shield className="h-4 w-4 mr-2" />
-              Handled with Discretion & Professionalism
-            </div>
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-slate-900 mb-6">
-              Difficult Situations,<br />Expert Guidance
-            </h1>
-            <p className="text-xl text-slate-600 mb-8">
-              When life gets complicated, you need an agent who handles sensitive transactions
-              with discretion, expertise, and compassion.
-            </p>
-            <a
-              href="tel:+17025001942"
-              className="inline-flex items-center bg-blue-600 text-white px-8 py-4 rounded-md font-bold text-lg hover:bg-blue-700 transition-colors"
-            >
-              <Phone className="h-5 w-5 mr-2" />
-              Confidential Consultation → (702) 500-1942
-            </a>
-          </div>
+          
+
 
           <RealScoutListings />
 

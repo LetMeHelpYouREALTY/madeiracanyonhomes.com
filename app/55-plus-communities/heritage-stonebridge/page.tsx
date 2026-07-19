@@ -15,6 +15,7 @@ import {
   Star,
 } from "lucide-react";
 import type { Metadata } from "next";
+import PageHero from "@/components/sections/PageHero";
 
 export const metadata: Metadata = {
   title: "Heritage at Stonebridge Homes for Sale | Guard-Gated 55+ Summerlin | Dr. Jan Duffy",
@@ -63,7 +64,12 @@ export default function HeritageAtStonebridgePage() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(communitySchema) }}
       />
       <Navbar />
-      <main className="pt-24 pb-16">
+      <PageHero
+        title={"Heritage at Stonebridge"}
+        subtitle={"Boutique 55+ living with guard-gated privacy in the heart of Summerlin."}
+        image={{"src":"/images/hero/active-adult.jpg","alt":"Bright active-adult style living room and patio light"}}
+      />
+      <main className="pb-16">
         <div className="container mx-auto px-4">
           {/* Breadcrumb */}
           <div className="max-w-6xl mx-auto mb-6">
@@ -80,20 +86,8 @@ export default function HeritageAtStonebridgePage() {
             </nav>
           </div>
 
-          {/* Hero */}
-          <div className="max-w-4xl mx-auto text-center mb-16">
-            <div className="inline-flex items-center bg-purple-100 text-purple-800 px-4 py-2 rounded-full text-sm font-semibold mb-6">
-              <Shield className="h-4 w-4 mr-2" />
-              Guard-Gated Summerlin 55+ Community
-            </div>
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-slate-900 mb-6">
-              Heritage at Stonebridge
-            </h1>
-            <p className="text-xl text-slate-600">
-              Boutique 55+ living with guard-gated privacy in the heart of
-              Summerlin.
-            </p>
-          </div>
+          
+
 
           <RealScoutListings />
 

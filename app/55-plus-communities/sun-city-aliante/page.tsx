@@ -14,6 +14,7 @@ import {
   TrendingUp,
 } from "lucide-react";
 import type { Metadata } from "next";
+import PageHero from "@/components/sections/PageHero";
 
 export const metadata: Metadata = {
   title: "Sun City Aliante Homes for Sale | Most Affordable Sun City | Dr. Jan Duffy",
@@ -62,7 +63,12 @@ export default function SunCityAliantePage() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(communitySchema) }}
       />
       <Navbar />
-      <main className="pt-24 pb-16">
+      <PageHero
+        title={"Sun City Aliante"}
+        subtitle={"Full Sun City amenities at the best value. Golf, pools, fitness, and 100+ clubs—from $280K."}
+        image={{"src":"/images/hero/active-adult.jpg","alt":"Bright active-adult style living room and patio light"}}
+      />
+      <main className="pb-16">
         <div className="container mx-auto px-4">
           {/* Breadcrumb */}
           <div className="max-w-6xl mx-auto mb-6">
@@ -79,20 +85,8 @@ export default function SunCityAliantePage() {
             </nav>
           </div>
 
-          {/* Hero */}
-          <div className="max-w-4xl mx-auto text-center mb-16">
-            <div className="inline-flex items-center bg-green-100 text-green-800 px-4 py-2 rounded-full text-sm font-semibold mb-6">
-              <DollarSign className="h-4 w-4 mr-2" />
-              Most Affordable Sun City in Las Vegas
-            </div>
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-slate-900 mb-6">
-              Sun City Aliante
-            </h1>
-            <p className="text-xl text-slate-600">
-              Full Sun City amenities at the best value. Golf, pools, fitness, and
-              100+ clubs—from $280K.
-            </p>
-          </div>
+          
+
 
           <RealScoutListings />
 

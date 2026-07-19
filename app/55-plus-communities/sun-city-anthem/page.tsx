@@ -20,6 +20,7 @@ import {
   generateFAQSchema,
   combineSchemas,
 } from "@/lib/schema";
+import PageHero from "@/components/sections/PageHero";
 
 export const metadata: Metadata = {
   title: "Sun City Anthem Homes for Sale | Berkshire Hathaway HomeServices",
@@ -104,7 +105,12 @@ export default function SunCityAnthemPage() {
       {/* Combined JSON-LD Schema: Breadcrumb + ResidentialComplex + FAQ */}
       <SchemaScript schema={pageSchemas} id="sun-city-anthem-schema" />
       <Navbar />
-      <main className="pt-24 pb-16">
+      <PageHero
+        title={"Sun City Anthem"}
+        subtitle={"7,100+ homes. Mountain views. Henderson safety. Championship golf."}
+        image={{"src":"/images/hero/golf-community.jpg","alt":"Golf community fairway at sunrise"}}
+      />
+      <main className="pb-16">
         <div className="container mx-auto px-4">
           {/* Breadcrumb */}
           <div className="max-w-6xl mx-auto mb-6">
@@ -117,19 +123,8 @@ export default function SunCityAnthemPage() {
             </nav>
           </div>
 
-          {/* Hero */}
-          <div className="max-w-4xl mx-auto text-center mb-16">
-            <div className="inline-flex items-center bg-green-100 text-green-800 px-4 py-2 rounded-full text-sm font-semibold mb-6">
-              <Mountain className="h-4 w-4 mr-2" />
-              Henderson's Premier 55+ Community
-            </div>
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-slate-900 mb-6">
-              Sun City Anthem
-            </h1>
-            <p className="text-xl text-slate-600">
-              7,100+ homes. Mountain views. Henderson safety. Championship golf.
-            </p>
-          </div>
+          
+
 
           <RealScoutListings />
 

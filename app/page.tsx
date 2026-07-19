@@ -4,10 +4,13 @@ import WhyChooseUs from "@/components/sections/WhyChooseUs";
 import ReviewsSection from "@/components/sections/ReviewsSection";
 import FAQSection from "@/components/sections/FAQSection";
 import Footer from "@/components/layouts/Footer";
+import Image from "next/image";
 import Link from "next/link";
 import { Phone, Home as HomeIcon, TrendingUp, Shield, Users } from "lucide-react";
 import { getPageDomainConfig } from "@/lib/get-domain-config";
 import { getFaqsForDomain } from "@/lib/faq-config";
+import { getHero } from "@/lib/hero-images";
+import { siteConfig } from "@/lib/site-config";
 
 // Maps pageType → human-readable FAQ section title/subtitle
 const FAQ_SECTION_COPY: Record<
@@ -112,26 +115,31 @@ export default async function Home() {
       />
       <Navbar />
       <main>
-        {/* Domain-Aware Hero */}
-        <section className="relative bg-slate-900 text-white py-24 md:py-32 overflow-hidden">
-          <div
-            className="absolute inset-0 bg-cover bg-center opacity-30"
-            style={{ backgroundImage: "url('/Image/hero_bg_1.jpg')" }}
+        {/* Domain-Aware full-bleed hero */}
+        <section className="relative min-h-[70vh] md:min-h-[78vh] flex items-center overflow-hidden text-white pt-20">
+          <Image
+            src={getHero("madeiraCanyon").src}
+            alt={getHero("madeiraCanyon").alt}
+            fill
+            priority
+            className="object-cover object-center"
+            sizes="100vw"
           />
-          <div className="relative z-10 container mx-auto px-4 text-center">
-            {config.ctaBadge && (
-              <span className="inline-block bg-blue-600 text-white text-sm font-semibold px-4 py-1 rounded-full mb-6">
-                {config.ctaBadge}
-              </span>
-            )}
+          <div
+            className="absolute inset-0 bg-gradient-to-t from-slate-950/90 via-slate-900/60 to-slate-900/40"
+            aria-hidden="true"
+          />
+          <div className="relative z-10 container mx-auto px-4 py-24 text-center">
+            <p className="text-sm md:text-base font-semibold tracking-wide text-blue-300 mb-4">
+              {siteConfig.brandLine}
+            </p>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight">
               {config.heroHeadline}
             </h1>
-            <p className="text-xl md:text-2xl text-white/80 mb-10 max-w-3xl mx-auto">
+            <p className="text-xl md:text-2xl text-white/90 mb-10 max-w-3xl mx-auto">
               {config.heroSubheadline}
             </p>
 
-            {/* RealScout Search Widget */}
             <div className="mb-8 flex justify-center">
               <div
                 dangerouslySetInnerHTML={{
@@ -140,21 +148,13 @@ export default async function Home() {
               />
             </div>
 
-            {/* Trust Indicators */}
-            <div className="flex flex-wrap justify-center gap-6 text-white/80 text-sm">
-              <div className="flex items-center gap-2">
-                <span className="font-semibold text-white">500+</span>
-                <span>Families Helped</span>
-              </div>
-              <div className="flex items-center gap-2">
-                <span className="font-semibold text-white">30+ Years</span>
-                <span>Las Vegas Experience</span>
-              </div>
-              <div className="flex items-center gap-2">
-                <span className="font-semibold text-white">4.9★</span>
-                <span>Client Rating</span>
-              </div>
-            </div>
+            <a
+              href="tel:+17025001942"
+              className="inline-flex items-center bg-white text-slate-900 px-7 py-3.5 font-bold hover:bg-blue-50 transition-colors"
+            >
+              <Phone className="h-5 w-5 mr-2" aria-hidden="true" />
+              Call (702) 500-1942
+            </a>
           </div>
         </section>
 

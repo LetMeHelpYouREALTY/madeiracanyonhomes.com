@@ -4,6 +4,7 @@ import RealScoutListings from "@/components/realscout/RealScoutListings";
 import Link from "next/link";
 import { Phone, Waves, TreePine, GraduationCap, Home as HomeIcon } from "lucide-react";
 import type { Metadata } from "next";
+import PageHero from "@/components/sections/PageHero";
 
 export const metadata: Metadata = {
   title: "Berkshire Hathaway HomeServices Inspirada | Henderson Resort Living",
@@ -65,7 +66,12 @@ export default function InspiradaPage() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
       />
       <Navbar />
-      <main className="pt-24 pb-16">
+      <PageHero
+        title={"Berkshire Hathaway HomeServices Inspirada"}
+        subtitle={"Resort-style living in Henderson. Discover Inspirada with Berkshire Hathaway HomeServices and Dr. Jan Duffy."}
+        image={{"src":"/images/hero/resort-pool.jpg","alt":"Resort-style community pool and cabanas"}}
+      />
+      <main className="pb-16">
         <div className="container mx-auto px-4">
           {/* Breadcrumb */}
           <div className="max-w-6xl mx-auto mb-6">
@@ -78,19 +84,8 @@ export default function InspiradaPage() {
             </nav>
           </div>
 
-          {/* Hero */}
-          <div className="max-w-4xl mx-auto text-center mb-16">
-            <div className="inline-block bg-blue-100 text-blue-800 px-4 py-2 rounded-full text-sm font-semibold mb-6">
-              Berkshire Hathaway HomeServices Nevada Properties
-            </div>
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-slate-900 mb-6">
-              Berkshire Hathaway HomeServices Inspirada
-            </h1>
-            <p className="text-xl text-slate-600">
-              Resort-style living in Henderson. Discover Inspirada with{" "}
-              <strong>Berkshire Hathaway HomeServices</strong> and Dr. Jan Duffy.
-            </p>
-          </div>
+          
+
 
           <RealScoutListings />
 

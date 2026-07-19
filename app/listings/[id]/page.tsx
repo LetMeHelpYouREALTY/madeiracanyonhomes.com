@@ -1,10 +1,12 @@
 import Navbar from "@/components/layouts/Navbar";
 import Footer from "@/components/layouts/Footer";
 import RealScoutListings from "@/components/realscout/RealScoutListings";
+import PageHero from "@/components/sections/PageHero";
 import Image from "next/image";
 import { Bed, Bath, Square, MapPin, Calendar } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import type { Metadata } from "next";
+import { getHero } from "@/lib/hero-images";
 
 export const metadata: Metadata = {
   title: "Property Details | Las Vegas & Henderson Real Estate",
@@ -19,7 +21,7 @@ async function getProperty(id: string) {
     name: "Modern Luxury Home",
     location: "Summerlin, Las Vegas, NV",
     price: "$850,000",
-    image: "/Image/hero_bg_1.jpg",
+    image: getHero("modern").src,
     bedrooms: 4,
     bathrooms: 3,
     squareFeet: 3200,
@@ -37,13 +39,25 @@ export default async function PropertyPage({ params }: PropertyPageProps) {
   const { id } = await params;
   const property = await getProperty(id);
 
+  const heroImage = {
+    src: property.image,
+    alt: `${property.name} in ${property.location}`,
+  };
+
   return (
     <>
       <Navbar />
-      <main className="pt-24 pb-16">
+      <PageHero
+        title={property.name}
+        subtitle={`${property.location} · ${property.price}`}
+        image={heroImage}
+        ctaHref="http://drjanduffy.realscout.com/"
+        ctaLabel="View more listings"
+      />
+      <main className="pb-16">
         <div className="container mx-auto px-4">
           {/* Breadcrumb */}
-          <nav className="mb-6 text-sm">
+          <nav className="mb-6 mt-8 text-sm">
             <ol className="flex items-center space-x-2 text-slate-600">
               <li>
                 <a href="/" className="hover:text-blue-600">
@@ -61,26 +75,21 @@ export default async function PropertyPage({ params }: PropertyPageProps) {
             </ol>
           </nav>
 
-          {/* Hero */}
-          <div className="mb-8">
-            <h1 className="text-3xl md:text-4xl font-bold text-slate-900 mb-2">
-              {property.name}
-            </h1>
-            <div className="flex items-center text-slate-600 mb-4">
-              <MapPin className="h-5 w-5 mr-2" />
-              {property.location}
-            </div>
-            <div className="text-3xl font-bold text-blue-600">{property.price}</div>
+          <div className="mb-8 flex items-center text-slate-600">
+            <MapPin className="h-5 w-5 mr-2" />
+            {property.location}
+            <span className="mx-3 text-slate-300">|</span>
+            <span className="text-2xl font-bold text-blue-600">{property.price}</span>
           </div>
 
-          {/* Main Image */}
-          <div className="relative h-64 md:h-96 rounded-lg overflow-hidden mb-8">
+          {/* Gallery image */}
+          <div className="relative h-64 md:h-96 overflow-hidden mb-8">
             <Image
               src={property.image}
               alt={property.name}
               fill
               className="object-cover"
-              priority
+              sizes="100vw"
             />
           </div>
 

@@ -56,3 +56,5 @@ import Image from 'next/image'
 - Next.js auto-optimizes images via `next/image`
 - WebP preferred for web (30% smaller than JPEG)
 - Always include descriptive alt text for SEO/accessibility
+- Page heroes use `components/sections/PageHero.tsx` + `lib/hero-images.ts`
+- Hero JPGs in `hero/` are Unsplash License (commercial OK) or site originals (`henderson-home-*`)

@@ -1,6 +1,7 @@
 import Navbar from "@/components/layouts/Navbar";
 import Footer from "@/components/layouts/Footer";
 import RealScoutListings from "@/components/realscout/RealScoutListings";
+import PageHero from "@/components/sections/PageHero";
 import JsonLd from "@/components/seo/JsonLd";
 import Link from "next/link";
 import { Phone } from "lucide-react";
@@ -12,7 +13,8 @@ import {
   generateWebPageSchema,
   type FAQItem,
 } from "@/lib/schema";
-import { agentInfo, officeInfo, siteConfig } from "@/lib/site-config";
+import { getHeroForRoute } from "@/lib/hero-images";
+import { agentInfo, officeInfo } from "@/lib/site-config";
 
 export type CompareRow = {
   factor: string;
@@ -64,13 +66,16 @@ export default function CompareGuide({
     generateFAQSchema(faqs)
   );
 
+  const hero = getHeroForRoute(path);
+
   return (
     <>
       <JsonLd data={schema} />
       <Navbar />
-      <main className="pt-24 pb-16">
+      <PageHero title={h1} subtitle={intro} image={hero} />
+      <main className="pb-16">
         <div className="container mx-auto px-4 max-w-5xl">
-          <nav className="text-sm text-slate-500 mb-6" aria-label="Breadcrumb">
+          <nav className="text-sm text-slate-500 mb-6 mt-8" aria-label="Breadcrumb">
             <Link href="/" className="hover:text-blue-600">
               Home
             </Link>
@@ -81,14 +86,6 @@ export default function CompareGuide({
             {" / "}
             <span className="text-slate-900">{title}</span>
           </nav>
-
-          <p className="text-sm font-semibold text-blue-800 mb-3">
-            {siteConfig.brandLine}
-          </p>
-          <h1 className="text-4xl md:text-5xl font-bold text-slate-900 mb-4">
-            {h1}
-          </h1>
-          <p className="text-xl text-slate-600 mb-10">{intro}</p>
 
           <RealScoutListings />
 

@@ -10,7 +10,8 @@ import {
   generateBreadcrumbSchema,
   generateWebPageSchema,
 } from "@/lib/schema";
-import { agentInfo, officeInfo, siteConfig } from "@/lib/site-config";
+import { agentInfo, officeInfo } from "@/lib/site-config";
+import PageHero from "@/components/sections/PageHero";
 
 export const metadata: Metadata = {
   title: "Madeira Canyon Real Estate Guides | AEO Answers | Dr Jan Duffy",
@@ -75,21 +76,15 @@ export default function GuidesHubPage() {
     <>
       <JsonLd data={schema} />
       <Navbar />
-      <main className="pt-24 pb-16">
+      <PageHero
+        title={"Madeira Canyon & Club Madeira Guides"}
+        subtitle={"Answer-engine ready guides for buyers, sellers, and relocators — written for Google, AI Overviews, and local search around clubmadeirahoa.com."}
+        image={{"src":"/images/hero/desert-canyon.jpg","alt":"Desert canyon landscape near Madeira Canyon Henderson Nevada"}}
+      />
+      <main className="pb-16">
         <div className="container mx-auto px-4 max-w-5xl">
-          <p className="text-sm font-semibold text-blue-800 mb-3">
-            {siteConfig.brandLine}
-          </p>
-          <h1 className="text-4xl md:text-5xl font-bold text-slate-900 mb-4">
-            Madeira Canyon & Club Madeira Guides
-          </h1>
-          <p className="text-xl text-slate-600 mb-10">
-            Answer-engine ready guides for buyers, sellers, and relocators —
-            written for Google, AI Overviews, and local search around
-            clubmadeirahoa.com.
-          </p>
-
-          <RealScoutListings />
+          
+<RealScoutListings />
 
           <ul className="grid md:grid-cols-2 gap-5 mb-14">
             {guides.map((guide) => (

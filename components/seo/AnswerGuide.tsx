@@ -1,6 +1,7 @@
 import Navbar from "@/components/layouts/Navbar";
 import Footer from "@/components/layouts/Footer";
 import RealScoutListings from "@/components/realscout/RealScoutListings";
+import PageHero from "@/components/sections/PageHero";
 import JsonLd from "@/components/seo/JsonLd";
 import Link from "next/link";
 import { Phone, CheckCircle } from "lucide-react";
@@ -13,7 +14,8 @@ import {
   generateWebPageSchema,
   type FAQItem,
 } from "@/lib/schema";
-import { agentInfo, officeInfo, siteConfig } from "@/lib/site-config";
+import { getHeroForRoute } from "@/lib/hero-images";
+import { agentInfo, officeInfo } from "@/lib/site-config";
 
 export type AnswerGuideProps = {
   title: string;
@@ -76,13 +78,16 @@ export default function AnswerGuide({
     schemas.push(generateHowToSchema(howto));
   }
 
+  const hero = getHeroForRoute(path);
+
   return (
     <>
       <JsonLd data={combineSchemas(...schemas)} />
       <Navbar />
-      <main className="pt-24 pb-16">
+      <PageHero title={h1} subtitle={intro} image={hero} />
+      <main className="pb-16">
         <div className="container mx-auto px-4">
-          <div className="max-w-4xl mx-auto mb-6">
+          <div className="max-w-4xl mx-auto mb-6 mt-8">
             <nav className="text-sm text-slate-500" aria-label="Breadcrumb">
               <Link href="/" className="hover:text-blue-600">
                 Home
@@ -97,14 +102,6 @@ export default function AnswerGuide({
           </div>
 
           <article className="max-w-4xl mx-auto">
-            <p className="text-sm font-semibold tracking-wide text-blue-800 mb-4">
-              {siteConfig.brandLine}
-            </p>
-            <h1 className="text-4xl md:text-5xl font-bold text-slate-900 mb-6">
-              {h1}
-            </h1>
-            <p className="text-xl text-slate-600 mb-10">{intro}</p>
-
             {showListings && <RealScoutListings />}
 
             {howto && (
