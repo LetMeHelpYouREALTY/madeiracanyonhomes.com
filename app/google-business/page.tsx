@@ -18,8 +18,8 @@ import {
   Heart,
 } from "lucide-react";
 import type { Metadata } from "next";
-import {
 import RealScoutListings from "@/components/realscout/RealScoutListings";
+import {
   businessInfo,
   gbpDescription,
   gbpFAQs,

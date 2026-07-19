@@ -44,14 +44,27 @@ function findMatchingBlockEnd(lines, startIdx) {
 
 function ensureImport(text) {
   if (text.includes("@/components/realscout/RealScoutListings")) return text;
-  // Insert after last import
   const lines = text.split("\n");
-  let lastImport = -1;
+  // Find the end of the last top-level import (handles multi-line `import { ... }`)
+  let lastImportEnd = -1;
+  let inImport = false;
   for (let i = 0; i < lines.length; i++) {
-    if (/^import\s/.test(lines[i])) lastImport = i;
+    const line = lines[i];
+    if (!inImport && /^import\s/.test(line)) {
+      inImport = true;
+    }
+    if (inImport) {
+      if (/;\s*$/.test(line) || (/^import\s.+from\s+["'].+["']\s*;?\s*$/.test(line) && !line.includes("{"))) {
+        lastImportEnd = i;
+        inImport = false;
+      } else if (inImport && line.includes("}") && /from\s+["']/.test(line)) {
+        lastImportEnd = i;
+        inImport = false;
+      }
+    }
   }
-  if (lastImport === -1) return `${IMPORT_LINE}\n${text}`;
-  lines.splice(lastImport + 1, 0, IMPORT_LINE);
+  if (lastImportEnd === -1) return `${IMPORT_LINE}\n${text}`;
+  lines.splice(lastImportEnd + 1, 0, IMPORT_LINE);
   return lines.join("\n");
 }
 
