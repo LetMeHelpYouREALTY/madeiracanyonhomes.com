@@ -7,17 +7,55 @@ import { Analytics } from "@vercel/analytics/react";
 import Script from "next/script";
 
 export async function generateMetadata(): Promise<Metadata> {
-  const domain = headers().get("x-domain") || "";
+  const headersList = headers();
+  const domain = headersList.get("x-domain") || "";
+  const pathname = headersList.get("x-pathname") || "/";
   const config = getDomainConfig(domain);
+
+  // Self-reference the exact host that was requested (don't normalize
+  // www on/off — some of these 80+ domains redirect apex to www and some
+  // don't). Every domain on this deployment must canonicalize to itself,
+  // never to heyberkshire.com, or Google Search Console will flag it as
+  // duplicate content / an invalid sitemap entry.
+  const host = domain || "heyberkshire.com";
+  const baseUrl = `https://${host}`;
+  const canonicalUrl = `${baseUrl}${pathname}`;
+  const googleSiteVerification =
+    config.googleSiteVerification || process.env.GOOGLE_SITE_VERIFICATION;
+
   return {
+    metadataBase: new URL(baseUrl),
     title: `${config.neighborhood} | Dr. Jan Duffy, REALTOR® | BHHS Nevada`,
     description: config.description,
     keywords: config.keywords,
+    alternates: {
+      canonical: pathname,
+    },
+    robots: {
+      index: true,
+      follow: true,
+      googleBot: {
+        index: true,
+        follow: true,
+        "max-image-preview": "large",
+      },
+    },
     openGraph: {
       title: config.heroHeadline,
       description: config.description,
+      url: canonicalUrl,
+      siteName: "Dr. Jan Duffy | Berkshire Hathaway HomeServices Nevada Properties",
+      locale: "en_US",
       type: "website",
     },
+    twitter: {
+      card: "summary_large_image",
+      title: config.heroHeadline,
+      description: config.description,
+    },
+    ...(googleSiteVerification && {
+      verification: { google: googleSiteVerification },
+    }),
   };
 }
 

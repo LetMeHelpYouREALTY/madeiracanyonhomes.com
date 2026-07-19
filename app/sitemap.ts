@@ -1,7 +1,18 @@
 import { MetadataRoute } from "next";
+import { headers } from "next/headers";
 
+// Every domain in `lib/domain-config.ts` serves the same route structure
+// (middleware swaps in domain-specific content at render time), so the
+// sitemap only needs to swap the hostname per request. This is required
+// for Google Search Console: a sitemap that lists a *different* domain's
+// URLs than the one it was fetched from is rejected as invalid.
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = "https://heyberkshire.com";
+  // Self-reference the exact requested host (don't normalize www on/off) —
+  // some of these domains redirect apex to www (or vice versa) and some
+  // don't, so mirroring whatever was actually requested keeps every
+  // sitemap internally consistent with the site that served it.
+  const host = headers().get("host") || "heyberkshire.com";
+  const baseUrl = `https://${host}`;
   const lastModified = new Date();
 
   // Core pages
