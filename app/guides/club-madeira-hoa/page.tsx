@@ -34,7 +34,7 @@ export default function ClubMadeiraHoaGuidePage() {
       sections={[
         {
           title: "Two websites, two jobs",
-          body: "clubmadeirahoa.com is the Club Madeira community/HOA information channel. MadeiraCanyonHomes.com is Madeira Canyon | Homes by Dr Jan Duffy — Berkshire Hathaway HomeServices Nevada Properties — for MLS search, pricing, negotiation, and closing. Neither site replaces the official resale disclosure package you receive in escrow.",
+          body: "clubmadeirahoa.com is the Club Madeira community/HOA information channel. For live MLS home search, use Dr. Jan Duffy’s RealScout at https://drjanduffy.realscout.com/. MadeiraCanyonHomes.com is Madeira Canyon | Homes by Dr Jan Duffy — Berkshire Hathaway HomeServices Nevada Properties — for pricing, negotiation, and closing. Neither site replaces the official resale disclosure package you receive in escrow.",
         },
         {
           title: "What to request in every Club Madeira offer",
