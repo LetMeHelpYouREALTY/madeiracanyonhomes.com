@@ -5,7 +5,10 @@
  * - Keyword-rich filenames (place + intent)
  * - Alt text: place + property type + city/state (visible on page via PageHero)
  * - Prefer Nevada place photos (Wikimedia / brand originals) over generic stock
+ * - Author/credit from lib/image-credits.ts for ImageObject + /photo-credits
  */
+
+import { creditForFile, type ImageCredit } from "@/lib/image-credits";
 
 export type HeroImage = {
   src: string;
@@ -14,10 +17,29 @@ export type HeroImage = {
   caption?: string;
   width?: number;
   height?: number;
+  /** Photographer / rights holder */
+  author?: string;
+  authorUrl?: string;
+  license?: string;
+  licenseUrl?: string;
+  sourceUrl?: string;
 };
 
 const H = "/images/hero";
 const SITE = "https://madeiracanyonhomes.com";
+
+function withCredit<T extends HeroImage>(image: T): T & Partial<ImageCredit> {
+  const credit = creditForFile(image.src);
+  if (!credit) return image;
+  return {
+    ...image,
+    author: credit.author,
+    authorUrl: credit.authorUrl,
+    license: credit.license,
+    licenseUrl: credit.licenseUrl,
+    sourceUrl: credit.sourceUrl,
+  };
+}
 
 export const heroImages = {
   default: {
@@ -243,26 +265,50 @@ export const heroByRoute: Record<string, HeroImageKey> = {
 
 export function getHeroForRoute(route: string): HeroImage {
   const key = heroByRoute[route] ?? "default";
-  return heroImages[key];
+  return withCredit(heroImages[key]);
 }
 
 export function getHero(key: HeroImageKey): HeroImage {
-  return heroImages[key];
+  return withCredit(heroImages[key]);
 }
 
-/** ImageObject JSON-LD for AEO / GEO image understanding */
+/** ImageObject JSON-LD for AEO / GEO image understanding + author credit */
 export function generateImageObjectSchema(image: HeroImage) {
-  const url = image.src.startsWith("http") ? image.src : `${SITE}${image.src}`;
+  const credited = withCredit(image);
+  const url = credited.src.startsWith("http")
+    ? credited.src
+    : `${SITE}${credited.src}`;
+
+  const authorName = credited.author || "Madeira Canyon | Homes by Dr Jan Duffy";
+  const creditText = credited.author
+    ? `Photo by ${credited.author}${credited.license ? ` · ${credited.license}` : ""}`
+    : "Madeira Canyon | Homes by Dr Jan Duffy";
+
   return {
     "@context": "https://schema.org",
     "@type": "ImageObject",
     contentUrl: url,
     url,
-    description: image.alt,
-    ...(image.caption && { caption: image.caption }),
-    ...(image.width && { width: image.width }),
-    ...(image.height && { height: image.height }),
-    creditText: "Madeira Canyon | Homes by Dr Jan Duffy",
-    copyrightNotice: "Used for MadeiraCanyonHomes.com local real estate marketing",
+    name: credited.caption || credited.alt,
+    description: credited.alt,
+    ...(credited.caption && { caption: credited.caption }),
+    ...(credited.width && { width: credited.width }),
+    ...(credited.height && { height: credited.height }),
+    ...(credited.license && { license: credited.licenseUrl || credited.license }),
+    ...(credited.sourceUrl && { acquireLicensePage: credited.sourceUrl }),
+    creator: {
+      "@type": "Person",
+      name: authorName,
+      ...(credited.authorUrl && { url: credited.authorUrl }),
+    },
+    author: {
+      "@type": "Person",
+      name: authorName,
+      ...(credited.authorUrl && { url: credited.authorUrl }),
+    },
+    creditText,
+    copyrightNotice: credited.license
+      ? `${creditText}. Used on MadeiraCanyonHomes.com with license compliance.`
+      : "Used for MadeiraCanyonHomes.com local real estate marketing",
   };
 }

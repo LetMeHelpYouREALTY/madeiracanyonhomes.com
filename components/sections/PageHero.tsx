@@ -99,10 +99,46 @@ export default function PageHero({
           </div>
         </div>
       </section>
-      {/* Visible caption supports image SEO / AEO without overlaying the hero media */}
-      {image.caption && (
-        <p className="sr-only">{image.caption}</p>
-      )}
+      {/* Caption + author credit (not overlaid on media) for SEO / CC compliance */}
+      <div className="bg-slate-950 text-slate-400 text-xs px-4 py-2">
+        <div className="container mx-auto max-w-4xl flex flex-col sm:flex-row sm:items-center sm:justify-between gap-1">
+          {image.caption && <p className="sr-only">{image.caption}</p>}
+          {image.author ? (
+            <p>
+              Photo by{" "}
+              {image.authorUrl ? (
+                <a
+                  href={image.authorUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-slate-300 hover:text-white underline-offset-2 hover:underline"
+                >
+                  {image.author}
+                </a>
+              ) : (
+                <span className="text-slate-300">{image.author}</span>
+              )}
+              {image.license ? ` · ${image.license}` : ""}
+              {" · "}
+              <Link
+                href="/photo-credits"
+                className="text-slate-300 hover:text-white underline-offset-2 hover:underline"
+              >
+                All credits
+              </Link>
+            </p>
+          ) : (
+            <p>
+              <Link
+                href="/photo-credits"
+                className="text-slate-300 hover:text-white underline-offset-2 hover:underline"
+              >
+                Photo credits
+              </Link>
+            </p>
+          )}
+        </div>
+      </div>
     </>
   );
 }

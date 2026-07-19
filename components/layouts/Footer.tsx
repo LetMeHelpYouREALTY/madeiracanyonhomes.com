@@ -236,6 +236,12 @@ export default function Footer() {
               <Link href="/faq" className="text-slate-400 hover:text-white transition-colors">
                 FAQ
               </Link>
+              <Link
+                href="/photo-credits"
+                className="text-slate-400 hover:text-white transition-colors"
+              >
+                Photo Credits
+              </Link>
               <Link href="/sitemap.xml" className="text-slate-400 hover:text-white transition-colors">
                 Sitemap
               </Link>

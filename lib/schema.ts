@@ -632,11 +632,23 @@ export function generateArticleSchema(article: {
     },
     author: {
       "@type": "Person",
+      "@id": `${BASE_URL}/about#person`,
       name: agentInfo.name,
-      jobTitle: agentInfo.title,
+      jobTitle: `${agentInfo.title}, Berkshire Hathaway HomeServices Nevada Properties`,
+      url: `${BASE_URL}/about`,
+      email: agentInfo.email,
+      telephone: "+1-702-500-1942",
+      image: `${BASE_URL}/Image/agent1.jpg`,
+      identifier: agentInfo.license,
       worksFor: {
         "@id": `${BASE_URL}#organization`,
       },
+      knowsAbout: [
+        "Madeira Canyon homes",
+        "Club Madeira",
+        "Henderson NV real estate",
+        "clubmadeirahoa.com",
+      ],
     },
     publisher: {
       "@id": `${BASE_URL}#organization`,
