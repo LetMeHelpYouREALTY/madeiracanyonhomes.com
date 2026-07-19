@@ -2,12 +2,15 @@ import Navbar from "@/components/layouts/Navbar";
 import Footer from "@/components/layouts/Footer";
 import PageHero from "@/components/sections/PageHero";
 import JsonLd from "@/components/seo/JsonLd";
+import Image from "next/image";
 import Link from "next/link";
 import type { Metadata } from "next";
 import {
   creditsByKind,
+  creditsNeedingAuthor,
   formatCreditLine,
   imageCredits,
+  type ImageCredit,
 } from "@/lib/image-credits";
 import { getHero } from "@/lib/hero-images";
 import {
@@ -25,6 +28,67 @@ export const metadata: Metadata = {
   robots: { index: true, follow: true },
 };
 
+function CreditRow({ row }: { row: ImageCredit }) {
+  return (
+    <tr className="border-t border-slate-200">
+      <td className="p-3 text-slate-800">
+        <div className="flex items-start gap-3">
+          <Image
+            src={`/images/hero/${row.file}`}
+            alt={row.title}
+            width={96}
+            height={64}
+            className="h-16 w-24 object-cover shrink-0 bg-slate-100"
+            loading="lazy"
+          />
+          <div>
+            <div className="font-medium">{row.title}</div>
+            <div className="text-xs text-slate-500 font-mono">{row.file}</div>
+          </div>
+        </div>
+      </td>
+      <td className="p-3">
+        {row.authorUrl ? (
+          <a
+            href={row.authorUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-blue-700 hover:underline"
+          >
+            {row.author}
+          </a>
+        ) : (
+          <span className="text-slate-800">{row.author}</span>
+        )}
+      </td>
+      <td className="p-3">
+        {row.licenseUrl ? (
+          <a
+            href={row.licenseUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-blue-700 hover:underline"
+          >
+            {row.license}
+          </a>
+        ) : (
+          row.license
+        )}
+      </td>
+      <td className="p-3">
+        <a
+          href={row.sourceUrl}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="text-blue-700 hover:underline"
+        >
+          View source
+        </a>
+      </td>
+    </tr>
+  );
+}
+
 function CreditTable({
   title,
   kind,
@@ -36,6 +100,7 @@ function CreditTable({
   return (
     <section className="mb-12">
       <h2 className="text-2xl font-bold text-slate-900 mb-4">{title}</h2>
+      <p className="text-sm text-slate-500 mb-3">{rows.length} images</p>
       <div className="overflow-x-auto border border-slate-200">
         <table className="w-full min-w-[720px] text-left text-sm">
           <thead className="bg-slate-900 text-white">
@@ -48,50 +113,7 @@ function CreditTable({
           </thead>
           <tbody>
             {rows.map((row) => (
-              <tr key={row.file} className="border-t border-slate-200">
-                <td className="p-3 text-slate-800">
-                  <div className="font-medium">{row.title}</div>
-                  <div className="text-xs text-slate-500 font-mono">{row.file}</div>
-                </td>
-                <td className="p-3">
-                  {row.authorUrl ? (
-                    <a
-                      href={row.authorUrl}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="text-blue-700 hover:underline"
-                    >
-                      {row.author}
-                    </a>
-                  ) : (
-                    <span className="text-slate-800">{row.author}</span>
-                  )}
-                </td>
-                <td className="p-3">
-                  {row.licenseUrl ? (
-                    <a
-                      href={row.licenseUrl}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="text-blue-700 hover:underline"
-                    >
-                      {row.license}
-                    </a>
-                  ) : (
-                    row.license
-                  )}
-                </td>
-                <td className="p-3">
-                  <a
-                    href={row.sourceUrl}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="text-blue-700 hover:underline"
-                  >
-                    View source
-                  </a>
-                </td>
-              </tr>
+              <CreditRow key={row.file} row={row} />
             ))}
           </tbody>
         </table>
@@ -101,6 +123,11 @@ function CreditTable({
 }
 
 export default function PhotoCreditsPage() {
+  const unresolved = creditsNeedingAuthor();
+  const namedUnsplash = creditsByKind("unsplash").filter(
+    (c) => c.author !== "Unsplash contributor"
+  );
+
   const schema = combineSchemas(
     generateWebPageSchema({
       name: "Photo Credits & Authors",
@@ -147,6 +174,16 @@ export default function PhotoCreditsPage() {
             Canyon | Homes by Dr Jan Duffy.
           </p>
 
+          <p className="text-sm text-slate-500 mb-10">
+            Registry: {imageCredits.length} hero files · {namedUnsplash.length} named
+            Unsplash photographers · {creditsByKind("wikimedia").length} Wikimedia
+            attributions
+            {unresolved.length > 0
+              ? ` · ${unresolved.length} Unsplash pages still pending named credit`
+              : ""}
+            .
+          </p>
+
           <CreditTable title="Brand photography (site originals)" kind="brand" />
           <CreditTable
             title="Wikimedia Commons (attribution required)"
@@ -157,9 +194,38 @@ export default function PhotoCreditsPage() {
             kind="unsplash"
           />
 
+          {unresolved.length > 0 && (
+            <section className="mb-12 border border-amber-200 bg-amber-50 p-6">
+              <h2 className="text-xl font-bold text-slate-900 mb-2">
+                Pending named Unsplash authors
+              </h2>
+              <p className="text-sm text-slate-600 mb-4">
+                These files are licensed under the Unsplash License. Photographer names
+                will be added when the public Unsplash page ID is confirmed — we do not
+                invent credits.
+              </p>
+              <ul className="space-y-2 text-sm text-slate-700">
+                {unresolved.map((c) => (
+                  <li key={c.file}>
+                    <span className="font-mono text-xs">{c.file}</span>
+                    {" — "}
+                    <a
+                      href={c.sourceUrl}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-blue-700 hover:underline"
+                    >
+                      CDN source
+                    </a>
+                  </li>
+                ))}
+              </ul>
+            </section>
+          )}
+
           <section className="mb-10">
             <h2 className="text-2xl font-bold text-slate-900 mb-3">
-              Quick credit lines
+              Quick credit lines (Wikimedia)
             </h2>
             <ul className="space-y-2 text-sm text-slate-600">
               {imageCredits

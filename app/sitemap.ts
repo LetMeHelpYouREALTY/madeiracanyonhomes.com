@@ -18,7 +18,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${baseUrl}/faq`, priority: 0.8, changeFrequency: "monthly" as const },
     { url: `${baseUrl}/guides`, priority: 0.9, changeFrequency: "weekly" as const },
     { url: `${baseUrl}/compare`, priority: 0.8, changeFrequency: "weekly" as const },
-    { url: `${baseUrl}/photo-credits`, priority: 0.4, changeFrequency: "yearly" as const },
+    { url: `${baseUrl}/photo-credits`, priority: 0.5, changeFrequency: "monthly" as const },
   ];
 
   // Service pages

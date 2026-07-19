@@ -45,6 +45,7 @@ const FAQ_SECTION_COPY: Record<
 
 export default async function Home() {
   const config = await getPageDomainConfig();
+  const homeHero = getHero("madeiraCanyon");
 
   // ── Domain-aware FAQs ────────────────────────────────────────────────────
   const faqs = getFaqsForDomain(config.pageType, config.domain);
@@ -119,16 +120,14 @@ export default async function Home() {
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
-            __html: JSON.stringify(
-              generateImageObjectSchema(getHero("madeiraCanyon"))
-            ),
+            __html: JSON.stringify(generateImageObjectSchema(homeHero)),
           }}
         />
         <section className="relative min-h-[70vh] md:min-h-[78vh] flex items-center overflow-hidden text-white pt-20">
           <Image
-            src={getHero("madeiraCanyon").src}
-            alt={getHero("madeiraCanyon").alt}
-            title={getHero("madeiraCanyon").caption}
+            src={homeHero.src}
+            alt={homeHero.alt}
+            title={homeHero.caption}
             fill
             priority
             className="object-cover object-center"
@@ -166,6 +165,35 @@ export default async function Home() {
             </a>
           </div>
         </section>
+        {/* Author credit below hero (not overlaid) — matches PageHero pattern */}
+        <div className="bg-slate-950 text-slate-400 text-xs px-4 py-2">
+          <div className="container mx-auto max-w-4xl flex flex-col sm:flex-row sm:items-center sm:justify-between gap-1">
+            {homeHero.caption && <p className="sr-only">{homeHero.caption}</p>}
+            <p>
+              Photo by{" "}
+              {homeHero.authorUrl ? (
+                <a
+                  href={homeHero.authorUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-slate-300 hover:text-white underline-offset-2 hover:underline"
+                >
+                  {homeHero.author}
+                </a>
+              ) : (
+                <span className="text-slate-300">{homeHero.author}</span>
+              )}
+              {homeHero.license ? ` · ${homeHero.license}` : ""}
+              {" · "}
+              <Link
+                href="/photo-credits"
+                className="text-slate-300 hover:text-white underline-offset-2 hover:underline"
+              >
+                All credits
+              </Link>
+            </p>
+          </div>
+        </div>
 
         <RealScoutListings />
 

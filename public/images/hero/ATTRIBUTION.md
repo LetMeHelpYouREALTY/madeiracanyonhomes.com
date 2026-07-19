@@ -3,7 +3,8 @@
 Local SEO heroes for MadeiraCanyonHomes.com. Prefer Nevada place photography over generic stock.
 
 **Public credits page:** https://madeiracanyonhomes.com/photo-credits  
-**Machine registry:** `lib/image-credits.ts`
+**Machine registry:** `lib/image-credits.ts`  
+**Last author refresh:** 2026-07-19
 
 ## Site originals (brand) — author: Madeira Canyon | Homes by Dr Jan Duffy
 
@@ -31,18 +32,18 @@ From site `public/Image/` brand library. All rights reserved.
 |------|--------|--------|
 | `las-vegas-boulevard-strip-dusk-nv.jpg` | [Grant Cai](https://unsplash.com/@grantcaiphoto) | [9xjdQ8-zLKI](https://unsplash.com/photos/9xjdQ8-zLKI) |
 | `home-keys-closing-day-real-estate.jpg` | [Tierra Mallorca](https://unsplash.com/@tierramallorca) | [rgJ1J8SDEAY](https://unsplash.com/photos/rgJ1J8SDEAY) |
-| `mojave-desert-sunset-southern-nevada.jpg` | Unsplash contributor | [photo-1518548419970-58e3b4079ab2](https://unsplash.com/photos/photo-1518548419970-58e3b4079ab2) |
-| `red-rock-formations-near-las-vegas-nv.jpg` | Unsplash contributor | [photo-1596422846543-75c6fc197f07](https://unsplash.com/photos/photo-1596422846543-75c6fc197f07) |
-| `southwest-luxury-home-exterior-pool.jpg` | Unsplash contributor | [photo-1613490493576-7fde63acd811](https://unsplash.com/photos/photo-1613490493576-7fde63acd811) |
-| `henderson-style-modern-home-curb-appeal.jpg` | Unsplash contributor | [photo-1600596542815-ffad4c1539a9](https://unsplash.com/photos/photo-1600596542815-ffad4c1539a9) |
-| `resort-community-pool-henderson-lifestyle.jpg` | Unsplash contributor | [photo-1571896349842-33c89424de2d](https://unsplash.com/photos/photo-1571896349842-33c89424de2d) |
-| `desert-golf-community-fairway-nevada.jpg` | Unsplash contributor | [photo-1535131749006-b7f58c99034b](https://unsplash.com/photos/photo-1535131749006-b7f58c99034b) |
-| `new-construction-homesite-las-vegas-valley.jpg` | Unsplash contributor | [photo-1503387762-592deb58ef4e](https://unsplash.com/photos/photo-1503387762-592deb58ef4e) |
-| `staged-home-interior-open-house-nevada.jpg` | Unsplash contributor | [photo-1600585154526-990dced4db0d](https://unsplash.com/photos/photo-1600585154526-990dced4db0d) |
-| `modern-kitchen-home-buyer-nevada.jpg` | Unsplash contributor | [photo-1600566753190-17f0baa2a6c3](https://unsplash.com/photos/photo-1600566753190-17f0baa2a6c3) |
-| `active-adult-community-living-room-light.jpg` | Unsplash contributor | [photo-1493809842364-78817add7ffb](https://unsplash.com/photos/photo-1493809842364-78817add7ffb) |
-| `suburban-neighborhood-street-southwest.jpg` | Unsplash contributor | [photo-1564013799919-ab600027ffc6](https://unsplash.com/photos/photo-1564013799919-ab600027ffc6) |
-| `mountain-lake-reservoir-recreation-nv.jpg` | Unsplash contributor | [photo-1506905925346-21bda4d32df4](https://unsplash.com/photos/photo-1506905925346-21bda4d32df4) |
+| `mojave-desert-sunset-southern-nevada.jpg` | [Harry Kessell](https://unsplash.com/@harrykessell) | [eE2trMn-6a0](https://unsplash.com/photos/eE2trMn-6a0) |
+| `red-rock-formations-near-las-vegas-nv.jpg` | [Esmonde Yong](https://unsplash.com/@esmonde) | [-9B08uduMyY](https://unsplash.com/photos/-9B08uduMyY) |
+| `southwest-luxury-home-exterior-pool.jpg` | [Avi Werde](https://unsplash.com/@aviwerde) | [hHz4yrvxwlA](https://unsplash.com/photos/hHz4yrvxwlA) |
+| `henderson-style-modern-home-curb-appeal.jpg` | [Frames For Your Heart](https://unsplash.com/@framesforyourheart) | [mR1CIDduGLc](https://unsplash.com/photos/mR1CIDduGLc) |
+| `resort-community-pool-henderson-lifestyle.jpg` | [Anmol Seth](https://unsplash.com/@anmol_seth) | [hDbCjHNdF48](https://unsplash.com/photos/hDbCjHNdF48) |
+| `desert-golf-community-fairway-nevada.jpg` | [Courtney Cook](https://unsplash.com/@courtneymcook) | [SsIIw_MET0E](https://unsplash.com/photos/SsIIw_MET0E) |
+| `new-construction-homesite-las-vegas-valley.jpg` | [Daniel McCullough](https://unsplash.com/@d_mccullough) | [HtBlQdxfG9k](https://unsplash.com/photos/HtBlQdxfG9k) |
+| `staged-home-interior-open-house-nevada.jpg` | Unsplash contributor (page ID unresolved) | [CDN](https://images.unsplash.com/photo-1600585154526-be33763f01dc) |
+| `modern-kitchen-home-buyer-nevada.jpg` | Unsplash contributor (page ID unresolved) | [CDN](https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3) |
+| `active-adult-community-living-room-light.jpg` | [Jarek Ceborski](https://unsplash.com/@jarson) | [jn7uVeCdf6U](https://unsplash.com/photos/jn7uVeCdf6U) |
+| `suburban-neighborhood-street-southwest.jpg` | [Wes Fischer](https://unsplash.com/@ntwrk_img) | [g39p1kDjvSY](https://unsplash.com/photos/g39p1kDjvSY) |
+| `mountain-lake-reservoir-recreation-nv.jpg` | [Sam Ferrara](https://unsplash.com/@samferrara) | [1527pjeb6jg](https://unsplash.com/photos/1527pjeb6jg) |
 
 ## Content author (articles / guides)
 

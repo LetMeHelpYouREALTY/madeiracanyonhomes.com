@@ -275,14 +275,29 @@ export function getHero(key: HeroImageKey): HeroImage {
 /** ImageObject JSON-LD for AEO / GEO image understanding + author credit */
 export function generateImageObjectSchema(image: HeroImage) {
   const credited = withCredit(image);
+  const credit = creditForFile(credited.src);
   const url = credited.src.startsWith("http")
     ? credited.src
     : `${SITE}${credited.src}`;
 
   const authorName = credited.author || "Madeira Canyon | Homes by Dr Jan Duffy";
+  const isBrand = credit?.kind === "brand" || !credited.author;
   const creditText = credited.author
     ? `Photo by ${credited.author}${credited.license ? ` · ${credited.license}` : ""}`
     : "Madeira Canyon | Homes by Dr Jan Duffy";
+
+  const creatorEntity = isBrand
+    ? {
+        "@type": "Organization" as const,
+        "@id": `${SITE}/#organization`,
+        name: authorName,
+        url: credited.authorUrl || `${SITE}/about`,
+      }
+    : {
+        "@type": "Person" as const,
+        name: authorName,
+        ...(credited.authorUrl && { url: credited.authorUrl }),
+      };
 
   return {
     "@context": "https://schema.org",
@@ -294,18 +309,20 @@ export function generateImageObjectSchema(image: HeroImage) {
     ...(credited.caption && { caption: credited.caption }),
     ...(credited.width && { width: credited.width }),
     ...(credited.height && { height: credited.height }),
-    ...(credited.license && { license: credited.licenseUrl || credited.license }),
+    ...(credited.license && {
+      license: credited.licenseUrl || credited.license,
+    }),
     ...(credited.sourceUrl && { acquireLicensePage: credited.sourceUrl }),
-    creator: {
-      "@type": "Person",
-      name: authorName,
-      ...(credited.authorUrl && { url: credited.authorUrl }),
-    },
-    author: {
-      "@type": "Person",
-      name: authorName,
-      ...(credited.authorUrl && { url: credited.authorUrl }),
-    },
+    creator: creatorEntity,
+    author: creatorEntity,
+    copyrightHolder: isBrand
+      ? {
+          "@type": "Organization",
+          "@id": `${SITE}/#organization`,
+          name: "Madeira Canyon | Homes by Dr Jan Duffy",
+          url: SITE,
+        }
+      : creatorEntity,
     creditText,
     copyrightNotice: credited.license
       ? `${creditText}. Used on MadeiraCanyonHomes.com with license compliance.`

@@ -2,6 +2,9 @@
  * Photographer / author credits for hero imagery.
  * Wikimedia CC licenses require attribution; Unsplash does not require it
  * but we credit authors when known for E-E-A-T and engagement.
+ *
+ * Authors verified via Unsplash/Wikimedia pages (2026-07). Unknown Unsplash
+ * authors stay as "Unsplash contributor" — never invent names.
  */
 
 export type ImageCredit = {
@@ -26,7 +29,8 @@ export const imageCredits: ImageCredit[] = [
     title: "Madeira Canyon Henderson home exterior",
     author: "Madeira Canyon | Homes by Dr Jan Duffy",
     authorUrl: "https://madeiracanyonhomes.com/about",
-    sourceUrl: "https://madeiracanyonhomes.com/images/hero/madeira-canyon-henderson-nv-home-exterior-1.jpg",
+    sourceUrl:
+      "https://madeiracanyonhomes.com/images/hero/madeira-canyon-henderson-nv-home-exterior-1.jpg",
     license: "All rights reserved (site brand asset)",
     kind: "brand",
   },
@@ -35,7 +39,8 @@ export const imageCredits: ImageCredit[] = [
     title: "Madeira Canyon Henderson residential exterior",
     author: "Madeira Canyon | Homes by Dr Jan Duffy",
     authorUrl: "https://madeiracanyonhomes.com/about",
-    sourceUrl: "https://madeiracanyonhomes.com/images/hero/madeira-canyon-henderson-nv-home-exterior-2.jpg",
+    sourceUrl:
+      "https://madeiracanyonhomes.com/images/hero/madeira-canyon-henderson-nv-home-exterior-2.jpg",
     license: "All rights reserved (site brand asset)",
     kind: "brand",
   },
@@ -44,7 +49,8 @@ export const imageCredits: ImageCredit[] = [
     title: "Madeira Canyon area home exterior",
     author: "Madeira Canyon | Homes by Dr Jan Duffy",
     authorUrl: "https://madeiracanyonhomes.com/about",
-    sourceUrl: "https://madeiracanyonhomes.com/images/hero/madeira-canyon-henderson-nv-home-exterior-3.jpg",
+    sourceUrl:
+      "https://madeiracanyonhomes.com/images/hero/madeira-canyon-henderson-nv-home-exterior-3.jpg",
     license: "All rights reserved (site brand asset)",
     kind: "brand",
   },
@@ -53,7 +59,8 @@ export const imageCredits: ImageCredit[] = [
     title: "Single-family home near Madeira Canyon, Henderson NV",
     author: "Madeira Canyon | Homes by Dr Jan Duffy",
     authorUrl: "https://madeiracanyonhomes.com/about",
-    sourceUrl: "https://madeiracanyonhomes.com/images/hero/madeira-canyon-area-single-family-home-nv.jpg",
+    sourceUrl:
+      "https://madeiracanyonhomes.com/images/hero/madeira-canyon-area-single-family-home-nv.jpg",
     license: "All rights reserved (site brand asset)",
     kind: "brand",
   },
@@ -123,18 +130,20 @@ export const imageCredits: ImageCredit[] = [
   },
   {
     file: "mojave-desert-sunset-southern-nevada.jpg",
-    title: "Mojave Desert sunset, Southern Nevada",
-    author: "Unsplash contributor",
-    sourceUrl: `${U}/photo-1518548419970-58e3b4079ab2`,
+    title: "Desert hillside temple silhouette (stock lifestyle)",
+    author: "Harry Kessell",
+    authorUrl: "https://unsplash.com/@harrykessell",
+    sourceUrl: `${U}/eE2trMn-6a0`,
     license: "Unsplash License",
     licenseUrl: "https://unsplash.com/license",
     kind: "unsplash",
   },
   {
     file: "red-rock-formations-near-las-vegas-nv.jpg",
-    title: "Red rock formations near Las Vegas",
-    author: "Unsplash contributor",
-    sourceUrl: `${U}/photo-1596422846543-75c6fc197f07`,
+    title: "High-rise skyline at dusk (stock lifestyle)",
+    author: "Esmonde Yong",
+    authorUrl: "https://unsplash.com/@esmonde",
+    sourceUrl: `${U}/-9B08uduMyY`,
     license: "Unsplash License",
     licenseUrl: "https://unsplash.com/license",
     kind: "unsplash",
@@ -142,8 +151,9 @@ export const imageCredits: ImageCredit[] = [
   {
     file: "southwest-luxury-home-exterior-pool.jpg",
     title: "Southwest luxury home with pool",
-    author: "Unsplash contributor",
-    sourceUrl: `${U}/photo-1613490493576-7fde63acd811`,
+    author: "Avi Werde",
+    authorUrl: "https://unsplash.com/@aviwerde",
+    sourceUrl: `${U}/hHz4yrvxwlA`,
     license: "Unsplash License",
     licenseUrl: "https://unsplash.com/license",
     kind: "unsplash",
@@ -151,8 +161,9 @@ export const imageCredits: ImageCredit[] = [
   {
     file: "henderson-style-modern-home-curb-appeal.jpg",
     title: "Modern home curb appeal",
-    author: "Unsplash contributor",
-    sourceUrl: `${U}/photo-1600596542815-ffad4c1539a9`,
+    author: "Frames For Your Heart",
+    authorUrl: "https://unsplash.com/@framesforyourheart",
+    sourceUrl: `${U}/mR1CIDduGLc`,
     license: "Unsplash License",
     licenseUrl: "https://unsplash.com/license",
     kind: "unsplash",
@@ -160,26 +171,29 @@ export const imageCredits: ImageCredit[] = [
   {
     file: "resort-community-pool-henderson-lifestyle.jpg",
     title: "Resort community pool lifestyle",
-    author: "Unsplash contributor",
-    sourceUrl: `${U}/photo-1571896349842-33c89424de2d`,
+    author: "Anmol Seth",
+    authorUrl: "https://unsplash.com/@anmol_seth",
+    sourceUrl: `${U}/hDbCjHNdF48`,
     license: "Unsplash License",
     licenseUrl: "https://unsplash.com/license",
     kind: "unsplash",
   },
   {
     file: "desert-golf-community-fairway-nevada.jpg",
-    title: "Desert golf community fairway",
-    author: "Unsplash contributor",
-    sourceUrl: `${U}/photo-1535131749006-b7f58c99034b`,
+    title: "Golfer swinging on fairway (stock lifestyle)",
+    author: "Courtney Cook",
+    authorUrl: "https://unsplash.com/@courtneymcook",
+    sourceUrl: `${U}/SsIIw_MET0E`,
     license: "Unsplash License",
     licenseUrl: "https://unsplash.com/license",
     kind: "unsplash",
   },
   {
     file: "new-construction-homesite-las-vegas-valley.jpg",
-    title: "New construction homesite",
-    author: "Unsplash contributor",
-    sourceUrl: `${U}/photo-1503387762-592deb58ef4e`,
+    title: "Architect drafting plans (new construction metaphor)",
+    author: "Daniel McCullough",
+    authorUrl: "https://unsplash.com/@d_mccullough",
+    sourceUrl: `${U}/HtBlQdxfG9k`,
     license: "Unsplash License",
     licenseUrl: "https://unsplash.com/license",
     kind: "unsplash",
@@ -188,7 +202,8 @@ export const imageCredits: ImageCredit[] = [
     file: "staged-home-interior-open-house-nevada.jpg",
     title: "Staged home interior for open house",
     author: "Unsplash contributor",
-    sourceUrl: `${U}/photo-1600585154526-990dced4db0d`,
+    sourceUrl:
+      "https://images.unsplash.com/photo-1600585154526-be33763f01dc",
     license: "Unsplash License",
     licenseUrl: "https://unsplash.com/license",
     kind: "unsplash",
@@ -197,7 +212,8 @@ export const imageCredits: ImageCredit[] = [
     file: "modern-kitchen-home-buyer-nevada.jpg",
     title: "Modern kitchen interior",
     author: "Unsplash contributor",
-    sourceUrl: `${U}/photo-1600566753190-17f0baa2a6c3`,
+    sourceUrl:
+      "https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3",
     license: "Unsplash License",
     licenseUrl: "https://unsplash.com/license",
     kind: "unsplash",
@@ -205,8 +221,9 @@ export const imageCredits: ImageCredit[] = [
   {
     file: "active-adult-community-living-room-light.jpg",
     title: "Bright living room light",
-    author: "Unsplash contributor",
-    sourceUrl: `${U}/photo-1493809842364-78817add7ffb`,
+    author: "Jarek Ceborski",
+    authorUrl: "https://unsplash.com/@jarson",
+    sourceUrl: `${U}/jn7uVeCdf6U`,
     license: "Unsplash License",
     licenseUrl: "https://unsplash.com/license",
     kind: "unsplash",
@@ -214,8 +231,9 @@ export const imageCredits: ImageCredit[] = [
   {
     file: "suburban-neighborhood-street-southwest.jpg",
     title: "Suburban neighborhood street",
-    author: "Unsplash contributor",
-    sourceUrl: `${U}/photo-1564013799919-ab600027ffc6`,
+    author: "Wes Fischer",
+    authorUrl: "https://unsplash.com/@ntwrk_img",
+    sourceUrl: `${U}/g39p1kDjvSY`,
     license: "Unsplash License",
     licenseUrl: "https://unsplash.com/license",
     kind: "unsplash",
@@ -223,8 +241,9 @@ export const imageCredits: ImageCredit[] = [
   {
     file: "mountain-lake-reservoir-recreation-nv.jpg",
     title: "Mountain lake / reservoir recreation",
-    author: "Unsplash contributor",
-    sourceUrl: `${U}/photo-1506905925346-21bda4d32df4`,
+    author: "Sam Ferrara",
+    authorUrl: "https://unsplash.com/@samferrara",
+    sourceUrl: `${U}/1527pjeb6jg`,
     license: "Unsplash License",
     licenseUrl: "https://unsplash.com/license",
     kind: "unsplash",
@@ -240,7 +259,19 @@ export function creditsByKind(kind: ImageCredit["kind"]): ImageCredit[] {
   return imageCredits.filter((c) => c.kind === kind);
 }
 
+/** Credits still missing a named photographer (Unsplash placeholders). */
+export function creditsNeedingAuthor(): ImageCredit[] {
+  return imageCredits.filter(
+    (c) => c.kind === "unsplash" && c.author === "Unsplash contributor"
+  );
+}
+
 /** Format a human-readable credit line */
 export function formatCreditLine(credit: ImageCredit): string {
   return `${credit.title} — Photo by ${credit.author} (${credit.license})`;
+}
+
+/** True when every hero file basename has a credit row */
+export function hasCreditForEveryFile(files: string[]): boolean {
+  return files.every((f) => Boolean(creditForFile(f)));
 }
