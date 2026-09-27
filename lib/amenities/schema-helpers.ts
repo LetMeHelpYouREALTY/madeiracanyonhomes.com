@@ -26,6 +26,7 @@ function placeToSchema(place: CuratedPlace) {
   return {
     "@type": place.schemaType,
     name: place.name,
+    url: place.sourceUrl,
     address: {
       "@type": "PostalAddress",
       streetAddress,

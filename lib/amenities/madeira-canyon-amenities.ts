@@ -4,7 +4,7 @@
  * documented on Compass MLS listings at 2721 Bonaparte Ln, Henderson NV 89044.
  */
 
-import { officeInfo, siteConfig } from "@/lib/site-config";
+import { agentInfo, officeInfo, siteConfig } from "@/lib/site-config";
 
 export const MADEIRA_CANYON_COMMUNITY = {
   name: "Madeira Canyon",
@@ -46,7 +46,7 @@ export type AmenityCategory = {
   ariaLabel: string;
 };
 
-/** Family master-planned community — parks and daily errands first, schools included */
+/** Master-planned community — parks and daily errands first, schools included */
 export const AMENITY_CATEGORIES: AmenityCategory[] = [
   {
     id: "parks",
@@ -120,7 +120,8 @@ export type CuratedPlace = {
   name: string;
   category: AmenityCategoryId;
   address: string;
-  /** Optional coordinates for fallback map markers (verified via Google Maps / City of Henderson) */
+  /** Official page used to verify name and address */
+  sourceUrl: string;
   lat?: number;
   lng?: number;
   schemaType:
@@ -146,6 +147,8 @@ export const CURATED_AMENITY_PLACES: CuratedPlace[] = [
     name: "Madeira Canyon Park",
     category: "parks",
     address: "2390 Democracy Dr, Henderson, NV 89044",
+    sourceUrl:
+      "https://www.cityofhenderson.com/Home/Components/FacilityDirectory/FacilityDirectory/248/752",
     lat: 35.93187,
     lng: -115.08807,
     schemaType: "Park",
@@ -155,6 +158,7 @@ export const CURATED_AMENITY_PLACES: CuratedPlace[] = [
     name: "Shirley & Bill Wallin Elementary School",
     category: "schools",
     address: "2333 Canyon Retreat Dr, Henderson, NV 89044",
+    sourceUrl: "https://www.wallinelementary.com/",
     lat: 35.9334,
     lng: -115.0908,
     schemaType: "School",
@@ -164,20 +168,24 @@ export const CURATED_AMENITY_PLACES: CuratedPlace[] = [
     name: "Del E. Webb Middle School",
     category: "schools",
     address: "2200 Reunion Dr, Henderson, NV 89052",
+    sourceUrl: "https://www.delwebbms.org/",
     schemaType: "School",
-    note: "Common CCSD middle school name in Madeira Canyon buyer guides — verify assignment.",
+    note: "CCSD middle school — verify assignment for your address.",
   },
   {
     name: "Liberty High School",
     category: "schools",
     address: "3700 Liberty Heights Ave, Henderson, NV 89052",
+    sourceUrl: "https://www.libertyhighpatriots.com/",
     schemaType: "School",
-    note: "CCSD high school referenced for Anthem Highlands addresses — verify assignment.",
+    note: "CCSD high school — verify assignment for your address.",
   },
   {
     name: "Albertsons",
     category: "grocery",
     address: "2910 Bicentennial Pkwy, Henderson, NV 89044",
+    sourceUrl:
+      "https://local.albertsons.com/nv/henderson/2910-bicentennial-pkwy.html",
     lat: 35.9422,
     lng: -115.0674,
     schemaType: "GroceryStore",
@@ -187,6 +195,8 @@ export const CURATED_AMENITY_PLACES: CuratedPlace[] = [
     name: "Smith's Food and Drug",
     category: "grocery",
     address: "10616 S Eastern Ave, Henderson, NV 89052",
+    sourceUrl:
+      "https://www.smithsfoodanddrug.com/stores/grocery/nv/henderson/horizon-marketplace/706/00346",
     schemaType: "GroceryStore",
     note: "Full-service Kroger-owned grocery south of Madeira Canyon in Henderson.",
   },
@@ -194,6 +204,7 @@ export const CURATED_AMENITY_PLACES: CuratedPlace[] = [
     name: "Henderson Hospital",
     category: "healthcare",
     address: "1050 W Galleria Dr, Henderson, NV 89014",
+    sourceUrl: "https://www.dignityhealth.org/lasvegas/locations/hendersonhospital",
     schemaType: "Hospital",
     note: "Dignity Health hospital serving southeast Henderson.",
   },
@@ -201,20 +212,24 @@ export const CURATED_AMENITY_PLACES: CuratedPlace[] = [
     name: "St. Rose Dominican Hospital, Siena Campus",
     category: "healthcare",
     address: "3001 St Rose Pkwy, Henderson, NV 89052",
+    sourceUrl:
+      "https://www.dignityhealth.org/lasvegas/locations/strose-siennacampus",
     schemaType: "Hospital",
     note: "Major acute-care hospital west of the Anthem corridor.",
   },
   {
-    name: "Rio Secco Golf Club",
+    name: "Rio Secco Golf Club (Serket Golf Club)",
     category: "golf",
     address: "2851 Grand Hills Dr, Henderson, NV 89052",
+    sourceUrl: "https://golfserket.com/",
     schemaType: "GolfCourse",
-    note: "Championship course in the Anthem / Seven Hills area.",
+    note: "Public championship course in the Anthem / Seven Hills area (rebranded Serket Golf Club).",
   },
   {
     name: "Anthem Country Club",
     category: "golf",
     address: "1 Club Side Dr, Henderson, NV 89052",
+    sourceUrl: "https://www.anthemcc.com/",
     schemaType: "GolfCourse",
     note: "Private club in the broader Anthem master plan.",
   },
@@ -222,6 +237,7 @@ export const CURATED_AMENITY_PLACES: CuratedPlace[] = [
     name: "The Club at Madeira Canyon (Club Madeira)",
     category: "fitness",
     address: "2721 Bonaparte Ln, Henderson, NV 89044",
+    sourceUrl: siteConfig.url,
     schemaType: "ExerciseGym",
     note: "Guard-gated village clubhouse with pool and fitness — amenity access varies by parcel.",
   },
@@ -231,7 +247,7 @@ export const AMENITIES_PAGE_FAQ = [
   {
     question: "What grocery stores are near Madeira Canyon?",
     answer:
-      "Albertsons at 2910 Bicentennial Pkwy (Henderson, NV 89044) sits in the same ZIP as Madeira Canyon; Smith's Food and Drug at 10616 S Eastern Ave (89052) is another common full-service option a short drive south. Drive times vary with traffic — call Dr. Jan at (702) 500-1942 to tour routes from a specific street.",
+      `Albertsons at 2910 Bicentennial Pkwy (Henderson, NV 89044) sits in the same ZIP as Madeira Canyon; Smith's Food and Drug at 10616 S Eastern Ave (89052) is another common full-service option a short drive south. Drive times vary with traffic — call Dr. Jan at ${agentInfo.phone} to tour routes from a specific street.`,
   },
   {
     question: "How far is Madeira Canyon from the Las Vegas Strip?",
@@ -256,7 +272,7 @@ export const AMENITIES_PAGE_FAQ = [
   {
     question: "Is there golf near Madeira Canyon?",
     answer:
-      "Rio Secco Golf Club and Anthem Country Club are well-known courses in the Anthem / Seven Hills corridor near Madeira Canyon; membership and guest policies vary by club.",
+      "Rio Secco (Serket Golf Club) and Anthem Country Club are courses in the Anthem / Seven Hills corridor near Madeira Canyon; membership and guest policies vary by club.",
   },
   {
     question: "How far is Madeira Canyon from Harry Reid International Airport?",
@@ -266,7 +282,7 @@ export const AMENITIES_PAGE_FAQ = [
   {
     question: "Who helps buyers compare Madeira Canyon amenities to other Henderson communities?",
     answer:
-      "Dr. Jan Duffy at Madeira Canyon | Homes by Dr Jan Duffy (Berkshire Hathaway HomeServices Nevada Properties) specializes in Madeira Canyon, Club Madeira, and nearby Henderson villages — call (702) 500-1942 or email DrDuffy@MadeiraCanyonHomes.com.",
+      `Dr. Jan Duffy at Madeira Canyon | Homes by Dr Jan Duffy (Berkshire Hathaway HomeServices Nevada Properties) specializes in Madeira Canyon, Club Madeira, and nearby Henderson villages — call ${agentInfo.phone} or email ${agentInfo.email}.`,
   },
 ];
 
@@ -295,6 +311,6 @@ export function getCuratedPlacesByCategory(
 export const amenitiesPageMetadata = {
   title: "Nearby Amenities in Madeira Canyon, Henderson NV | Dr Jan Duffy",
   description:
-    "Interactive map and guide to dining, parks, grocery, schools, healthcare, and golf near Madeira Canyon & Club Madeira, Henderson NV 89044. Dr. Jan Duffy (702) 500-1942.",
+    `Interactive map and guide to dining, parks, grocery, schools, healthcare, and golf near Madeira Canyon & Club Madeira, Henderson NV 89044. Dr. Jan Duffy ${agentInfo.phone}.`,
   canonical: `${siteConfig.url}${AMENITIES_PAGE_PATH}`,
 };

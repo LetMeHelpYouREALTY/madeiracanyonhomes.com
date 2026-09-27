@@ -1,109 +1,39 @@
 "use client";
 
 import { useCallback, useEffect, useId, useRef, useState } from "react";
-import { MapPin, Navigation } from "lucide-react";
+import { Navigation } from "lucide-react";
 import {
   AMENITY_CATEGORIES,
-  CURATED_AMENITY_PLACES,
   MADEIRA_CANYON_COMMUNITY,
   getCuratedPlacesByCategory,
   getKeylessMapEmbedUrl,
   getPlaceDirectionsUrl,
   type AmenityCategoryId,
 } from "@/lib/amenities/madeira-canyon-amenities";
-
-type MapPlaceResult = {
-  id: string;
-  name: string;
-  address?: string;
-  rating?: number;
-  lat: number;
-  lng: number;
-  directionsQuery: string;
-};
+import {
+  loadGoogleMaps,
+  mapsAuthFailed,
+} from "@/lib/google-maps-loader";
+import {
+  searchCategory,
+  type NearbyPlaceResult,
+} from "@/lib/amenities/places-search";
 
 type CommunityAmenityMapProps = {
-  /** Initial category chip */
   defaultCategory?: AmenityCategoryId;
-  /** Reserved map height (prevents CLS) */
   height?: number;
   className?: string;
-  /** Show static curated list below map (always on in fallback mode) */
   showCuratedList?: boolean;
 };
 
 const MAP_CONTAINER_MIN_HEIGHT = 380;
-
-declare global {
-  interface Window {
-    google?: {
-      maps: {
-        importLibrary: (name: string) => Promise<unknown>;
-        Map: new (
-          el: HTMLElement,
-          opts: Record<string, unknown>
-        ) => {
-          setCenter: (c: { lat: number; lng: number }) => void;
-          setZoom: (z: number) => void;
-        };
-        InfoWindow: new (opts?: Record<string, unknown>) => {
-          setContent: (html: string) => void;
-          open: (opts: { map: unknown; anchor?: unknown }) => void;
-          close: () => void;
-        };
-        Marker: new (opts: Record<string, unknown>) => {
-          setMap: (map: unknown | null) => void;
-          addListener: (event: string, fn: () => void) => void;
-        };
-        LatLng: new (lat: number, lng: number) => unknown;
-        places: {
-          PlacesService: new (map: unknown) => {
-            nearbySearch: (
-              request: Record<string, unknown>,
-              callback: (
-                results: Array<Record<string, unknown>> | null,
-                status: string
-              ) => void
-            ) => void;
-          };
-        };
-      };
-    };
-  }
-}
 
 function getApiKey(): string | undefined {
   const key = process.env.NEXT_PUBLIC_GOOGLE_MAPS_API_KEY;
   return key && key.length > 0 && !key.includes("your_") ? key : undefined;
 }
 
-function loadGoogleMapsScript(apiKey: string): Promise<void> {
-  if (typeof window === "undefined") return Promise.reject(new Error("no window"));
-  if (window.google?.maps) return Promise.resolve();
-
-  const existing = document.getElementById("google-maps-js");
-  if (existing) {
-    return new Promise((resolve, reject) => {
-      existing.addEventListener("load", () => resolve());
-      existing.addEventListener("error", () => reject(new Error("maps script error")));
-    });
-  }
-
-  return new Promise((resolve, reject) => {
-    const script = document.createElement("script");
-    script.id = "google-maps-js";
-    script.src = `https://maps.googleapis.com/maps/api/js?key=${encodeURIComponent(
-      apiKey
-    )}&libraries=places,marker&loading=async`;
-    script.async = true;
-    script.defer = true;
-    script.onload = () => resolve();
-    script.onerror = () => reject(new Error("maps script failed"));
-    document.head.appendChild(script);
-  });
-}
-
-function curatedToResults(category: AmenityCategoryId): MapPlaceResult[] {
+function curatedToResults(category: AmenityCategoryId): NearbyPlaceResult[] {
   return getCuratedPlacesByCategory(category)
     .filter(
       (place): place is typeof place & { lat: number; lng: number } =>
@@ -119,6 +49,32 @@ function curatedToResults(category: AmenityCategoryId): MapPlaceResult[] {
     }));
 }
 
+function buildInfoWindowContent(opts: {
+  title: string;
+  address?: string;
+  directionsUrl: string;
+}): HTMLElement {
+  const div = document.createElement("div");
+  div.style.maxWidth = "260px";
+  const strong = document.createElement("strong");
+  strong.textContent = opts.title;
+  div.appendChild(strong);
+  if (opts.address) {
+    div.appendChild(document.createElement("br"));
+    const addr = document.createElement("span");
+    addr.textContent = opts.address;
+    div.appendChild(addr);
+  }
+  div.appendChild(document.createElement("br"));
+  const link = document.createElement("a");
+  link.href = opts.directionsUrl;
+  link.target = "_blank";
+  link.rel = "noopener noreferrer";
+  link.textContent = "Directions";
+  div.appendChild(link);
+  return div;
+}
+
 export default function CommunityAmenityMap({
   defaultCategory = "parks",
   height = MAP_CONTAINER_MIN_HEIGHT,
@@ -128,21 +84,41 @@ export default function CommunityAmenityMap({
   const sectionId = useId();
   const containerRef = useRef<HTMLDivElement>(null);
   const mapDivRef = useRef<HTMLDivElement>(null);
-  const mapRef = useRef<unknown>(null);
-  const markersRef = useRef<unknown[]>([]);
-  const communityMarkerRef = useRef<unknown>(null);
-  const infoWindowRef = useRef<{ close: () => void; setContent: (h: string) => void; open: (o: { map: unknown; anchor?: unknown }) => void } | null>(null);
+  const mapRef = useRef<google.maps.Map | null>(null);
+  const markersRef = useRef<google.maps.Marker[]>([]);
+  const communityMarkerRef = useRef<google.maps.Marker | null>(null);
+  const infoWindowRef = useRef<google.maps.InfoWindow | null>(null);
 
   const apiKey = getApiKey();
   const [inView, setInView] = useState(false);
   const [activeCategory, setActiveCategory] =
     useState<AmenityCategoryId>(defaultCategory);
-  const [places, setPlaces] = useState<MapPlaceResult[]>(() =>
+  const [places, setPlaces] = useState<NearbyPlaceResult[]>(() =>
     curatedToResults(defaultCategory)
   );
   const [loading, setLoading] = useState(false);
-  const [useFallback, setUseFallback] = useState(!apiKey);
-  const [mapError, setMapError] = useState(false);
+  const [useFallback, setUseFallback] = useState(
+    () => !apiKey || mapsAuthFailed
+  );
+
+  const enterFallback = useCallback(() => {
+    setUseFallback(true);
+    mapRef.current = null;
+    communityMarkerRef.current = null;
+    markersRef.current.forEach((m) => m.setMap(null));
+    markersRef.current = [];
+    infoWindowRef.current?.close();
+    infoWindowRef.current = null;
+    setPlaces(curatedToResults(activeCategory));
+  }, [activeCategory]);
+
+  useEffect(() => {
+    const onAuthFailure = () => enterFallback();
+    if (mapsAuthFailed) enterFallback();
+    window.addEventListener("gmaps:auth-failure", onAuthFailure);
+    return () =>
+      window.removeEventListener("gmaps:auth-failure", onAuthFailure);
+  }, [enterFallback]);
 
   useEffect(() => {
     const node = containerRef.current;
@@ -161,18 +137,14 @@ export default function CommunityAmenityMap({
   }, []);
 
   const clearMarkers = useCallback(() => {
-    markersRef.current.forEach((marker) => {
-      const m = marker as { setMap: (map: null) => void };
-      m.setMap(null);
-    });
+    markersRef.current.forEach((marker) => marker.setMap(null));
     markersRef.current = [];
   }, []);
 
   const renderMarkers = useCallback(
-    (results: MapPlaceResult[]) => {
-      const google = window.google;
+    (results: NearbyPlaceResult[]) => {
       const map = mapRef.current;
-      if (!google?.maps || !map) return;
+      if (!map || !window.google?.maps) return;
 
       clearMarkers();
       if (!infoWindowRef.current) {
@@ -189,14 +161,20 @@ export default function CommunityAmenityMap({
           label: { text: "★", color: "#ffffff", fontWeight: "700" },
           zIndex: 1000,
         });
-        const cm = communityMarkerRef.current as {
-          addListener: (e: string, fn: () => void) => void;
-        };
-        cm.addListener("click", () => {
+        communityMarkerRef.current.addListener("click", () => {
           infoWindow.setContent(
-            `<div style="max-width:240px"><strong>${MADEIRA_CANYON_COMMUNITY.centerLabel}</strong><br/>${MADEIRA_CANYON_COMMUNITY.centerAddress}<br/><a href="${getPlaceDirectionsUrl(MADEIRA_CANYON_COMMUNITY.centerAddress)}" target="_blank" rel="noopener noreferrer">Directions</a></div>`
+            buildInfoWindowContent({
+              title: MADEIRA_CANYON_COMMUNITY.centerLabel,
+              address: MADEIRA_CANYON_COMMUNITY.centerAddress,
+              directionsUrl: getPlaceDirectionsUrl(
+                MADEIRA_CANYON_COMMUNITY.centerAddress
+              ),
+            })
           );
-          infoWindow.open({ map, anchor: communityMarkerRef.current as unknown });
+          infoWindow.open({
+            map,
+            anchor: communityMarkerRef.current ?? undefined,
+          });
         });
       }
 
@@ -207,15 +185,12 @@ export default function CommunityAmenityMap({
           title: place.name,
         });
         marker.addListener("click", () => {
-          const ratingLine =
-            place.rating !== undefined
-              ? `<br/>Rating: ${place.rating.toFixed(1)}`
-              : "";
-          const addressLine = place.address
-            ? `<br/>${place.address}`
-            : "";
           infoWindow.setContent(
-            `<div style="max-width:260px"><strong>${place.name}</strong>${ratingLine}${addressLine}<br/><a href="${getPlaceDirectionsUrl(place.directionsQuery)}" target="_blank" rel="noopener noreferrer">Directions</a></div>`
+            buildInfoWindowContent({
+              title: place.name,
+              address: place.address,
+              directionsUrl: getPlaceDirectionsUrl(place.directionsQuery),
+            })
           );
           infoWindow.open({ map, anchor: marker });
         });
@@ -226,11 +201,19 @@ export default function CommunityAmenityMap({
   );
 
   const initMap = useCallback(async () => {
-    if (!apiKey || !mapDivRef.current || mapRef.current) return;
+    if (!apiKey || !mapDivRef.current || mapRef.current || useFallback) {
+      return;
+    }
+    if (mapsAuthFailed) {
+      enterFallback();
+      return;
+    }
     try {
-      await loadGoogleMapsScript(apiKey);
-      const google = window.google;
-      if (!google?.maps) throw new Error("maps unavailable");
+      await loadGoogleMaps(apiKey);
+      if (mapsAuthFailed) {
+        enterFallback();
+        return;
+      }
 
       const mapId = process.env.NEXT_PUBLIC_GOOGLE_MAPS_MAP_ID;
       const map = new google.maps.Map(mapDivRef.current, {
@@ -242,140 +225,56 @@ export default function CommunityAmenityMap({
         ...(mapId ? { mapId } : {}),
       });
       mapRef.current = map;
-      setUseFallback(false);
       renderMarkers(places);
     } catch {
-      setMapError(true);
-      setUseFallback(true);
+      enterFallback();
     }
-  }, [apiKey, places, renderMarkers]);
+  }, [apiKey, places, renderMarkers, useFallback, enterFallback]);
 
   useEffect(() => {
-    if (inView && apiKey && !useFallback && !mapError) {
+    if (inView && apiKey && !useFallback) {
       void initMap();
     }
-  }, [inView, apiKey, useFallback, mapError, initMap]);
+  }, [inView, apiKey, useFallback, initMap]);
 
   const fetchPlaces = useCallback(
     async (categoryId: AmenityCategoryId) => {
       const category = AMENITY_CATEGORIES.find((c) => c.id === categoryId);
       if (!category) return;
 
-      if (!apiKey || useFallback || mapError) {
+      if (!apiKey || useFallback || mapsAuthFailed) {
         setPlaces(curatedToResults(categoryId));
         return;
       }
 
       setLoading(true);
       try {
-        await loadGoogleMapsScript(apiKey);
-        const google = window.google;
-        if (!google?.maps) throw new Error("no maps");
-
-        let results: MapPlaceResult[] = [];
-
-        try {
-          const placesLib = (await google.maps.importLibrary(
-            "places"
-          )) as {
-            Place: {
-              searchNearby: (req: Record<string, unknown>) => Promise<{
-                places: Array<{
-                  id?: string;
-                  displayName?: string;
-                  formattedAddress?: string;
-                  rating?: number;
-                  location?: { lat: () => number; lng: () => number };
-                  googleMapsURI?: string;
-                }>;
-              }>;
-            };
-          };
-
-          const { places: nearby } = await placesLib.Place.searchNearby({
-            fields: [
-              "displayName",
-              "formattedAddress",
-              "location",
-              "rating",
-              "googleMapsURI",
-            ],
-            locationRestriction: {
-              center: MADEIRA_CANYON_COMMUNITY.center,
-              radius: MADEIRA_CANYON_COMMUNITY.searchRadiusMeters,
-            },
-            includedPrimaryTypes: category.googleTypes,
-            maxResultCount: 15,
-          });
-
-          results = nearby
-            .filter((p) => p.location)
-            .map((p, i) => ({
-              id: p.id ?? `place-${i}`,
-              name: p.displayName ?? "Place",
-              address: p.formattedAddress,
-              rating: p.rating,
-              lat: p.location!.lat(),
-              lng: p.location!.lng(),
-              directionsQuery: p.formattedAddress ?? p.displayName ?? "",
-            }));
-        } catch {
-          if (!mapRef.current) {
-            await initMap();
-          }
-          const map = mapRef.current;
-          if (!map) throw new Error("no map for legacy search");
-
-          await new Promise<void>((resolve) => {
-            const service = new google.maps.places.PlacesService(map);
-            service.nearbySearch(
-              {
-                location: new google.maps.LatLng(
-                  MADEIRA_CANYON_COMMUNITY.center.lat,
-                  MADEIRA_CANYON_COMMUNITY.center.lng
-                ),
-                radius: MADEIRA_CANYON_COMMUNITY.searchRadiusMeters,
-                type: category.googleTypes[0],
-              },
-              (raw, status) => {
-                if (status === "OK" && raw) {
-                  results = raw.map((r, i) => {
-                    const geom = r.geometry as {
-                      location: { lat: () => number; lng: () => number };
-                    };
-                    return {
-                      id: (r.place_id as string) ?? `legacy-${i}`,
-                      name: (r.name as string) ?? "Place",
-                      address: r.vicinity as string | undefined,
-                      rating: r.rating as number | undefined,
-                      lat: geom.location.lat(),
-                      lng: geom.location.lng(),
-                      directionsQuery:
-                        (r.name as string) ?? (r.vicinity as string) ?? "",
-                    };
-                  });
-                }
-                resolve();
-              }
-            );
-          });
+        await loadGoogleMaps(apiKey);
+        if (mapsAuthFailed) {
+          enterFallback();
+          setPlaces(curatedToResults(categoryId));
+          return;
         }
 
-        if (results.length === 0) {
-          results = curatedToResults(categoryId);
-        }
-        setPlaces(results);
+        const results = await searchCategory(
+          MADEIRA_CANYON_COMMUNITY.center,
+          categoryId,
+          category.googleTypes
+        );
+
+        const next =
+          results.length > 0 ? results : curatedToResults(categoryId);
+        setPlaces(next);
         if (mapRef.current) {
-          renderMarkers(results);
+          renderMarkers(next);
         }
       } catch {
         setPlaces(curatedToResults(categoryId));
-        setUseFallback(true);
       } finally {
         setLoading(false);
       }
     },
-    [apiKey, useFallback, mapError, initMap, renderMarkers]
+    [apiKey, useFallback, renderMarkers, enterFallback]
   );
 
   useEffect(() => {
@@ -390,12 +289,8 @@ export default function CommunityAmenityMap({
     }
   }, [places, renderMarkers, useFallback]);
 
-  const showEmbed = !apiKey || useFallback || mapError;
   const curatedForCategory = getCuratedPlacesByCategory(activeCategory);
-  const listToShow =
-    curatedForCategory.length > 0
-      ? curatedForCategory
-      : CURATED_AMENITY_PLACES.filter((p) => p.category === activeCategory);
+  const listToShow = curatedForCategory;
 
   return (
     <div ref={containerRef} className={className}>
@@ -435,7 +330,7 @@ export default function CommunityAmenityMap({
         className="overflow-hidden rounded-xl border border-slate-200 bg-white shadow-sm"
         style={{ minHeight: height }}
       >
-        {showEmbed ? (
+        {useFallback || !apiKey ? (
           <iframe
             title="Map of Madeira Canyon, Henderson NV and nearby amenities"
             src={getKeylessMapEmbedUrl()}
@@ -461,9 +356,9 @@ export default function CommunityAmenityMap({
         ) : null}
       </div>
 
-      {showCuratedList && (showEmbed || listToShow.length > 0) ? (
+      {showCuratedList && (useFallback || listToShow.length > 0) ? (
         <ul className="mt-4 space-y-3" aria-label="Curated nearby places list">
-          {showEmbed
+          {useFallback
             ? listToShow.map((item) => (
                 <li
                   key={`${item.name}-${item.address}`}
@@ -497,11 +392,6 @@ export default function CommunityAmenityMap({
                     {item.address ? (
                       <p className="text-sm text-slate-600">{item.address}</p>
                     ) : null}
-                    {item.rating !== undefined ? (
-                      <p className="text-xs text-slate-500 mt-1">
-                        Google rating: {item.rating.toFixed(1)}
-                      </p>
-                    ) : null}
                   </div>
                   <a
                     href={getPlaceDirectionsUrl(item.directionsQuery)}
@@ -515,15 +405,6 @@ export default function CommunityAmenityMap({
                 </li>
               ))}
         </ul>
-      ) : null}
-
-      {!apiKey ? (
-        <p className="mt-3 text-xs text-slate-500 flex items-start gap-1">
-          <MapPin className="h-4 w-4 shrink-0 text-blue-600 mt-0.5" aria-hidden />
-          Interactive search requires{" "}
-          <code className="text-slate-700">NEXT_PUBLIC_GOOGLE_MAPS_API_KEY</code>{" "}
-          in Vercel. Map shows Madeira Canyon center until the key is set.
-        </p>
       ) : null}
     </div>
   );
