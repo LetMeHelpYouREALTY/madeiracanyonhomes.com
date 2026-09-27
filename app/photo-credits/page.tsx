@@ -15,7 +15,6 @@ import {
 import { getHero } from "@/lib/hero-images";
 import {
   combineSchemas,
-  generateBreadcrumbSchema,
   generateWebPageSchema,
 } from "@/lib/schema";
 import { agentInfo } from "@/lib/site-config";
@@ -134,10 +133,6 @@ export default function PhotoCreditsPage() {
       description: metadata.description as string,
       url: "/photo-credits",
     }),
-    generateBreadcrumbSchema([
-      { name: "Home", url: "/" },
-      { name: "Photo Credits", url: "/photo-credits" },
-    ]),
     {
       "@context": "https://schema.org",
       "@type": "Person",

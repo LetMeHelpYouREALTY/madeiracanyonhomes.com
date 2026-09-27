@@ -5,7 +5,6 @@ import Link from "next/link";
 import type { Metadata } from "next";
 import {
   combineSchemas,
-  generateBreadcrumbSchema,
   generateWebPageSchema,
 } from "@/lib/schema";
 import PageHero from "@/components/sections/PageHero";
@@ -42,11 +41,7 @@ export default function CompareHubPage() {
       name: "Compare Henderson Neighborhoods",
       description: metadata.description as string,
       url: "/compare",
-    }),
-    generateBreadcrumbSchema([
-      { name: "Home", url: "/" },
-      { name: "Compare", url: "/compare" },
-    ])
+    })
   );
 
   return (

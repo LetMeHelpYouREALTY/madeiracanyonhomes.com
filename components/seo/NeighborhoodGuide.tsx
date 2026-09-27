@@ -7,7 +7,6 @@ import Link from "next/link";
 import { Phone, MapPin } from "lucide-react";
 import {
   combineSchemas,
-  generateBreadcrumbSchema,
   generateFAQSchema,
   generateNeighborhoodSchema,
   generateWebPageSchema,
@@ -70,11 +69,6 @@ export default function NeighborhoodGuide({
       url: pageUrl,
       dateModified: "2026-07-19",
     }),
-    generateBreadcrumbSchema([
-      { name: "Home", url: "/" },
-      { name: "Neighborhoods", url: "/neighborhoods" },
-      { name: name, url: pageUrl },
-    ]),
     generateNeighborhoodSchema({
       name,
       slug,

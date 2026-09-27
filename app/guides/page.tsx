@@ -7,7 +7,6 @@ import { Phone } from "lucide-react";
 import type { Metadata } from "next";
 import {
   combineSchemas,
-  generateBreadcrumbSchema,
   generateWebPageSchema,
 } from "@/lib/schema";
 import { agentInfo, officeInfo } from "@/lib/site-config";
@@ -71,11 +70,7 @@ export default function GuidesHubPage() {
       name: "Madeira Canyon Real Estate Guides",
       description: metadata.description as string,
       url: "/guides",
-    }),
-    generateBreadcrumbSchema([
-      { name: "Home", url: "/" },
-      { name: "Guides", url: "/guides" },
-    ])
+    })
   );
 
   return (

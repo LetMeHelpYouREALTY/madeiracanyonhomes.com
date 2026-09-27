@@ -8,7 +8,6 @@ import { Phone } from "lucide-react";
 import {
   combineSchemas,
   generateArticleSchema,
-  generateBreadcrumbSchema,
   generateFAQSchema,
   generateWebPageSchema,
   type FAQItem,
@@ -51,11 +50,6 @@ export default function CompareGuide({
 }: CompareGuideProps) {
   const schema = combineSchemas(
     generateWebPageSchema({ name: title, description, url: path }),
-    generateBreadcrumbSchema([
-      { name: "Home", url: "/" },
-      { name: "Compare", url: "/compare" },
-      { name: title, url: path },
-    ]),
     generateArticleSchema({
       headline: h1,
       description,

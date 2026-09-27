@@ -9,7 +9,6 @@ import type { Metadata } from "next";
 import {
   combineSchemas,
   generateArticleSchema,
-  generateBreadcrumbSchema,
   generateFAQSchema,
   generateWebPageSchema,
 } from "@/lib/schema";
@@ -173,11 +172,6 @@ export default function MadeiraCanyonSchoolsPage() {
       url: path,
       dateModified: "2026-07-19",
     }),
-    generateBreadcrumbSchema([
-      { name: "Home", url: "/" },
-      { name: "Guides", url: "/guides" },
-      { name: "Madeira Canyon Schools", url: path },
-    ]),
     generateArticleSchema({
       headline: "Madeira Canyon Schools in Henderson, NV",
       description: metadata.description as string,
