@@ -87,7 +87,7 @@ export const DOMAIN_CONFIGS: Record<string, DomainConfig> = {
     neighborhood: "Madeira Canyon",
     tagline: "Madeira Canyon | Homes by Dr Jan Duffy",
     description:
-      "Madeira Canyon | Homes by Dr Jan Duffy — buy or sell in Madeira Canyon and Club Madeira (Madeira Canyon Homes) Henderson, NV. Berkshire Hathaway HomeServices Nevada Properties. Suite A, 2721 Bonaparte Ln, Henderson, NV 89044.",
+      "Buy or sell Madeira Canyon and Club Madeira homes in Henderson, NV. Dr. Jan Duffy, REALTOR® with BHHS Nevada Properties. Suite A, 2721 Bonaparte Ln, 89044.",
     heroHeadline: "Madeira Canyon | Homes by Dr Jan Duffy",
     heroSubheadline:
       "Club Madeira and Madeira Canyon homes in Henderson — clear local guidance from Dr. Jan Duffy. Looking for Madeira Canyon Homes? Start by searching homes for sale with her below.",

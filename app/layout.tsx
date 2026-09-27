@@ -9,6 +9,7 @@ import DeferredWidgetTracker from "@/components/analytics/DeferredWidgetTracker"
 import GoogleAnalytics from "@/components/analytics/GoogleAnalytics";
 import { generateLocalBusinessSchema } from "@/lib/gbp-schema";
 import { siteConfig } from "@/lib/site-config";
+import AutoBreadcrumbJsonLd from "@/components/seo/AutoBreadcrumbJsonLd";
 
 const SITE_URL =
   (process.env.NEXT_PUBLIC_SITE_URL || siteConfig.url).replace(/\/$/, "") ||
@@ -114,6 +115,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
             __html: JSON.stringify(localBusinessSchema),
           }}
         />
+        <AutoBreadcrumbJsonLd />
         {children}
         <GoogleAnalytics />
         <CalendlyProvider />

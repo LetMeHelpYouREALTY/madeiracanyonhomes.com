@@ -13,7 +13,7 @@ export const siteConfig = {
   /** Primary SEO focus keyword: Madeira Canyon Homes (Club Madeira / Madeira Canyon searches) */
   primaryKeyword: "Madeira Canyon Homes",
   description:
-    "Madeira Canyon | Homes by Dr Jan Duffy — buy or sell in Madeira Canyon and Club Madeira (Madeira Canyon Homes) Henderson, NV. Berkshire Hathaway HomeServices Nevada Properties. Suite A, 2721 Bonaparte Ln, Henderson, NV 89044.",
+    "Buy or sell Madeira Canyon and Club Madeira homes in Henderson, NV. Dr. Jan Duffy, REALTOR® with BHHS Nevada Properties. Suite A, 2721 Bonaparte Ln, 89044.",
   keywords: [
     "Madeira Canyon Homes",
     "Club Madeira HOA",

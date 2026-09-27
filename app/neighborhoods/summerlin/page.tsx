@@ -6,7 +6,6 @@ import { Phone, MapPin, TreePine, Mountain, GraduationCap, ShoppingBag } from "l
 import type { Metadata } from "next";
 import SchemaScript from "@/components/SchemaScript";
 import {
-  generateBreadcrumbSchema,
   generateFAQSchema,
   generateNeighborhoodSchema,
   combineSchemas,
@@ -26,13 +25,6 @@ export const metadata: Metadata = {
     "luxury homes Summerlin",
   ],
 };
-
-// Breadcrumb items for this page
-const breadcrumbs = [
-  { name: "Home", url: "/" },
-  { name: "Neighborhoods", url: "/neighborhoods" },
-  { name: "Summerlin", url: "/neighborhoods/summerlin" },
-];
 
 // FAQ data for schema
 const summerlinFaqs = [
@@ -60,7 +52,6 @@ const summerlinFaqs = [
 
 // Combined page schemas
 const pageSchemas = combineSchemas(
-  generateBreadcrumbSchema(breadcrumbs),
   generateNeighborhoodSchema({
     name: "Summerlin",
     slug: "summerlin",
@@ -76,7 +67,7 @@ const pageSchemas = combineSchemas(
 export default function SummerlinPage() {
   return (
     <>
-      {/* Combined JSON-LD Schema: Breadcrumb + Place + FAQ */}
+      {/* Combined JSON-LD Schema: Place + FAQ */}
       <SchemaScript schema={pageSchemas} id="summerlin-schema" />
       <Navbar />
       <PageHero

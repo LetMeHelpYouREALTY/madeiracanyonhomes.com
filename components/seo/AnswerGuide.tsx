@@ -8,7 +8,6 @@ import { Phone, CheckCircle } from "lucide-react";
 import {
   combineSchemas,
   generateArticleSchema,
-  generateBreadcrumbSchema,
   generateFAQSchema,
   generateHowToSchema,
   generateWebPageSchema,
@@ -58,11 +57,6 @@ export default function AnswerGuide({
       url: path,
       dateModified: "2026-07-19",
     }),
-    generateBreadcrumbSchema([
-      { name: "Home", url: "/" },
-      { name: "Guides", url: "/guides" },
-      { name: h1, url: path },
-    ]),
     generateArticleSchema({
       headline: h1,
       description,
