@@ -15,6 +15,7 @@ import {
 import { getHeroForRoute } from "@/lib/hero-images";
 import { agentInfo, officeInfo } from "@/lib/site-config";
 import { REALSCOUT_SEARCH_URL } from "@/lib/realscout";
+import NearbyAmenitiesSection from "@/components/sections/NearbyAmenitiesSection";
 
 export type NeighborhoodStat = {
   label: string;
@@ -42,6 +43,7 @@ export type NeighborhoodGuideProps = {
   relatedLinks?: { href: string; label: string }[];
   quote?: string;
   lastUpdated?: string;
+  showNearbyAmenities?: boolean;
 };
 
 export default function NeighborhoodGuide({
@@ -60,6 +62,7 @@ export default function NeighborhoodGuide({
   relatedLinks = [],
   quote,
   lastUpdated = "July 2026",
+  showNearbyAmenities = false,
 }: NeighborhoodGuideProps) {
   const pageUrl = `/neighborhoods/${slug}`;
   const schema = combineSchemas(
@@ -107,6 +110,15 @@ export default function NeighborhoodGuide({
             title={`${name} & Nearby Homes for Sale`}
             subtitle={`Current homes for sale near ${name}, Henderson, NV`}
           />
+
+          {showNearbyAmenities ? (
+            <div className="mb-16 -mx-4 md:mx-0">
+              <NearbyAmenitiesSection
+                title={`What's Near ${name}`}
+                subtitle={`Parks, grocery, schools, and healthcare around ${name} in Henderson, NV 89044.`}
+              />
+            </div>
+          ) : null}
 
           <section className="mb-16 bg-slate-900 text-white rounded-2xl p-8 md:p-12 max-w-5xl mx-auto">
             <h2 className="text-2xl font-bold mb-8 text-center">

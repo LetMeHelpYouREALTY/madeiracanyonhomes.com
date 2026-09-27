@@ -20,6 +20,7 @@ import {
 import type { Metadata } from "next";
 import RealScoutListings from "@/components/realscout/RealScoutListings";
 import PageHero from "@/components/sections/PageHero";
+import NearbyAmenitiesSection from "@/components/sections/NearbyAmenitiesSection";
 import { getHero } from "@/lib/hero-images";
 
 export const metadata: Metadata = {
@@ -462,6 +463,12 @@ export default function ListingsPage() {
               </div>
             </div>
           </section>
+
+          <NearbyAmenitiesSection
+            title="What's Near Madeira Canyon"
+            subtitle="Filter parks, grocery, schools, and healthcare around Club Madeira while you search Henderson listings."
+            className="mb-16"
+          />
 
           {/* CTA */}
           <section className="text-center bg-blue-600 text-white rounded-2xl p-8 md:p-12 max-w-4xl mx-auto">

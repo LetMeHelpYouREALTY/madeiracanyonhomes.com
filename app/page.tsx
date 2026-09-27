@@ -16,6 +16,7 @@ import CalendlyButton from "@/components/calendly/CalendlyButton";
 import RealScoutHeroSearch from "@/components/realscout/RealScoutHeroSearch";
 import { getDrJanPhotoUrl } from "@/lib/agent-photo";
 import { REALSCOUT_SEARCH_URL } from "@/lib/realscout";
+import NearbyAmenitiesSection from "@/components/sections/NearbyAmenitiesSection";
 
 export const metadata: Metadata = {
   alternates: {
@@ -291,6 +292,8 @@ export default async function Home() {
           </div>
         </section>
 
+
+        <NearbyAmenitiesSection />
 
         <WhyChooseUs />
         <ReviewsSection />
