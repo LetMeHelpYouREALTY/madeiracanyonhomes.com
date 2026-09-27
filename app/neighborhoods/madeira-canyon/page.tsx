@@ -85,6 +85,7 @@ export default function MadeiraCanyonPage() {
       ]}
       relatedLinks={[
         { href: "/neighborhoods/club-madeira", label: "Club Madeira homes" },
+        { href: "/amenities", label: "Nearby amenities map" },
         { href: "/guides/buying-madeira-canyon-homes", label: "Buying guide" },
         { href: "/guides/madeira-canyon-schools", label: "Madeira Canyon schools" },
         { href: "/guides/club-madeira-hoa", label: "Club Madeira HOA FAQ" },
@@ -92,6 +93,7 @@ export default function MadeiraCanyonPage() {
         { href: "/neighborhoods/anthem", label: "Anthem Highlands" },
       ]}
       quote="Madeira Canyon buyers usually care about elevation, trail access, and whether they want Club Madeira amenities or a quieter non-gated street. I match the village to the commute and the square footage—not a generic Henderson ZIP code search."
+      showNearbyAmenities
     />
   );
 }

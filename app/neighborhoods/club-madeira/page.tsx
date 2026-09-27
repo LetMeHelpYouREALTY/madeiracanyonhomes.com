@@ -98,6 +98,7 @@ export default function ClubMadeiraPage() {
         { href: "/home-valuation", label: "What’s my home worth?" },
       ]}
       quote="Club Madeira searches often start with Madeira Canyon Homes. I help buyers find the right home for sale, then explain HOA rules and amenity access in plain English before they write an offer."
+      showNearbyAmenities
     />
   );
 }
