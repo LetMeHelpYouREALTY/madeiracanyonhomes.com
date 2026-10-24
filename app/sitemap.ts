@@ -17,6 +17,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${baseUrl}/market-insights`, priority: 0.9, changeFrequency: "monthly" as const },
     { url: `${baseUrl}/google-business`, priority: 0.9, changeFrequency: "monthly" as const },
     { url: `${baseUrl}/faq`, priority: 0.8, changeFrequency: "monthly" as const },
+    { url: `${baseUrl}/amenities`, priority: 0.9, changeFrequency: "monthly" as const },
     { url: `${baseUrl}/guides`, priority: 0.9, changeFrequency: "weekly" as const },
     { url: `${baseUrl}/compare`, priority: 0.8, changeFrequency: "weekly" as const },
     { url: `${baseUrl}/photo-credits`, priority: 0.5, changeFrequency: "monthly" as const },

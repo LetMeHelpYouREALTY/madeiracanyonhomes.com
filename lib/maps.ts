@@ -3,6 +3,7 @@
  * NAP must match GBP: Suite A, 2721 Bonaparte Ln, Henderson, NV 89044
  */
 
+import { MADEIRA_CANYON_COMMUNITY } from "@/lib/amenities/madeira-canyon-amenities";
 import { officeInfo } from "@/lib/site-config";
 
 export const MADEIRA_CANYON_MAP = {
@@ -10,8 +11,8 @@ export const MADEIRA_CANYON_MAP = {
   communityQuery: "Madeira Canyon, Henderson, NV 89044",
   parkQuery: "Madeira Canyon Park, Henderson, NV",
   officeQuery: officeInfo.address.full,
-  lat: officeInfo.coordinates.lat,
-  lng: officeInfo.coordinates.lng,
+  lat: MADEIRA_CANYON_COMMUNITY.center.lat,
+  lng: MADEIRA_CANYON_COMMUNITY.center.lng,
   zoomOffice: 15,
   zoomCommunity: 13,
 } as const;
