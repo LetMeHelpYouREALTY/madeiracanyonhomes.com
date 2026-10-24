@@ -8,9 +8,9 @@ import PageHero from "@/components/sections/PageHero";
 import { getHero } from "@/lib/hero-images";
 
 export const metadata: Metadata = {
-  title: "Why Choose Berkshire Hathaway HomeServices | Las Vegas Real Estate",
+  title: "Why Work With Dr. Jan Duffy | Las Vegas Real Estate",
   description:
-    "Discover why Berkshire Hathaway HomeServices is the most trusted name in real estate. Backed by Warren Buffett, with 50,000+ agents worldwide. Work with BHHS Nevada Properties today.",
+    "Why buyers and sellers choose Dr. Jan Duffy, a Top 1% Las Vegas REALTOR® in real estate since 1983: 500+ transactions, $127M+ in closed volume, and local Madeira Canyon expertise.",
   keywords: [
     "Berkshire Hathaway HomeServices",
     "why choose BHHS",
@@ -45,8 +45,8 @@ export default function WhyBerkshireHathawayPage() {
       />
       <Navbar />
       <PageHero
-        title={"Why Choose Berkshire Hathaway HomeServices?"}
-        subtitle={"When you work with a Berkshire Hathaway HomeServices agent, you're backed by a name synonymous with trust, ethical standards, and financial strength—the same principles that built Warren Buffett's empire."}
+        title={"Why Work With Dr. Jan Duffy?"}
+        subtitle={"A Top 1% Las Vegas REALTOR®, in real estate since 1983, with the trust, ethical standards, and local knowledge your move deserves."}
         image={getHero("skyline")}
       />
       <main className="pb-16">
@@ -56,38 +56,10 @@ export default function WhyBerkshireHathawayPage() {
 
           <RealScoutListings />
 
-          {/* Warren Buffett Section */}
-          <section className="mb-16 bg-slate-900 text-white rounded-2xl p-8 md:p-12 max-w-5xl mx-auto">
-            <div className="grid md:grid-cols-2 gap-8 items-center">
-              <div>
-                <h2 className="text-3xl md:text-4xl font-bold mb-6">
-                  Backed by Warren Buffett's Legacy
-                </h2>
-                <p className="text-slate-300 mb-6">
-                  <strong>Berkshire Hathaway HomeServices</strong> is the only real estate brand
-                  backed by Berkshire Hathaway Inc., Warren Buffett's legendary holding company.
-                  This means unmatched financial stability and a commitment to ethical business
-                  practices that spans decades.
-                </p>
-                <p className="text-slate-300">
-                  When you see the Berkshire Hathaway name, you know you're working with
-                  professionals who uphold the highest standards in the industry.
-                </p>
-              </div>
-              <div className="bg-slate-800 rounded-lg p-8 text-center">
-                <div className="text-6xl mb-4">🏛️</div>
-                <p className="text-2xl font-bold mb-2">Fortune #1</p>
-                <p className="text-slate-400">
-                  Berkshire Hathaway Inc. consistently ranks among the top companies in the world
-                </p>
-              </div>
-            </div>
-          </section>
-
           {/* Key Benefits */}
           <section className="mb-16 max-w-6xl mx-auto">
             <h2 className="text-3xl md:text-4xl font-bold text-slate-900 mb-12 text-center">
-              The BHHS Advantage
+              The Dr. Jan Duffy Advantage
             </h2>
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
               <div className="bg-white border border-slate-200 rounded-lg p-8 hover:shadow-lg transition-shadow">
@@ -96,8 +68,8 @@ export default function WhyBerkshireHathawayPage() {
                 </div>
                 <h3 className="text-xl font-bold text-slate-900 mb-3">Unmatched Trust</h3>
                 <p className="text-slate-600">
-                  The Berkshire Hathaway name represents integrity and reliability. Our agents
-                  uphold these values in every transaction.
+                  Integrity and reliability in every transaction, built over a career in real
+                  estate since 1983.
                 </p>
               </div>
 
@@ -105,10 +77,10 @@ export default function WhyBerkshireHathawayPage() {
                 <div className="bg-blue-100 rounded-full p-4 w-16 h-16 flex items-center justify-center mb-6">
                   <Users className="h-8 w-8 text-blue-600" />
                 </div>
-                <h3 className="text-xl font-bold text-slate-900 mb-3">Global Network</h3>
+                <h3 className="text-xl font-bold text-slate-900 mb-3">Referral Network</h3>
                 <p className="text-slate-600">
-                  50,000+ agents worldwide means seamless referrals for relocations and connections
-                  to buyers from across the globe.
+                  A nationwide network of trusted agents means seamless referrals for relocations
+                  and connections to buyers from across the country.
                 </p>
               </div>
 
@@ -118,8 +90,8 @@ export default function WhyBerkshireHathawayPage() {
                 </div>
                 <h3 className="text-xl font-bold text-slate-900 mb-3">World-Class Marketing</h3>
                 <p className="text-slate-600">
-                  Your property gets exposure through the most recognized real estate brand in the
-                  world, reaching qualified buyers everywhere.
+                  Professional photography, MLS syndication, and targeted digital advertising put
+                  your property in front of qualified buyers.
                 </p>
               </div>
 
@@ -129,8 +101,8 @@ export default function WhyBerkshireHathawayPage() {
                 </div>
                 <h3 className="text-xl font-bold text-slate-900 mb-3">Ethical Standards</h3>
                 <p className="text-slate-600">
-                  BHHS agents adhere to strict ethical guidelines that go beyond industry
-                  requirements. Your interests always come first.
+                  Dr. Jan follows strict ethical guidelines that go beyond industry requirements.
+                  Your interests always come first.
                 </p>
               </div>
 
@@ -138,10 +110,10 @@ export default function WhyBerkshireHathawayPage() {
                 <div className="bg-blue-100 rounded-full p-4 w-16 h-16 flex items-center justify-center mb-6">
                   <TrendingUp className="h-8 w-8 text-blue-600" />
                 </div>
-                <h3 className="text-xl font-bold text-slate-900 mb-3">Financial Strength</h3>
+                <h3 className="text-xl font-bold text-slate-900 mb-3">Top 1% Las Vegas REALTOR®</h3>
                 <p className="text-slate-600">
-                  Backed by one of the most financially secure companies in the world. Our stability
-                  means we'll be here for you long-term.
+                  Ranked among the top 1% of Las Vegas REALTORS®, with $127M+ in closed
+                  transactions.
                 </p>
               </div>
 
@@ -151,34 +123,9 @@ export default function WhyBerkshireHathawayPage() {
                 </div>
                 <h3 className="text-xl font-bold text-slate-900 mb-3">Proven Results</h3>
                 <p className="text-slate-600">
-                  BHHS Nevada Properties has helped thousands of families achieve their real estate
-                  goals in Southern Nevada.
+                  500+ transactions helping families achieve their real estate goals in Southern
+                  Nevada.
                 </p>
-              </div>
-            </div>
-          </section>
-
-          {/* Stats Section */}
-          <section className="mb-16 bg-blue-600 text-white rounded-2xl p-8 md:p-12 max-w-5xl mx-auto">
-            <h2 className="text-3xl font-bold mb-8 text-center">
-              Berkshire Hathaway HomeServices By The Numbers
-            </h2>
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
-              <div className="text-center">
-                <div className="text-4xl md:text-5xl font-bold mb-2">50K+</div>
-                <div className="text-blue-200">Agents Worldwide</div>
-              </div>
-              <div className="text-center">
-                <div className="text-4xl md:text-5xl font-bold mb-2">1,500+</div>
-                <div className="text-blue-200">Offices Globally</div>
-              </div>
-              <div className="text-center">
-                <div className="text-4xl md:text-5xl font-bold mb-2">$138B+</div>
-                <div className="text-blue-200">Sales Volume (2024)</div>
-              </div>
-              <div className="text-center">
-                <div className="text-4xl md:text-5xl font-bold mb-2">#1</div>
-                <div className="text-blue-200">Most Trusted Brand</div>
               </div>
             </div>
           </section>
@@ -188,17 +135,16 @@ export default function WhyBerkshireHathawayPage() {
             <div className="grid md:grid-cols-2 gap-12 items-center">
               <div>
                 <h2 className="text-3xl md:text-4xl font-bold text-slate-900 mb-6">
-                  Your Local BHHS Expert in Las Vegas
+                  Your Local Expert in Las Vegas
                 </h2>
                 <p className="text-lg text-slate-700 mb-6">
-                  Dr. Jan Duffy brings the power of <strong>Berkshire Hathaway HomeServices</strong>{" "}
-                  to Las Vegas, Henderson, Summerlin, and all of Southern Nevada. Serving the area 
-                  since 2008 with $127M+ in closed transactions, you get global brand strength
-                  with hometown expertise.
+                  Dr. Jan Duffy serves Las Vegas, Henderson, Summerlin, and all of Southern
+                  Nevada. In real estate since 1983 with $127M+ in closed transactions, she
+                  brings hometown expertise to every move.
                 </p>
                 <ul className="space-y-3 mb-8">
                   {[
-                    "Serving Las Vegas since 2008",
+                    "In real estate since 1983",
                     "$127M+ in closed transactions",
                     "500+ satisfied clients",
                     "Specializing in luxury, investment, and relocation",
@@ -219,12 +165,12 @@ export default function WhyBerkshireHathawayPage() {
               </div>
               <div className="bg-slate-100 rounded-lg p-8">
                 <blockquote className="text-lg text-slate-700 italic mb-4">
-                  "When clients ask why they should choose a Berkshire Hathaway HomeServices agent,
-                  I tell them: you're not just getting me—you're getting a global network of 50,000
-                  agents, world-class marketing, and a brand that's synonymous with trust."
+                  "When clients ask why they should choose me, I tell them: you get a REALTOR®
+                  who has been in real estate since 1983, world-class marketing, and someone who
+                  puts your interests first."
                 </blockquote>
                 <cite className="text-slate-900 font-semibold">
-                  — Dr. Jan Duffy, BHHS Nevada Properties
+                  — Dr. Jan Duffy, REALTOR®
                 </cite>
               </div>
             </div>
@@ -233,25 +179,21 @@ export default function WhyBerkshireHathawayPage() {
           {/* FAQ Section */}
           <section className="mb-16 max-w-4xl mx-auto">
             <h2 className="text-3xl font-bold text-slate-900 mb-8 text-center">
-              Frequently Asked Questions About BHHS
+              Frequently Asked Questions
             </h2>
             <div className="space-y-4">
               {[
                 {
-                  q: "Is Berkshire Hathaway HomeServices owned by Warren Buffett?",
-                  a: "Berkshire Hathaway HomeServices is part of HSF Affiliates LLC, which is a joint venture of Berkshire Hathaway Inc. (Warren Buffett's company) and HomeServices of America. The brand carries the trusted Berkshire Hathaway name and upholds its values of integrity and excellence.",
+                  q: "How long has Dr. Jan Duffy been in real estate?",
+                  a: "Dr. Jan Duffy has been in real estate since 1983 and is a Top 1% Las Vegas REALTOR®, with 500+ transactions and $127M+ in closed volume.",
                 },
                 {
-                  q: "What makes BHHS different from other real estate companies?",
-                  a: "BHHS is the only real estate brand backed by Warren Buffett's Berkshire Hathaway Inc. This provides unmatched financial stability, a global network of 50,000+ agents, world-class marketing resources, and a commitment to ethical standards that goes beyond industry requirements.",
+                  q: "Does working with Dr. Jan cost more?",
+                  a: "No. Commission rates are negotiable and comparable to other full-service agents. The value you receive—marketing exposure and experienced representation—often helps homes sell faster and for more money.",
                 },
                 {
-                  q: "Does using a Berkshire Hathaway agent cost more?",
-                  a: "No. Commission rates are negotiable and comparable to other brokerages. The value you receive—global marketing exposure, trusted brand recognition, and experienced agents—often helps homes sell faster and for more money.",
-                },
-                {
-                  q: "Can BHHS help with relocations to Las Vegas?",
-                  a: "Yes! Our global network makes relocations seamless. Dr. Jan Duffy can coordinate with BHHS agents in your current city while providing expert guidance on Las Vegas neighborhoods, schools, and communities.",
+                  q: "Can Dr. Jan help with relocations to Las Vegas?",
+                  a: "Yes! Dr. Jan Duffy can coordinate with agents in your current city through her referral network while providing expert guidance on Las Vegas neighborhoods, schools, and communities.",
                 },
               ].map((faq, index) => (
                 <div key={index} className="bg-slate-50 rounded-lg p-6">
@@ -265,10 +207,10 @@ export default function WhyBerkshireHathawayPage() {
           {/* CTA */}
           <section className="text-center bg-slate-900 text-white rounded-2xl p-8 md:p-12 max-w-4xl mx-auto">
             <h2 className="text-3xl md:text-4xl font-bold mb-4">
-              Experience the Berkshire Hathaway Difference
+              Experience the Difference
             </h2>
             <p className="text-xl text-slate-300 mb-8">
-              Ready to work with the most trusted name in real estate? Contact Dr. Jan Duffy today.
+              Ready to work with a Top 1% Las Vegas REALTOR®? Contact Dr. Jan Duffy today.
             </p>
             <a
               href="tel:+17025001942"
@@ -277,9 +219,6 @@ export default function WhyBerkshireHathawayPage() {
               <Phone className="h-5 w-5 mr-2" />
               Call (702) 500-1942
             </a>
-            <p className="mt-4 text-slate-400 text-sm">
-              Berkshire Hathaway HomeServices Nevada Properties
-            </p>
           </section>
         </div>
 

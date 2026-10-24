@@ -53,7 +53,7 @@ export const heroImages = {
     // Best full-bleed Madeira Canyon hero: bright landscape, pool/patio, clean (no stock watermarks)
     src: `${H}/madeira-canyon-henderson-nv-home-exterior-2.jpg`,
     alt: "Madeira Canyon Henderson Nevada home for sale — modern exterior with pool and patio in ZIP 89044",
-    caption: "Buy and sell Madeira Canyon homes with Dr. Jan Duffy, BHHS Nevada Properties",
+    caption: "Buy and sell Madeira Canyon homes with Dr. Jan Duffy, REALTOR®",
     width: 2070,
     height: 1380,
   },
@@ -88,7 +88,7 @@ export const heroImages = {
   luxury: {
     src: `${H}/southwest-luxury-home-exterior-pool.jpg`,
     alt: "Luxury home with pool in the Las Vegas Valley — high-end Henderson and Summerlin estates",
-    caption: "Luxury homes Las Vegas and Henderson — Berkshire Hathaway HomeServices Nevada Properties",
+    caption: "Luxury homes Las Vegas and Henderson — Dr. Jan Duffy, REALTOR®",
     width: 1920,
     height: 1280,
   },
@@ -186,7 +186,7 @@ export const heroImages = {
   services: {
     src: `${H}/madeira-canyon-area-single-family-home-nv.jpg`,
     alt: "Full-service real estate for Madeira Canyon and Club Madeira Henderson Nevada homes",
-    caption: "Buyer and seller services — Berkshire Hathaway HomeServices Nevada Properties",
+    caption: "Buyer and seller services — Dr. Jan Duffy, REALTOR®",
     width: 1280,
     height: 1280,
   },

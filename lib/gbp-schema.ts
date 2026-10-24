@@ -146,12 +146,12 @@ export const businessInfo = {
 // 750-word GBP Description (3 sections)
 export const gbpDescription = {
   // Section 1: Who you are/mission (~250 words)
-  whoWeAre: `Madeira Canyon | Homes by Dr Jan Duffy is the local real estate resource for buyers and sellers in Madeira Canyon and Club Madeira in Henderson, NV—the community known as Madeira Canyon Homes. Dr. Jan Duffy, REALTOR® with Berkshire Hathaway HomeServices Nevada Properties (License S.0197614.LLC), focuses on this Anthem Highlands corridor with clear pricing comparisons, amenity knowledge, and practical next steps—not generic valley-wide marketing.
+  whoWeAre: `Madeira Canyon | Homes by Dr Jan Duffy is the local real estate resource for buyers and sellers in Madeira Canyon and Club Madeira in Henderson, NV—the community known as Madeira Canyon Homes. Dr. Jan Duffy, REALTOR®, in real estate since 1983, focuses on this Anthem Highlands corridor with clear pricing comparisons, amenity knowledge, and practical next steps—not generic valley-wide marketing.
 
-With $127 million in closed transactions and hundreds of clients helped since 2008, Dr. Jan brings BHHS resources plus hyperlocal Madeira Canyon inventory insight. Whether you are comparing Club Madeira listings, reviewing HOA dues tied to Club Madeira HOA info, or relocating to Henderson for Nevada's tax advantages, you get data-backed guidance and a single point of contact.`,
+With $127M+ in closed transactions and hundreds of clients helped, Dr. Jan brings hyperlocal Madeira Canyon inventory insight. Whether you are comparing Club Madeira listings, reviewing HOA dues tied to Club Madeira HOA info, or relocating to Henderson for Nevada's tax advantages, you get data-backed guidance and a single point of contact.`,
 
   // Section 2: What/why - Value proposition (~250 words)
-  whatWeDo: `What sets this practice apart is Madeira Canyon focus plus Berkshire Hathaway HomeServices backing. Clients get current pricing for Club Madeira and surrounding Madeira Canyon villages, clear offer help, and honest advice—not sales pressure. Sellers get professional marketing; buyers get representation that costs them nothing when the seller’s side pays the commission.
+  whatWeDo: `What sets this practice apart is Madeira Canyon focus from a Top 1% Las Vegas REALTOR®. Clients get current pricing for Club Madeira and surrounding Madeira Canyon villages, clear offer help, and honest advice—not sales pressure. Sellers get professional marketing; buyers get representation that costs them nothing when the seller’s side pays the commission.
 
 Services include buyer and seller representation in Madeira Canyon / Club Madeira, Henderson market analysis, California relocation assistance, investment property consulting, new construction representation, and first-time buyer programs (FHA, VA, conventional, Nevada down-payment assistance).
 
@@ -171,7 +171,7 @@ export const gbpFAQs = [
   },
   {
     question: "Is this the Club Madeira HOA website?",
-    answer: "No. The Club Madeira HOA has its own community website. Madeira Canyon Homes (MadeiraCanyonHomes.com) is Dr. Jan Duffy — Berkshire Hathaway HomeServices Nevada Properties — for buying and selling in Madeira Canyon and Club Madeira. Use Search Homes for Sale to browse listings.",
+    answer: "No. The Club Madeira HOA has its own community website. Madeira Canyon Homes (MadeiraCanyonHomes.com) is Dr. Jan Duffy — for buying and selling in Madeira Canyon and Club Madeira. Use Search Homes for Sale to browse listings.",
   },
   {
     question: "Does Dr. Jan help buyers relocating from California?",
@@ -182,7 +182,7 @@ export const gbpFAQs = [
     answer: "Dr. Jan specializes in Sun City Summerlin (Nevada's largest 55+ community with 7,700+ homes), Sun City Anthem in Henderson, Del Webb Lake Las Vegas, and Solera at Anthem. Each community offers different amenities and price points for active adult living.",
   },
   {
-    question: "Does Berkshire Hathaway HomeServices help with new construction?",
+    question: "Does Dr. Jan help with new construction?",
     answer: "Yes! Dr. Jan provides free buyer representation for new construction purchases from builders like Toll Brothers, Lennar, and Century Communities. The builder pays the commission, but Dr. Jan works exclusively for you—protecting your interests during the build process.",
   },
   {
@@ -198,8 +198,7 @@ export const gbpFAQs = [
     answer: "Absolutely! Dr. Jan guides first-time buyers through every step, including pre-approval, loan programs (FHA 3.5% down, VA 0% down, conventional options), Nevada down payment assistance programs, and new construction incentives. Free buyer consultations available.",
   },
   {
-    question: "Why choose Berkshire Hathaway HomeServices over other agencies?",
-    answer: "Berkshire Hathaway HomeServices is backed by Warren Buffett's Berkshire Hathaway Inc.—the only real estate brand with this level of financial stability and trust. You get a global network of 50,000+ agents, world-class marketing, and a name synonymous with integrity.",
+    question: "Why choose Dr. Jan Duffy over other agents?", answer: "Dr. Jan Duffy is a Top 1% Las Vegas REALTOR® in real estate since 1983, with 500+ transactions and $127M+ in closed volume. You get world-class marketing and a REALTOR® known for integrity.",
   },
   {
     question: "How do I schedule a consultation with Dr. Jan Duffy?",

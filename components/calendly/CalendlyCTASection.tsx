@@ -20,7 +20,7 @@ type CalendlyCTASectionProps = {
  */
 export default function CalendlyCTASection({
   title = "Book a Madeira Canyon Consultation with Dr. Jan Duffy",
-  subtitle = "Buyer strategy, listing consultation, home valuation, or a private showing — pick a time that works. Berkshire Hathaway HomeServices Nevada Properties.",
+  subtitle = "Buyer strategy, listing consultation, home valuation, or a private showing — pick a time that works.",
   event = "appointment",
   showInline = false,
   className = "",
@@ -73,7 +73,7 @@ export default function CalendlyCTASection({
         ) : null}
 
         <p className="mt-6 text-center text-slate-400 text-xs">
-          Suite A, 2721 Bonaparte Ln, Henderson, NV 89044 · License S.0197614.LLC
+          Suite A, 2721 Bonaparte Ln, Henderson, NV 89044
         </p>
       </div>
     </section>

@@ -17,7 +17,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Madeira Canyon Homes for Sale | Henderson NV",
     description:
-      "Buy or sell in Madeira Canyon and Club Madeira with Dr. Jan Duffy, BHHS Nevada Properties.",
+      "Buy or sell in Madeira Canyon and Club Madeira with Dr. Jan Duffy, REALTOR®.",
     url: "https://www.madeiracanyonhomes.com/neighborhoods/madeira-canyon",
   },
 };
@@ -28,7 +28,7 @@ export default function MadeiraCanyonPage() {
       name="Madeira Canyon"
       slug="madeira-canyon"
       h1="Madeira Canyon Homes for Sale in Henderson, NV"
-      intro="Elevated Anthem-area living with canyon trails, Madeira Canyon Park, and Club Madeira amenities — guided by Dr. Jan Duffy at Berkshire Hathaway HomeServices Nevada Properties."
+      intro="Elevated Anthem-area living with canyon trails, Madeira Canyon Park, and Club Madeira amenities — guided by Dr. Jan Duffy."
       description="Madeira Canyon real estate guide for Henderson, NV including Club Madeira, Videiras, market stats, amenities, and FAQs."
       containedIn="Henderson"
       latitude={35.927504}
@@ -80,7 +80,7 @@ export default function MadeiraCanyonPage() {
         {
           question: "Who should I call to tour Madeira Canyon homes?",
           answer:
-            "Call Dr. Jan Duffy at (702) 500-1942 or email DrDuffy@MadeiraCanyonHomes.com. Office: Suite A, 2721 Bonaparte Ln, Henderson, NV 89044. Berkshire Hathaway HomeServices Nevada Properties, license S.0197614.LLC.",
+            "Call Dr. Jan Duffy at (702) 500-1942 or email DrDuffy@MadeiraCanyonHomes.com. Office: Suite A, 2721 Bonaparte Ln, Henderson, NV 89044.",
         },
       ]}
       relatedLinks={[

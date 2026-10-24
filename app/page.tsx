@@ -158,7 +158,7 @@ export default async function Home() {
             <div className="mb-5 flex justify-center">
               <Image
                 src={getDrJanPhotoUrl({ variant: "hero" })}
-                alt="Dr. Jan Duffy, REALTOR® — Madeira Canyon | Homes by Dr Jan Duffy, BHHS Nevada Properties"
+                alt="Dr. Jan Duffy, REALTOR® — Madeira Canyon | Homes by Dr Jan Duffy"
                 width={168}
                 height={168}
                 className="h-28 w-28 md:h-36 md:w-36 lg:h-40 lg:w-40 rounded-md object-cover shadow-lg shadow-black/40"
@@ -238,14 +238,14 @@ export default async function Home() {
                 Why Work With Dr. Jan Duffy?
               </h2>
               <p className="text-lg text-slate-600">
-                Berkshire Hathaway HomeServices Nevada Properties — the most trusted name in Las Vegas real estate.
+                A Top 1% Las Vegas REALTOR®, in real estate since 1983.
               </p>
             </div>
             <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 max-w-6xl mx-auto">
               {[
-                { icon: Shield, title: "Trusted Brand", desc: "Backed by Warren Buffett's Berkshire Hathaway — unmatched integrity" },
-                { icon: Users, title: "50K+ Network", desc: "Global referral network for seamless moves to or from any market" },
-                { icon: TrendingUp, title: "$127M+ Sold", desc: "Proven results across every Las Vegas neighborhood since 2008" },
+                { icon: Shield, title: "Since 1983", desc: "In real estate since 1983 — unmatched integrity and experience" },
+                { icon: Users, title: "Referral Network", desc: "Nationwide referral network for seamless moves to or from any market" },
+                { icon: TrendingUp, title: "$127M+ Sold", desc: "Proven results across every Las Vegas neighborhood" },
                 { icon: HomeIcon, title: "Full Service", desc: "Buying, selling, 55+, luxury, investment — one expert handles it all" },
               ].map(({ icon: Icon, title, desc }) => (
                 <div key={title} className="text-center p-6">
@@ -331,7 +331,7 @@ export default async function Home() {
               />
             </div>
             <p className="mt-6 text-white text-sm">
-              Dr. Jan Duffy | License S.0197614.LLC | Berkshire Hathaway HomeServices Nevada Properties
+              Dr. Jan Duffy, REALTOR® | In real estate since 1983
             </p>
           </div>
         </section>

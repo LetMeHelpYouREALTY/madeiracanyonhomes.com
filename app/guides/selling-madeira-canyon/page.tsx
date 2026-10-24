@@ -4,7 +4,7 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "How to Sell Your Madeira Canyon Home | 2026 Guide",
   description:
-    "Sell a Madeira Canyon or Club Madeira home: pricing, prep, photos, and HOA resale package. Dr. Jan Duffy, BHHS Nevada Properties. Call (702) 500-1942.",
+    "Sell a Madeira Canyon or Club Madeira home: pricing, prep, photos, and HOA resale package. Dr. Jan Duffy, REALTOR®. Call (702) 500-1942.",
   keywords: [
     "sell Madeira Canyon home",
     "Club Madeira home seller",
@@ -50,8 +50,7 @@ export default function SellingMadeiraCanyonGuidePage() {
             text: "Clean patio furniture, service the pool if you have one, and highlight Strip or canyon views at dusk when relevant. Staging ROI is highest in the rooms buyers photograph first.",
           },
           {
-            name: "Go live with Berkshire Hathaway HomeServices",
-            text: "List with Berkshire Hathaway HomeServices Nevada Properties so buyers across the valley—and Madeira Canyon shoppers—can find your home quickly.",
+            name: "Go live on the MLS", text: "List with Dr. Jan Duffy so buyers across the valley—and Madeira Canyon shoppers—can find your home quickly.",
             url: "/sellers",
           },
           {

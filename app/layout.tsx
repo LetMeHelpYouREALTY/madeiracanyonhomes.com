@@ -24,7 +24,7 @@ export async function generateMetadata(): Promise<Metadata> {
     !domain;
   const title = isMadeira
     ? "Madeira Canyon | Homes by Dr Jan Duffy | Madeira Canyon Homes"
-    : `${config.neighborhood} | Dr. Jan Duffy, REALTOR® | BHHS Nevada`;
+    : `${config.neighborhood} | Dr. Jan Duffy, REALTOR®`;
 
   const googleVerification =
     process.env.GOOGLE_SITE_VERIFICATION ||

@@ -8,9 +8,9 @@ import PageHero from "@/components/sections/PageHero";
 import { getHero } from "@/lib/hero-images";
 
 export const metadata: Metadata = {
-  title: "Berkshire Hathaway HomeServices Mountains Edge | Southwest Las Vegas",
+  title: "Mountains Edge Homes | Southwest Las Vegas",
   description:
-    "Find Mountains Edge homes with Berkshire Hathaway HomeServices Nevada Properties. Dr. Jan Duffy specializes in this southwest Las Vegas community. Median price $475K. Call (702) 500-1942.",
+    "Find Mountains Edge homes. Dr. Jan Duffy specializes in this southwest Las Vegas community. Median price $475K. Call (702) 500-1942.",
   keywords: [
     "Berkshire Hathaway HomeServices Mountains Edge",
     "Mountains Edge homes for sale",
@@ -68,8 +68,8 @@ export default function MountainsEdgePage() {
       />
       <Navbar />
       <PageHero
-        title={"Berkshire Hathaway HomeServices Mountains Edge"}
-        subtitle={"Affordable luxury in southwest Las Vegas. Find your Mountains Edge home with Berkshire Hathaway HomeServices and Dr. Jan Duffy."}
+        title={"Mountains Edge Real Estate"}
+        subtitle={"Affordable luxury in southwest Las Vegas. Find your Mountains Edge home with Dr. Jan Duffy."}
         image={getHero("desert")}
       />
       <main className="pb-16">
@@ -126,8 +126,7 @@ export default function MountainsEdgePage() {
                 master-planned community amenities at prices significantly below Summerlin or
                 Henderson. This 3,500-acre community in southwest Las Vegas offers mountain views,
                 exceptional parks, and modern homes—without the premium prices of the valley's
-                more established luxury markets. <strong>Berkshire Hathaway HomeServices</strong>
-                helps value-conscious buyers discover Mountains Edge's potential.
+                more established luxury markets. Dr. Jan Duffy helps value-conscious buyers discover Mountains Edge's potential.
               </p>
               <p>
                 The community's crown jewel is Exploration Peak Park—120 acres of open space that
@@ -138,9 +137,7 @@ export default function MountainsEdgePage() {
                 to Southern Nevada's natural beauty.
               </p>
               <p>
-                <strong>Berkshire Hathaway HomeServices Nevada Properties</strong> serves Mountains
-                Edge buyers with the same commitment to excellence we bring to the valley's luxury
-                markets. Dr. Jan Duffy understands that value doesn't mean compromise—it means
+                Dr. Jan Duffy serves Mountains Edge buyers with the same commitment to excellence she brings to the valley's luxury markets. She understands that value doesn't mean compromise—it means
                 finding the right home at the right price. For families priced out of Summerlin
                 or Henderson, Mountains Edge delivers comparable lifestyle at accessible prices.
               </p>
@@ -288,12 +285,10 @@ export default function MountainsEdgePage() {
                 $750,000 for larger properties with premium views and upgraded features.
               </p>
               <p>
-                Working with <strong>Berkshire Hathaway HomeServices</strong> in Mountains Edge means
-                getting honest guidance about where the community offers the best value. Dr. Jan Duffy
-                helps buyers identify neighborhoods with the strongest appreciation potential, homes
+                Working with Dr. Jan Duffy in Mountains Edge means
+                getting honest guidance about where the community offers the best value. She helps buyers identify neighborhoods with the strongest appreciation potential, homes
                 with the best views, and properties that represent genuine value rather than
-                superficial appeal. That expertise—combined with the BHHS commitment to client
-                service—ensures Mountains Edge buyers make informed decisions.
+                superficial appeal. That expertise—combined with a commitment to client service—ensures Mountains Edge buyers make informed decisions.
               </p>
             </div>
           </section>
@@ -304,11 +299,11 @@ export default function MountainsEdgePage() {
               <blockquote className="text-lg text-slate-700 italic mb-4">
                 "Mountains Edge is where I send buyers who want master-planned living without the
                 Summerlin price tag. The park is incredible, the homes are modern, and the value
-                is undeniable. As a Berkshire Hathaway HomeServices agent, I help clients see
+                is undeniable. As a REALTOR®, I help clients see
                 that finding the right home isn't about spending the most—it's about spending wisely."
               </blockquote>
               <cite className="text-slate-900 font-semibold">
-                — Dr. Jan Duffy, Berkshire Hathaway HomeServices Nevada Properties
+                — Dr. Jan Duffy, REALTOR®
               </cite>
             </div>
           </section>
@@ -356,7 +351,7 @@ export default function MountainsEdgePage() {
                 </h3>
                 <p className="text-slate-600">
                   Yes, several builders offer new construction in Mountains Edge's expanding areas.
-                  BHHS provides free buyer representation on new construction purchases, helping
+                  Dr. Jan Duffy provides free buyer representation on new construction purchases, helping
                   buyers navigate builder contracts and negotiate upgrades.
                 </p>
               </div>
@@ -369,7 +364,7 @@ export default function MountainsEdgePage() {
               Discover Mountains Edge Value
             </h2>
             <p className="text-xl text-blue-100 mb-8">
-              Contact Dr. Jan Duffy, your Berkshire Hathaway HomeServices Mountains Edge specialist,
+              Contact Dr. Jan Duffy, your Mountains Edge specialist,
               for expert guidance in finding exceptional value in southwest Las Vegas.
             </p>
             <a
@@ -379,9 +374,6 @@ export default function MountainsEdgePage() {
               <Phone className="h-5 w-5 mr-2" />
               Call (702) 500-1942
             </a>
-            <p className="mt-4 text-blue-200 text-sm">
-              Berkshire Hathaway HomeServices Nevada Properties
-            </p>
           </section>
         </div>
         <div className="text-center text-sm text-slate-500 mt-8">Last Updated: January 2026</div>

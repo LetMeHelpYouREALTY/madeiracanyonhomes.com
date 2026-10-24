@@ -8,9 +8,9 @@ import PageHero from "@/components/sections/PageHero";
 import { getHero } from "@/lib/hero-images";
 
 export const metadata: Metadata = {
-  title: "Las Vegas Neighborhoods | Berkshire Hathaway HomeServices",
+  title: "Las Vegas Neighborhoods | Dr. Jan Duffy, REALTOR®",
   description:
-    "Explore Las Vegas and Henderson neighborhoods with Dr. Jan Duffy at Berkshire Hathaway HomeServices Nevada Properties. Summerlin, Henderson, The Ridges, Southern Highlands & more.",
+    "Explore Las Vegas and Henderson neighborhoods with Dr. Jan Duffy. Summerlin, Henderson, The Ridges, Southern Highlands & more.",
   keywords: [
     "Las Vegas neighborhoods",
     "Henderson communities",
@@ -164,7 +164,7 @@ export default function NeighborhoodsPage() {
       <Navbar />
       <PageHero
         title={"Las Vegas & Henderson Neighborhoods"}
-        subtitle={"Explore the best communities in Southern Nevada with Dr. Jan Duffy, your Berkshire Hathaway HomeServices neighborhood expert"}
+        subtitle={"Explore the best communities in Southern Nevada with Dr. Jan Duffy, your neighborhood expert"}
         image={getHero("henderson")}
       />
       <main className="pb-16">
@@ -218,11 +218,11 @@ export default function NeighborhoodsPage() {
                 "Every Las Vegas neighborhood has its own personality. Whether you want Madeira
                 Canyon and Club Madeira, the parks of Summerlin, the established streets of Green
                 Valley, or The Ridges, I'll help you match square footage and amenities to how you
-                live. That's the Berkshire Hathaway HomeServices difference—local guidance with a
+                live. That's the difference—local guidance with a
                 clear village-level CMA."
               </blockquote>
               <cite className="text-slate-900 font-semibold">
-                — Dr. Jan Duffy, BHHS Nevada Properties
+                — Dr. Jan Duffy, REALTOR®
               </cite>
             </div>
           </section>
@@ -271,9 +271,6 @@ export default function NeighborhoodsPage() {
               <Phone className="h-5 w-5 mr-2" />
               Call (702) 500-1942
             </a>
-            <p className="mt-4 text-blue-200 text-sm">
-              Berkshire Hathaway HomeServices Nevada Properties
-            </p>
           </section>
         </div>
 

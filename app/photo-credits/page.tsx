@@ -164,8 +164,7 @@ export default function PhotoCreditsPage() {
             <Link href="/about" className="text-blue-700 hover:underline font-medium">
               {agentInfo.name}
             </Link>
-            , {agentInfo.title} (License {agentInfo.license}), Berkshire Hathaway
-            HomeServices Nevada Properties. Site brand photography is credited to Madeira
+            , {agentInfo.title}. Site brand photography is credited to Madeira
             Canyon | Homes by Dr Jan Duffy.
           </p>
 

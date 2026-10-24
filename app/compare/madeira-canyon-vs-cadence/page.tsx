@@ -67,7 +67,7 @@ export default function MadeiraVsCadencePage() {
         {
           question: "Who helps compare them?",
           answer:
-            "Dr. Jan Duffy, Madeira Canyon | Homes by Dr Jan Duffy, Suite A, 2721 Bonaparte Ln, Henderson, NV 89044. License S.0197614.LLC.",
+            "Dr. Jan Duffy, Madeira Canyon | Homes by Dr Jan Duffy, Suite A, 2721 Bonaparte Ln, Henderson, NV 89044.",
         },
       ]}
       relatedLinks={[

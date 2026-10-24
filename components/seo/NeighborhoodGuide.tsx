@@ -157,7 +157,7 @@ export default function NeighborhoodGuide({
                   &ldquo;{quote}&rdquo;
                 </blockquote>
                 <cite className="text-slate-900 font-semibold not-italic">
-                  — {agentInfo.name}, {agentInfo.brokerage}
+                  — {agentInfo.name}, {agentInfo.title}
                 </cite>
               </div>
             </section>
@@ -243,7 +243,7 @@ export default function NeighborhoodGuide({
               </Link>
             </div>
             <p className="mt-4 text-blue-200 text-sm">
-              License {agentInfo.license} · {agentInfo.brokerage}
+              {agentInfo.name}, {agentInfo.title}
             </p>
           </section>
         </div>

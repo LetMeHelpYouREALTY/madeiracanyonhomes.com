@@ -4,7 +4,7 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Cadence Homes for Sale | Henderson NV | Dr Jan Duffy",
   description:
-    "Cadence Henderson new-construction and resale homes. Compare Cadence with Madeira Canyon and Inspirada. Dr. Jan Duffy, BHHS Nevada Properties. (702) 500-1942.",
+    "Cadence Henderson new-construction and resale homes. Compare Cadence with Madeira Canyon and Inspirada. Dr. Jan Duffy, REALTOR®. (702) 500-1942.",
   keywords: [
     "Cadence Henderson homes",
     "Cadence NV real estate",

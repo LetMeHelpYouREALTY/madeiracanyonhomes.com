@@ -8,9 +8,9 @@ import PageHero from "@/components/sections/PageHero";
 import { getHero } from "@/lib/hero-images";
 
 export const metadata: Metadata = {
-  title: "Berkshire Hathaway HomeServices Southern Highlands | Las Vegas Golf Community",
+  title: "Southern Highlands Homes | Las Vegas Golf Community",
   description:
-    "Find Southern Highlands homes with Berkshire Hathaway HomeServices Nevada Properties. Dr. Jan Duffy specializes in this premier golf community. Median price $750K. Call (702) 500-1942.",
+    "Find Southern Highlands homes. Dr. Jan Duffy specializes in this premier golf community. Median price $750K. Call (702) 500-1942.",
   keywords: [
     "Berkshire Hathaway HomeServices Southern Highlands",
     "Southern Highlands homes for sale",
@@ -68,8 +68,8 @@ export default function SouthernHighlandsPage() {
       />
       <Navbar />
       <PageHero
-        title={"Berkshire Hathaway HomeServices Southern Highlands"}
-        subtitle={"Premier golf course living in southwest Las Vegas. Discover Southern Highlands with Berkshire Hathaway HomeServices and Dr. Jan Duffy."}
+        title={"Southern Highlands Real Estate"}
+        subtitle={"Premier golf course living in southwest Las Vegas. Discover Southern Highlands with Dr. Jan Duffy."}
         image={getHero("golf")}
       />
       <main className="pb-16">
@@ -125,8 +125,7 @@ export default function SouthernHighlandsPage() {
                 <strong>Southern Highlands</strong> stands as southwest Las Vegas's answer to Summerlin—a
                 meticulously planned 2,200-acre community centered around an award-winning championship
                 golf course. For buyers seeking luxury living with convenient access to the Strip, airport,
-                and I-15 corridor, <strong>Berkshire Hathaway HomeServices</strong> considers Southern
-                Highlands among Las Vegas's finest residential options.
+                and I-15 corridor, Dr. Jan Duffy considers Southern Highlands among Las Vegas's finest residential options.
               </p>
               <p>
                 The community's crown jewel is the Southern Highlands Golf Club, featuring a stunning
@@ -137,12 +136,10 @@ export default function SouthernHighlandsPage() {
                 entire community's aesthetic.
               </p>
               <p>
-                <strong>Berkshire Hathaway HomeServices Nevada Properties</strong> has represented buyers
-                and sellers in Southern Highlands for over two decades. Dr. Jan Duffy understands the
+                Dr. Jan Duffy understands the
                 community's various sections—from the guard-gated luxury estates surrounding the golf
                 course to the family-friendly neighborhoods in the community's newer phases. Whether
-                you're seeking a golf course lot with Strip views or a spacious family home with top-rated
-                schools, BHHS has the local expertise to guide your search.
+                you're seeking a golf course lot with Strip views or a spacious family home with top-rated schools, she has the local expertise to guide your search.
               </p>
 
               {/* Community Highlights */}
@@ -290,11 +287,9 @@ export default function SouthernHighlandsPage() {
                 from $500,000 in non-gated sections to over $3 million for golf course estates.
               </p>
               <p>
-                Choosing <strong>Berkshire Hathaway HomeServices</strong> for Southern Highlands means
-                working with agents who understand the community's unique value proposition. Dr. Jan Duffy
+                Choosing Dr. Jan Duffy for Southern Highlands means working with a REALTOR® who understands the community's unique value proposition. Dr. Jan Duffy
                 can explain the differences between various sections, which lots offer the best views,
-                and how HOA fees vary across the community. This knowledge, combined with the BHHS
-                reputation for excellence, ensures Southern Highlands buyers and sellers receive
+                and how HOA fees vary across the community. This knowledge ensures Southern Highlands buyers and sellers receive
                 exceptional service.
               </p>
             </div>
@@ -306,11 +301,10 @@ export default function SouthernHighlandsPage() {
               <blockquote className="text-lg text-slate-700 italic mb-4">
                 "Southern Highlands delivers luxury living at prices that often surprise buyers—especially
                 those relocating from California. You get championship golf, guard-gated security, mountain
-                views, and excellent schools, all just 15 minutes from the Strip. As a Berkshire Hathaway
-                HomeServices agent, I help clients see beyond the golf course to the community's full potential."
+                views, and excellent schools, all just 15 minutes from the Strip. As a REALTOR®, I help clients see beyond the golf course to the community's full potential."
               </blockquote>
               <cite className="text-slate-900 font-semibold">
-                — Dr. Jan Duffy, Berkshire Hathaway HomeServices Nevada Properties
+                — Dr. Jan Duffy, REALTOR®
               </cite>
             </div>
           </section>
@@ -370,7 +364,7 @@ export default function SouthernHighlandsPage() {
               Explore Southern Highlands Living
             </h2>
             <p className="text-xl text-blue-100 mb-8">
-              Contact Dr. Jan Duffy, your Berkshire Hathaway HomeServices Southern Highlands specialist,
+              Contact Dr. Jan Duffy, your Southern Highlands specialist,
               for expert guidance in this premier golf community.
             </p>
             <a
@@ -380,9 +374,6 @@ export default function SouthernHighlandsPage() {
               <Phone className="h-5 w-5 mr-2" />
               Call (702) 500-1942
             </a>
-            <p className="mt-4 text-blue-200 text-sm">
-              Berkshire Hathaway HomeServices Nevada Properties
-            </p>
           </section>
         </div>
         <div className="text-center text-sm text-slate-500 mt-8">Last Updated: January 2026</div>

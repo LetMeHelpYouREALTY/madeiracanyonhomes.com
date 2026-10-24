@@ -16,7 +16,7 @@ import { getHero } from "@/lib/hero-images";
 export const metadata: Metadata = {
   title: "Madeira Canyon Real Estate Guides | AEO Answers | Dr Jan Duffy",
   description:
-    "Buying, selling, and HOA guides for Madeira Canyon and Club Madeira (Madeira Canyon Homes). Answer-ready articles by Dr. Jan Duffy, BHHS Nevada Properties.",
+    "Buying, selling, and HOA guides for Madeira Canyon and Club Madeira (Madeira Canyon Homes). Answer-ready articles by Dr. Jan Duffy, REALTOR®.",
   keywords: [
     "Madeira Canyon buying guide",
     "Club Madeira HOA guide",
@@ -106,7 +106,7 @@ export default function GuidesHubPage() {
           <section className="bg-slate-900 text-white p-8 text-center">
             <h2 className="text-2xl font-bold mb-3">Need a human answer?</h2>
             <p className="text-slate-300 mb-4">
-              {officeInfo.address.full} · License {agentInfo.license}
+              {officeInfo.address.full}
             </p>
             <a
               href={agentInfo.phoneTel}

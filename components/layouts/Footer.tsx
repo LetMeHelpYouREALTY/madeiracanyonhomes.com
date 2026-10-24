@@ -19,8 +19,7 @@ export default function Footer() {
             <h3 className="font-bold text-xl mb-4">Madeira Canyon | Homes by Dr Jan Duffy</h3>
             <p className="text-slate-300 mb-4 text-sm">
               Buy and sell in Madeira Canyon and Club Madeira, Henderson, NV
-              (Madeira Canyon Homes). Berkshire Hathaway HomeServices Nevada Properties —
-              Suite A, 2721 Bonaparte Ln, Henderson, NV 89044.
+              (Madeira Canyon Homes). Suite A, 2721 Bonaparte Ln, Henderson, NV 89044.
             </p>
             <div className="flex space-x-4">
               <a
@@ -101,10 +100,7 @@ export default function Footer() {
               </li>
               <li>
                 <Link
-                  href="/why-berkshire-hathaway"
-                  className="text-slate-300 hover:text-white transition-colors text-sm"
-                >
-                  Why BHHS
+                  href="/why-berkshire-hathaway" className="text-slate-300 hover:text-white transition-colors text-sm" > Why Dr. Jan
                 </Link>
               </li>
               <li>
@@ -263,8 +259,7 @@ export default function Footer() {
         <div className="border-t border-slate-800 mt-8 pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center gap-4">
             <p className="text-slate-400 text-sm text-center md:text-left">
-              © {currentYear} Madeira Canyon | Homes by Dr Jan Duffy · Berkshire Hathaway
-              HomeServices Nevada Properties. All Rights Reserved.
+              © {currentYear} Madeira Canyon | Homes by Dr Jan Duffy. All Rights Reserved.
             </p>
             <div className="flex flex-wrap justify-center gap-4 text-sm">
               <Link href="/faq" className="text-slate-400 hover:text-white transition-colors">
@@ -288,13 +283,9 @@ export default function Footer() {
             </div>
           </div>
           <p className="text-slate-400 text-xs mt-4 text-center">
-            Dr. Jan Duffy, REALTOR® | License S.0197614.LLC | Berkshire Hathaway HomeServices Nevada
-            Properties
+            Berkshire Hathaway HomeServices Nevada Properties since September 2008 · License S.0197614.LLC
           </p>
-          <p className="text-slate-400 text-xs mt-2 text-center max-w-3xl mx-auto">
-            When you work with a Berkshire Hathaway HomeServices agent, you&apos;re backed by a name
-            synonymous with trust, ethical standards, and financial strength.
-          </p>
+          
         </div>
       </div>
     </footer>

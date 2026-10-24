@@ -4,7 +4,7 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "How to Buy a Home in Madeira Canyon | Step-by-Step Guide",
   description:
-    "Buy a Madeira Canyon or Club Madeira home in Henderson: budget, villages, HOA docs, offer strategy. Dr. Jan Duffy, BHHS Nevada Properties. (702) 500-1942.",
+    "Buy a Madeira Canyon or Club Madeira home in Henderson: budget, villages, HOA docs, offer strategy. Dr. Jan Duffy, REALTOR®. (702) 500-1942.",
   keywords: [
     "buy Madeira Canyon home",
     "Club Madeira buying guide",
@@ -57,7 +57,7 @@ export default function BuyingMadeiraCanyonGuidePage() {
           },
           {
             name: "Negotiate, inspect, and close",
-            text: "Use recent Madeira Canyon solds (about 45-day average DOM in recent summaries) to set strategy. Complete inspection, appraisal, and title, then close with Berkshire Hathaway HomeServices Nevada Properties support.",
+            text: "Use recent Madeira Canyon solds (about 45-day average DOM in recent summaries) to set strategy. Complete inspection, appraisal, and title, then close with Dr. Jan Duffy's support.",
             url: "/home-valuation",
           },
         ],

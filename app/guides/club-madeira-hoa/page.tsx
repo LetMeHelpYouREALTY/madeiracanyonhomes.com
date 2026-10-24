@@ -34,7 +34,7 @@ export default function ClubMadeiraHoaGuidePage() {
       sections={[
         {
           title: "Two websites, two jobs",
-          body: "The Club Madeira HOA has a community information channel for rules and amenities. Madeira Canyon Homes (MadeiraCanyonHomes.com) is Dr. Jan Duffy — Berkshire Hathaway HomeServices Nevada Properties — for browsing homes, pricing, offers, and closing. Neither replaces the official HOA resale package you receive when you buy.",
+          body: "The Club Madeira HOA has a community information channel for rules and amenities. Madeira Canyon Homes (MadeiraCanyonHomes.com) is Dr. Jan Duffy — for browsing homes, pricing, offers, and closing. Neither replaces the official HOA resale package you receive when you buy.",
         },
         {
           title: "What to request in every Club Madeira offer",
@@ -49,7 +49,7 @@ export default function ClubMadeiraHoaGuidePage() {
         {
           question: "Is the Club Madeira HOA website owned by Dr. Jan Duffy?",
           answer:
-            "No. The Club Madeira HOA runs its own community site. Madeira Canyon Homes is Dr. Jan Duffy’s brokerage site — Berkshire Hathaway HomeServices Nevada Properties — for buying and selling.",
+            "No. The Club Madeira HOA runs its own community site. Madeira Canyon Homes is Dr. Jan Duffy’s real estate site — for buying and selling.",
         },
         {
           question: "How much are Club Madeira HOA dues?",

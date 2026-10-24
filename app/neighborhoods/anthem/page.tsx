@@ -73,7 +73,7 @@ export default function AnthemPage() {
         {
           question: "Where is your Anthem-area office?",
           answer:
-            "Madeira Canyon | Homes by Dr Jan Duffy is at Suite A, 2721 Bonaparte Ln, Henderson, NV 89044. Phone (702) 500-1942. License S.0197614.LLC, Berkshire Hathaway HomeServices Nevada Properties.",
+            "Madeira Canyon | Homes by Dr Jan Duffy is at Suite A, 2721 Bonaparte Ln, Henderson, NV 89044. Phone (702) 500-1942.",
         },
       ]}
       relatedLinks={[

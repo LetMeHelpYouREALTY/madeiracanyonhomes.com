@@ -51,7 +51,7 @@ export default function ClubMadeiraPage() {
       sections={[
         {
           title: "Club Madeira HOA vs Madeira Canyon Homes",
-          body: "The Club Madeira HOA has a community information site for covenants and amenity rules. Madeira Canyon Homes (MadeiraCanyonHomes.com) is Dr. Jan Duffy — Berkshire Hathaway HomeServices Nevada Properties — for buying and selling. Looking for homes? Use Search Homes for Sale on this site, or call Dr. Jan.",
+          body: "The Club Madeira HOA has a community information site for covenants and amenity rules. Madeira Canyon Homes (MadeiraCanyonHomes.com) is Dr. Jan Duffy — for buying and selling. Looking for homes? Use Search Homes for Sale on this site, or call Dr. Jan.",
         },
         {
           title: "What buyers pay for inside The Club",
@@ -86,7 +86,7 @@ export default function ClubMadeiraPage() {
         {
           question: "Can Dr. Jan Duffy list my Club Madeira home?",
           answer:
-            "Yes. Call (702) 500-1942 or email DrDuffy@MadeiraCanyonHomes.com. Office hours and NAP: Suite A, 2721 Bonaparte Ln, Henderson, NV 89044. License S.0197614.LLC.",
+            "Yes. Call (702) 500-1942 or email DrDuffy@MadeiraCanyonHomes.com. Office hours and NAP: Suite A, 2721 Bonaparte Ln, Henderson, NV 89044.",
         },
       ]}
       relatedLinks={[

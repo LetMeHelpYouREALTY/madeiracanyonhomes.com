@@ -8,9 +8,9 @@ import PageHero from "@/components/sections/PageHero";
 import { getHero } from "@/lib/hero-images";
 
 export const metadata: Metadata = {
-  title: "Las Vegas Real Estate Market Report January 2026 | Berkshire Hathaway HomeServices",
+  title: "Las Vegas Real Estate Market Report January 2026 | Dr. Jan Duffy, REALTOR®",
   description:
-    "Get the latest Las Vegas real estate market statistics for January 2026. Median prices, days on market, inventory levels, and expert analysis from Berkshire Hathaway HomeServices Nevada Properties.",
+    "Get the latest Las Vegas real estate market statistics for January 2026. Median prices, days on market, inventory levels, and expert analysis from Dr. Jan Duffy.",
   keywords: [
     "Las Vegas real estate market",
     "Las Vegas home prices 2026",
@@ -47,7 +47,7 @@ export default function MarketReportPage() {
       <Navbar />
       <PageHero
         title={"Las Vegas Real Estate Market Report"}
-        subtitle={"January 2026 | Expert analysis from Berkshire Hathaway HomeServices Nevada Properties"}
+        subtitle={"January 2026 | Expert analysis from Dr. Jan Duffy"}
         image={getHero("skyline")}
       />
       <main className="pb-16">
@@ -188,7 +188,7 @@ export default function MarketReportPage() {
                 proper pricing and preparation."
               </blockquote>
               <cite className="text-slate-900 font-semibold">
-                — Dr. Jan Duffy, Berkshire Hathaway HomeServices Nevada Properties
+                — Dr. Jan Duffy, REALTOR®
               </cite>
             </div>
 
@@ -307,9 +307,6 @@ export default function MarketReportPage() {
               <Phone className="h-5 w-5 mr-2" />
               Call (702) 500-1942
             </a>
-            <p className="mt-4 text-blue-200 text-sm">
-              Berkshire Hathaway HomeServices Nevada Properties
-            </p>
           </section>
         </div>
 

@@ -11,8 +11,7 @@ export default function CTASection() {
             Ready for Madeira Canyon Real Estate Help?
           </h2>
           <p className="text-xl text-blue-100 mb-8 max-w-2xl mx-auto">
-            Schedule a buyer consult, listing appointment, or private showing with Dr. Jan Duffy —
-            Berkshire Hathaway HomeServices Nevada Properties.
+            Schedule a buyer consult, listing appointment, or private showing with Dr. Jan Duffy.
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-8">

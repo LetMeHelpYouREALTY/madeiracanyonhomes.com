@@ -4,7 +4,7 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Lake Las Vegas Homes for Sale | Henderson NV | Dr Jan Duffy",
   description:
-    "Lake Las Vegas waterfront and golf community homes in Henderson. Compare with Madeira Canyon and Club Madeira. Dr. Jan Duffy, BHHS Nevada Properties. (702) 500-1942.",
+    "Lake Las Vegas waterfront and golf community homes in Henderson. Compare with Madeira Canyon and Club Madeira. Dr. Jan Duffy, REALTOR®. (702) 500-1942.",
   keywords: [
     "Lake Las Vegas homes for sale",
     "Lake Las Vegas Henderson",

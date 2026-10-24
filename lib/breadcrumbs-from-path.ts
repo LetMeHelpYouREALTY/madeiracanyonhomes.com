@@ -23,7 +23,7 @@ const SEGMENT_LABELS: Record<string, string> = {
   "google-business": "Google Business Profile",
   "photo-credits": "Photo Credits",
   "security-policy": "Security Policy",
-  "why-berkshire-hathaway": "Why Berkshire Hathaway",
+  "why-berkshire-hathaway": "Why Dr. Jan Duffy",
   "55-plus-communities": "55+ Communities",
   "madeira-canyon": "Madeira Canyon",
   "club-madeira": "Club Madeira",

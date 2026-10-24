@@ -22,7 +22,7 @@ import PageHero from "@/components/sections/PageHero";
 import { getHero } from "@/lib/hero-images";
 
 export const metadata: Metadata = {
-  title: "Berkshire Hathaway HomeServices New Construction Las Vegas | Buyer's Guide",
+  title: "New Construction Las Vegas | Buyer's Guide",
   description:
     "Free buyer representation on new construction homes in Las Vegas. Dr. Jan Duffy helps you navigate builder contracts, negotiate upgrades, and secure incentives. Call (702) 500-1942.",
   keywords: [
@@ -239,7 +239,7 @@ export default function NewConstructionPage() {
       />
       <Navbar />
       <PageHero
-        title={"Berkshire Hathaway HomeServices New Construction Las Vegas"}
+        title={"New Construction Las Vegas"}
         subtitle={"Your complete buyer's guide to new homes in Las Vegas. Free representation, expert contract review, and insider knowledge of builder incentives."}
         image={getHero("newConstruction")}
       />
@@ -264,7 +264,7 @@ export default function NewConstructionPage() {
           {/* Why Free Representation */}
           <section className="mb-16 bg-blue-600 text-white rounded-2xl p-8 md:p-12 max-w-5xl mx-auto">
             <h2 className="text-3xl font-bold mb-8 text-center">
-              Why Use a BHHS Agent for New Construction?
+              Why Use Your Own Agent for New Construction?
             </h2>
             <div className="grid md:grid-cols-2 gap-8 mb-8">
               <div className="flex items-start">
@@ -433,7 +433,7 @@ export default function NewConstructionPage() {
           {/* The Process */}
           <section className="mb-16 max-w-5xl mx-auto">
             <h2 className="text-3xl font-bold text-slate-900 mb-8 text-center">
-              New Construction Buying Process with BHHS
+              New Construction Buying Process with Dr. Jan
             </h2>
             <div className="space-y-6">
               <div className="flex items-start">
@@ -521,13 +521,12 @@ export default function NewConstructionPage() {
               <blockquote className="text-lg text-slate-700 italic mb-4">
                 "I've seen buyers leave $30,000 on the table because they didn't know what to ask
                 for. Builders expect negotiation—their sales managers have authority to approve
-                upgrades and credits. As your <strong>Berkshire Hathaway HomeServices</strong>
-                agent, I know exactly which incentives are available, which upgrades add value, and
+                upgrades and credits. As your REALTOR®, I know exactly which incentives are available, which upgrades add value, and
                 which builder promises are legally binding. This representation costs you nothing
                 and can save you tens of thousands."
               </blockquote>
               <cite className="text-slate-900 font-semibold">
-                — Dr. Jan Duffy, Berkshire Hathaway HomeServices Nevada Properties
+                — Dr. Jan Duffy, REALTOR®
               </cite>
             </div>
           </section>
@@ -555,7 +554,7 @@ export default function NewConstructionPage() {
                   Why do I need an agent when buying new construction?
                 </h3>
                 <p className="text-slate-600">
-                  Builder sales reps work for the builder, not you. A BHHS agent reviews contracts
+                  Builder sales reps work for the builder, not you. Your own agent reviews contracts
                   (often 50+ pages), negotiates upgrades and incentives, monitors construction
                   quality, and ensures deadlines are met. Without representation, you're negotiating
                   against experienced professionals alone.
@@ -594,8 +593,7 @@ export default function NewConstructionPage() {
                 </h3>
                 <p className="text-slate-600">
                   Base prices are typically firm, but everything else is negotiable—upgrades, lot
-                  premiums, closing costs, and design center selections. A BHHS agent knows which
-                  builders negotiate and how to maximize your leverage, especially on standing
+                  premiums, closing costs, and design center selections. An experienced agent knows which builders negotiate and how to maximize your leverage, especially on standing
                   inventory.
                 </p>
               </div>
@@ -666,9 +664,6 @@ export default function NewConstructionPage() {
                 Request Builder Info
               </a>
             </div>
-            <p className="mt-6 text-blue-200 text-sm">
-              Berkshire Hathaway HomeServices Nevada Properties
-            </p>
           </section>
         </div>
         <div className="text-center text-sm text-slate-500 mt-8">

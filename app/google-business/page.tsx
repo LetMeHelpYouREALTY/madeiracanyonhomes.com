@@ -102,10 +102,7 @@ export default function GoogleBusinessPage() {
               <h1 className="text-2xl md:text-3xl font-bold text-slate-900 mb-4">
                 {businessInfo.name}
               </h1>
-              <address className="not-italic text-slate-700 mb-4 leading-relaxed">
-                Berkshire Hathaway HomeServices Nevada Properties
-                <br />
-                {businessInfo.address.streetAddress}
+              <address className="not-italic text-slate-700 mb-4 leading-relaxed"> {businessInfo.address.streetAddress}
                 <br />
                 {businessInfo.address.addressLocality},{" "}
                 {businessInfo.address.addressRegion}{" "}
@@ -140,7 +137,7 @@ export default function GoogleBusinessPage() {
               </div>
               <p className="text-sm text-slate-600">
                 {agentStats.averageRating} average · {agentStats.reviewCount}+
-                reviews · License {businessInfo.license}
+                reviews
               </p>
             </div>
           </section>
