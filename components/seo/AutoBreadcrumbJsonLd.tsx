@@ -3,8 +3,8 @@ import { BreadcrumbSchema } from "@/components/SchemaScript";
 import { breadcrumbsFromPathname } from "@/lib/breadcrumbs-from-path";
 
 /** Sitewide BreadcrumbList JSON-LD for all non-home routes (server-rendered). */
-export default function AutoBreadcrumbJsonLd() {
-  const pathname = headers().get("x-pathname") ?? "/";
+export default async function AutoBreadcrumbJsonLd() {
+  const pathname = (await headers()).get("x-pathname") ?? "/";
   const items = breadcrumbsFromPathname(pathname);
   if (items.length < 2) {
     return null;
