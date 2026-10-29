@@ -25,7 +25,7 @@ import {
 export const metadata: Metadata = {
   title: "About Dr. Jan Duffy | Madeira Canyon | Homes by Dr Jan Duffy",
   description:
-    "Meet Dr. Jan Duffy — Madeira Canyon | Homes by Dr Jan Duffy. Club Madeira & Madeira Canyon specialist (Madeira Canyon Homes), in real estate since 1983. Suite A, 2721 Bonaparte Ln, Henderson, NV 89044. Call (702) 500-1955.",
+    "Meet Dr. Jan Duffy — Madeira Canyon | Homes by Dr Jan Duffy. Club Madeira & Madeira Canyon specialist (Madeira Canyon Homes), licensed since 2008 · 35 years in Las Vegas. Suite A, 2721 Bonaparte Ln, Henderson, NV 89044. Call (702) 500-1955.",
   keywords: [
     "Madeira Canyon Homes",
     "Dr. Jan Duffy",
@@ -134,7 +134,7 @@ export default function AboutPage() {
       <Navbar />
       <PageHero
         title={"Meet Dr. Jan Duffy, Your Las Vegas REALTOR®"}
-        subtitle={"Dr. Jan Duffy has been in real estate since 1983 and is a Top 1% Las Vegas REALTOR®. Whether you're buying, selling, investing, or relocating, you'll receive expert guidance with integrity and professio…"}
+        subtitle={"Dr. Jan Duffy has been licensed since 2008, with 35 years in Las Vegas, and is a Las Vegas REALTOR®. Whether you're buying, selling, investing, or relocating, you'll receive expert guidance with integrity and professio…"}
         image={getHero("contact")}
       />
       <main className="pb-16">
@@ -150,15 +150,15 @@ export default function AboutPage() {
               <div>
                 <h2 className="text-3xl md:text-4xl font-bold text-slate-900 mb-4">Dr. Jan Duffy</h2>
                 <p className="text-lg text-blue-600 mb-6">
-                  REALTOR® | Top 1% Las Vegas REALTOR®
+                  Las Vegas REALTOR®
                 </p>
 
                 <div className="prose prose-lg text-slate-700 mb-8 space-y-4">
                   <p>
-                    When you choose to work with me, you're choosing trust, integrity, and excellence. I've been in real estate since 1983, and I bring world-class resources and local expertise to every client I serve.
+                    When you choose to work with me, you're choosing trust, integrity, and excellence. I've been licensed since 2008 · 35 years in Las Vegas, and I bring world-class resources and local expertise to every client I serve.
                   </p>
                   <p>
-                    I've closed $127M+ in transactions and helped hundreds of families find their perfect home in Las Vegas, Henderson,
+                    I've led the Dr. Duffy Group to $127M+ in career sales and helped hundreds of families find their perfect home in Las Vegas, Henderson,
                     Summerlin, and throughout Southern Nevada. My expertise spans luxury properties,
                     new construction, investment real estate, 55+ active adult communities, and 
                     relocations—particularly for California families seeking Nevada's tax advantages.
@@ -241,16 +241,16 @@ export default function AboutPage() {
                 {/* Stats Grid */}
                 <div className="grid grid-cols-2 gap-4">
                   <div className="bg-blue-50 rounded-lg p-6 text-center">
-                    <div className="text-3xl font-bold text-blue-600 mb-1">Since 1983</div>
-                    <div className="text-sm text-slate-600">In Real Estate</div>
+                    <div className="text-3xl font-bold text-blue-600 mb-1">Since 2008</div>
+                    <div className="text-sm text-slate-600">Licensed</div>
                   </div>
                   <div className="bg-blue-50 rounded-lg p-6 text-center">
                     <div className="text-3xl font-bold text-blue-600 mb-1">$127M+</div>
-                    <div className="text-sm text-slate-600">Volume Closed</div>
+                    <div className="text-sm text-slate-600">Team Career Sales</div>
                   </div>
                   <div className="bg-blue-50 rounded-lg p-6 text-center">
                     <div className="text-3xl font-bold text-blue-600 mb-1">500+</div>
-                    <div className="text-sm text-slate-600">Transactions</div>
+                    <div className="text-sm text-slate-600">Team Sales</div>
                   </div>
                   <div className="bg-blue-50 rounded-lg p-6 text-center">
                     <div className="text-3xl font-bold text-blue-600 mb-1">4.9★</div>

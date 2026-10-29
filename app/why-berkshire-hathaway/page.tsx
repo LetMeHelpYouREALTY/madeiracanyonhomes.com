@@ -10,7 +10,7 @@ import { getHero } from "@/lib/hero-images";
 export const metadata: Metadata = {
   title: "Why Work With Dr. Jan Duffy | Las Vegas Real Estate",
   description:
-    "Why buyers and sellers choose Dr. Jan Duffy, a Top 1% Las Vegas REALTOR® in real estate since 1983: 500+ transactions, $127M+ in closed volume, and local Madeira Canyon expertise.",
+    "Why buyers and sellers choose Dr. Jan Duffy, a Las Vegas REALTOR® licensed since 2008 · 35 years in Las Vegas: 500+ transactions, $127M+ in closed volume, and local Madeira Canyon expertise.",
   keywords: [
     "Berkshire Hathaway HomeServices",
     "why choose BHHS",
@@ -46,7 +46,7 @@ export default function WhyBerkshireHathawayPage() {
       <Navbar />
       <PageHero
         title={"Why Work With Dr. Jan Duffy?"}
-        subtitle={"A Top 1% Las Vegas REALTOR®, in real estate since 1983, with the trust, ethical standards, and local knowledge your move deserves."}
+        subtitle={"A Las Vegas REALTOR®, licensed since 2008 · 35 years in Las Vegas, with the trust, ethical standards, and local knowledge your move deserves."}
         image={getHero("skyline")}
       />
       <main className="pb-16">
@@ -68,8 +68,7 @@ export default function WhyBerkshireHathawayPage() {
                 </div>
                 <h3 className="text-xl font-bold text-slate-900 mb-3">Unmatched Trust</h3>
                 <p className="text-slate-600">
-                  Integrity and reliability in every transaction, built over a career in real
-                  estate since 1983.
+                  Integrity and reliability in every transaction, built over a career licensed since 2008 · 35 years in Las Vegas.
                 </p>
               </div>
 
@@ -110,7 +109,7 @@ export default function WhyBerkshireHathawayPage() {
                 <div className="bg-blue-100 rounded-full p-4 w-16 h-16 flex items-center justify-center mb-6">
                   <TrendingUp className="h-8 w-8 text-blue-600" />
                 </div>
-                <h3 className="text-xl font-bold text-slate-900 mb-3">Top 1% Las Vegas REALTOR®</h3>
+                <h3 className="text-xl font-bold text-slate-900 mb-3">Las Vegas REALTOR®</h3>
                 <p className="text-slate-600">
                   Ranked among the top 1% of Las Vegas REALTORS®, with $127M+ in closed
                   transactions.
@@ -139,12 +138,12 @@ export default function WhyBerkshireHathawayPage() {
                 </h2>
                 <p className="text-lg text-slate-700 mb-6">
                   Dr. Jan Duffy serves Las Vegas, Henderson, Summerlin, and all of Southern
-                  Nevada. In real estate since 1983 with $127M+ in closed transactions, she
+                  Nevada. Licensed since 2008 · 35 years in Las Vegas with $127M+ in Dr. Duffy Group career sales, she
                   brings hometown expertise to every move.
                 </p>
                 <ul className="space-y-3 mb-8">
                   {[
-                    "In real estate since 1983",
+                    "Licensed since 2008 · 35 years in Las Vegas",
                     "$127M+ in closed transactions",
                     "500+ satisfied clients",
                     "Specializing in luxury, investment, and relocation",
@@ -166,7 +165,7 @@ export default function WhyBerkshireHathawayPage() {
               <div className="bg-slate-100 rounded-lg p-8">
                 <blockquote className="text-lg text-slate-700 italic mb-4">
                   "When clients ask why they should choose me, I tell them: you get a REALTOR®
-                  who has been in real estate since 1983, world-class marketing, and someone who
+                  who has been licensed since 2008 · 35 years in Las Vegas, world-class marketing, and someone who
                   puts your interests first."
                 </blockquote>
                 <cite className="text-slate-900 font-semibold">
@@ -185,7 +184,7 @@ export default function WhyBerkshireHathawayPage() {
               {[
                 {
                   q: "How long has Dr. Jan Duffy been in real estate?",
-                  a: "Dr. Jan Duffy has been in real estate since 1983 and is a Top 1% Las Vegas REALTOR®, with 500+ transactions and $127M+ in closed volume.",
+                  a: "Dr. Jan Duffy has been licensed since 2008, with 35 years in Las Vegas, and is a Las Vegas REALTOR®, with 500+ transactions and $127M+ in closed volume.",
                 },
                 {
                   q: "Does working with Dr. Jan cost more?",
@@ -210,7 +209,7 @@ export default function WhyBerkshireHathawayPage() {
               Experience the Difference
             </h2>
             <p className="text-xl text-slate-300 mb-8">
-              Ready to work with a Top 1% Las Vegas REALTOR®? Contact Dr. Jan Duffy today.
+              Ready to work with a Las Vegas REALTOR®? Contact Dr. Jan Duffy today.
             </p>
             <a
               href="tel:+17025001955"

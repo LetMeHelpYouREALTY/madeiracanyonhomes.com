@@ -102,11 +102,11 @@ export const agentStats = {
 
 // Value Propositions
 export const valuePropositions = {
-  main: "When you work with Dr. Jan Duffy, you get a Top 1% Las Vegas REALTOR® known for trust and ethical standards.",
+  main: "When you work with Dr. Jan Duffy, you get a Las Vegas REALTOR® known for trust and ethical standards.",
   trust:
-    "Dr. Jan Duffy has been in real estate since 1983, with 500+ transactions and a nationwide referral network.",
+    "Dr. Jan Duffy has been licensed since 2008 · 35 years in Las Vegas, with 500+ transactions and a nationwide referral network.",
   expertise:
-    "In real estate since 1983 with $127M+ in closed transactions, Dr. Jan Duffy combines deep local market knowledge with a long track record.",
+    "Licensed since 2008 · 35 years in Las Vegas with $127M+ in Dr. Duffy Group career sales, Dr. Jan Duffy combines deep local market knowledge with a long track record.",
 };
 
 // Neighborhoods served
@@ -244,7 +244,7 @@ export const expertQuotes = {
   investment: `"Las Vegas rental yields are among the best in the country right now. But you need to know which neighborhoods are appreciating and which have peaked."`,
   relocation: `"Moving to a new city is stressful enough. I handle everything from neighborhood tours to school research to contractor referrals so you can focus on your new beginning."`,
   newConstruction: `"Builders have sales agents who work for them, not you. Having your own representation costs you nothing but can save you tens of thousands in upgrades and negotiations."`,
-  valueProposition: `"When clients ask why they should choose me, I tell them: you get a REALTOR® in real estate since 1983, world-class marketing, and someone who puts your interests first."`,
+  valueProposition: `"When clients ask why they should choose me, I tell them: you get a REALTOR® licensed since 2008 · 35 years in Las Vegas, world-class marketing, and someone who puts your interests first."`,
 };
 
 // Common FAQs
@@ -253,7 +253,7 @@ export const commonFAQs = {
     {
       question: "Why should I choose Dr. Jan Duffy?",
       answer:
-        "Dr. Jan Duffy is a Top 1% Las Vegas REALTOR® in real estate since 1983, with 500+ transactions. When you're making the biggest purchase of your life, that trust matters.",
+        "Dr. Jan Duffy is a Las Vegas REALTOR® licensed since 2008 · 35 years in Las Vegas, with 500+ transactions. When you're making the biggest purchase of your life, that trust matters.",
     },
     {
       question: "What areas does Dr. Jan Duffy cover?", answer: "Dr. Jan Duffy serves all of Las Vegas, Henderson, North Las Vegas, and surrounding areas, with specialized expertise in Summerlin, The Ridges, Skye Canyon, Southern Highlands, Green Valley, and Henderson's master-planned communities.",
@@ -266,7 +266,7 @@ export const commonFAQs = {
     {
       question: "What is Dr. Jan Duffy's experience in Las Vegas real estate?",
       answer:
-        "Dr. Jan Duffy has been in real estate since 1983, with $127M+ in closed transactions and 500+ satisfied clients. Her expertise spans residential, luxury, investment, and new construction properties throughout Southern Nevada.",
+        "Dr. Jan Duffy has been licensed since 2008 · 35 years in Las Vegas, backed by $127M+ in Dr. Duffy Group career sales and 500+ satisfied clients. Her expertise spans residential, luxury, investment, and new construction properties throughout Southern Nevada.",
     },
   ],
   buying: [
@@ -290,7 +290,7 @@ export const commonFAQs = {
     {
       question: "What is my home worth in today's Las Vegas market?",
       answer:
-        "Home values depend on location, condition, size, and recent comparable sales. Dr. Jan provides free, comprehensive home valuations using current market data and her expertise in real estate since 1983.",
+        "Home values depend on location, condition, size, and recent comparable sales. Dr. Jan provides free, comprehensive home valuations using current market data and her expertise as a REALTOR® licensed since 2008 · 35 years in Las Vegas.",
     },
     {
       question: "How long will it take to sell my home?",
