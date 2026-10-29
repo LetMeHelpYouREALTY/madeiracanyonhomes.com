@@ -38,7 +38,7 @@ describe("field helpers", () => {
 
   it("normalizes email and phone", () => {
     expect(normalizeEmail("Email: Jane.Doe@Example.COM")).toBe("jane.doe@example.com");
-    expect(normalizePhone("(702) 222-1964")).toBe("7022221964");
+    expect(normalizePhone("(702) 500-1942")).toBe("7025001942");
     expect(normalizePhone("123")).toBe("");
   });
 
