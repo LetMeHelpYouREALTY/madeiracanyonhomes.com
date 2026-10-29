@@ -97,11 +97,6 @@ export default async function Home() {
       longitude: -115.090006,
     },
     areaServed: ["Madeira Canyon", "Club Madeira", "Henderson, NV"],
-    aggregateRating: {
-      "@type": "AggregateRating",
-      ratingValue: "4.9",
-      reviewCount: "200",
-    },
   };
 
   // ── Schema: FAQPage ──────────────────────────────────────────────────────

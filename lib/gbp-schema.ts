@@ -255,13 +255,6 @@ export function generateLocalBusinessSchema() {
         },
       })),
     },
-    aggregateRating: {
-      "@type": "AggregateRating",
-      ratingValue: agentStats.averageRating.toString(),
-      reviewCount: agentStats.reviewCount.toString(),
-      bestRating: "5",
-      worstRating: "1",
-    },
     sameAs: [
       "https://www.facebook.com/drjanduffy",
       "https://www.instagram.com/drjanduffy",
