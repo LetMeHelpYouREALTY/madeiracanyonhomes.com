@@ -98,7 +98,7 @@ const neighborhoods = [
     slug: "north-las-vegas",
     medianPrice: "$385,000",
     priceChange: "+3.2%",
-    description: "Rapidly growing area with affordable new construction and family-friendly communities",
+    description: "Rapidly growing area with affordable new construction communities",
     highlights: ["New Construction", "Affordable", "Growing Area", "Investor Interest"],
     bestFor: "First-time buyers, investors",
   },
