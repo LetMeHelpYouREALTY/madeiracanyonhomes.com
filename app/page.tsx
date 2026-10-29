@@ -238,12 +238,12 @@ export default async function Home() {
                 Why Work With Dr. Jan Duffy?
               </h2>
               <p className="text-lg text-slate-600">
-                A Top 1% Las Vegas REALTOR®, in real estate since 1983.
+                A Las Vegas REALTOR®, licensed since 2008 · 35 years in Las Vegas.
               </p>
             </div>
             <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 max-w-6xl mx-auto">
               {[
-                { icon: Shield, title: "Since 1983", desc: "In real estate since 1983 — unmatched integrity and experience" },
+                { icon: Shield, title: "Licensed Since 2008", desc: "35 years in Las Vegas — unmatched integrity and experience" },
                 { icon: Users, title: "Referral Network", desc: "Nationwide referral network for seamless moves to or from any market" },
                 { icon: TrendingUp, title: "$127M+ Sold", desc: "Proven results across every Las Vegas neighborhood" },
                 { icon: HomeIcon, title: "Full Service", desc: "Buying, selling, 55+, luxury, investment — one expert handles it all" },
@@ -331,7 +331,7 @@ export default async function Home() {
               />
             </div>
             <p className="mt-6 text-white text-sm">
-              Dr. Jan Duffy, REALTOR® | In real estate since 1983
+              Dr. Jan Duffy, REALTOR® | Licensed since 2008 · 35 years in Las Vegas
             </p>
           </div>
         </section>

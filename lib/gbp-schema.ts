@@ -146,12 +146,12 @@ export const businessInfo = {
 // 750-word GBP Description (3 sections)
 export const gbpDescription = {
   // Section 1: Who you are/mission (~250 words)
-  whoWeAre: `Madeira Canyon | Homes by Dr Jan Duffy is the local real estate resource for buyers and sellers in Madeira Canyon and Club Madeira in Henderson, NV—the community known as Madeira Canyon Homes. Dr. Jan Duffy, REALTOR®, in real estate since 1983, focuses on this Anthem Highlands corridor with clear pricing comparisons, amenity knowledge, and practical next steps—not generic valley-wide marketing.
+  whoWeAre: `Madeira Canyon | Homes by Dr Jan Duffy is the local real estate resource for buyers and sellers in Madeira Canyon and Club Madeira in Henderson, NV—the community known as Madeira Canyon Homes. Dr. Jan Duffy, REALTOR®, licensed since 2008 · 35 years in Las Vegas, focuses on this Anthem Highlands corridor with clear pricing comparisons, amenity knowledge, and practical next steps—not generic valley-wide marketing.
 
-With $127M+ in closed transactions and hundreds of clients helped, Dr. Jan brings hyperlocal Madeira Canyon inventory insight. Whether you are comparing Club Madeira listings, reviewing HOA dues tied to Club Madeira HOA info, or relocating to Henderson for Nevada's tax advantages, you get data-backed guidance and a single point of contact.`,
+With $127M+ in Dr. Duffy Group career sales and hundreds of clients helped, Dr. Jan brings hyperlocal Madeira Canyon inventory insight. Whether you are comparing Club Madeira listings, reviewing HOA dues tied to Club Madeira HOA info, or relocating to Henderson for Nevada's tax advantages, you get data-backed guidance and a single point of contact.`,
 
   // Section 2: What/why - Value proposition (~250 words)
-  whatWeDo: `What sets this practice apart is Madeira Canyon focus from a Top 1% Las Vegas REALTOR®. Clients get current pricing for Club Madeira and surrounding Madeira Canyon villages, clear offer help, and honest advice—not sales pressure. Sellers get professional marketing; buyers get representation that costs them nothing when the seller’s side pays the commission.
+  whatWeDo: `What sets this practice apart is Madeira Canyon focus from a Las Vegas REALTOR®. Clients get current pricing for Club Madeira and surrounding Madeira Canyon villages, clear offer help, and honest advice—not sales pressure. Sellers get professional marketing; buyers get representation that costs them nothing when the seller’s side pays the commission.
 
 Services include buyer and seller representation in Madeira Canyon / Club Madeira, Henderson market analysis, California relocation assistance, investment property consulting, new construction representation, and first-time buyer programs (FHA, VA, conventional, Nevada down-payment assistance).
 
@@ -198,7 +198,7 @@ export const gbpFAQs = [
     answer: "Absolutely! Dr. Jan guides first-time buyers through every step, including pre-approval, loan programs (FHA 3.5% down, VA 0% down, conventional options), Nevada down payment assistance programs, and new construction incentives. Free buyer consultations available.",
   },
   {
-    question: "Why choose Dr. Jan Duffy over other agents?", answer: "Dr. Jan Duffy is a Top 1% Las Vegas REALTOR® in real estate since 1983, with 500+ transactions and $127M+ in closed volume. You get world-class marketing and a REALTOR® known for integrity.",
+    question: "Why choose Dr. Jan Duffy over other agents?", answer: "Dr. Jan Duffy is a Las Vegas REALTOR® licensed since 2008 · 35 years in Las Vegas, with 500+ transactions and $127M+ in closed volume. You get world-class marketing and a REALTOR® known for integrity.",
   },
   {
     question: "How do I schedule a consultation with Dr. Jan Duffy?",
