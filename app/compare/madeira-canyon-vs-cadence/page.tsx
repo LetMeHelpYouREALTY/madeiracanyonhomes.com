@@ -4,7 +4,7 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Madeira Canyon vs Cadence | Henderson Comparison",
   description:
-    "Madeira Canyon vs Cadence Henderson: resale elevation vs new construction incentives. Side-by-side buyer guide by Dr. Jan Duffy. (702) 500-1942.",
+    "Madeira Canyon vs Cadence Henderson: resale elevation vs new construction incentives. Side-by-side buyer guide by Dr. Jan Duffy. (702) 500-1955.",
   alternates: {
     canonical:
       "https://www.madeiracanyonhomes.com/compare/madeira-canyon-vs-cadence",
@@ -57,7 +57,7 @@ export default function MadeiraVsCadencePage() {
         {
           question: "Can I afford Club Madeira if Cadence fits my budget?",
           answer:
-            "Sometimes—not always. Run payment with HOA and insurance for both. Call (702) 500-1942 for a same-day net sheet comparison.",
+            "Sometimes—not always. Run payment with HOA and insurance for both. Call (702) 500-1955 for a same-day net sheet comparison.",
         },
         {
           question: "Which appreciates more?",

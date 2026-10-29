@@ -141,7 +141,7 @@ export default function PhotoCreditsPage() {
       jobTitle: agentInfo.title,
       url: "https://www.madeiracanyonhomes.com/about",
       email: agentInfo.email,
-      telephone: "+1-702-500-1942",
+      telephone: "+1-702-500-1955",
       identifier: agentInfo.license,
     }
   );

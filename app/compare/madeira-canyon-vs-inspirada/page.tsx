@@ -4,7 +4,7 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Madeira Canyon vs Inspirada | Henderson Neighborhood Comparison",
   description:
-    "Madeira Canyon vs Inspirada: prices, amenities, new vs resale, Club Madeira. Which Henderson community fits you? Dr. Jan Duffy (702) 500-1942.",
+    "Madeira Canyon vs Inspirada: prices, amenities, new vs resale, Club Madeira. Which Henderson community fits you? Dr. Jan Duffy (702) 500-1955.",
   alternates: {
     canonical:
       "https://www.madeiracanyonhomes.com/compare/madeira-canyon-vs-inspirada",
@@ -67,7 +67,7 @@ export default function MadeiraVsInspiradaPage() {
         {
           question: "Which is better for relocators?",
           answer:
-            "Neither is universally better. Relocators who want Club Madeira gates and views lean Madeira; those who want newer construction lean Inspirada. Call (702) 500-1942 for a matched tour.",
+            "Neither is universally better. Relocators who want Club Madeira gates and views lean Madeira; those who want newer construction lean Inspirada. Call (702) 500-1955 for a matched tour.",
         },
         {
           question: "Can I see both with one agent?",

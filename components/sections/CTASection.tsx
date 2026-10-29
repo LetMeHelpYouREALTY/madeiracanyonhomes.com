@@ -37,7 +37,7 @@ export default function CTASection() {
               className="inline-flex items-center justify-center border border-white text-white hover:bg-white/10 px-6 py-3 rounded-md font-semibold text-lg transition-colors"
             />
             <a
-              href="tel:+17025001942"
+              href="tel:+17025001955"
               className="inline-flex items-center justify-center border border-white text-white hover:bg-white/10 px-6 py-3 rounded-md font-semibold text-lg transition-colors"
             >
               <Phone className="h-5 w-5 mr-2" />

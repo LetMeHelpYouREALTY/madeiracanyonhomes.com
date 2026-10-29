@@ -4,7 +4,7 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Club Madeira HOA FAQ | Madeira Canyon Homes Explained",
   description:
-    "Club Madeira HOA questions for buyers and sellers: Madeira Canyon Homes vs MadeiraCanyonHomes.com, dues, documents, gates. Dr. Jan Duffy (702) 500-1942.",
+    "Club Madeira HOA questions for buyers and sellers: Madeira Canyon Homes vs MadeiraCanyonHomes.com, dues, documents, gates. Dr. Jan Duffy (702) 500-1955.",
   keywords: [
     "Madeira Canyon Homes",
     "Club Madeira HOA",
@@ -54,7 +54,7 @@ export default function ClubMadeiraHoaGuidePage() {
         {
           question: "How much are Club Madeira HOA dues?",
           answer:
-            "UNKNOWN, needs verification for your specific APN and year. Dues change with the HOA budget. Dr. Jan Duffy will pull the current resale figures before you finalize an offer—call (702) 500-1942.",
+            "UNKNOWN, needs verification for your specific APN and year. Dues change with the HOA budget. Dr. Jan Duffy will pull the current resale figures before you finalize an offer—call (702) 500-1955.",
         },
         {
           question: "Can I rent my Club Madeira home?",

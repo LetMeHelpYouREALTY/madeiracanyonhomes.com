@@ -179,7 +179,7 @@ export const heroImages = {
   contact: {
     src: `${H}/madeira-canyon-henderson-nv-home-exterior-3.jpg`,
     alt: "Contact Madeira Canyon Homes by Dr Jan Duffy — Henderson NV office near Bonaparte Lane",
-    caption: "Suite A, 2721 Bonaparte Ln, Henderson, NV 89044 · (702) 500-1942",
+    caption: "Suite A, 2721 Bonaparte Ln, Henderson, NV 89044 · (702) 500-1955",
     width: 2070,
     height: 1380,
   },

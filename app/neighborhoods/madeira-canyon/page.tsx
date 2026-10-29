@@ -4,7 +4,7 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Madeira Canyon Homes for Sale | Henderson NV | Dr Jan Duffy",
   description:
-    "Madeira Canyon homes in Henderson, NV — median sale near $745K (2026). Club Madeira, Videiras, trails, Strip views. Madeira Canyon | Homes by Dr Jan Duffy. Call (702) 500-1942.",
+    "Madeira Canyon homes in Henderson, NV — median sale near $745K (2026). Club Madeira, Videiras, trails, Strip views. Madeira Canyon | Homes by Dr Jan Duffy. Call (702) 500-1955.",
   keywords: [
     "Madeira Canyon homes for sale",
     "Madeira Canyon Henderson",
@@ -80,7 +80,7 @@ export default function MadeiraCanyonPage() {
         {
           question: "Who should I call to tour Madeira Canyon homes?",
           answer:
-            "Call Dr. Jan Duffy at (702) 500-1942 or email DrDuffy@MadeiraCanyonHomes.com. Office: Suite A, 2721 Bonaparte Ln, Henderson, NV 89044.",
+            "Call Dr. Jan Duffy at (702) 500-1955 or email DrDuffy@MadeiraCanyonHomes.com. Office: Suite A, 2721 Bonaparte Ln, Henderson, NV 89044.",
         },
       ]}
       relatedLinks={[

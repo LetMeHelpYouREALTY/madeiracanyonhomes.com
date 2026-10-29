@@ -57,11 +57,11 @@ export default function CalendlyCTASection({
               className="inline-flex items-center justify-center bg-slate-700 hover:bg-slate-600 text-white px-6 py-3 rounded-md font-semibold transition-colors"
             />
             <a
-              href="tel:+17025001942"
+              href="tel:+17025001955"
               className="inline-flex items-center justify-center border border-slate-500 hover:bg-slate-800 text-white px-6 py-3 rounded-md font-semibold transition-colors"
             >
               <Phone className="h-4 w-4 mr-2" aria-hidden />
-              (702) 500-1942
+              (702) 500-1955
             </a>
           </div>
         </div>

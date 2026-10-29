@@ -132,7 +132,7 @@ const faqCategories = [
       },
       {
         q: "How do I contact Dr. Jan Duffy?",
-        a: "Call or text (702) 500-1942 or email DrDuffy@MadeiraCanyonHomes.com. Office located at Suite A, 2721 Bonaparte Ln, Henderson, NV 89044.",
+        a: "Call or text (702) 500-1955 or email DrDuffy@MadeiraCanyonHomes.com. Office located at Suite A, 2721 Bonaparte Ln, Henderson, NV 89044.",
       },
       {
         q: "What areas does Dr. Jan cover?",
@@ -210,11 +210,11 @@ export default function FAQPage() {
               Dr. Jan Duffy is happy to answer any questions about Las Vegas real estate or working together.
             </p>
             <a
-              href="tel:+17025001942"
+              href="tel:+17025001955"
               className="inline-flex items-center bg-white text-blue-600 px-8 py-4 rounded-md font-bold text-lg hover:bg-blue-50 transition-colors"
             >
               <Phone className="h-5 w-5 mr-2" />
-              Call (702) 500-1942
+              Call (702) 500-1955
             </a>
           </section>
         </div>

@@ -4,7 +4,7 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Cadence Homes for Sale | Henderson NV | Dr Jan Duffy",
   description:
-    "Cadence Henderson new-construction and resale homes. Compare Cadence with Madeira Canyon and Inspirada. Dr. Jan Duffy, REALTOR®. (702) 500-1942.",
+    "Cadence Henderson new-construction and resale homes. Compare Cadence with Madeira Canyon and Inspirada. Dr. Jan Duffy, REALTOR®. (702) 500-1955.",
   keywords: [
     "Cadence Henderson homes",
     "Cadence NV real estate",
@@ -46,7 +46,7 @@ export default function CadencePage() {
         },
         {
           title: "Buyer representation on new construction",
-          body: "Nevada buyers benefit from independent representation even on builder lots. Dr. Jan Duffy reviews lot premiums, structural options, and closing credits so the builder’s net number is clear before you reserve a homesite. Call (702) 500-1942.",
+          body: "Nevada buyers benefit from independent representation even on builder lots. Dr. Jan Duffy reviews lot premiums, structural options, and closing credits so the builder’s net number is clear before you reserve a homesite. Call (702) 500-1955.",
         },
       ]}
       faqs={[
@@ -58,7 +58,7 @@ export default function CadencePage() {
         {
           question: "Do I need an agent for Cadence new construction?",
           answer:
-            "Yes. Register with Dr. Jan Duffy before your first builder visit so representation and incentive credit are protected. Call (702) 500-1942.",
+            "Yes. Register with Dr. Jan Duffy before your first builder visit so representation and incentive credit are protected. Call (702) 500-1955.",
         },
         {
           question: "What should relocators compare first?",
@@ -68,7 +68,7 @@ export default function CadencePage() {
         {
           question: "Where is your office relative to Cadence?",
           answer:
-            "Suite A, 2721 Bonaparte Ln, Henderson, NV 89044 — in the Madeira Canyon / Anthem area. Phone (702) 500-1942. Email DrDuffy@MadeiraCanyonHomes.com.",
+            "Suite A, 2721 Bonaparte Ln, Henderson, NV 89044 — in the Madeira Canyon / Anthem area. Phone (702) 500-1955. Email DrDuffy@MadeiraCanyonHomes.com.",
         },
       ]}
       relatedLinks={[

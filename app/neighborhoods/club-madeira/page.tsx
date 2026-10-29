@@ -5,7 +5,7 @@ import { REALSCOUT_SEARCH_URL } from "@/lib/realscout";
 export const metadata: Metadata = {
   title: "Club Madeira Homes | Madeira Canyon Homes | Henderson NV",
   description:
-    "Club Madeira (The Club at Madeira Canyon) homes for sale in Henderson. Madeira Canyon Homes buyers — resort clubhouse, valley views, ~$900K–$1.3M+. Dr. Jan Duffy (702) 500-1942.",
+    "Club Madeira (The Club at Madeira Canyon) homes for sale in Henderson. Madeira Canyon Homes buyers — resort clubhouse, valley views, ~$900K–$1.3M+. Dr. Jan Duffy (702) 500-1955.",
   keywords: [
     "Madeira Canyon Homes",
     "Club Madeira HOA",
@@ -59,7 +59,7 @@ export default function ClubMadeiraPage() {
         },
         {
           title: "How we find Club Madeira homes",
-          body: "Start with the home search on this site for Club Madeira, Videiras, and nearby Madeira Canyon streets. Dr. Jan Duffy then compares price per square foot, days on market, and view corridors. Call (702) 500-1942 to get alerts that match your bed/bath and garage needs.",
+          body: "Start with the home search on this site for Club Madeira, Videiras, and nearby Madeira Canyon streets. Dr. Jan Duffy then compares price per square foot, days on market, and view corridors. Call (702) 500-1955 to get alerts that match your bed/bath and garage needs.",
         },
       ]}
       faqs={[
@@ -86,7 +86,7 @@ export default function ClubMadeiraPage() {
         {
           question: "Can Dr. Jan Duffy list my Club Madeira home?",
           answer:
-            "Yes. Call (702) 500-1942 or email DrDuffy@MadeiraCanyonHomes.com. Office hours and NAP: Suite A, 2721 Bonaparte Ln, Henderson, NV 89044.",
+            "Yes. Call (702) 500-1955 or email DrDuffy@MadeiraCanyonHomes.com. Office hours and NAP: Suite A, 2721 Bonaparte Ln, Henderson, NV 89044.",
         },
       ]}
       relatedLinks={[

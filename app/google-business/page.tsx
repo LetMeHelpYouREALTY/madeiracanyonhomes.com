@@ -38,7 +38,7 @@ export const metadata: Metadata = {
   title:
     "Google Business Profile | Madeira Canyon Homes by Dr Jan Duffy | Henderson NV",
   description:
-    "Madeira Canyon | Homes by Dr Jan Duffy — Google Business Profile hub. Suite A, 2721 Bonaparte Ln, Henderson, NV 89044. Call (702) 500-1942. Hours, map, reviews, and service areas for Club Madeira & Madeira Canyon.",
+    "Madeira Canyon | Homes by Dr Jan Duffy — Google Business Profile hub. Suite A, 2721 Bonaparte Ln, Henderson, NV 89044. Call (702) 500-1955. Hours, map, reviews, and service areas for Club Madeira & Madeira Canyon.",
   keywords: [
     "Madeira Canyon Homes Google Business",
     "Dr. Jan Duffy realtor Henderson",
@@ -49,7 +49,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Madeira Canyon | Homes by Dr Jan Duffy — Google Business Profile",
     description:
-      "NAP, hours, map, and reviews for Madeira Canyon and Club Madeira, Henderson NV. Call (702) 500-1942.",
+      "NAP, hours, map, and reviews for Madeira Canyon and Club Madeira, Henderson NV. Call (702) 500-1955.",
     url: "https://www.madeiracanyonhomes.com/google-business",
     type: "website",
   },

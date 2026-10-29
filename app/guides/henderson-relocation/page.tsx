@@ -4,7 +4,7 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Relocating to Henderson NV | Madeira Canyon Area Guide",
   description:
-    "Relocate to Henderson, NV: timeline, Madeira Canyon vs Inspirada vs Cadence, costs to plan. Dr. Jan Duffy helps California and out-of-state buyers. (702) 500-1942.",
+    "Relocate to Henderson, NV: timeline, Madeira Canyon vs Inspirada vs Cadence, costs to plan. Dr. Jan Duffy helps California and out-of-state buyers. (702) 500-1955.",
   keywords: [
     "relocating to Henderson NV",
     "move to Madeira Canyon",
@@ -84,7 +84,7 @@ export default function HendersonRelocationGuidePage() {
         {
           question: "Who should I contact first?",
           answer:
-            "Call Dr. Jan Duffy at (702) 500-1942 or email DrDuffy@MadeiraCanyonHomes.com. Madeira Canyon | Homes by Dr Jan Duffy, Suite A, 2721 Bonaparte Ln, Henderson, NV 89044.",
+            "Call Dr. Jan Duffy at (702) 500-1955 or email DrDuffy@MadeiraCanyonHomes.com. Madeira Canyon | Homes by Dr Jan Duffy, Suite A, 2721 Bonaparte Ln, Henderson, NV 89044.",
         },
       ]}
       relatedLinks={[
