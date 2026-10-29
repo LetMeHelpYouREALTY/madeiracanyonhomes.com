@@ -59,4 +59,4 @@ export function getGoogleMapsDirectionsUrl(): string {
 
 /** Placeholder-friendly reviews URL used elsewhere on the site */
 export const GOOGLE_REVIEWS_URL =
-  "https://g.page/r/madeiracanyonhomes/review";
+  "https://search.google.com/local/writereview?placeid=ChIJ7XLw8ta5yIARjTZPjgHJWVQ";
