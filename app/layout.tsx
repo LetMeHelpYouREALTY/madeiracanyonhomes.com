@@ -16,7 +16,7 @@ const SITE_URL =
   "https://www.madeiracanyonhomes.com";
 
 export async function generateMetadata(): Promise<Metadata> {
-  const domain = headers().get("x-domain") || "";
+  const domain = (await headers()).get("x-domain") || "";
   const config = getDomainConfig(domain);
   const isMadeira =
     config.domain === "madeiracanyonhomes.com" ||
@@ -64,11 +64,15 @@ export async function generateMetadata(): Promise<Metadata> {
         { url: "/favicon-16x16.png", sizes: "16x16", type: "image/png" },
         { url: "/favicon-32x32.png", sizes: "32x32", type: "image/png" },
       ],
-      apple: [{ url: "/apple-touch-icon.png", sizes: "180x180", type: "image/png" }],
+      apple: [
+        { url: "/apple-touch-icon.png", sizes: "180x180", type: "image/png" },
+      ],
     },
     manifest: "/site.webmanifest",
     openGraph: {
-      title: isMadeira ? "Madeira Canyon | Homes by Dr Jan Duffy" : config.heroHeadline,
+      title: isMadeira
+        ? "Madeira Canyon | Homes by Dr Jan Duffy"
+        : config.heroHeadline,
       description: config.description,
       type: "website",
       url: isMadeira ? SITE_URL : undefined,
@@ -85,14 +89,20 @@ export async function generateMetadata(): Promise<Metadata> {
     },
     twitter: {
       card: "summary_large_image",
-      title: isMadeira ? "Madeira Canyon | Homes by Dr Jan Duffy" : config.heroHeadline,
+      title: isMadeira
+        ? "Madeira Canyon | Homes by Dr Jan Duffy"
+        : config.heroHeadline,
       description: config.description,
       images: ["/images/hero/madeira-canyon-henderson-nv-home-exterior-2.jpg"],
     },
   };
 }
 
-export default function RootLayout({ children }: { children: React.ReactNode }) {
+export default function RootLayout({
+  children,
+}: {
+  children: React.ReactNode;
+}) {
   // Sitewide LocalBusiness / RealEstateAgent JSON-LD — NAP + hours match GBP
   const localBusinessSchema = generateLocalBusinessSchema();
 
