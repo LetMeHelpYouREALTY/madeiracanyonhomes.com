@@ -30,9 +30,9 @@ export const agentInfo = {
   name: "Dr. Jan Duffy",
   title: "REALTOR®",
   license: "S.0197614.LLC",
-  phone: "(702) 500-1942",
-  phoneFormatted: "(702) 500-1942",
-  phoneTel: "tel:+17025001942",
+  phone: "(702) 500-1955",
+  phoneFormatted: "(702) 500-1955",
+  phoneTel: "tel:+17025001955",
   email: "DrDuffy@MadeiraCanyonHomes.com",
   brokerage: "Berkshire Hathaway HomeServices Nevada Properties",
 };
@@ -51,8 +51,8 @@ export const officeInfo = {
     lat: 35.927504,
     lng: -115.090006,
   },
-  phone: "(702) 500-1942",
-  phoneTel: "tel:+17025001942",
+  phone: "(702) 500-1955",
+  phoneTel: "tel:+17025001955",
 };
 
 // Market Statistics (Updated January 2026)

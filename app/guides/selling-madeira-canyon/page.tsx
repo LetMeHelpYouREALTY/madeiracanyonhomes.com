@@ -4,7 +4,7 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "How to Sell Your Madeira Canyon Home | 2026 Guide",
   description:
-    "Sell a Madeira Canyon or Club Madeira home: pricing, prep, photos, and HOA resale package. Dr. Jan Duffy, REALTOR®. Call (702) 500-1942.",
+    "Sell a Madeira Canyon or Club Madeira home: pricing, prep, photos, and HOA resale package. Dr. Jan Duffy, REALTOR®. Call (702) 500-1955.",
   keywords: [
     "sell Madeira Canyon home",
     "Club Madeira home seller",
@@ -37,7 +37,7 @@ export default function SellingMadeiraCanyonGuidePage() {
         steps: [
           {
             name: "Order a village-level CMA",
-            text: "Price against Club Madeira, Videiras, or open Madeira solds—not a single Henderson average. Call (702) 500-1942 or start at the home valuation page.",
+            text: "Price against Club Madeira, Videiras, or open Madeira solds—not a single Henderson average. Call (702) 500-1955 or start at the home valuation page.",
             url: "/home-valuation",
           },
           {
@@ -73,7 +73,7 @@ export default function SellingMadeiraCanyonGuidePage() {
         {
           question: "What is my Madeira Canyon home worth?",
           answer:
-            "It depends on village, view, and condition. Neighborhood medians near $745K are a starting point only. Club Madeira homes often support $900K–$1.3M+ when updates and views align. Request a CMA at (702) 500-1942.",
+            "It depends on village, view, and condition. Neighborhood medians near $745K are a starting point only. Club Madeira homes often support $900K–$1.3M+ when updates and views align. Request a CMA at (702) 500-1955.",
         },
         {
           question: "How do I sell if I live out of state?",

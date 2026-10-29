@@ -101,7 +101,7 @@ export function generateRealEstateAgentSchema() {
     logo: DR_JAN_PHOTO,
     image: DR_JAN_PHOTO,
     description: siteConfig.description,
-    telephone: "+1-702-500-1942",
+    telephone: "+1-702-500-1955",
     email: agentInfo.email,
     priceRange: "$385K - $10M+",
     address: {
@@ -647,7 +647,7 @@ export function generateArticleSchema(article: {
       jobTitle: `${agentInfo.title}, Berkshire Hathaway HomeServices Nevada Properties`,
       url: `${BASE_URL}/about`,
       email: agentInfo.email,
-      telephone: "+1-702-500-1942",
+      telephone: "+1-702-500-1955",
       image: DR_JAN_PHOTO,
       identifier: agentInfo.license,
       worksFor: {

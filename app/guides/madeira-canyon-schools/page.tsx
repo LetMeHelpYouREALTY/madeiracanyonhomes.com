@@ -19,7 +19,7 @@ import { CALENDLY_EVENTS } from "@/lib/calendly";
 export const metadata: Metadata = {
   title: "Madeira Canyon Schools | Henderson NV School Names & Ratings",
   description:
-    "School names near Madeira Canyon, Henderson NV 89044: Wallin Elementary, Del E. Webb Middle, Liberty High, plus nearby Henderson and Boulder City options. Verify zoning by address. Dr. Jan Duffy (702) 500-1942.",
+    "School names near Madeira Canyon, Henderson NV 89044: Wallin Elementary, Del E. Webb Middle, Liberty High, plus nearby Henderson and Boulder City options. Verify zoning by address. Dr. Jan Duffy (702) 500-1955.",
   keywords: [
     "Madeira Canyon schools",
     "Wallin Elementary Henderson",
@@ -151,7 +151,7 @@ const faqs = [
   {
     question: "How do I verify school assignment for a listing?",
     answer:
-      "Use the Clark County School District Zoning Search with the property’s full street address. Dr. Jan Duffy can pull the assigned school names for each Madeira Canyon or Club Madeira home you tour — call (702) 500-1942.",
+      "Use the Clark County School District Zoning Search with the property’s full street address. Dr. Jan Duffy can pull the assigned school names for each Madeira Canyon or Club Madeira home you tour — call (702) 500-1955.",
   },
   {
     question: "What else does Madeira Canyon offer besides schools?",

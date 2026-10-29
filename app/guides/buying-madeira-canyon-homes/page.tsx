@@ -4,7 +4,7 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "How to Buy a Home in Madeira Canyon | Step-by-Step Guide",
   description:
-    "Buy a Madeira Canyon or Club Madeira home in Henderson: budget, villages, HOA docs, offer strategy. Dr. Jan Duffy, REALTOR®. (702) 500-1942.",
+    "Buy a Madeira Canyon or Club Madeira home in Henderson: budget, villages, HOA docs, offer strategy. Dr. Jan Duffy, REALTOR®. (702) 500-1955.",
   keywords: [
     "buy Madeira Canyon home",
     "Club Madeira buying guide",
@@ -48,7 +48,7 @@ export default function BuyingMadeiraCanyonGuidePage() {
           },
           {
             name: "Tour with a Madeira Canyon specialist",
-            text: "Call (702) 500-1942 to tour active listings. Compare price per square foot, roof/HVAC age, and view corridors on the same day.",
+            text: "Call (702) 500-1955 to tour active listings. Compare price per square foot, roof/HVAC age, and view corridors on the same day.",
             url: "/contact",
           },
           {
@@ -86,7 +86,7 @@ export default function BuyingMadeiraCanyonGuidePage() {
         {
           question: "Can Dr. Jan Duffy represent me against a builder or FSBO?",
           answer:
-            "Yes for most resale and many new-construction scenarios in Henderson. Call (702) 500-1942 before your first tour so registration and agency are clear.",
+            "Yes for most resale and many new-construction scenarios in Henderson. Call (702) 500-1955 before your first tour so registration and agency are clear.",
         },
       ]}
       relatedLinks={[

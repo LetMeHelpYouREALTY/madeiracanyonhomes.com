@@ -4,7 +4,7 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Anthem Highlands Homes for Sale | Henderson NV | Dr Jan Duffy",
   description:
-    "Anthem Highlands and Anthem Country Club homes in Henderson. Compare Madeira Canyon, Anthem parks, and golf-adjacent living with Dr. Jan Duffy. Call (702) 500-1942.",
+    "Anthem Highlands and Anthem Country Club homes in Henderson. Compare Madeira Canyon, Anthem parks, and golf-adjacent living with Dr. Jan Duffy. Call (702) 500-1955.",
   keywords: [
     "Anthem Highlands homes",
     "Anthem Henderson NV",
@@ -51,7 +51,7 @@ export default function AnthemPage() {
         },
         {
           title: "How we compare Anthem villages",
-          body: "We line up HOA dues, gate status, lot size, HVAC age, and pool costs next to recent solds. Call (702) 500-1942 for a side-by-side of Anthem Highlands vs Club Madeira vs Inspirada before you write an offer.",
+          body: "We line up HOA dues, gate status, lot size, HVAC age, and pool costs next to recent solds. Call (702) 500-1955 for a side-by-side of Anthem Highlands vs Club Madeira vs Inspirada before you write an offer.",
         },
       ]}
       faqs={[
@@ -73,7 +73,7 @@ export default function AnthemPage() {
         {
           question: "Where is your Anthem-area office?",
           answer:
-            "Madeira Canyon | Homes by Dr Jan Duffy is at Suite A, 2721 Bonaparte Ln, Henderson, NV 89044. Phone (702) 500-1942.",
+            "Madeira Canyon | Homes by Dr Jan Duffy is at Suite A, 2721 Bonaparte Ln, Henderson, NV 89044. Phone (702) 500-1955.",
         },
       ]}
       relatedLinks={[

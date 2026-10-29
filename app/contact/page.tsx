@@ -12,7 +12,7 @@ import { getHero } from "@/lib/hero-images";
 export const metadata: Metadata = {
   title: "Contact | Madeira Canyon | Homes by Dr Jan Duffy | Madeira Canyon Homes",
   description:
-    "Contact Madeira Canyon | Homes by Dr Jan Duffy. Suite A, 2721 Bonaparte Ln, Henderson, NV 89044. Call (702) 500-1942 or email DrDuffy@MadeiraCanyonHomes.com. Club Madeira & Madeira Canyon real estate.",
+    "Contact Madeira Canyon | Homes by Dr Jan Duffy. Suite A, 2721 Bonaparte Ln, Henderson, NV 89044. Call (702) 500-1955 or email DrDuffy@MadeiraCanyonHomes.com. Club Madeira & Madeira Canyon real estate.",
   keywords: [
     "Madeira Canyon Homes",
     "contact Dr Jan Duffy",
@@ -29,7 +29,7 @@ const contactSchema = {
     "@type": "RealEstateAgent",
     name: "Madeira Canyon | Homes by Dr Jan Duffy",
     alternateName: ["Madeira Canyon Homes", "MadeiraCanyonHomes.com"],
-    telephone: "+17025001942",
+    telephone: "+17025001955",
     email: "DrDuffy@MadeiraCanyonHomes.com",
     url: "https://www.madeiracanyonhomes.com/contact",
     address: {
@@ -85,10 +85,10 @@ export default function ContactPage() {
                   <div>
                     <h3 className="font-semibold text-slate-900 mb-1">Phone (Call or Text)</h3>
                     <a
-                      href="tel:+17025001942"
+                      href="tel:+17025001955"
                       className="text-2xl font-bold text-blue-600 hover:text-blue-700"
                     >
-                      (702) 500-1942
+                      (702) 500-1955
                     </a>
                     <p className="text-sm text-slate-500 mt-1">
                       Mon–Fri 9am–6pm · Sat 10am–4pm · Sun by appointment
@@ -236,13 +236,13 @@ export default function ContactPage() {
             </h2>
             <div className="grid md:grid-cols-2 gap-6">
               <a
-                href="tel:+17025001942"
+                href="tel:+17025001955"
                 className="flex items-center justify-center bg-blue-600 hover:bg-blue-700 text-white p-6 rounded-xl transition-colors"
               >
                 <Phone className="h-8 w-8 mr-4" />
                 <div className="text-left">
                   <div className="font-bold text-lg">Call Now</div>
-                  <div className="text-blue-100">(702) 500-1942</div>
+                  <div className="text-blue-100">(702) 500-1955</div>
                 </div>
               </a>
               <a
@@ -275,7 +275,7 @@ export default function ContactPage() {
                 },
                 {
                   q: "How quickly can you respond to inquiries?",
-                  a: "I typically respond to calls, texts, and emails within 2 hours during business hours (Mon–Fri 9am–6pm, Sat 10am–4pm). For urgent matters, calling or texting (702) 500-1942 is the fastest way to reach me.",
+                  a: "I typically respond to calls, texts, and emails within 2 hours during business hours (Mon–Fri 9am–6pm, Sat 10am–4pm). For urgent matters, calling or texting (702) 500-1955 is the fastest way to reach me.",
                 },
                 {
                   q: "Do you charge for consultations?",

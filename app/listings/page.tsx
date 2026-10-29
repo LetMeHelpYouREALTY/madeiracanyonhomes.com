@@ -25,7 +25,7 @@ import { getHero } from "@/lib/hero-images";
 export const metadata: Metadata = {
   title: "Las Vegas Homes for Sale | Property Search | Dr. Jan Duffy, REALTOR®",
   description:
-    "Browse Las Vegas and Henderson homes for sale. Search by neighborhood, price, and features. Dr. Jan Duffy, REALTOR®. Call (702) 500-1942.",
+    "Browse Las Vegas and Henderson homes for sale. Search by neighborhood, price, and features. Dr. Jan Duffy, REALTOR®. Call (702) 500-1955.",
   keywords: [
     "Las Vegas homes for sale",
     "Henderson real estate",
@@ -44,7 +44,7 @@ const listingsSchema = {
   provider: {
     "@type": "RealEstateAgent",
     name: "Dr. Jan Duffy - Berkshire Hathaway HomeServices Nevada Properties",
-    telephone: "+17025001942",
+    telephone: "+17025001955",
   },
   areaServed: [
     { "@type": "City", name: "Las Vegas, NV" },
@@ -470,11 +470,11 @@ export default function ListingsPage() {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a
-                href="tel:+17025001942"
+                href="tel:+17025001955"
                 className="inline-flex items-center justify-center bg-white text-blue-600 px-8 py-4 rounded-md font-bold text-lg hover:bg-blue-50 transition-colors"
               >
                 <Phone className="h-5 w-5 mr-2" />
-                Call (702) 500-1942
+                Call (702) 500-1955
               </a>
               <a
                 href="https://calendly.com/drjanduffy/appointment"

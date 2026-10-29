@@ -4,7 +4,7 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Lake Las Vegas Homes for Sale | Henderson NV | Dr Jan Duffy",
   description:
-    "Lake Las Vegas waterfront and golf community homes in Henderson. Compare with Madeira Canyon and Club Madeira. Dr. Jan Duffy, REALTOR®. (702) 500-1942.",
+    "Lake Las Vegas waterfront and golf community homes in Henderson. Compare with Madeira Canyon and Club Madeira. Dr. Jan Duffy, REALTOR®. (702) 500-1955.",
   keywords: [
     "Lake Las Vegas homes for sale",
     "Lake Las Vegas Henderson",
@@ -63,12 +63,12 @@ export default function LakeLasVegasPage() {
         {
           question: "Are there 55+ options near Lake Las Vegas?",
           answer:
-            "Yes. Del Webb at Lake Las Vegas is a nearby active-adult community. See our 55+ pages or call (702) 500-1942 for current inventory.",
+            "Yes. Del Webb at Lake Las Vegas is a nearby active-adult community. See our 55+ pages or call (702) 500-1955 for current inventory.",
         },
         {
           question: "How do I start a Lake Las Vegas search?",
           answer:
-            "Call Dr. Jan Duffy at (702) 500-1942 or use the RealScout listings on this page. Office: Suite A, 2721 Bonaparte Ln, Henderson, NV 89044.",
+            "Call Dr. Jan Duffy at (702) 500-1955 or use the RealScout listings on this page. Office: Suite A, 2721 Bonaparte Ln, Henderson, NV 89044.",
         },
       ]}
       relatedLinks={[

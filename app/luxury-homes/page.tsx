@@ -24,7 +24,7 @@ import { getHero } from "@/lib/hero-images";
 export const metadata: Metadata = {
   title: "Las Vegas Luxury Homes for Sale | Dr. Jan Duffy, REALTOR®",
   description:
-    "Discover Las Vegas luxury real estate with Dr. Jan Duffy. The Ridges, MacDonald Highlands, Summerlin, Southern Highlands. $1M+ homes. Call (702) 500-1942.",
+    "Discover Las Vegas luxury real estate with Dr. Jan Duffy. The Ridges, MacDonald Highlands, Summerlin, Southern Highlands. $1M+ homes. Call (702) 500-1955.",
   keywords: [
     "Las Vegas luxury homes",
     "The Ridges Las Vegas",
@@ -44,7 +44,7 @@ const luxurySchema = {
   provider: {
     "@type": "RealEstateAgent",
     name: "Dr. Jan Duffy - Berkshire Hathaway HomeServices Nevada Properties",
-    telephone: "+17025001942",
+    telephone: "+17025001955",
   },
   areaServed: "Las Vegas, Henderson, Summerlin luxury communities",
   serviceType: "Luxury Real Estate",
@@ -410,11 +410,11 @@ export default function LuxuryHomesPage() {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a
-                href="tel:+17025001942"
+                href="tel:+17025001955"
                 className="inline-flex items-center justify-center bg-blue-600 hover:bg-blue-700 text-white px-8 py-4 rounded-md font-bold text-lg transition-colors"
               >
                 <Phone className="h-5 w-5 mr-2" />
-                Call (702) 500-1942
+                Call (702) 500-1955
               </a>
               <a
                 href="https://calendly.com/drjanduffy/appointment"

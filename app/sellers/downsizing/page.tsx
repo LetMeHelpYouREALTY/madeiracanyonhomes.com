@@ -20,7 +20,7 @@ import { getHero } from "@/lib/hero-images";
 export const metadata: Metadata = {
   title: "Downsizing in Las Vegas | Dr. Jan Duffy, REALTOR®",
   description:
-    "Ready to simplify? Dr. Jan Duffy helps Las Vegas homeowners extract equity and transition to low-maintenance living. 55+ communities, condos, and more. Call (702) 500-1942.",
+    "Ready to simplify? Dr. Jan Duffy helps Las Vegas homeowners extract equity and transition to low-maintenance living. 55+ communities, condos, and more. Call (702) 500-1955.",
   keywords: [
     "downsizing Las Vegas",
     "sell large home Las Vegas",
@@ -444,11 +444,11 @@ export default function DownsizingPage() {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a
-                href="tel:+17025001942"
+                href="tel:+17025001955"
                 className="inline-flex items-center justify-center bg-white text-blue-600 px-8 py-4 rounded-md font-bold text-lg hover:bg-blue-50 transition-colors"
               >
                 <Phone className="h-5 w-5 mr-2" />
-                Call (702) 500-1942
+                Call (702) 500-1955
               </a>
               <Link
                 href="/home-valuation"

@@ -25,7 +25,7 @@ import {
 export const metadata: Metadata = {
   title: "About Dr. Jan Duffy | Madeira Canyon | Homes by Dr Jan Duffy",
   description:
-    "Meet Dr. Jan Duffy — Madeira Canyon | Homes by Dr Jan Duffy. Club Madeira & Madeira Canyon specialist (Madeira Canyon Homes), in real estate since 1983. Suite A, 2721 Bonaparte Ln, Henderson, NV 89044. Call (702) 500-1942.",
+    "Meet Dr. Jan Duffy — Madeira Canyon | Homes by Dr Jan Duffy. Club Madeira & Madeira Canyon specialist (Madeira Canyon Homes), in real estate since 1983. Suite A, 2721 Bonaparte Ln, Henderson, NV 89044. Call (702) 500-1955.",
   keywords: [
     "Madeira Canyon Homes",
     "Dr. Jan Duffy",
@@ -48,7 +48,7 @@ const personSchema = {
   description:
     "Madeira Canyon | Homes by Dr Jan Duffy — licensed REALTOR® with Berkshire Hathaway HomeServices Nevada Properties, specializing in Madeira Canyon and Club Madeira (Madeira Canyon Homes) in Henderson, NV.",
   image: agentPhotoUrl,
-  telephone: "+17025001942",
+  telephone: "+17025001955",
   email: "DrDuffy@MadeiraCanyonHomes.com",
   url: "https://www.madeiracanyonhomes.com/about",
   worksFor: {
@@ -183,11 +183,11 @@ export default function AboutPage() {
                   <h3 className="font-bold text-slate-900 mb-4">Contact Dr. Jan Duffy</h3>
                   <div className="space-y-3">
                     <a
-                      href="tel:+17025001942"
+                      href="tel:+17025001955"
                       className="flex items-center text-slate-700 hover:text-blue-600"
                     >
                       <Phone className="h-5 w-5 mr-3 text-blue-600" />
-                      <span className="font-semibold">(702) 500-1942</span>
+                      <span className="font-semibold">(702) 500-1955</span>
                     </a>
                     <a
                       href="mailto:DrDuffy@MadeiraCanyonHomes.com"
@@ -389,11 +389,11 @@ export default function AboutPage() {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a
-                href="tel:+17025001942"
+                href="tel:+17025001955"
                 className="inline-flex items-center justify-center bg-white text-blue-600 px-8 py-4 rounded-md font-bold text-lg hover:bg-blue-50 transition-colors"
               >
                 <Phone className="h-5 w-5 mr-2" />
-                Call (702) 500-1942
+                Call (702) 500-1955
               </a>
               <a
                 href="https://calendly.com/drjanduffy/appointment"

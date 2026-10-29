@@ -10,7 +10,7 @@ import { getHero } from "@/lib/hero-images";
 export const metadata: Metadata = {
   title: "Henderson Homes | Nevada Real Estate",
   description:
-    "Find Henderson homes. Dr. Jan Duffy specializes in Henderson's master-planned communities. Median price $485K. Call (702) 500-1942.",
+    "Find Henderson homes. Dr. Jan Duffy specializes in Henderson's master-planned communities. Median price $485K. Call (702) 500-1955.",
   keywords: [
     "Berkshire Hathaway HomeServices Henderson",
     "Henderson homes for sale",
@@ -380,11 +380,11 @@ export default function HendersonPage() {
               for personalized guidance and local market insights.
             </p>
             <a
-              href="tel:+17025001942"
+              href="tel:+17025001955"
               className="inline-flex items-center bg-white text-blue-600 px-8 py-4 rounded-md font-bold text-lg hover:bg-blue-50 transition-colors"
             >
               <Phone className="h-5 w-5 mr-2" />
-              Call (702) 500-1942
+              Call (702) 500-1955
             </a>
           </section>
         </div>

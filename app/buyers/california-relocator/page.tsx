@@ -23,7 +23,7 @@ import { getHero } from "@/lib/hero-images";
 export const metadata: Metadata = {
   title: "Relocating from California to Las Vegas | Dr. Jan Duffy, REALTOR®",
   description:
-    "Moving from California to Las Vegas? Zero state income tax, 40-60% lower home prices, same sunshine. Dr. Jan Duffy helps CA relocators find their perfect Las Vegas home. Call (702) 500-1942.",
+    "Moving from California to Las Vegas? Zero state income tax, 40-60% lower home prices, same sunshine. Dr. Jan Duffy helps CA relocators find their perfect Las Vegas home. Call (702) 500-1955.",
   keywords: [
     "California to Las Vegas relocation",
     "moving from California to Nevada",
@@ -86,7 +86,7 @@ const realEstateAgentSchema = {
   "@type": "RealEstateAgent",
   name: "Madeira Canyon | Homes by Dr Jan Duffy",
   alternateName: ["Madeira Canyon Homes", "MadeiraCanyonHomes.com"],
-  telephone: "+17025001942",
+  telephone: "+17025001955",
   url: "https://www.madeiracanyonhomes.com/buyers/california-relocator",
   address: {
     "@type": "PostalAddress",
@@ -462,11 +462,11 @@ export default function CaliforniaRelocatorPage() {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a
-                href="tel:+17025001942"
+                href="tel:+17025001955"
                 className="inline-flex items-center justify-center bg-white text-blue-600 px-8 py-4 rounded-md font-bold text-lg hover:bg-blue-50 transition-colors"
               >
                 <Phone className="h-5 w-5 mr-2" />
-                Call/Text (702) 500-1942
+                Call/Text (702) 500-1955
               </a>
               <a
                 href="https://calendly.com/drjanduffy/appointment"
