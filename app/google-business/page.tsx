@@ -136,7 +136,7 @@ export default function GoogleBusinessPage() {
                 </a>
               </div>
               <p className="text-sm text-slate-600">
-                {agentStats.averageRating} average · {agentStats.reviewCount}+
+                {agentStats.averageRating.toFixed(1)} average · {agentStats.reviewCount}+
                 reviews
               </p>
             </div>
