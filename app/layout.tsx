@@ -129,7 +129,8 @@ export default function RootLayout({
         {children}
         <GoogleAnalytics />
         <CalendlyProvider />
-        <DeferredWidgetTracker />
+        {/* Production only: keeps Vercel preview URLs out of the FUB Pixel install list */}
+        {process.env.VERCEL_ENV === "production" && <DeferredWidgetTracker />}
         <Analytics />
       </body>
     </html>
