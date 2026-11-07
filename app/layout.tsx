@@ -10,6 +10,7 @@ import GoogleAnalytics from "@/components/analytics/GoogleAnalytics";
 import { generateLocalBusinessSchema } from "@/lib/gbp-schema";
 import { siteConfig } from "@/lib/site-config";
 import AutoBreadcrumbJsonLd from "@/components/seo/AutoBreadcrumbJsonLd";
+import { SpeedInsights as VercelSpeedInsights } from "@vercel/speed-insights/next";
 
 const SITE_URL =
   (process.env.NEXT_PUBLIC_SITE_URL || siteConfig.url).replace(/\/$/, "") ||
@@ -131,6 +132,7 @@ export default function RootLayout({
         <CalendlyProvider />
         <DeferredWidgetTracker />
         <Analytics />
+        <VercelSpeedInsights />
       </body>
     </html>
   );
